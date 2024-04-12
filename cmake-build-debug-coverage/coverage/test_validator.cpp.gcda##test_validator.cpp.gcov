@@ -1,0 +1,442 @@
+        -:    0:Source:D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion/teste/test_validator.cpp
+        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_validator.cpp.gcno
+        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_validator.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by obrej on 4/11/2024.
+        -:    3://
+        -:    4:
+        -:    5:#include <cassert>
+        -:    6:#include <sstream>
+        -:    7:#include "../Headers/teste.h"
+        -:    8:#include "../Headers/validator.h"
+        -:    9:
+function _ZN14test_validator16tester_validatorEv called 1 returned 100% blocks executed 51%
+        1:   10:void test_validator::tester_validator(){
+        1:   10-block  0
+        -:   11:    validator_carte validator;
+        6:   12:    carte book1 = carte("Luis", "Jupanii", "epic", 1842, 0);
+        1:   12-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   12-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   12-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   12-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   12-block  4
+call   12 returned 1
+        1:   12-block  5
+call   13 returned 1
+        1:   12-block  6
+call   14 returned 1
+        1:   12-block  7
+    $$$$$:   12-block  8
+call   15 never executed
+    $$$$$:   12-block  9
+    $$$$$:   12-block 10
+    $$$$$:   12-block 11
+call   16 never executed
+    $$$$$:   12-block 12
+    $$$$$:   12-block 13
+    $$$$$:   12-block 14
+call   17 never executed
+    $$$$$:   12-block 15
+    $$$$$:   12-block 16
+        6:   13:    carte book2 = carte("Kong", "", "liric", 1940, 1);
+        1:   13-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   13-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   13-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   13-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   13-block  4
+call   12 returned 1
+        1:   13-block  5
+call   13 returned 1
+        1:   13-block  6
+call   14 returned 1
+        1:   13-block  7
+    $$$$$:   13-block  8
+call   15 never executed
+    $$$$$:   13-block  9
+    $$$$$:   13-block 10
+    $$$$$:   13-block 11
+call   16 never executed
+    $$$$$:   13-block 12
+    $$$$$:   13-block 13
+    $$$$$:   13-block 14
+call   17 never executed
+    $$$$$:   13-block 15
+    $$$$$:   13-block 16
+        6:   14:    carte book3 = carte("Luis", "", "", 1842, 2);
+        1:   14-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   14-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   14-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   14-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   14-block  4
+call   12 returned 1
+        1:   14-block  5
+call   13 returned 1
+        1:   14-block  6
+call   14 returned 1
+        1:   14-block  7
+    $$$$$:   14-block  8
+call   15 never executed
+    $$$$$:   14-block  9
+    $$$$$:   14-block 10
+    $$$$$:   14-block 11
+call   16 never executed
+    $$$$$:   14-block 12
+    $$$$$:   14-block 13
+    $$$$$:   14-block 14
+call   17 never executed
+    $$$$$:   14-block 15
+    $$$$$:   14-block 16
+        6:   15:    carte book4 = carte("", "Maria", "", 1940, 3);
+        1:   15-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   15-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   15-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   15-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   15-block  4
+call   12 returned 1
+        1:   15-block  5
+call   13 returned 1
+        1:   15-block  6
+call   14 returned 1
+        1:   15-block  7
+    $$$$$:   15-block  8
+call   15 never executed
+    $$$$$:   15-block  9
+    $$$$$:   15-block 10
+    $$$$$:   15-block 11
+call   16 never executed
+    $$$$$:   15-block 12
+    $$$$$:   15-block 13
+    $$$$$:   15-block 14
+call   17 never executed
+    $$$$$:   15-block 15
+    $$$$$:   15-block 16
+        5:   16:    carte book5 = carte("Luis", "Jupanii", "epic", 2034, 4);
+        1:   16-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   16-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   16-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   16-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   16-block  4
+call   12 returned 1
+        1:   16-block  5
+call   13 returned 1
+        1:   16-block  6
+call   14 returned 1
+    $$$$$:   16-block  7
+call   15 never executed
+    $$$$$:   16-block  8
+    $$$$$:   16-block  9
+    $$$$$:   16-block 10
+call   16 never executed
+    $$$$$:   16-block 11
+    $$$$$:   16-block 12
+    $$$$$:   16-block 13
+call   17 never executed
+    $$$$$:   16-block 14
+    $$$$$:   16-block 15
+        -:   17:
+        1:   18:    validator.validate(book1);
+        1:   18-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   19:
+        -:   20:    try{
+        1:   21:        validator.validate(book2);
+        1:   21-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+        -:   22:    }
+        1:   23:    catch(const book_validation_exception& ex){
+        1:   23-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   23-block  1
+call    2 returned 1
+        1:   24:        std::stringstream ss;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   25:        ss << ex;
+        1:   25-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   26:        auto mesaj = ss.str();
+        1:   26-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   27:        assert(mesaj.find("Titlul") == 0);
+        1:   27-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    $$$$$:   27-block  1
+call    3 never executed
+        1:   27-block  2
+        1:   28:        ss.clear();
+        1:   28-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   29:    }
+        1:   29-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   29-block  1
+call    5 never executed
+    $$$$$:   29-block  2
+call    6 never executed
+    $$$$$:   29-block  3
+call    7 never executed
+        -:   30:
+        -:   31:    try{
+        1:   32:        validator.validate(book3);
+        1:   32-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+        -:   33:    }
+        1:   34:    catch(const book_validation_exception& ex){
+        1:   34-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   34-block  1
+call    2 returned 1
+        1:   35:        std::stringstream ss;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   36:        ss << ex;
+        1:   36-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   37:        auto mesaj = ss.str();
+        1:   37-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   38:        assert(mesaj.find("Titlul") == 0);
+        1:   38-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    $$$$$:   38-block  1
+call    3 never executed
+        1:   38-block  2
+        1:   39:        assert(mesaj.find("Genul") >= 0);
+        1:   39-block  0
+call    0 returned 1
+        1:   40:        ss.clear();
+        1:   40-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   41:    }
+        1:   41-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   41-block  1
+call    5 never executed
+    $$$$$:   41-block  2
+call    6 never executed
+    $$$$$:   41-block  3
+call    7 never executed
+        -:   42:
+        -:   43:    try{
+        1:   44:        validator.validate(book4);
+        1:   44-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+        -:   45:    }
+        1:   46:    catch(const book_validation_exception& ex){
+        1:   46-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   46-block  1
+call    2 returned 1
+        1:   47:        std::stringstream ss;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   48:        ss << ex;
+        1:   48-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   49:        auto mesaj = ss.str();
+        1:   49-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   50:        assert(mesaj.find("Autorul") == 0);
+        1:   50-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    $$$$$:   50-block  1
+call    3 never executed
+        1:   50-block  2
+        1:   51:        assert(mesaj.find("Genul") >= 0);
+        1:   51-block  0
+call    0 returned 1
+        1:   52:        ss.clear();
+        1:   52-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   53:    }
+        1:   53-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   53-block  1
+call    5 never executed
+    $$$$$:   53-block  2
+call    6 never executed
+    $$$$$:   53-block  3
+call    7 never executed
+        -:   54:
+        -:   55:    try{
+        1:   56:        validator.validate(book5);
+        1:   56-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+        -:   57:    }
+        1:   58:    catch(const book_validation_exception& ex){
+        1:   58-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   58-block  1
+call    2 returned 1
+        1:   59:        std::stringstream ss;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   60:        ss << ex;
+        1:   60-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   61:        auto mesaj = ss.str();
+        1:   61-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   62:        assert(mesaj.find("Anul") == 0);
+        1:   62-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    $$$$$:   62-block  1
+call    3 never executed
+        1:   62-block  2
+        1:   63:        ss.clear();
+        1:   63-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   64:    }
+        1:   64-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:   64-block  1
+call    5 never executed
+    $$$$$:   64-block  2
+call    6 never executed
+    $$$$$:   64-block  3
+call    7 never executed
+        -:   65:
+        1:   66:}
+        1:   66-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+    $$$$$:   66-block  1
+call    5 never executed
+    $$$$$:   66-block  2
+call    6 never executed
+    $$$$$:   66-block  3
+call    7 never executed
+    $$$$$:   66-block  4
+call    8 never executed
+    $$$$$:   66-block  5
+call    9 never executed

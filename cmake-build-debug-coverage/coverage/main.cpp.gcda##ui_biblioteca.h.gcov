@@ -1,0 +1,33 @@
+        -:    0:Source:D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion/Headers/ui_biblioteca.h
+        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\main.cpp.gcno
+        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\main.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by obrej on 4/10/2024.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef LAB6_7_CLION_UI_BIBLIOTECA_H
+        -:    6:#define LAB6_7_CLION_UI_BIBLIOTECA_H
+        -:    7:
+        -:    8:#include "service_biblioteca.h"
+        -:    9:
+        -:   10:class ui_biblioteca {
+        -:   11:private:
+        -:   12:    service_biblioteca& srv;
+        -:   13:    void meniu();
+        -:   14:
+        -:   15:    void add_book();
+        -:   16:    void delete_book();
+        -:   17:    void modify_book();
+        -:   18:    void afiseaza(const std::vector<carte>& books);
+        -:   19:    void filtrare_an();
+        -:   20:public:
+function _ZN13ui_bibliotecaC1ER18service_biblioteca called 1 returned 100% blocks executed 100%
+        1:   21:    ui_biblioteca(service_biblioteca &srv_obj): srv{srv_obj}{}
+        -:   22:    ui_biblioteca(const ui_biblioteca&) = delete;
+        -:   23:
+        -:   24:    void run();
+        -:   25:};
+        -:   26:
+        -:   27:
+        -:   28:#endif //LAB6_7_CLION_UI_BIBLIOTECA_H

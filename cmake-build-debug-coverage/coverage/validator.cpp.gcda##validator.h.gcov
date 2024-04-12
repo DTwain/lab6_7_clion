@@ -1,0 +1,35 @@
+        -:    0:Source:D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion/Headers/validator.h
+        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcno
+        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by obrej on 4/11/2024.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef LAB6_7_CLION_VALIDATOR_H
+        -:    6:#define LAB6_7_CLION_VALIDATOR_H
+        -:    7:
+        -:    8:#include "carte.h"
+        -:    9:
+        -:   10:class book_validation_exception{
+        -:   11:private:
+        -:   12:    vector<string> msgs;
+        -:   13:public:
+function _ZN25book_validation_exceptionC1ERKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS6_EE called 6 returned 100% blocks executed 100%
+        6:   14:    book_validation_exception(const vector<string>& errors): msgs{errors}{}
+        6:   14-block  0
+call    0 returned 6
+        -:   15:    friend ostream& operator << (ostream &out, const book_validation_exception& ex);
+        -:   16:};
+        -:   17:
+        -:   18:ostream& operator << (ostream& out, const book_validation_exception& ex);
+        -:   19:
+        -:   20:class validator_carte{
+        -:   21:public:
+        -:   22:    validator_carte() = default;
+        -:   23:    void validate(const carte& book);
+        -:   24:};
+        -:   25:
+        -:   26:
+        -:   27:
+        -:   28:#endif //LAB6_7_CLION_VALIDATOR_H

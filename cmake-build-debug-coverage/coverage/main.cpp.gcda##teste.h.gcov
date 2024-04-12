@@ -1,0 +1,75 @@
+        -:    0:Source:D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion/Headers/teste.h
+        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\main.cpp.gcno
+        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\main.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by obrej on 4/10/2024.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef LAB6_7_CLION_TEST_REPO_H
+        -:    6:#define LAB6_7_CLION_TEST_REPO_H
+        -:    7:
+        -:    8:
+        -:    9:class test_repo {
+        -:   10:private:
+        -:   11:    void test_repo_add();
+        -:   12:    void test_repo_delete();
+        -:   13:    void test_repo_modify();
+        -:   14:    void test_repo_get_all();
+        -:   15:    void test_repo_find_book_by_id();
+        -:   16:    void test_get_id_for_next_book_to_be_added();
+        -:   17:    void test_increment_id();
+        -:   18:
+        -:   19:public:
+        -:   20:    void run_repo_tests();
+        -:   21:};
+        -:   22:
+        -:   23:class test_domain{
+        -:   24:private:
+        -:   25:    void test_get_author();
+        -:   26:    void test_get_title();
+        -:   27:    void test_get_genre();
+        -:   28:    void test_get_publication_year();
+        -:   29:    void test_get_book_id();
+        -:   30:
+        -:   31:public:
+        -:   32:    void run_domain_tests();
+        -:   33:};
+        -:   34:
+        -:   35:class test_validator{
+        -:   36:public:
+        -:   37:    void tester_validator();
+        -:   38:};
+        -:   39:
+        -:   40:class test_service{
+        -:   41:private:
+        -:   42:    void test_add();
+        -:   43:    void test_delete();
+        -:   44:    void test_modify();
+        -:   45:    void test_get_all();
+        -:   46:    void test_filter_an();
+        -:   47:public:
+        -:   48:    void run_service_tests();
+        -:   49:};
+        -:   50:
+        -:   51:class tests{
+        -:   52:private:
+        -:   53:    test_domain tester_domain;
+        -:   54:    test_repo tester_repo;
+        -:   55:    test_validator t_validator;
+        -:   56:    test_service tester_service;
+        -:   57:public:
+function _ZN5tests13run_all_testsEv called 1 returned 100% blocks executed 100%
+        1:   58:    void run_all_tests(){
+        1:   59:        tester_domain.run_domain_tests();
+        1:   59-block  0
+call    0 returned 1
+        1:   60:        tester_repo.run_repo_tests();
+call    0 returned 1
+        1:   61:        t_validator.tester_validator();
+call    0 returned 1
+        1:   62:        tester_service.run_service_tests();
+call    0 returned 1
+        1:   63:    }
+        -:   64:};
+        -:   65:#endif //LAB6_7_CLION_TEST_REPO_H

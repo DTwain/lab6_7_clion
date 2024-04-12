@@ -1,0 +1,44 @@
+        -:    0:Source:D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion/Headers/service_biblioteca.h
+        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_service.cpp.gcno
+        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_service.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by obrej on 4/10/2024.
+        -:    3://
+        -:    4:
+        -:    5:
+        -:    6:#ifndef LAB6_7_CLION_SERVICE_BIBLIOTECA_H
+        -:    7:#define LAB6_7_CLION_SERVICE_BIBLIOTECA_H
+        -:    8:
+        -:    9:#include <string>
+        -:   10:#include <vector>
+        -:   11:#include "carte.h"
+        -:   12:#include "repo.h"
+        -:   13:#include "validator.h"
+        -:   14:
+        -:   15:using std::vector;
+        -:   16:
+        -:   17:class service_biblioteca {
+        -:   18:private:
+        -:   19:    repo& repo_carti;
+        -:   20:    validator_carte& validator;
+        -:   21:public:
+function _ZN18service_bibliotecaC1ER4repoR15validator_carte called 0 returned 0% blocks executed 0%
+    #####:   22:    service_biblioteca(repo &repo_carti_obj, validator_carte& validator_obj):
+    #####:   23:        repo_carti{repo_carti_obj}, validator{validator_obj}{}
+        -:   24:
+        -:   25:        service_biblioteca(const service_biblioteca& other) = delete; // blocam copierea service lui
+        -:   26:
+        -:   27:        void add_book_srv(const string& autor, const string& titlu, const string& genre, const int& an);
+        -:   28:
+        -:   29:        void delete_book_srv(const int& id);
+        -:   30:
+        -:   31:        void modify_book_srv(const string& autor, const string& titlu, const string& genre, const int& an, const int& id);
+        -:   32:
+        -:   33:        const vector<carte>& get_all_srv() noexcept;
+        -:   34:
+        -:   35:        const vector<carte> filter_srv_an_aparitie(const int& an) const;
+        -:   36:};
+        -:   37:
+        -:   38:
+        -:   39:#endif //LAB6_7_CLION_SERVICE_BIBLIOTECA_H

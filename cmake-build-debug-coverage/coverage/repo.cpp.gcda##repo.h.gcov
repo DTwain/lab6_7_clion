@@ -1,0 +1,58 @@
+        -:    0:Source:D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion/Headers/repo.h
+        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcno
+        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by obrej on 4/10/2024.
+        -:    3://
+        -:    4:
+        -:    5:
+        -:    6:
+        -:    7:#ifndef LAB6_7_CLION_REPO_H
+        -:    8:#define LAB6_7_CLION_REPO_H
+        -:    9:
+        -:   10:#include "../Headers/carte.h"
+        -:   11:#include <ostream>
+        -:   12:#include <vector>
+        -:   13:#include <string>
+        -:   14:
+        -:   15:using std::ostream;
+        -:   16:using std::string;
+        -:   17:using std::vector;
+        -:   18:
+        -:   19:class repo {
+        -:   20:private:
+        -:   21:    vector< carte > carte_vec;
+        -:   22:    int id = 0;
+        -:   23:    bool carte_in_repo(const int& id ) const;
+        -:   24:    void incrementare_id();
+        -:   25:public:
+        -:   26:    repo() = default;
+        -:   27:    repo(const carte&) = delete; // pt a bloca copierea
+        -:   28:
+        -:   29:    const int& get_id_for_next_book_to_be_added() const;
+        -:   30:
+        -:   31:    void add(const carte& carte_obj);
+        -:   32:
+        -:   33:    void delete_book(const int& id);
+        -:   34:
+        -:   35:    void modify_book(const carte& obj_carte);
+        -:   36:
+        -:   37:    const carte& find_book_by_id(const int& id) const;
+        -:   38:
+        -:   39:    const vector<carte>& get_all() const noexcept;
+        -:   40:};
+        -:   41:
+        -:   42:class book_repo_exception{
+        -:   43:    string msg;
+        -:   44:public:
+function _ZN19book_repo_exceptionC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 34 returned 100% blocks executed 100%
+       34:   45:    explicit book_repo_exception(string error_msg): msg{error_msg} {}
+       34:   45-block  0
+call    0 returned 34
+        -:   46:    friend ostream& operator<<(ostream& out, const book_repo_exception& ex);
+        -:   47:};
+        -:   48:
+        -:   49:ostream& operator<<(ostream& out, const book_repo_exception& ex);
+        -:   50:
+        -:   51:#endif //LAB6_7_CLION_REPO_H

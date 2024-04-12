@@ -1,0 +1,219 @@
+        -:    0:Source:D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion/domain/validator.cpp
+        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcno
+        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by obrej on 4/11/2024.
+        -:    3://
+        -:    4:
+        -:    5:#include "../Headers/validator.h"
+        -:    6:#include <vector>
+        -:    7:#include <string>
+        -:    8:
+        -:    9:using std::string;
+        -:   10:using std::vector;
+        -:   11:using std::tolower;
+        -:   12:
+function _Z11is_good_genRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 18 returned 100% blocks executed 100%
+       18:   13:bool is_good_gen(string& gen){
+       91:   14:    for(auto& c: gen){
+       18:   14-block  0
+call    0 returned 18
+call    1 returned 18
+       73:   14-block  1
+call    2 returned 73
+       91:   14-block  2
+call    3 returned 91
+branch  4 taken 73
+branch  5 taken 18 (fallthrough)
+       73:   15:        c = tolower(c);
+call    0 returned 73
+        -:   16:    }
+       18:   17:    if(gen == "epic" || gen == "liric" || gen == "dramatic")
+       18:   17-block  0
+call    0 returned 18
+branch  1 taken 11 (fallthrough)
+branch  2 taken 7
+       11:   17-block  1
+call    3 returned 11
+branch  4 taken 2 (fallthrough)
+branch  5 taken 9
+        2:   17-block  2
+call    6 returned 2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 2
+       16:   17-block  3
+        2:   17-block  4
+       18:   17-block  5
+branch  9 taken 16 (fallthrough)
+branch 10 taken 2
+       16:   18:        return true;
+       16:   18-block  0
+        2:   19:    return false;
+        2:   19-block  0
+        -:   20:}
+function _ZN15validator_carte8validateERK5carte called 18 returned 67% blocks executed 66%
+       18:   21:void validator_carte::validate(const carte &book) {
+       18:   22:    vector<string> errors;
+       18:   23:    if(book.get_author().length() == 0)
+       18:   23-block  0
+call    0 returned 18
+branch  1 taken 18 (fallthrough)
+branch  2 taken 0 (throw)
+       18:   23-block  1
+call    3 returned 18
+call    4 returned 18
+branch  5 taken 3 (fallthrough)
+branch  6 taken 15
+    $$$$$:   23-block  2
+        6:   24:        errors.push_back("Autorul introdus este vid");
+        3:   24-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:   24-block  1
+call    3 returned 3
+branch  4 taken 3 (fallthrough)
+branch  5 taken 0 (throw)
+        3:   24-block  2
+call    6 returned 3
+        3:   24-block  3
+    $$$$$:   24-block  4
+call    7 never executed
+    $$$$$:   24-block  5
+    $$$$$:   24-block  6
+       18:   25:    if(book.get_title().length() == 0)
+       18:   25-block  0
+call    0 returned 18
+branch  1 taken 18 (fallthrough)
+branch  2 taken 0 (throw)
+       18:   25-block  1
+call    3 returned 18
+call    4 returned 18
+branch  5 taken 2 (fallthrough)
+branch  6 taken 16
+    $$$$$:   25-block  2
+        4:   26:        errors.push_back("Titlul introdus este vid");
+        2:   26-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   26-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   26-block  2
+call    6 returned 2
+        2:   26-block  3
+    $$$$$:   26-block  4
+call    7 never executed
+    $$$$$:   26-block  5
+    $$$$$:   26-block  6
+       18:   27:    if(book.get_publication_year() > 2025)
+       18:   27-block  0
+call    0 returned 18
+branch  1 taken 18 (fallthrough)
+branch  2 taken 0 (throw)
+       18:   27-block  1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 17
+        2:   28:        errors.push_back("Anul introdus nu poate fi din viitor");
+        1:   28-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   28-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   28-block  2
+call    6 returned 1
+        1:   28-block  3
+    $$$$$:   28-block  4
+call    7 never executed
+    $$$$$:   28-block  5
+    $$$$$:   28-block  6
+        -:   29:
+       18:   30:    string gen = book.get_genre();
+       18:   30-block  0
+call    0 returned 18
+branch  1 taken 18 (fallthrough)
+branch  2 taken 0 (throw)
+       18:   31:    if(!is_good_gen(gen))
+       18:   31-block  0
+call    0 returned 18
+branch  1 taken 18 (fallthrough)
+branch  2 taken 0 (throw)
+       18:   31-block  1
+branch  3 taken 2 (fallthrough)
+branch  4 taken 16
+        4:   32:        errors.push_back("Genul introdus nu este epic / liric / dramatic");
+        2:   32-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   32-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   32-block  2
+call    6 returned 2
+        2:   32-block  3
+    $$$$$:   32-block  4
+call    7 never executed
+    $$$$$:   32-block  5
+    $$$$$:   32-block  6
+        -:   33:
+        -:   34:
+       18:   35:    if(errors.size() > 0){
+       18:   35-block  0
+call    0 returned 18
+branch  1 taken 6 (fallthrough)
+branch  2 taken 12
+        6:   36:        throw book_validation_exception(errors);
+        6:   36-block  0
+call    0 returned 6
+call    1 returned 6
+branch  2 taken 6 (fallthrough)
+branch  3 taken 0 (throw)
+        6:   36-block  1
+call    4 returned 6
+    $$$$$:   36-block  2
+call    5 never executed
+        -:   37:    }
+       24:   38:}
+       12:   38-block  0
+call    0 returned 12
+call    1 returned 12
+        6:   38-block  1
+call    2 returned 6
+        6:   38-block  2
+call    3 returned 6
+        -:   39:
+function _ZlsRSoRK25book_validation_exception called 4 returned 100% blocks executed 100%
+        4:   40:ostream& operator << (ostream& out, const book_validation_exception& ex){
+       10:   41:    for(const auto& mesaj : ex.msgs){
+        4:   41-block  0
+call    0 returned 4
+call    1 returned 4
+        6:   41-block  1
+call    2 returned 6
+        6:   41-block  2
+call    3 returned 6
+       10:   41-block  3
+call    4 returned 10
+branch  5 taken 6
+branch  6 taken 4 (fallthrough)
+        6:   42:        out << mesaj << " ";
+call    0 returned 6
+branch  1 taken 6 (fallthrough)
+branch  2 taken 0 (throw)
+        6:   42-block  0
+call    3 returned 6
+branch  4 taken 6 (fallthrough)
+branch  5 taken 0 (throw)
+        -:   43:    }
+        4:   44:    return out;
+        4:   44-block  0
+        4:   44-block  1
+        -:   45:}

@@ -1,0 +1,344 @@
+        -:    0:Source:D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion/teste/test_domain.cpp
+        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_domain.cpp.gcno
+        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_domain.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by obrej on 4/11/2024.
+        -:    3://
+        -:    4:#include <cassert>
+        -:    5:#include "../Headers/teste.h"
+        -:    6:#include "../Headers/carte.h"
+        -:    7:
+function _ZN11test_domain16run_domain_testsEv called 1 returned 100% blocks executed 100%
+        1:    8:void test_domain::run_domain_tests() {
+        1:    9:    test_get_author();
+        1:    9-block  0
+call    0 returned 1
+        1:   10:    test_get_title();
+call    0 returned 1
+        1:   11:    test_get_genre();
+call    0 returned 1
+        1:   12:    test_get_publication_year();
+call    0 returned 1
+        1:   13:    test_get_book_id();
+call    0 returned 1
+        1:   14:}
+function _ZN11test_domain15test_get_authorEv called 1 returned 100% blocks executed 50%
+        1:   15:void test_domain::test_get_author() {
+        1:   15-block  0
+        5:   16:    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+        1:   16-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   16-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   16-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   16-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   16-block  4
+call   12 returned 1
+        1:   16-block  5
+call   13 returned 1
+        1:   16-block  6
+call   14 returned 1
+    $$$$$:   16-block  7
+call   15 never executed
+    $$$$$:   16-block  8
+    $$$$$:   16-block  9
+    $$$$$:   16-block 10
+call   16 never executed
+    $$$$$:   16-block 11
+    $$$$$:   16-block 12
+    $$$$$:   16-block 13
+call   17 never executed
+    $$$$$:   16-block 14
+    $$$$$:   16-block 15
+       1*:   17:    assert(book1.get_author() == "Luis");
+        1:   17-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   17-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   17-block  2
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   17-block  3
+call    8 never executed
+        1:   17-block  4
+        1:   17-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   17-block  6
+call   11 returned 1
+    $$$$$:   17-block  7
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:   17-block  8
+call   14 never executed
+    $$$$$:   17-block  9
+        1:   18:}
+        1:   18-block  0
+call    0 returned 1
+    $$$$$:   18-block  1
+call    1 never executed
+        -:   19:
+function _ZN11test_domain14test_get_titleEv called 1 returned 100% blocks executed 50%
+        1:   20:void test_domain::test_get_title() {
+        1:   20-block  0
+        5:   21:    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+        1:   21-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   21-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   21-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   21-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   21-block  4
+call   12 returned 1
+        1:   21-block  5
+call   13 returned 1
+        1:   21-block  6
+call   14 returned 1
+    $$$$$:   21-block  7
+call   15 never executed
+    $$$$$:   21-block  8
+    $$$$$:   21-block  9
+    $$$$$:   21-block 10
+call   16 never executed
+    $$$$$:   21-block 11
+    $$$$$:   21-block 12
+    $$$$$:   21-block 13
+call   17 never executed
+    $$$$$:   21-block 14
+    $$$$$:   21-block 15
+       1*:   22:    assert(book1.get_title() == "Jupanii");
+        1:   22-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   22-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   22-block  2
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   22-block  3
+call    8 never executed
+        1:   22-block  4
+        1:   22-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   22-block  6
+call   11 returned 1
+    $$$$$:   22-block  7
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:   22-block  8
+call   14 never executed
+    $$$$$:   22-block  9
+        1:   23:}
+        1:   23-block  0
+call    0 returned 1
+    $$$$$:   23-block  1
+call    1 never executed
+        -:   24:
+function _ZN11test_domain16test_get_book_idEv called 1 returned 100% blocks executed 51%
+        1:   25:void test_domain::test_get_book_id() {
+        1:   25-block  0
+        5:   26:    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+        1:   26-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   26-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   26-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   26-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   26-block  4
+call   12 returned 1
+        1:   26-block  5
+call   13 returned 1
+        1:   26-block  6
+call   14 returned 1
+    $$$$$:   26-block  7
+call   15 never executed
+    $$$$$:   26-block  8
+    $$$$$:   26-block  9
+    $$$$$:   26-block 10
+call   16 never executed
+    $$$$$:   26-block 11
+    $$$$$:   26-block 12
+    $$$$$:   26-block 13
+call   17 never executed
+    $$$$$:   26-block 14
+    $$$$$:   26-block 15
+       1*:   27:    assert(book1.get_book_id() == 0);
+        1:   27-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   27-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   27-block  2
+call    5 never executed
+        1:   27-block  3
+        1:   28:}
+        1:   28-block  0
+call    0 returned 1
+    $$$$$:   28-block  1
+call    1 never executed
+        -:   29:
+function _ZN11test_domain14test_get_genreEv called 1 returned 100% blocks executed 50%
+        1:   30:void test_domain::test_get_genre() {
+        1:   30-block  0
+        5:   31:    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+        1:   31-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   31-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   31-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   31-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   31-block  4
+call   12 returned 1
+        1:   31-block  5
+call   13 returned 1
+        1:   31-block  6
+call   14 returned 1
+    $$$$$:   31-block  7
+call   15 never executed
+    $$$$$:   31-block  8
+    $$$$$:   31-block  9
+    $$$$$:   31-block 10
+call   16 never executed
+    $$$$$:   31-block 11
+    $$$$$:   31-block 12
+    $$$$$:   31-block 13
+call   17 never executed
+    $$$$$:   31-block 14
+    $$$$$:   31-block 15
+       1*:   32:    assert(book1.get_genre() == "Epic");
+        1:   32-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   32-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   32-block  2
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   32-block  3
+call    8 never executed
+        1:   32-block  4
+        1:   32-block  5
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0
+        1:   32-block  6
+call   11 returned 1
+    $$$$$:   32-block  7
+branch 12 never executed (fallthrough)
+branch 13 never executed
+    $$$$$:   32-block  8
+call   14 never executed
+    $$$$$:   32-block  9
+        1:   33:}
+        1:   33-block  0
+call    0 returned 1
+    $$$$$:   33-block  1
+call    1 never executed
+        -:   34:
+function _ZN11test_domain25test_get_publication_yearEv called 1 returned 100% blocks executed 51%
+        1:   35:void test_domain::test_get_publication_year() {
+        1:   35-block  0
+        5:   36:    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+        1:   36-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   36-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   36-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   36-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   36-block  4
+call   12 returned 1
+        1:   36-block  5
+call   13 returned 1
+        1:   36-block  6
+call   14 returned 1
+    $$$$$:   36-block  7
+call   15 never executed
+    $$$$$:   36-block  8
+    $$$$$:   36-block  9
+    $$$$$:   36-block 10
+call   16 never executed
+    $$$$$:   36-block 11
+    $$$$$:   36-block 12
+    $$$$$:   36-block 13
+call   17 never executed
+    $$$$$:   36-block 14
+    $$$$$:   36-block 15
+       1*:   37:    assert(book1.get_publication_year() == 1842);
+        1:   37-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   37-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   37-block  2
+call    5 never executed
+        1:   37-block  3
+        1:   38:}
+        1:   38-block  0
+call    0 returned 1
+    $$$$$:   38-block  1
+call    1 never executed

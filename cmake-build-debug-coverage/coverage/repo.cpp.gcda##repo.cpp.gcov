@@ -1,0 +1,317 @@
+        -:    0:Source:D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion/repository/repo.cpp
+        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcno
+        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by obrej on 4/10/2024.
+        -:    3://
+        -:    4:
+        -:    5:#include "../Headers/repo.h"
+        -:    6:#include <sstream>
+        -:    7:#include <string>
+        -:    8:#include <algorithm>
+        -:    9:
+        -:   10:using std::string;
+        -:   11:using std::ostream;
+        -:   12:using std::stringstream;
+        -:   13:using std::to_string;
+        -:   14:
+function _ZN4repo15incrementare_idEv called 24 returned 100% blocks executed 100%
+       24:   15:void repo::incrementare_id(){
+       24:   16:    this->id += 1;
+       24:   17:}
+        -:   18:/*
+        -:   19: * Returneaza un id pentru cartea pe care dorim sa o adaugam
+        -:   20: * Return type: int
+        -:   21: */
+function _ZNK4repo32get_id_for_next_book_to_be_addedEv called 15 returned 100% blocks executed 100%
+       15:   22:const int& repo::get_id_for_next_book_to_be_added() const {
+       15:   23:    return this->id;
+       15:   23-block  0
+        -:   24:}
+        -:   25:/*
+        -:   26: * Adauga cartea in repo
+        -:   27: * Arunca book_repo_exception daca mai exista o cartte cu acelasi Id
+        -:   28: */
+function _ZN4repo3addERK5carte called 25 returned 96% blocks executed 61%
+       25:   29:void repo::add(const carte& obj_carte){
+       25:   30:    if(carte_in_repo(obj_carte.get_book_id()))
+       25:   30-block  0
+call    0 returned 25
+branch  1 taken 25 (fallthrough)
+branch  2 taken 0 (throw)
+       25:   30-block  1
+call    3 returned 25
+branch  4 taken 25 (fallthrough)
+branch  5 taken 0 (throw)
+       25:   30-block  2
+branch  6 taken 1 (fallthrough)
+branch  7 taken 24
+    $$$$$:   30-block  3
+call    8 never executed
+        1:   31:        throw book_repo_exception("Cartea cu id - ul: " + to_string(obj_carte.get_book_id()) + "exista deja");
+        1:   31-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   31-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   31-block  2
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   31-block  3
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   31-block  4
+call   14 returned 1
+call   15 returned 1
+call   16 returned 1
+call   17 returned 0
+    $$$$$:   31-block  5
+call   18 never executed
+    $$$$$:   31-block  6
+call   19 never executed
+    $$$$$:   31-block  7
+call   20 never executed
+    $$$$$:   31-block  8
+    $$$$$:   31-block  9
+    $$$$$:   31-block 10
+    $$$$$:   31-block 11
+call   21 never executed
+       24:   32:    this->carte_vec.push_back(obj_carte);
+       24:   32-block  0
+call    0 returned 24
+       24:   33:    this->incrementare_id();
+call    0 returned 24
+       24:   34:}
+        -:   35:
+function _ZNK4repo13carte_in_repoERKi called 30 returned 100% blocks executed 86%
+       30:   36:bool repo::carte_in_repo(const int& id_to_find ) const {
+        -:   37:    try {
+       30:   38:        find_book_by_id(id_to_find);
+       30:   38-block  0
+call    0 returned 30
+branch  1 taken 3 (fallthrough)
+branch  2 taken 27 (throw)
+        3:   39:        return true;
+        3:   39-block  0
+        -:   40:    }
+       27:   41:    catch(book_repo_exception&){
+       27:   41-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 27
+       27:   41-block  1
+call    2 returned 27
+       27:   42:        return false;
+       27:   43:    }
+        -:   44:}
+function _ZNK4repo15find_book_by_idERKi called 37 returned 24% blocks executed 65%
+       37:   45:const carte& repo::find_book_by_id(const int& id) const{
+       60:   46:    for(const auto& carte: this->carte_vec){
+       37:   46-block  0
+call    0 returned 37
+call    1 returned 37
+       32:   46-block  1
+call    2 returned 32
+       23:   46-block  2
+call    3 returned 23
+       60:   46-block  3
+call    4 returned 60
+branch  5 taken 32
+branch  6 taken 28 (fallthrough)
+       32:   47:        if(carte.get_book_id() == id)
+call    0 returned 32
+branch  1 taken 32 (fallthrough)
+branch  2 taken 0 (throw)
+       32:   47-block  0
+branch  3 taken 9 (fallthrough)
+branch  4 taken 23
+        9:   48:            return carte;
+        9:   48-block  0
+        9:   48-block  1
+        -:   49:    }
+       28:   50:    throw book_repo_exception("Book with id: " + to_string(id) + " doesn't exist");
+       28:   50-block  0
+call    0 returned 28
+call    1 returned 28
+call    2 returned 28
+branch  3 taken 28 (fallthrough)
+branch  4 taken 0 (throw)
+       28:   50-block  1
+call    5 returned 28
+branch  6 taken 28 (fallthrough)
+branch  7 taken 0 (throw)
+       28:   50-block  2
+call    8 returned 28
+branch  9 taken 28 (fallthrough)
+branch 10 taken 0 (throw)
+       28:   50-block  3
+call   11 returned 28
+call   12 returned 28
+call   13 returned 28
+call   14 returned 0
+    $$$$$:   50-block  4
+call   15 never executed
+    $$$$$:   50-block  5
+call   16 never executed
+    $$$$$:   50-block  6
+call   17 never executed
+    $$$$$:   50-block  7
+    $$$$$:   50-block  8
+    $$$$$:   50-block  9
+    $$$$$:   50-block 10
+call   18 never executed
+        -:   51:}
+        -:   52:
+function _ZN4repo11delete_bookERKi called 5 returned 40% blocks executed 59%
+        5:   53:void repo::delete_book(const int &id) {
+        5:   54:    if(!carte_in_repo(id))
+        5:   54-block  0
+call    0 returned 5
+branch  1 taken 5 (fallthrough)
+branch  2 taken 0 (throw)
+        5:   54-block  1
+branch  3 taken 3 (fallthrough)
+branch  4 taken 2
+        3:   55:        throw book_repo_exception("Cartea cu id-ul " + to_string(id) + " nu exista!");
+        3:   55-block  0
+call    0 returned 3
+call    1 returned 3
+call    2 returned 3
+branch  3 taken 3 (fallthrough)
+branch  4 taken 0 (throw)
+        3:   55-block  1
+call    5 returned 3
+branch  6 taken 3 (fallthrough)
+branch  7 taken 0 (throw)
+        3:   55-block  2
+call    8 returned 3
+branch  9 taken 3 (fallthrough)
+branch 10 taken 0 (throw)
+        3:   55-block  3
+call   11 returned 3
+call   12 returned 3
+call   13 returned 3
+call   14 returned 3
+    $$$$$:   55-block  4
+call   15 never executed
+    $$$$$:   55-block  5
+call   16 never executed
+    $$$$$:   55-block  6
+call   17 never executed
+    $$$$$:   55-block  7
+    $$$$$:   55-block  8
+    $$$$$:   55-block  9
+    $$$$$:   55-block 10
+call   18 never executed
+        2:   56:    auto remove_begin = std::remove_if(carte_vec.begin(), carte_vec.end(),
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+function _ZZN4repo11delete_bookERKiENKUlRK5carteE_clES4_ called 4 returned 100% blocks executed 100%
+        6:   57:                                       [id](const carte& obj_carte) { return obj_carte.get_book_id() == id; });
+        2:   57-block  0
+call    0 returned 2
+        4:   57-block  1
+call    1 returned 4
+        2:   58:    carte_vec.erase(remove_begin, carte_vec.end());
+        2:   58-block  0
+call    0 returned 2
+call    1 returned 2
+call    2 returned 2
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   58-block  1
+    $$$$$:   58-block  2
+    $$$$$:   58-block  3
+        2:   59:}
+        2:   59-block  0
+        -:   60:
+function _ZN4repo11modify_bookERK5carte called 3 returned 33% blocks executed 72%
+        3:   61:void repo::modify_book(const carte& obj_carte) {
+        3:   62:    int book_id = obj_carte.get_book_id();
+        3:   62-block  0
+call    0 returned 3
+        3:   63:    bool found = false;
+        -:   64:
+        8:   65:    for(auto& carte : carte_vec) {
+call    0 returned 3
+call    1 returned 3
+        6:   65-block  0
+call    2 returned 6
+        5:   65-block  1
+call    3 returned 5
+        8:   65-block  2
+call    4 returned 8
+branch  5 taken 6
+branch  6 taken 2 (fallthrough)
+        6:   66:        if(carte.get_book_id() == book_id) {
+call    0 returned 6
+branch  1 taken 6 (fallthrough)
+branch  2 taken 0 (throw)
+        6:   66-block  0
+branch  3 taken 1 (fallthrough)
+branch  4 taken 5
+        1:   67:            carte = obj_carte; // Update the found book with obj_carte
+        1:   67-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   68:            found = true;
+        1:   69:            break; // Break out of the loop since we found the book
+        1:   69-block  0
+        -:   70:        }
+        -:   71:    }
+        -:   72:
+        3:   73:    if(!found) {
+        3:   73-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 1
+        2:   74:        throw book_repo_exception("Doesn't exist book with id: " + to_string(book_id));
+        2:   74-block  0
+call    0 returned 2
+call    1 returned 2
+call    2 returned 2
+branch  3 taken 2 (fallthrough)
+branch  4 taken 0 (throw)
+        2:   74-block  1
+call    5 returned 2
+branch  6 taken 2 (fallthrough)
+branch  7 taken 0 (throw)
+        2:   74-block  2
+call    8 returned 2
+call    9 returned 2
+call   10 returned 0
+    $$$$$:   74-block  3
+call   11 never executed
+    $$$$$:   74-block  4
+call   12 never executed
+    $$$$$:   74-block  5
+    $$$$$:   74-block  6
+    $$$$$:   74-block  7
+call   13 never executed
+        -:   75:    }
+        1:   76:}
+        1:   76-block  0
+        -:   77:
+function _ZNK4repo7get_allEv called 6 returned 100% blocks executed 100%
+        6:   78:const vector<carte>& repo::get_all() const noexcept{
+        6:   79:    return carte_vec;
+        6:   79-block  0
+        -:   80:}
+        -:   81:
+function _ZlsRSoRK19book_repo_exception called 5 returned 100% blocks executed 100%
+        5:   82:ostream& operator<<(ostream& out, const book_repo_exception& ex){
+        5:   83:    out << ex.msg;
+        5:   83-block  0
+call    0 returned 5
+        5:   84:    return out;
+        -:   85:}

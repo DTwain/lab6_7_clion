@@ -1,0 +1,10 @@
+# ninja log v5
+2	529	7346035248209874	build.ninja	634ce428223f36bf
+1917	2583	7345570475256046	CMakeFiles/lab6_7_clion.dir/service/service_biblioteca.cpp.obj	da75e3a5585d9a13
+8	1915	7345570471426043	CMakeFiles/lab6_7_clion.dir/domain/carte.cpp.obj	9642feef3f6abeef
+1	3073	7345570484696057	CMakeFiles/lab6_7_clion.dir/repository/repo.cpp.obj	c8487e3b8e3c557d
+2584	3666	7345570490626057	CMakeFiles/lab6_7_clion.dir/teste/test_domain.cpp.obj	280072ff0ffdb6a
+4	2577	7345570475056132	CMakeFiles/lab6_7_clion.dir/main.cpp.obj	d6ed5e86ee272bbf
+2578	2778	7345570481766089	CMakeFiles/lab6_7_clion.dir/ui/ui_biblioteca.cpp.obj	b888bd96b8e0c953
+2778	4089	7345570494856060	CMakeFiles/lab6_7_clion.dir/teste/test_repo.cpp.obj	4ed0360f12cb8288
+4089	4377	7345570497706070	lab6_7_clion.exe	6b7833e7b7be16f0

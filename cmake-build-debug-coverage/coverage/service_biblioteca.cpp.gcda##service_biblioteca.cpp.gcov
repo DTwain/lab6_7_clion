@@ -1,0 +1,169 @@
+        -:    0:Source:D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion/service/service_biblioteca.cpp
+        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcno
+        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by obrej on 4/10/2024.
+        -:    3://
+        -:    4:
+        -:    5:#include "../Headers/service_biblioteca.h"
+        -:    6:#include <string>
+        -:    7:
+function _ZN18service_biblioteca12add_book_srvERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_S7_RKi called 11 returned 91% blocks executed 62%
+       11:    8:void service_biblioteca::add_book_srv(const std::string &autor, const std::string &titlu, const std::string &genre,
+        -:    9:                                      const int &an) {
+       11:   10:    carte book_to_be_added{autor, titlu, genre, an, repo_carti.get_id_for_next_book_to_be_added()};
+       11:   10-block  0
+call    0 returned 11
+branch  1 taken 11 (fallthrough)
+branch  2 taken 0 (throw)
+       11:   10-block  1
+call    3 returned 11
+branch  4 taken 11 (fallthrough)
+branch  5 taken 0 (throw)
+       11:   10-block  2
+call    6 returned 11
+branch  7 taken 11 (fallthrough)
+branch  8 taken 0 (throw)
+       11:   10-block  3
+call    9 returned 11
+branch 10 taken 11 (fallthrough)
+branch 11 taken 0 (throw)
+       11:   10-block  4
+call   12 returned 11
+branch 13 taken 11 (fallthrough)
+branch 14 taken 0 (throw)
+       11:   10-block  5
+call   15 returned 11
+call   16 returned 11
+call   17 returned 11
+    $$$$$:   10-block  6
+call   18 never executed
+    $$$$$:   10-block  7
+    $$$$$:   10-block  8
+call   19 never executed
+    $$$$$:   10-block  9
+    $$$$$:   10-block 10
+call   20 never executed
+    $$$$$:   10-block 11
+       11:   11:    validator.validate(book_to_be_added);
+call    0 returned 11
+branch  1 taken 10 (fallthrough)
+branch  2 taken 1 (throw)
+       10:   12:    repo_carti.add(book_to_be_added);
+       10:   12-block  0
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
+branch  2 taken 0 (throw)
+       11:   13:}
+       10:   13-block  0
+call    0 returned 10
+        1:   13-block  1
+call    1 returned 1
+        -:   14:
+function _ZN18service_biblioteca15delete_book_srvERKi called 3 returned 33% blocks executed 100%
+        3:   15:void service_biblioteca::delete_book_srv(const int &id) {
+        3:   16:    repo_carti.delete_book(id);
+        3:   16-block  0
+call    0 returned 1
+        1:   17:}
+        -:   18:
+function _ZN18service_biblioteca15modify_book_srvERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_S7_RKiS9_ called 2 returned 0% blocks executed 52%
+        2:   19:void service_biblioteca::modify_book_srv(const std::string &autor, const std::string &titlu, const std::string &genre,
+        -:   20:                                         const int &an, const int &id) {
+        2:   21:    carte modified_book{autor, titlu, genre, an, id};
+        2:   21-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   21-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   21-block  2
+call    6 returned 2
+branch  7 taken 2 (fallthrough)
+branch  8 taken 0 (throw)
+        2:   21-block  3
+call    9 returned 2
+branch 10 taken 2 (fallthrough)
+branch 11 taken 0 (throw)
+        2:   21-block  4
+call   12 returned 2
+call   13 returned 2
+call   14 returned 2
+    $$$$$:   21-block  5
+call   15 never executed
+    $$$$$:   21-block  6
+    $$$$$:   21-block  7
+call   16 never executed
+    $$$$$:   21-block  8
+    $$$$$:   21-block  9
+call   17 never executed
+    $$$$$:   21-block 10
+        2:   22:    validator.validate(modified_book);
+call    0 returned 2
+branch  1 taken 1 (fallthrough)
+branch  2 taken 1 (throw)
+        1:   23:    repo_carti.modify_book(modified_book);
+        1:   23-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+       2*:   24:}
+    %%%%%:   24-block  0
+call    0 never executed
+        2:   24-block  1
+call    1 returned 2
+        -:   25:
+function _ZN18service_biblioteca11get_all_srvEv called 1 returned 100% blocks executed 100%
+        1:   26:const vector<carte>& service_biblioteca::get_all_srv() noexcept{
+        1:   27:    return repo_carti.get_all();
+        1:   27-block  0
+call    0 returned 1
+        -:   28:}
+        -:   29:
+function _ZNK18service_biblioteca22filter_srv_an_aparitieERKi called 1 returned 100% blocks executed 76%
+        1:   30:const vector<carte> service_biblioteca::filter_srv_an_aparitie(const int &an) const {
+        1:   31:    vector<carte> filtered_books;
+        1:   32:    vector<carte> all = repo_carti.get_all();
+        1:   32-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        3:   33:    for(const auto& book: all){
+        1:   33-block  0
+call    0 returned 1
+call    1 returned 1
+        2:   33-block  1
+call    2 returned 2
+        2:   33-block  2
+call    3 returned 2
+        3:   33-block  3
+call    4 returned 3
+branch  5 taken 2
+branch  6 taken 1 (fallthrough)
+        2:   34:        if(book.get_publication_year() < an)
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   34-block  0
+branch  3 taken 1 (fallthrough)
+branch  4 taken 1
+        1:   35:            filtered_books.push_back(book);
+        1:   35-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   36:    }
+        2:   37:    return filtered_books;
+        1:   37-block  0
+        1:   37-block  1
+        1:   38:}
+        1:   38-block  0
+call    0 returned 1
+    $$$$$:   38-block  1
+call    1 never executed
+    $$$$$:   38-block  2
+call    2 never executed

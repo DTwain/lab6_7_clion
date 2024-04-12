@@ -1,0 +1,468 @@
+        -:    0:Source:D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion/ui/ui_biblioteca.cpp
+        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\ui\ui_biblioteca.cpp.gcno
+        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\ui\ui_biblioteca.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by obrej on 4/10/2024.
+        -:    3://
+        -:    4:
+        -:    5:#include "../Headers/ui_biblioteca.h"
+        -:    6:#include <iostream>
+        -:    7:#include <string>
+        -:    8:#include "../Headers/carte.h"
+        -:    9:
+        -:   10:using std::string;
+        -:   11:using std::cin;
+        -:   12:using std::cout;
+        -:   13:
+function _ZN13ui_biblioteca8afiseazaERKSt6vectorI5carteSaIS1_EE called 0 returned 0% blocks executed 0%
+    #####:   14:void ui_biblioteca::afiseaza(const std::vector<carte> &books) {
+    #####:   15:    cout << "\nCartile sunt:\n";
+    %%%%%:   15-block  0
+call    0 never executed
+    #####:   16:    for(const auto& carte: books){
+call    0 never executed
+call    1 never executed
+    %%%%%:   16-block  0
+call    2 never executed
+    %%%%%:   16-block  1
+call    3 never executed
+    %%%%%:   16-block  2
+call    4 never executed
+branch  5 never executed
+branch  6 never executed (fallthrough)
+    #####:   17:        cout << "Author: " << carte.get_author() << '\n';
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   17-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   17-block  1
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:   17-block  2
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:   17-block  3
+call   12 never executed
+    $$$$$:   17-block  4
+call   13 never executed
+    $$$$$:   17-block  5
+    #####:   18:        cout << "Title: " << carte.get_title() << '\n';
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   18-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   18-block  1
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:   18-block  2
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:   18-block  3
+call   12 never executed
+    $$$$$:   18-block  4
+call   13 never executed
+    $$$$$:   18-block  5
+    #####:   19:        cout << "Genre: " << carte.get_genre() << '\n';
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   19-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   19-block  1
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:   19-block  2
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    %%%%%:   19-block  3
+call   12 never executed
+    $$$$$:   19-block  4
+call   13 never executed
+    $$$$$:   19-block  5
+    #####:   20:        cout << "Publication Year: " << carte.get_publication_year() << '\n';
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   20-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   20-block  1
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:   20-block  2
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+    #####:   21:        cout << "Book ID: " << carte.get_book_id() << '\n';
+    %%%%%:   21-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   21-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   21-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:   21-block  3
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed (throw)
+        -:   22:
+    #####:   23:        cout << '\n';
+    %%%%%:   23-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   24:    }
+    #####:   25:}
+    %%%%%:   25-block  0
+        -:   26:
+function _ZN13ui_biblioteca5meniuEv called 0 returned 0% blocks executed 0%
+    #####:   27:void ui_biblioteca::meniu(){
+    #####:   28:    cout<< "< 1 > Adaugare carte\n< 2 > Sterge carte\n< 3 > Modifica carte\n< 4 > Afiseaza cartile\n< 5 > Filtrare dupa an\n< 6 > EXIT\nOption: ";
+    %%%%%:   28-block  0
+call    0 never executed
+    #####:   29:}
+function _ZN13ui_biblioteca8add_bookEv called 0 returned 0% blocks executed 0%
+    #####:   30:void ui_biblioteca::add_book() {
+    #####:   31:    string autor, titlu, gen;
+    %%%%%:   31-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+        -:   32:    int an_pub;
+    #####:   33:    cout<<"autor: "; cin>>autor;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   33-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:   34:
+    #####:   35:    cout<<"titlu: "; cin>>titlu;
+    %%%%%:   35-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   35-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:   36:
+    #####:   37:    cout<<"gen: "; cin>>gen;
+    %%%%%:   37-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   37-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:   38:
+    #####:   39:    cout<<"an: "; cin >> an_pub;
+    %%%%%:   39-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   39-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:   40:
+    #####:   41:    srv.add_book_srv(autor, titlu, gen, an_pub);
+    %%%%%:   41-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   42:}
+    %%%%%:   42-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    $$$$$:   42-block  1
+call    3 never executed
+    $$$$$:   42-block  2
+call    4 never executed
+    $$$$$:   42-block  3
+call    5 never executed
+        -:   43:
+function _ZN13ui_biblioteca11delete_bookEv called 0 returned 0% blocks executed 0%
+    #####:   44:void ui_biblioteca::delete_book() {
+        -:   45:    int id_carte_to_be_deleted;
+    #####:   46:    afiseaza(srv.get_all_srv());
+    %%%%%:   46-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    #####:   47:    cout<<"\nId carte pentru a fi stearsa: "; cin>> id_carte_to_be_deleted;
+    %%%%%:   47-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   47-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:   48:
+    #####:   49:    srv.delete_book_srv(id_carte_to_be_deleted);
+    %%%%%:   49-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   50:}
+    %%%%%:   50-block  0
+        -:   51:
+function _ZN13ui_biblioteca11modify_bookEv called 0 returned 0% blocks executed 0%
+    #####:   52:void ui_biblioteca::modify_book() {
+        -:   53:    int id_carte_to_be_modified;
+    #####:   54:    afiseaza(srv.get_all_srv());
+    %%%%%:   54-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    #####:   55:    cout<<"Id carte pentru a fi stearsa: "; cin>> id_carte_to_be_modified;
+    %%%%%:   55-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   55-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    #####:   56:    string autor, titlu, gen;
+    %%%%%:   56-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+        -:   57:    int an_pub;
+    #####:   58:    cout<<"autor: "; cin>>autor;
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   58-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:   59:
+    #####:   60:    cout<<"titlu: "; cin>>titlu;
+    %%%%%:   60-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   60-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:   61:
+    #####:   62:    cout<<"gen: "; cin>>gen;
+    %%%%%:   62-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   62-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:   63:
+    #####:   64:    cout<<"an: "; cin >> an_pub;
+    %%%%%:   64-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   64-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+        -:   65:
+    #####:   66:    srv.modify_book_srv(autor, titlu, gen, an_pub, id_carte_to_be_modified);
+    %%%%%:   66-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   67:}
+    %%%%%:   67-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    $$$$$:   67-block  1
+call    3 never executed
+    $$$$$:   67-block  2
+call    4 never executed
+    $$$$$:   67-block  3
+call    5 never executed
+function _ZN13ui_biblioteca11filtrare_anEv called 0 returned 0% blocks executed 0%
+    #####:   68:void ui_biblioteca::filtrare_an(){
+        -:   69:    int an;
+    #####:   70:    afiseaza(srv.get_all_srv());
+    %%%%%:   70-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    #####:   71:    cout << "Afiseaza cartile cu anul aparitiei mai mic decat: ";
+    %%%%%:   71-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   72:    cin >> an;
+    %%%%%:   72-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   73:    afiseaza(srv.filter_srv_an_aparitie(an));
+    %%%%%:   73-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   73-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   73-block  2
+call    6 never executed
+    $$$$$:   73-block  3
+call    7 never executed
+    $$$$$:   73-block  4
+    #####:   74:}
+function _ZN13ui_biblioteca3runEv called 0 returned 0% blocks executed 0%
+    #####:   75:void ui_biblioteca::run(){
+        -:   76:    while(true){
+    #####:   77:        meniu();
+    %%%%%:   77-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   78:        int option;
+    #####:   79:        cin>>option;
+    %%%%%:   79-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   80:        try{
+    #####:   81:            switch(option) {
+    %%%%%:   81-block  0
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+branch  5 never executed
+branch  6 never executed
+    #####:   82:                case 1:
+    #####:   83:                    add_book();
+    %%%%%:   83-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   84:                    break;
+    %%%%%:   84-block  0
+    #####:   85:                case 2:
+    #####:   86:                    delete_book();
+    %%%%%:   86-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   87:                    break;
+    %%%%%:   87-block  0
+    #####:   88:                case 3:
+    #####:   89:                    modify_book();
+    %%%%%:   89-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   90:                    break;
+    %%%%%:   90-block  0
+    #####:   91:                case 4:
+    #####:   92:                    afiseaza(srv.get_all_srv());
+    %%%%%:   92-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    #####:   93:                    break;
+    %%%%%:   93-block  0
+    #####:   94:                case 5:
+    #####:   95:                    filtrare_an();
+    %%%%%:   95-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:   96:                case 6:
+    #####:   97:                    return;
+    %%%%%:   97-block  0
+    %%%%%:   97-block  1
+    #####:   98:                default:
+    #####:   99:                    cout << "Optiunea nu exista!\n";
+    %%%%%:   99-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  100:            }
+        -:  101:        }
+    =====:  102:        catch (const book_validation_exception& ex){
+    $$$$$:  102-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+branch  2 never executed
+    $$$$$:  102-block  1
+call    3 never executed
+    =====:  103:            cout << ex << '\n';
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    $$$$$:  103-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    =====:  104:        }
+    $$$$$:  104-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    $$$$$:  104-block  1
+call    3 never executed
+    =====:  105:        catch (const book_repo_exception& ex){
+    $$$$$:  105-block  0
+call    0 never executed
+    =====:  106:            cout << ex << '\n';
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    $$$$$:  106-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    =====:  107:        }
+    $$$$$:  107-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    $$$$$:  107-block  1
+call    3 never executed
+    #####:  108:    }
+    %%%%%:  108-block  0
+        -:  109:}
+        -:  110:
