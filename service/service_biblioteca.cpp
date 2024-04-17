@@ -40,8 +40,7 @@ const vector<carte>& service_biblioteca::filter_srv_an_aparitie(const int &an) c
 
 const carte& service_biblioteca:: search_for_book(const std::string &autor, const std::string &titlu, const std::string &genre,
                              const int &an){
-    const vector<carte>& all = repo_carti.get_all();
-    for(const auto& carte: all){
+    for(const auto& carte: repo_carti.get_all()){
         if(carte.get_author() == autor ||
             carte.get_title() == titlu ||
             carte.get_genre() == genre ||

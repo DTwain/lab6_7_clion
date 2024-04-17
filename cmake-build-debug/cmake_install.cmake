@@ -1,4 +1,4 @@
-# Install script for directory: D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion
+# Install script for directory: D:/INFO 2/SEM 2/OOP/lab6-7---oop
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "D:/Aplicatii/CLion 2024.1/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "D:/CLion 2023.3.4/bin/mingw/bin/objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

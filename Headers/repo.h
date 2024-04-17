@@ -39,7 +39,7 @@ public:
     const vector<carte>& get_all() const noexcept;
 };
 
-class book_repo_exception{
+class book_repo_exception : std::exception{
     string msg;
 public:
     explicit book_repo_exception(string error_msg): msg{error_msg} {}
