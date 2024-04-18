@@ -132,6 +132,18 @@
 		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/ui/ui_biblioteca.cpp">
 			<Option target="lab6_7_clion"/>
 		</Unit>
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/utils/iterator.cpp">
+			<Option target="lab6_7_clion"/>
+		</Unit>
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/utils/iterator.h">
+			<Option target="lab6_7_clion"/>
+		</Unit>
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/utils/myvector.cpp">
+			<Option target="lab6_7_clion"/>
+		</Unit>
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/utils/myvector.h">
+			<Option target="lab6_7_clion"/>
+		</Unit>
 		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
