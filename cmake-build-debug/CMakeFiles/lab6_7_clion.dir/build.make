@@ -208,34 +208,6 @@ CMakeFiles/lab6_7_clion.dir/teste/test_service.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lab6_7_clion.dir/teste/test_service.cpp.s"
 	"D:\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\INFO 2\SEM 2\OOP\lab6-7---oop\teste\test_service.cpp" -o CMakeFiles\lab6_7_clion.dir\teste\test_service.cpp.s
 
-CMakeFiles/lab6_7_clion.dir/utils/myvector.cpp.obj: CMakeFiles/lab6_7_clion.dir/flags.make
-CMakeFiles/lab6_7_clion.dir/utils/myvector.cpp.obj: D:/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/utils/myvector.cpp
-CMakeFiles/lab6_7_clion.dir/utils/myvector.cpp.obj: CMakeFiles/lab6_7_clion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/lab6_7_clion.dir/utils/myvector.cpp.obj"
-	"D:\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab6_7_clion.dir/utils/myvector.cpp.obj -MF CMakeFiles\lab6_7_clion.dir\utils\myvector.cpp.obj.d -o CMakeFiles\lab6_7_clion.dir\utils\myvector.cpp.obj -c "D:\INFO 2\SEM 2\OOP\lab6-7---oop\utils\myvector.cpp"
-
-CMakeFiles/lab6_7_clion.dir/utils/myvector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lab6_7_clion.dir/utils/myvector.cpp.i"
-	"D:\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\INFO 2\SEM 2\OOP\lab6-7---oop\utils\myvector.cpp" > CMakeFiles\lab6_7_clion.dir\utils\myvector.cpp.i
-
-CMakeFiles/lab6_7_clion.dir/utils/myvector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lab6_7_clion.dir/utils/myvector.cpp.s"
-	"D:\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\INFO 2\SEM 2\OOP\lab6-7---oop\utils\myvector.cpp" -o CMakeFiles\lab6_7_clion.dir\utils\myvector.cpp.s
-
-CMakeFiles/lab6_7_clion.dir/utils/iterator.cpp.obj: CMakeFiles/lab6_7_clion.dir/flags.make
-CMakeFiles/lab6_7_clion.dir/utils/iterator.cpp.obj: D:/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/utils/iterator.cpp
-CMakeFiles/lab6_7_clion.dir/utils/iterator.cpp.obj: CMakeFiles/lab6_7_clion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/lab6_7_clion.dir/utils/iterator.cpp.obj"
-	"D:\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab6_7_clion.dir/utils/iterator.cpp.obj -MF CMakeFiles\lab6_7_clion.dir\utils\iterator.cpp.obj.d -o CMakeFiles\lab6_7_clion.dir\utils\iterator.cpp.obj -c "D:\INFO 2\SEM 2\OOP\lab6-7---oop\utils\iterator.cpp"
-
-CMakeFiles/lab6_7_clion.dir/utils/iterator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lab6_7_clion.dir/utils/iterator.cpp.i"
-	"D:\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\INFO 2\SEM 2\OOP\lab6-7---oop\utils\iterator.cpp" > CMakeFiles\lab6_7_clion.dir\utils\iterator.cpp.i
-
-CMakeFiles/lab6_7_clion.dir/utils/iterator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lab6_7_clion.dir/utils/iterator.cpp.s"
-	"D:\CLion 2023.3.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\INFO 2\SEM 2\OOP\lab6-7---oop\utils\iterator.cpp" -o CMakeFiles\lab6_7_clion.dir\utils\iterator.cpp.s
-
 # Object files for target lab6_7_clion
 lab6_7_clion_OBJECTS = \
 "CMakeFiles/lab6_7_clion.dir/main.cpp.obj" \
@@ -247,9 +219,7 @@ lab6_7_clion_OBJECTS = \
 "CMakeFiles/lab6_7_clion.dir/teste/test_domain.cpp.obj" \
 "CMakeFiles/lab6_7_clion.dir/domain/validator.cpp.obj" \
 "CMakeFiles/lab6_7_clion.dir/teste/test_validator.cpp.obj" \
-"CMakeFiles/lab6_7_clion.dir/teste/test_service.cpp.obj" \
-"CMakeFiles/lab6_7_clion.dir/utils/myvector.cpp.obj" \
-"CMakeFiles/lab6_7_clion.dir/utils/iterator.cpp.obj"
+"CMakeFiles/lab6_7_clion.dir/teste/test_service.cpp.obj"
 
 # External object files for target lab6_7_clion
 lab6_7_clion_EXTERNAL_OBJECTS =
@@ -264,13 +234,11 @@ lab6_7_clion.exe: CMakeFiles/lab6_7_clion.dir/teste/test_domain.cpp.obj
 lab6_7_clion.exe: CMakeFiles/lab6_7_clion.dir/domain/validator.cpp.obj
 lab6_7_clion.exe: CMakeFiles/lab6_7_clion.dir/teste/test_validator.cpp.obj
 lab6_7_clion.exe: CMakeFiles/lab6_7_clion.dir/teste/test_service.cpp.obj
-lab6_7_clion.exe: CMakeFiles/lab6_7_clion.dir/utils/myvector.cpp.obj
-lab6_7_clion.exe: CMakeFiles/lab6_7_clion.dir/utils/iterator.cpp.obj
 lab6_7_clion.exe: CMakeFiles/lab6_7_clion.dir/build.make
 lab6_7_clion.exe: CMakeFiles/lab6_7_clion.dir/linkLibs.rsp
 lab6_7_clion.exe: CMakeFiles/lab6_7_clion.dir/objects1.rsp
 lab6_7_clion.exe: CMakeFiles/lab6_7_clion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable lab6_7_clion.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable lab6_7_clion.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\lab6_7_clion.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -368,54 +368,6 @@ ui/ui_biblioteca.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6_7_clion.dir\build.make CMakeFiles/lab6_7_clion.dir/ui/ui_biblioteca.cpp.s
 .PHONY : ui/ui_biblioteca.cpp.s
 
-utils/iterator.obj: utils/iterator.cpp.obj
-.PHONY : utils/iterator.obj
-
-# target to build an object file
-utils/iterator.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6_7_clion.dir\build.make CMakeFiles/lab6_7_clion.dir/utils/iterator.cpp.obj
-.PHONY : utils/iterator.cpp.obj
-
-utils/iterator.i: utils/iterator.cpp.i
-.PHONY : utils/iterator.i
-
-# target to preprocess a source file
-utils/iterator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6_7_clion.dir\build.make CMakeFiles/lab6_7_clion.dir/utils/iterator.cpp.i
-.PHONY : utils/iterator.cpp.i
-
-utils/iterator.s: utils/iterator.cpp.s
-.PHONY : utils/iterator.s
-
-# target to generate assembly for a file
-utils/iterator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6_7_clion.dir\build.make CMakeFiles/lab6_7_clion.dir/utils/iterator.cpp.s
-.PHONY : utils/iterator.cpp.s
-
-utils/myvector.obj: utils/myvector.cpp.obj
-.PHONY : utils/myvector.obj
-
-# target to build an object file
-utils/myvector.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6_7_clion.dir\build.make CMakeFiles/lab6_7_clion.dir/utils/myvector.cpp.obj
-.PHONY : utils/myvector.cpp.obj
-
-utils/myvector.i: utils/myvector.cpp.i
-.PHONY : utils/myvector.i
-
-# target to preprocess a source file
-utils/myvector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6_7_clion.dir\build.make CMakeFiles/lab6_7_clion.dir/utils/myvector.cpp.i
-.PHONY : utils/myvector.cpp.i
-
-utils/myvector.s: utils/myvector.cpp.s
-.PHONY : utils/myvector.s
-
-# target to generate assembly for a file
-utils/myvector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6_7_clion.dir\build.make CMakeFiles/lab6_7_clion.dir/utils/myvector.cpp.s
-.PHONY : utils/myvector.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -455,12 +407,6 @@ help:
 	@echo ... ui/ui_biblioteca.obj
 	@echo ... ui/ui_biblioteca.i
 	@echo ... ui/ui_biblioteca.s
-	@echo ... utils/iterator.obj
-	@echo ... utils/iterator.i
-	@echo ... utils/iterator.s
-	@echo ... utils/myvector.obj
-	@echo ... utils/myvector.i
-	@echo ... utils/myvector.s
 .PHONY : help
 
 

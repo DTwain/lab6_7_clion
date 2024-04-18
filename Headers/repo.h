@@ -7,7 +7,8 @@
 #ifndef LAB6_7_CLION_REPO_H
 #define LAB6_7_CLION_REPO_H
 
-#include "../Headers/carte.h"
+#include "carte.h"
+#include "my_vector.h"
 #include <ostream>
 #include <vector>
 #include <string>
@@ -18,7 +19,7 @@ using std::vector;
 
 class repo {
 private:
-    vector< carte > carte_vec;
+    my_vector<carte> carte_vec;
     int id = 0;
     bool carte_in_repo(const int& id ) const;
     void incrementare_id();
