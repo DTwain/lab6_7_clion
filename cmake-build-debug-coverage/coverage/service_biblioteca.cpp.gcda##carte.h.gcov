@@ -1,6 +1,6 @@
-        -:    0:Source:D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion/Headers/carte.h
-        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcno
-        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcda
+        -:    0:Source:D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/carte.h
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcda
         -:    0:Runs:1
         -:    1://
         -:    2:// Created by obrej on 4/10/2024.
@@ -13,45 +13,79 @@
         -:    9:#include <string>
         -:   10:#include <vector>
         -:   11:#include <ostream>
-        -:   12:
-        -:   13:using std::vector;
-        -:   14:using std::string;
-        -:   15:using std::ostream;
-        -:   16:
-        -:   17:class carte
-        -:   18:{
-        -:   19:private:
-        -:   20:    string author,
-        -:   21:            title,
-        -:   22:            genre;
-        -:   23:    int publication_year,
-        -:   24:            book_id;
-        -:   25:
-        -:   26:public:
-function _ZN5carteC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_S5_ii called 39 returned 100% blocks executed 62%
-       39:   27:    carte(const string author, const string title, const string genre, const int year, const int id)
-       39:   28:            :author{ author }, title{ title }, genre{ genre }, publication_year{ year }, book_id{ id }{}
-       39:   28-block  0
-call    0 returned 39
-call    1 returned 39
-branch  2 taken 39 (fallthrough)
-branch  3 taken 0 (throw)
-       39:   28-block  1
-call    4 returned 39
-branch  5 taken 39 (fallthrough)
-branch  6 taken 0 (throw)
-       39:   28-block  2
-    $$$$$:   28-block  3
-call    7 never executed
-    $$$$$:   28-block  4
-call    8 never executed
+        -:   12:#include <iostream>
+        -:   13:
+        -:   14:using std::vector;
+        -:   15:using std::string;
+        -:   16:using std::ostream;
+        -:   17:
+        -:   18:class carte
+        -:   19:{
+        -:   20:private:
+        -:   21:    string author,
+        -:   22:            title,
+        -:   23:            genre;
+        -:   24:    int publication_year,
+        -:   25:            book_id;
+        -:   26:
+        -:   27:public:
+function _ZN5carteC1Ev called 0 returned 0% blocks executed 0%
+    #####:   28:    carte() = default;
+    %%%%%:   28-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
         -:   29:
-        -:   30:    string get_author() const;
-        -:   31:    string get_title() const;
-        -:   32:    string get_genre() const;
-        -:   33:    int get_publication_year() const;
-        -:   34:    int get_book_id() const;
+function _ZN5carteC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_S5_ii called 71 returned 100% blocks executed 62%
+       71:   30:    carte(const string author, const string title, const string genre, const int year, const int id)
+       71:   31:            :author{ author }, title{ title }, genre{ genre }, publication_year{ year }, book_id{ id }{}
+       71:   31-block  0
+call    0 returned 71
+call    1 returned 71
+branch  2 taken 71 (fallthrough)
+branch  3 taken 0 (throw)
+       71:   31-block  1
+call    4 returned 71
+branch  5 taken 71 (fallthrough)
+branch  6 taken 0 (throw)
+       71:   31-block  2
+    $$$$$:   31-block  3
+call    7 never executed
+    $$$$$:   31-block  4
+call    8 never executed
+function _ZN5carteC1ERKS_ called 10 returned 100% blocks executed 55%
+       10:   32:    carte(const carte& ceva): author{ceva.author}, title{ceva.title}, genre{ceva.genre}, book_id{ceva.book_id}, publication_year{ceva.publication_year}{
+       10:   32-block  0
+call    0 returned 10
+call    1 returned 10
+branch  2 taken 10 (fallthrough)
+branch  3 taken 0 (throw)
+       10:   32-block  1
+call    4 returned 10
+branch  5 taken 10 (fallthrough)
+branch  6 taken 0 (throw)
+       10:   33:            std::cout<<"hi\n";
+       10:   33-block  0
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
+branch  2 taken 0 (throw)
+       10:   34:    }
+       10:   34-block  0
+    $$$$$:   34-block  1
+call    0 never executed
+    $$$$$:   34-block  2
+call    1 never executed
+    $$$$$:   34-block  3
+call    2 never executed
         -:   35:
-        -:   36:};
+        -:   36:    bool operator==(const carte& other) const;
         -:   37:
-        -:   38:#endif
+        -:   38:    string get_author() const;
+        -:   39:    string get_title() const;
+        -:   40:    string get_genre() const;
+        -:   41:    int get_publication_year() const;
+        -:   42:    int get_book_id() const;
+        -:   43:
+        -:   44:};
+        -:   45:
+        -:   46:#endif

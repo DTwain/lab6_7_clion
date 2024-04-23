@@ -1,169 +1,422 @@
-        -:    0:Source:D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion/service/service_biblioteca.cpp
-        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcno
-        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcda
+        -:    0:Source:D:/INFO 2/SEM 2/OOP/lab6-7---oop/service/service_biblioteca.cpp
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcda
         -:    0:Runs:1
         -:    1://
         -:    2:// Created by obrej on 4/10/2024.
         -:    3://
         -:    4:
         -:    5:#include "../Headers/service_biblioteca.h"
-        -:    6:#include <string>
-        -:    7:
-function _ZN18service_biblioteca12add_book_srvERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_S7_RKi called 11 returned 91% blocks executed 62%
-       11:    8:void service_biblioteca::add_book_srv(const std::string &autor, const std::string &titlu, const std::string &genre,
-        -:    9:                                      const int &an) {
-       11:   10:    carte book_to_be_added{autor, titlu, genre, an, repo_carti.get_id_for_next_book_to_be_added()};
-       11:   10-block  0
-call    0 returned 11
-branch  1 taken 11 (fallthrough)
-branch  2 taken 0 (throw)
-       11:   10-block  1
-call    3 returned 11
-branch  4 taken 11 (fallthrough)
-branch  5 taken 0 (throw)
-       11:   10-block  2
-call    6 returned 11
-branch  7 taken 11 (fallthrough)
-branch  8 taken 0 (throw)
-       11:   10-block  3
-call    9 returned 11
-branch 10 taken 11 (fallthrough)
-branch 11 taken 0 (throw)
-       11:   10-block  4
-call   12 returned 11
-branch 13 taken 11 (fallthrough)
-branch 14 taken 0 (throw)
-       11:   10-block  5
-call   15 returned 11
-call   16 returned 11
-call   17 returned 11
-    $$$$$:   10-block  6
-call   18 never executed
-    $$$$$:   10-block  7
-    $$$$$:   10-block  8
-call   19 never executed
-    $$$$$:   10-block  9
-    $$$$$:   10-block 10
-call   20 never executed
-    $$$$$:   10-block 11
-       11:   11:    validator.validate(book_to_be_added);
-call    0 returned 11
-branch  1 taken 10 (fallthrough)
-branch  2 taken 1 (throw)
-       10:   12:    repo_carti.add(book_to_be_added);
-       10:   12-block  0
-call    0 returned 10
-branch  1 taken 10 (fallthrough)
-branch  2 taken 0 (throw)
-       11:   13:}
-       10:   13-block  0
-call    0 returned 10
-        1:   13-block  1
-call    1 returned 1
-        -:   14:
-function _ZN18service_biblioteca15delete_book_srvERKi called 3 returned 33% blocks executed 100%
-        3:   15:void service_biblioteca::delete_book_srv(const int &id) {
-        3:   16:    repo_carti.delete_book(id);
-        3:   16-block  0
+        -:    6:#include "../Headers/vector_iterator.h"
+        -:    7:#include <string>
+        -:    8:
+        -:    9:// return a reference to a my_vector class obj, used for printing
+function _ZNK18service_biblioteca29get_reference_from_vector_srvEv called 1 returned 100% blocks executed 100%
+        1:   10:const my_vector<carte>& service_biblioteca::get_reference_from_vector_srv() const noexcept {
+        1:   11:    return repo_carti.get_reference_from_vector();
+        1:   11-block  0
 call    0 returned 1
-        1:   17:}
-        -:   18:
+        -:   12:}
+        -:   13:
+        -:   14:/*
+        -:   15: * Adauga carte in repo, daca exista
+        -:   16: */
+function _ZN18service_biblioteca12add_book_srvERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_S7_RKi called 21 returned 95% blocks executed 62%
+       21:   17:void service_biblioteca::add_book_srv(const std::string &autor, const std::string &titlu, const std::string &genre,
+        -:   18:                                      const int &an) {
+       21:   19:    carte book_to_be_added{autor, titlu, genre, an, repo_carti.get_id_for_next_book_to_be_added()};
+       21:   19-block  0
+call    0 returned 21
+branch  1 taken 21 (fallthrough)
+branch  2 taken 0 (throw)
+       21:   19-block  1
+call    3 returned 21
+branch  4 taken 21 (fallthrough)
+branch  5 taken 0 (throw)
+       21:   19-block  2
+call    6 returned 21
+branch  7 taken 21 (fallthrough)
+branch  8 taken 0 (throw)
+       21:   19-block  3
+call    9 returned 21
+branch 10 taken 21 (fallthrough)
+branch 11 taken 0 (throw)
+       21:   19-block  4
+call   12 returned 21
+branch 13 taken 21 (fallthrough)
+branch 14 taken 0 (throw)
+       21:   19-block  5
+call   15 returned 21
+call   16 returned 21
+call   17 returned 21
+    $$$$$:   19-block  6
+call   18 never executed
+    $$$$$:   19-block  7
+    $$$$$:   19-block  8
+call   19 never executed
+    $$$$$:   19-block  9
+    $$$$$:   19-block 10
+call   20 never executed
+    $$$$$:   19-block 11
+       21:   20:    validator.validate(book_to_be_added);
+call    0 returned 21
+branch  1 taken 20 (fallthrough)
+branch  2 taken 1 (throw)
+       20:   21:    repo_carti.add(book_to_be_added);
+       20:   21-block  0
+call    0 returned 20
+branch  1 taken 20 (fallthrough)
+branch  2 taken 0 (throw)
+       21:   22:}
+       20:   22-block  0
+call    0 returned 20
+        1:   22-block  1
+call    1 returned 1
+        -:   23:
+        -:   24:/*
+        -:   25: * Sterge carte din repo
+        -:   26: */
+function _ZN18service_biblioteca15delete_book_srvERKi called 7 returned 71% blocks executed 100%
+        7:   27:void service_biblioteca::delete_book_srv(const int &id) {
+        7:   28:    repo_carti.delete_book(id);
+        7:   28-block  0
+call    0 returned 5
+        5:   29:}
+        -:   30:
+        -:   31:/*
+        -:   32: * Modifica carte din repo, daca exista.
+        -:   33: */
 function _ZN18service_biblioteca15modify_book_srvERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_S7_RKiS9_ called 2 returned 0% blocks executed 52%
-        2:   19:void service_biblioteca::modify_book_srv(const std::string &autor, const std::string &titlu, const std::string &genre,
-        -:   20:                                         const int &an, const int &id) {
-        2:   21:    carte modified_book{autor, titlu, genre, an, id};
-        2:   21-block  0
+        2:   34:void service_biblioteca::modify_book_srv(const std::string &autor, const std::string &titlu, const std::string &genre,
+        -:   35:                                         const int &an, const int &id) {
+        2:   36:    carte modified_book{autor, titlu, genre, an, id};
+        2:   36-block  0
 call    0 returned 2
 branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-        2:   21-block  1
+        2:   36-block  1
 call    3 returned 2
 branch  4 taken 2 (fallthrough)
 branch  5 taken 0 (throw)
-        2:   21-block  2
+        2:   36-block  2
 call    6 returned 2
 branch  7 taken 2 (fallthrough)
 branch  8 taken 0 (throw)
-        2:   21-block  3
+        2:   36-block  3
 call    9 returned 2
 branch 10 taken 2 (fallthrough)
 branch 11 taken 0 (throw)
-        2:   21-block  4
+        2:   36-block  4
 call   12 returned 2
 call   13 returned 2
 call   14 returned 2
-    $$$$$:   21-block  5
+    $$$$$:   36-block  5
 call   15 never executed
-    $$$$$:   21-block  6
-    $$$$$:   21-block  7
+    $$$$$:   36-block  6
+    $$$$$:   36-block  7
 call   16 never executed
-    $$$$$:   21-block  8
-    $$$$$:   21-block  9
+    $$$$$:   36-block  8
+    $$$$$:   36-block  9
 call   17 never executed
-    $$$$$:   21-block 10
-        2:   22:    validator.validate(modified_book);
+    $$$$$:   36-block 10
+        2:   37:    validator.validate(modified_book);
 call    0 returned 2
 branch  1 taken 1 (fallthrough)
 branch  2 taken 1 (throw)
-        1:   23:    repo_carti.modify_book(modified_book);
-        1:   23-block  0
+        1:   38:    repo_carti.modify_book(modified_book);
+        1:   38-block  0
 call    0 returned 1
 branch  1 taken 0 (fallthrough)
 branch  2 taken 1 (throw)
-       2*:   24:}
-    %%%%%:   24-block  0
+       2*:   39:}
+    %%%%%:   39-block  0
 call    0 never executed
-        2:   24-block  1
+        2:   39-block  1
 call    1 returned 2
-        -:   25:
+        -:   40:
+        -:   41:/*
+        -:   42: * Returneaza o referinta catre obiectul de tip my_vector, care stocheaza cartile
+        -:   43: */
 function _ZN18service_biblioteca11get_all_srvEv called 1 returned 100% blocks executed 100%
-        1:   26:const vector<carte>& service_biblioteca::get_all_srv() noexcept{
-        1:   27:    return repo_carti.get_all();
-        1:   27-block  0
+        1:   44:const my_vector<carte>& service_biblioteca::get_all_srv() noexcept{
+        1:   45:    return repo_carti.get_all();
+        1:   45-block  0
 call    0 returned 1
-        -:   28:}
-        -:   29:
-function _ZNK18service_biblioteca22filter_srv_an_aparitieERKi called 1 returned 100% blocks executed 76%
-        1:   30:const vector<carte> service_biblioteca::filter_srv_an_aparitie(const int &an) const {
-        1:   31:    vector<carte> filtered_books;
-        1:   32:    vector<carte> all = repo_carti.get_all();
-        1:   32-block  0
-call    0 returned 1
-call    1 returned 1
-branch  2 taken 1 (fallthrough)
-branch  3 taken 0 (throw)
-        3:   33:    for(const auto& book: all){
-        1:   33-block  0
-call    0 returned 1
-call    1 returned 1
-        2:   33-block  1
-call    2 returned 2
-        2:   33-block  2
-call    3 returned 2
-        3:   33-block  3
-call    4 returned 3
-branch  5 taken 2
-branch  6 taken 1 (fallthrough)
-        2:   34:        if(book.get_publication_year() < an)
+        -:   46:}
+        -:   47:
+function _ZN18service_biblioteca15search_for_bookERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_S7_RKi called 2 returned 50% blocks executed 74%
+        2:   48:const carte& service_biblioteca:: search_for_book(const std::string &autor, const std::string &titlu, const std::string &genre,
+        -:   49:                                                  const int &an){
+        2:   50:    iterator_vector<carte> iter{repo_carti.get_reference_from_vector()};
+        2:   50-block  0
 call    0 returned 2
 branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-        2:   34-block  0
+        2:   50-block  1
+call    3 returned 2
+        2:   51:    iter.prim();
+call    0 returned 2
+        9:   52:    while(iter.valid()){
+        9:   52-block  0
+call    0 returned 9
+branch  1 taken 8
+branch  2 taken 1 (fallthrough)
+        8:   53:        const carte& book = iter.element();
+        8:   53-block  0
+call    0 returned 8
+       15:   54:        if(book.get_author() == autor ||
+branch  0 taken 7 (fallthrough)
+branch  1 taken 0
+        8:   54-block  0
+call    2 returned 8
+        8:   54-block  1
 branch  3 taken 1 (fallthrough)
+branch  4 taken 7
+    $$$$$:   54-block  2
+branch  5 never executed (fallthrough)
+branch  6 never executed
+    $$$$$:   54-block  3
+call    7 never executed
+    $$$$$:   54-block  4
+       22:   55:           book.get_title() == titlu ||
+        7:   55-block  0
+call    0 returned 7
+branch  1 taken 7 (fallthrough)
+branch  2 taken 0 (throw)
+        7:   55-block  1
+call    3 returned 7
+branch  4 taken 7 (fallthrough)
+branch  5 taken 0
+        7:   55-block  2
+call    6 returned 7
+        8:   55-block  3
+branch  7 taken 8 (fallthrough)
+branch  8 taken 0
+    $$$$$:   55-block  4
+branch  9 never executed (fallthrough)
+branch 10 never executed
+    $$$$$:   55-block  5
+call   11 never executed
+    $$$$$:   55-block  6
+       22:   56:           book.get_genre() == genre ||
+call    0 returned 8
+branch  1 taken 8 (fallthrough)
+branch  2 taken 0 (throw)
+        8:   56-block  0
+call    3 returned 8
+branch  4 taken 7 (fallthrough)
+branch  5 taken 1
+        7:   56-block  1
+call    6 returned 7
+branch  7 taken 7 (fallthrough)
+branch  8 taken 0 (throw)
+        7:   56-block  2
+call    9 returned 7
+        1:   56-block  3
+        7:   56-block  4
+        8:   56-block  5
+branch 10 taken 7 (fallthrough)
+branch 11 taken 1
+        7:   56-block  6
+call   12 returned 7
+        8:   56-block  7
+branch 13 taken 7 (fallthrough)
+branch 14 taken 1
+    $$$$$:   56-block  8
+branch 15 never executed (fallthrough)
+branch 16 never executed
+    $$$$$:   56-block  9
+call   17 never executed
+    $$$$$:   56-block 10
+        7:   57:           book.get_publication_year() == an
+        7:   57-block  0
+call    0 returned 7
+branch  1 taken 7 (fallthrough)
+branch  2 taken 0 (throw)
+        7:   57-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 7
+        -:   58:                )
+        1:   59:            return book;
+        1:   59-block  0
+        1:   59-block  1
+        7:   60:        iter.next();
+        7:   60-block  0
+call    0 returned 7
+        -:   61:    }
+        1:   62:    throw std::exception{};
+        1:   62-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+        -:   63:}
+        -:   64:
+        -:   65:/*
+        -:   66: * Filtreaza cartile dupa an si titlu
+        -:   67: * Daca gaseste o carte cu un camp egal cu $an sau $titlu o adauga in lista
+        -:   68: */
+function _ZNK18service_biblioteca10filter_srvEiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 2 returned 100% blocks executed 79%
+        2:   69:const my_vector<carte> service_biblioteca::filter_srv(int an, string titlu) const {
+        2:   70:    my_vector<carte> filtered_books;
+        2:   70-block  0
+call    0 returned 2
+        2:   71:    const my_vector<carte>& all{ repo_carti.get_all() };
+call    0 returned 2
+       10:   72:    for(const auto& book: all){
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   72-block  0
+        8:   72-block  1
+call    4 returned 8
+branch  5 taken 8 (fallthrough)
+branch  6 taken 0 (throw)
+        8:   72-block  2
+call    7 returned 8
+       10:   72-block  3
+call    8 returned 10
+branch  9 taken 8
+branch 10 taken 2 (fallthrough)
+        8:   73:        if(book.get_publication_year() == an || book.get_title() == titlu)
+        8:   73-block  0
+call    0 returned 8
+branch  1 taken 8 (fallthrough)
+branch  2 taken 0 (throw)
+        8:   73-block  1
+branch  3 taken 7 (fallthrough)
 branch  4 taken 1
-        1:   35:            filtered_books.push_back(book);
-        1:   35-block  0
+        7:   73-block  2
+call    5 returned 7
+branch  6 taken 7 (fallthrough)
+branch  7 taken 0 (throw)
+        7:   73-block  3
+call    8 returned 7
+branch  9 taken 1 (fallthrough)
+branch 10 taken 6
+        2:   73-block  4
+        6:   73-block  5
+        8:   73-block  6
+branch 11 taken 7 (fallthrough)
+branch 12 taken 1
+        7:   73-block  7
+call   13 returned 7
+        8:   73-block  8
+branch 14 taken 2 (fallthrough)
+branch 15 taken 6
+    $$$$$:   73-block  9
+branch 16 never executed (fallthrough)
+branch 17 never executed
+    $$$$$:   73-block 10
+call   18 never executed
+    $$$$$:   73-block 11
+        2:   74:            filtered_books.add(book);
+        2:   74-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   75:    }
+        2:   76:    return filtered_books;
+        2:   76-block  0
+        2:   76-block  1
+    =====:   77:}
+    $$$$$:   77-block  0
+call    0 never executed
+        -:   78:
+        -:   79:/*
+        -:   80: * Executa sortarea propriu siza
+        -:   81: * all : referinta catre un my_vector care stocheaza cartile
+        -:   82: * func : functia retureaza true in cazul in care cele doua obiecte trebuie interschimbate
+        -:   83: */
+function _ZNK18service_biblioteca7my_sortERK9my_vectorI5carteEPFbRKS1_S6_E called 4 returned 100% blocks executed 92%
+        4:   84:void service_biblioteca::my_sort(const my_vector<carte>& all, bool(*func)(const carte&, const carte&)) const{
+       13:   85:    for(int i = 0; i < all.size() - 1; ++i)
+        4:   85-block  0
+        9:   85-block  1
+       13:   85-block  2
+call    0 returned 13
+branch  1 taken 9
+branch  2 taken 4 (fallthrough)
+       27:   86:        for(int j = i + 1; j < all.size(); ++j)
+        9:   86-block  0
+       18:   86-block  1
+       27:   86-block  2
+call    0 returned 27
+branch  1 taken 18
+branch  2 taken 9 (fallthrough)
+       18:   87:            if(func(all[i], all[j])) {
+       18:   87-block  0
+call    0 returned 18
+call    1 returned 18
+call    2 returned 18
+branch  3 taken 8 (fallthrough)
+branch  4 taken 10
+        8:   88:                carte book = all[i];
+        8:   88-block  0
+call    0 returned 8
+call    1 returned 8
+branch  2 taken 8 (fallthrough)
+branch  3 taken 0 (throw)
+        8:   89:                all[i] = all[j];
+        8:   89-block  0
+call    0 returned 8
+call    1 returned 8
+call    2 returned 8
+branch  3 taken 8 (fallthrough)
+branch  4 taken 0 (throw)
+        8:   90:                all[j] = book;
+        8:   90-block  0
+call    0 returned 8
+call    1 returned 8
+branch  2 taken 8 (fallthrough)
+branch  3 taken 0 (throw)
+        8:   91:            }
+        8:   91-block  0
+call    0 returned 8
+    $$$$$:   91-block  1
+call    1 never executed
+        4:   92:}
+        4:   92-block  0
+        -:   93:
+        -:   94:/*
+        -:   95: * Determina functia care va compara doua carti si va decide daca ele se interschimba
+        -:   96: * option : 1 / 2 / 3
+        -:   97: * Return type: referinta catre obiectul sortat
+        -:   98: */
+function _ZNK18service_biblioteca22sorter_based_on_optionEi called 4 returned 100% blocks executed 91%
+        4:   99:const my_vector<carte> service_biblioteca::sorter_based_on_option(int option) const{
+        4:  100:    const my_vector<carte> all{ repo_carti.get_all() };
+        4:  100-block  0
+call    0 returned 4
+call    1 returned 4
+        4:  101:    if(option == 1)
+branch  0 taken 1 (fallthrough)
+branch  1 taken 3
+        1:  102:        my_sort(all, repo_carti.sort_by_title);
+        1:  102-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        -:   36:    }
-        2:   37:    return filtered_books;
-        1:   37-block  0
-        1:   37-block  1
-        1:   38:}
-        1:   38-block  0
+        3:  103:    else if(option == 2)
+        3:  103-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 2
+        1:  104:        my_sort(all, repo_carti.sort_by_author);
+        1:  104-block  0
 call    0 returned 1
-    $$$$$:   38-block  1
-call    1 never executed
-    $$$$$:   38-block  2
-call    2 never executed
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  105:    else
+        2:  106:        my_sort(all, repo_carti.sort_by_publication_year_and_gen);
+        2:  106-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        4:  107:    return all;
+        4:  107-block  0
+        4:  107-block  1
+    =====:  108:}
+    $$$$$:  108-block  0
+call    0 never executed
+        -:  109:
+        -:  110:

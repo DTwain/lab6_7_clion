@@ -1,6 +1,6 @@
-        -:    0:Source:D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion/teste/test_service.cpp
-        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_service.cpp.gcno
-        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_service.cpp.gcda
+        -:    0:Source:D:/INFO 2/SEM 2/OOP/lab6-7---oop/teste/test_service.cpp
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_service.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_service.cpp.gcda
         -:    0:Runs:1
         -:    1://
         -:    2:// Created by obrej on 4/12/2024.
@@ -24,736 +24,702 @@ call    0 returned 1
 call    0 returned 1
         1:   16:    test_get_all();
 call    0 returned 1
-        1:   17:    test_filter_an();
+        1:   17:    test_filter();
 call    0 returned 1
-        1:   18:}
-        -:   19:
+        1:   18:    test_sort();
+call    0 returned 1
+        1:   19:    test_search_book();
+call    0 returned 1
+        1:   20:}
+        -:   21:
 function _ZN12test_service8test_addEv called 1 returned 100% blocks executed 59%
-        1:   20:void test_service::test_add() {
-        1:   21:    repo book_repo;
-        -:   22:    validator_carte validator;
-        1:   23:    service_biblioteca srv{book_repo, validator};
+        1:   22:void test_service::test_add() {
+        1:   23:    repo book_repo;
         1:   23-block  0
 call    0 returned 1
-        -:   24:
-        6:   25:    srv.add_book_srv("Luis", "Jupanii", "Epic", 1842);
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   24:    validator_carte validator;
+        1:   25:    service_biblioteca srv{book_repo, validator};
         1:   25-block  0
 call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:   25-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:   25-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   25-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   25-block  4
-call   12 returned 1
-        1:   25-block  5
-call   13 returned 1
-        1:   25-block  6
-call   14 returned 1
-    $$$$$:   25-block  7
-call   15 never executed
-    $$$$$:   25-block  8
-    $$$$$:   25-block  9
-    $$$$$:   25-block 10
-call   16 never executed
-    $$$$$:   25-block 11
-    $$$$$:   25-block 12
-    $$$$$:   25-block 13
-call   17 never executed
-    $$$$$:   25-block 14
-    $$$$$:   25-block 15
-    $$$$$:   25-block 16
-        6:   26:    srv.add_book_srv("Kong", "Maria", "Liric", 1940);
-        1:   26-block  0
-        1:   26-block  1
+        -:   26:
+        6:   27:    srv.add_book_srv("Luis", "Jupanii", "Epic", 1842);
+        1:   27-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        1:   26-block  2
+        1:   27-block  1
 call    3 returned 1
 branch  4 taken 1 (fallthrough)
 branch  5 taken 0 (throw)
-        1:   26-block  3
+        1:   27-block  2
 call    6 returned 1
 branch  7 taken 1 (fallthrough)
 branch  8 taken 0 (throw)
-        1:   26-block  4
+        1:   27-block  3
 call    9 returned 1
 branch 10 taken 1 (fallthrough)
 branch 11 taken 0 (throw)
-        1:   26-block  5
+        1:   27-block  4
 call   12 returned 1
-        1:   26-block  6
+        1:   27-block  5
 call   13 returned 1
-        1:   26-block  7
+        1:   27-block  6
 call   14 returned 1
-    $$$$$:   26-block  8
+    $$$$$:   27-block  7
 call   15 never executed
-    $$$$$:   26-block  9
-    $$$$$:   26-block 10
-    $$$$$:   26-block 11
+    $$$$$:   27-block  8
+    $$$$$:   27-block  9
+    $$$$$:   27-block 10
 call   16 never executed
-    $$$$$:   26-block 12
-    $$$$$:   26-block 13
-    $$$$$:   26-block 14
+    $$$$$:   27-block 11
+    $$$$$:   27-block 12
+    $$$$$:   27-block 13
 call   17 never executed
-    $$$$$:   26-block 15
-    $$$$$:   26-block 16
-    $$$$$:   26-block 17
-        -:   27:
-        -:   28:    try{
-       7*:   29:        srv.add_book_srv("", "Fabulos", "Liric", 1900);
-        1:   29-block  0
-        1:   29-block  1
+    $$$$$:   27-block 14
+    $$$$$:   27-block 15
+    $$$$$:   27-block 16
+        6:   28:    srv.add_book_srv("Kong", "Maria", "Liric", 1940);
+        1:   28-block  0
+        1:   28-block  1
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        1:   29-block  2
+        1:   28-block  2
 call    3 returned 1
 branch  4 taken 1 (fallthrough)
 branch  5 taken 0 (throw)
-        1:   29-block  3
+        1:   28-block  3
 call    6 returned 1
 branch  7 taken 1 (fallthrough)
 branch  8 taken 0 (throw)
-        1:   29-block  4
+        1:   28-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   28-block  5
+call   12 returned 1
+        1:   28-block  6
+call   13 returned 1
+        1:   28-block  7
+call   14 returned 1
+    $$$$$:   28-block  8
+call   15 never executed
+    $$$$$:   28-block  9
+    $$$$$:   28-block 10
+    $$$$$:   28-block 11
+call   16 never executed
+    $$$$$:   28-block 12
+    $$$$$:   28-block 13
+    $$$$$:   28-block 14
+call   17 never executed
+    $$$$$:   28-block 15
+    $$$$$:   28-block 16
+    $$$$$:   28-block 17
+        -:   29:
+        -:   30:    try{
+       7*:   31:        srv.add_book_srv("", "Fabulos", "Liric", 1900);
+        1:   31-block  0
+        1:   31-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   31-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   31-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   31-block  4
 call    9 returned 1
 branch 10 taken 0 (fallthrough)
 branch 11 taken 1 (throw)
-    %%%%%:   29-block  5
+    %%%%%:   31-block  5
 call   12 never executed
-    %%%%%:   29-block  6
+    %%%%%:   31-block  6
 call   13 never executed
-    %%%%%:   29-block  7
+    %%%%%:   31-block  7
 call   14 never executed
-        1:   29-block  8
+        1:   31-block  8
 call   15 returned 1
-        1:   29-block  9
-        1:   29-block 10
-        1:   29-block 11
+        1:   31-block  9
+        1:   31-block 10
+        1:   31-block 11
 call   16 returned 1
-        1:   29-block 12
-        1:   29-block 13
-        1:   29-block 14
+        1:   31-block 12
+        1:   31-block 13
+        1:   31-block 14
 call   17 returned 1
-        1:   29-block 15
-        1:   29-block 16
-        1:   29-block 17
-    #####:   30:        assert(false);
-    %%%%%:   30-block  0
+        1:   31-block 15
+        1:   31-block 16
+        1:   31-block 17
+    #####:   32:        assert(false);
+    %%%%%:   32-block  0
 call    0 never executed
-        -:   31:    }
-        1:   32:    catch(const book_validation_exception&){
-        1:   32-block  0
+        -:   33:    }
+        1:   34:    catch(const book_validation_exception&){
+        1:   34-block  0
 branch  0 taken 0 (fallthrough)
 branch  1 taken 1
-        1:   32-block  1
+        1:   34-block  1
 call    2 returned 1
-        -:   33:        assert(true);
-        1:   34:    }
+        -:   35:        assert(true);
+        1:   36:    }
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        -:   35:
-        1:   36:}
-        1:   36-block  0
-call    0 returned 1
-    $$$$$:   36-block  1
-call    1 never executed
         -:   37:
-function _ZN12test_service11test_deleteEv called 1 returned 100% blocks executed 52%
-        1:   38:void test_service::test_delete() {
-        1:   39:    repo book_repo;
-        -:   40:    validator_carte validator;
-        1:   41:    service_biblioteca srv{book_repo, validator};
+        1:   38:}
+        1:   38-block  0
+call    0 returned 1
+    $$$$$:   38-block  1
+call    1 never executed
+        -:   39:
+function _ZN12test_service11test_deleteEv called 1 returned 100% blocks executed 53%
+        1:   40:void test_service::test_delete() {
+        1:   41:    repo book_repo;
         1:   41-block  0
 call    0 returned 1
-        -:   42:
-        6:   43:    srv.add_book_srv("Luis", "Jupanii", "Epic", 1842);
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   42:    validator_carte validator;
+        1:   43:    service_biblioteca srv{book_repo, validator};
         1:   43-block  0
 call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:   43-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:   43-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   43-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   43-block  4
-call   12 returned 1
-        1:   43-block  5
-call   13 returned 1
-        1:   43-block  6
-call   14 returned 1
-    $$$$$:   43-block  7
-call   15 never executed
-    $$$$$:   43-block  8
-    $$$$$:   43-block  9
-    $$$$$:   43-block 10
-call   16 never executed
-    $$$$$:   43-block 11
-    $$$$$:   43-block 12
-    $$$$$:   43-block 13
-call   17 never executed
-    $$$$$:   43-block 14
-    $$$$$:   43-block 15
-    $$$$$:   43-block 16
-        6:   44:    srv.add_book_srv("Kong", "Maria", "Liric", 1940);
-        1:   44-block  0
-        1:   44-block  1
+        -:   44:
+        6:   45:    srv.add_book_srv("Luis", "Jupanii", "Epic", 1842);
+        1:   45-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        1:   44-block  2
+        1:   45-block  1
 call    3 returned 1
 branch  4 taken 1 (fallthrough)
 branch  5 taken 0 (throw)
-        1:   44-block  3
+        1:   45-block  2
 call    6 returned 1
 branch  7 taken 1 (fallthrough)
 branch  8 taken 0 (throw)
-        1:   44-block  4
+        1:   45-block  3
 call    9 returned 1
 branch 10 taken 1 (fallthrough)
 branch 11 taken 0 (throw)
-        1:   44-block  5
+        1:   45-block  4
 call   12 returned 1
-        1:   44-block  6
+        1:   45-block  5
 call   13 returned 1
-        1:   44-block  7
+        1:   45-block  6
 call   14 returned 1
-    $$$$$:   44-block  8
+    $$$$$:   45-block  7
 call   15 never executed
-    $$$$$:   44-block  9
-    $$$$$:   44-block 10
-    $$$$$:   44-block 11
+    $$$$$:   45-block  8
+    $$$$$:   45-block  9
+    $$$$$:   45-block 10
 call   16 never executed
-    $$$$$:   44-block 12
-    $$$$$:   44-block 13
-    $$$$$:   44-block 14
+    $$$$$:   45-block 11
+    $$$$$:   45-block 12
+    $$$$$:   45-block 13
 call   17 never executed
-    $$$$$:   44-block 15
-    $$$$$:   44-block 16
-    $$$$$:   44-block 17
-        -:   45:
-        1:   46:    srv.delete_book_srv(0);
+    $$$$$:   45-block 14
+    $$$$$:   45-block 15
+    $$$$$:   45-block 16
+        6:   46:    srv.add_book_srv("Kong", "Maria", "Liric", 1940);
         1:   46-block  0
+        1:   46-block  1
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-    $$$$$:   46-block  1
-       1*:   47:    assert(srv.get_all_srv().size() == 1);
-        1:   47-block  0
+        1:   46-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   46-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   46-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   46-block  5
+call   12 returned 1
+        1:   46-block  6
+call   13 returned 1
+        1:   46-block  7
+call   14 returned 1
+    $$$$$:   46-block  8
+call   15 never executed
+    $$$$$:   46-block  9
+    $$$$$:   46-block 10
+    $$$$$:   46-block 11
+call   16 never executed
+    $$$$$:   46-block 12
+    $$$$$:   46-block 13
+    $$$$$:   46-block 14
+call   17 never executed
+    $$$$$:   46-block 15
+    $$$$$:   46-block 16
+    $$$$$:   46-block 17
+        -:   47:
+        1:   48:    srv.delete_book_srv(0);
+        1:   48-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   48-block  1
+       1*:   49:    assert(srv.get_all_srv().size() == 1);
+        1:   49-block  0
 call    0 returned 1
 call    1 returned 1
 branch  2 taken 0 (fallthrough)
 branch  3 taken 1
-    %%%%%:   47-block  1
+    %%%%%:   49-block  1
 call    4 never executed
-        1:   47-block  2
-        -:   48:
-        -:   49:    try{
-       1*:   50:        srv.delete_book_srv(0);
-        1:   50-block  0
+        1:   49-block  2
+        -:   50:
+        -:   51:    try{
+       1*:   52:        srv.delete_book_srv(0);
+        1:   52-block  0
 call    0 returned 1
 branch  1 taken 0 (fallthrough)
 branch  2 taken 1 (throw)
-        1:   50-block  1
-    #####:   51:        assert(false);
-    %%%%%:   51-block  0
+        1:   52-block  1
+    #####:   53:        assert(false);
+    %%%%%:   53-block  0
 call    0 never executed
-        -:   52:    }
-        1:   53:    catch(const book_repo_exception&){
-        1:   53-block  0
+        -:   54:    }
+        1:   55:    catch(const book_repo_exception&){
+        1:   55-block  0
 branch  0 taken 0 (fallthrough)
 branch  1 taken 1
-        1:   53-block  1
+        1:   55-block  1
 call    2 returned 1
-        -:   54:        assert(true);
-        1:   55:    }
+        -:   56:        assert(true);
+        1:   57:    }
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        -:   56:
-        -:   57:    try{
-        1:   58:        srv.delete_book_srv(2);
-        1:   58-block  0
+        -:   58:
+        -:   59:    try{
+        1:   60:        srv.delete_book_srv(2);
+        1:   60-block  0
 call    0 returned 1
 branch  1 taken 0 (fallthrough)
 branch  2 taken 1 (throw)
-        1:   58-block  1
-    =====:   59:        assert(false);
-    $$$$$:   59-block  0
+        1:   60-block  1
+    =====:   61:        assert(false);
+    $$$$$:   61-block  0
 call    0 never executed
-        -:   60:    }
-        1:   61:    catch(const book_repo_exception& ex){
-        1:   61-block  0
-branch  0 taken 0 (fallthrough)
-branch  1 taken 1
-        1:   61-block  1
-call    2 returned 1
-        1:   62:        stringstream ss;
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:   63:        ss << ex;
+        -:   62:    }
+        1:   63:    catch(const book_repo_exception& ex){
         1:   63-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   63-block  1
+call    2 returned 1
+        1:   64:        stringstream ss;
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        1:   64:        assert(ss.str().find("Cartea cu id-ul") == 0);
-        1:   64-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:   64-block  1
-call    3 returned 1
-branch  4 taken 0 (fallthrough)
-branch  5 taken 1
-    $$$$$:   64-block  2
-call    6 never executed
-        1:   64-block  3
-        1:   64-block  4
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0
-        1:   64-block  5
-call    9 returned 1
-    $$$$$:   64-block  6
-branch 10 never executed (fallthrough)
-branch 11 never executed
-    $$$$$:   64-block  7
-call   12 never executed
-    $$$$$:   64-block  8
-        1:   65:        ss.clear();
+        1:   65:        ss << ex;
         1:   65-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        1:   66:    }
+        1:   66:        assert(ss.str().find("Cartea cu id-ul") == 0);
         1:   66-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   66-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    $$$$$:   66-block  2
+call    6 never executed
+        1:   66-block  3
+        1:   66-block  4
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0
+        1:   66-block  5
+call    9 returned 1
+    $$$$$:   66-block  6
+branch 10 never executed (fallthrough)
+branch 11 never executed
+    $$$$$:   66-block  7
+call   12 never executed
+    $$$$$:   66-block  8
+        1:   67:        ss.clear();
+        1:   67-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   68:    }
+        1:   68-block  0
 call    0 returned 1
 call    1 returned 1
 branch  2 taken 1 (fallthrough)
 branch  3 taken 0 (throw)
-    $$$$$:   66-block  1
-call    4 never executed
-    $$$$$:   66-block  2
-call    5 never executed
-        -:   67:
-        1:   68:}
-        1:   68-block  0
-call    0 returned 1
     $$$$$:   68-block  1
-call    1 never executed
+call    4 never executed
+    $$$$$:   68-block  2
+call    5 never executed
         -:   69:
+        1:   70:}
+        1:   70-block  0
+call    0 returned 1
+    $$$$$:   70-block  1
+call    1 never executed
+        -:   71:
 function _ZN12test_service11test_modifyEv called 1 returned 100% blocks executed 63%
-        1:   70:void test_service::test_modify() {
-        1:   71:    repo book_repo;
-        -:   72:    validator_carte validator;
-        1:   73:    service_biblioteca srv{book_repo, validator};
+        1:   72:void test_service::test_modify() {
+        1:   73:    repo book_repo;
         1:   73-block  0
 call    0 returned 1
-        -:   74:
-        6:   75:    srv.add_book_srv("Luis", "Jupanii", "Epic", 1842);
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   74:    validator_carte validator;
+        1:   75:    service_biblioteca srv{book_repo, validator};
         1:   75-block  0
 call    0 returned 1
+        -:   76:
+        6:   77:    srv.add_book_srv("Luis", "Jupanii", "Epic", 1842);
+        1:   77-block  0
+call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        1:   75-block  1
+        1:   77-block  1
 call    3 returned 1
 branch  4 taken 1 (fallthrough)
 branch  5 taken 0 (throw)
-        1:   75-block  2
+        1:   77-block  2
 call    6 returned 1
 branch  7 taken 1 (fallthrough)
 branch  8 taken 0 (throw)
-        1:   75-block  3
+        1:   77-block  3
 call    9 returned 1
 branch 10 taken 1 (fallthrough)
 branch 11 taken 0 (throw)
-        1:   75-block  4
+        1:   77-block  4
 call   12 returned 1
-        1:   75-block  5
+        1:   77-block  5
 call   13 returned 1
-        1:   75-block  6
+        1:   77-block  6
 call   14 returned 1
-    $$$$$:   75-block  7
+    $$$$$:   77-block  7
 call   15 never executed
-    $$$$$:   75-block  8
-    $$$$$:   75-block  9
-    $$$$$:   75-block 10
+    $$$$$:   77-block  8
+    $$$$$:   77-block  9
+    $$$$$:   77-block 10
 call   16 never executed
-    $$$$$:   75-block 11
-    $$$$$:   75-block 12
-    $$$$$:   75-block 13
+    $$$$$:   77-block 11
+    $$$$$:   77-block 12
+    $$$$$:   77-block 13
 call   17 never executed
-    $$$$$:   75-block 14
-    $$$$$:   75-block 15
-    $$$$$:   75-block 16
-        6:   76:    srv.add_book_srv("Kong", "Maria", "Liric", 1940);
-        1:   76-block  0
-        1:   76-block  1
+    $$$$$:   77-block 14
+    $$$$$:   77-block 15
+    $$$$$:   77-block 16
+        6:   78:    srv.add_book_srv("Kong", "Maria", "Liric", 1940);
+        1:   78-block  0
+        1:   78-block  1
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        1:   76-block  2
+        1:   78-block  2
 call    3 returned 1
 branch  4 taken 1 (fallthrough)
 branch  5 taken 0 (throw)
-        1:   76-block  3
+        1:   78-block  3
 call    6 returned 1
 branch  7 taken 1 (fallthrough)
 branch  8 taken 0 (throw)
-        1:   76-block  4
+        1:   78-block  4
 call    9 returned 1
 branch 10 taken 1 (fallthrough)
 branch 11 taken 0 (throw)
-        1:   76-block  5
+        1:   78-block  5
 call   12 returned 1
-        1:   76-block  6
+        1:   78-block  6
 call   13 returned 1
-        1:   76-block  7
+        1:   78-block  7
 call   14 returned 1
-    $$$$$:   76-block  8
+    $$$$$:   78-block  8
 call   15 never executed
-    $$$$$:   76-block  9
-    $$$$$:   76-block 10
-    $$$$$:   76-block 11
+    $$$$$:   78-block  9
+    $$$$$:   78-block 10
+    $$$$$:   78-block 11
 call   16 never executed
-    $$$$$:   76-block 12
-    $$$$$:   76-block 13
-    $$$$$:   76-block 14
+    $$$$$:   78-block 12
+    $$$$$:   78-block 13
+    $$$$$:   78-block 14
 call   17 never executed
-    $$$$$:   76-block 15
-    $$$$$:   76-block 16
-    $$$$$:   76-block 17
-        -:   77:
-        -:   78:    try{
-       7*:   79:        srv.modify_book_srv("", "Fabulos", "Liric", 1900, 0);
-        1:   79-block  0
-        1:   79-block  1
+    $$$$$:   78-block 15
+    $$$$$:   78-block 16
+    $$$$$:   78-block 17
+        -:   79:
+        -:   80:    try{
+       7*:   81:        srv.modify_book_srv("", "Fabulos", "Liric", 1900, 0);
+        1:   81-block  0
+        1:   81-block  1
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        1:   79-block  2
+        1:   81-block  2
 call    3 returned 1
 branch  4 taken 1 (fallthrough)
 branch  5 taken 0 (throw)
-        1:   79-block  3
+        1:   81-block  3
 call    6 returned 1
 branch  7 taken 1 (fallthrough)
 branch  8 taken 0 (throw)
-        1:   79-block  4
+        1:   81-block  4
 call    9 returned 1
 branch 10 taken 0 (fallthrough)
 branch 11 taken 1 (throw)
-    %%%%%:   79-block  5
+    %%%%%:   81-block  5
 call   12 never executed
-    %%%%%:   79-block  6
+    %%%%%:   81-block  6
 call   13 never executed
-    %%%%%:   79-block  7
+    %%%%%:   81-block  7
 call   14 never executed
-        1:   79-block  8
+        1:   81-block  8
 call   15 returned 1
-        1:   79-block  9
-        1:   79-block 10
-        1:   79-block 11
+        1:   81-block  9
+        1:   81-block 10
+        1:   81-block 11
 call   16 returned 1
-        1:   79-block 12
-        1:   79-block 13
-        1:   79-block 14
+        1:   81-block 12
+        1:   81-block 13
+        1:   81-block 14
 call   17 returned 1
-        1:   79-block 15
-        1:   79-block 16
-        1:   79-block 17
-        1:   79-block 18
-    #####:   80:        assert(false);
-    %%%%%:   80-block  0
+        1:   81-block 15
+        1:   81-block 16
+        1:   81-block 17
+        1:   81-block 18
+    #####:   82:        assert(false);
+    %%%%%:   82-block  0
 call    0 never executed
-        -:   81:    }
-        1:   82:    catch(const book_validation_exception&){
-        1:   82-block  0
+        -:   83:    }
+        1:   84:    catch(const book_validation_exception&){
+        1:   84-block  0
 branch  0 taken 0 (fallthrough)
 branch  1 taken 1
-        1:   82-block  1
+        1:   84-block  1
 call    2 returned 1
-        -:   83:        assert(true);
-        1:   84:    }
+        -:   85:        assert(true);
+        1:   86:    }
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        -:   85:
-        -:   86:    try{
-        7:   87:        srv.modify_book_srv("Justin", "Fabulos", "Liric", 1900, 2);
-        1:   87-block  0
-        1:   87-block  1
+        -:   87:
+        -:   88:    try{
+        7:   89:        srv.modify_book_srv("Justin", "Fabulos", "Liric", 1900, 2);
+        1:   89-block  0
+        1:   89-block  1
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        1:   87-block  2
+        1:   89-block  2
 call    3 returned 1
 branch  4 taken 1 (fallthrough)
 branch  5 taken 0 (throw)
-        1:   87-block  3
+        1:   89-block  3
 call    6 returned 1
 branch  7 taken 1 (fallthrough)
 branch  8 taken 0 (throw)
-        1:   87-block  4
+        1:   89-block  4
 call    9 returned 1
 branch 10 taken 0 (fallthrough)
 branch 11 taken 1 (throw)
-    $$$$$:   87-block  5
+    $$$$$:   89-block  5
 call   12 never executed
-    $$$$$:   87-block  6
+    $$$$$:   89-block  6
 call   13 never executed
-    $$$$$:   87-block  7
+    $$$$$:   89-block  7
 call   14 never executed
-        1:   87-block  8
+        1:   89-block  8
 call   15 returned 1
-        1:   87-block  9
-        1:   87-block 10
-        1:   87-block 11
+        1:   89-block  9
+        1:   89-block 10
+        1:   89-block 11
 call   16 returned 1
-        1:   87-block 12
-        1:   87-block 13
-        1:   87-block 14
+        1:   89-block 12
+        1:   89-block 13
+        1:   89-block 14
 call   17 returned 1
-        1:   87-block 15
-        1:   87-block 16
-        1:   87-block 17
-        1:   87-block 18
-    =====:   88:        assert(false);
-    $$$$$:   88-block  0
+        1:   89-block 15
+        1:   89-block 16
+        1:   89-block 17
+        1:   89-block 18
+    =====:   90:        assert(false);
+    $$$$$:   90-block  0
 call    0 never executed
-        -:   89:    }
-        1:   90:    catch(const book_repo_exception& ex){
-        1:   90-block  0
-branch  0 taken 0 (fallthrough)
-branch  1 taken 1
-        1:   90-block  1
-call    2 returned 1
-        1:   91:        stringstream ss;
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:   92:        ss << ex;
+        -:   91:    }
+        1:   92:    catch(const book_repo_exception& ex){
         1:   92-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   92-block  1
+call    2 returned 1
+        1:   93:        stringstream ss;
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        1:   93:        assert(ss.str().find("Doesn't exist book with id:") == 0);
-        1:   93-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:   93-block  1
-call    3 returned 1
-branch  4 taken 0 (fallthrough)
-branch  5 taken 1
-    $$$$$:   93-block  2
-call    6 never executed
-        1:   93-block  3
-        1:   93-block  4
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0
-        1:   93-block  5
-call    9 returned 1
-    $$$$$:   93-block  6
-branch 10 never executed (fallthrough)
-branch 11 never executed
-    $$$$$:   93-block  7
-call   12 never executed
-    $$$$$:   93-block  8
-        1:   94:        ss.clear();
+        1:   94:        ss << ex;
         1:   94-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        1:   95:    }
+        1:   95:        assert(ss.str().find("Doesn't exist book with id:") == 0);
         1:   95-block  0
 call    0 returned 1
-call    1 returned 1
-branch  2 taken 1 (fallthrough)
-branch  3 taken 0 (throw)
-    $$$$$:   95-block  1
-call    4 never executed
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   95-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
     $$$$$:   95-block  2
-call    5 never executed
-        1:   96:}
+call    6 never executed
+        1:   95-block  3
+        1:   95-block  4
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0
+        1:   95-block  5
+call    9 returned 1
+    $$$$$:   95-block  6
+branch 10 never executed (fallthrough)
+branch 11 never executed
+    $$$$$:   95-block  7
+call   12 never executed
+    $$$$$:   95-block  8
+        1:   96:        ss.clear();
         1:   96-block  0
 call    0 returned 1
-    $$$$$:   96-block  1
-call    1 never executed
-        -:   97:
-function _ZN12test_service12test_get_allEv called 1 returned 100% blocks executed 54%
-        1:   98:void test_service::test_get_all() {
-        1:   99:    repo book_repo;
-        -:  100:    validator_carte validator;
-        1:  101:    service_biblioteca srv{book_repo, validator};
-        1:  101-block  0
-call    0 returned 1
-        -:  102:
-        6:  103:    srv.add_book_srv("Luis", "Jupanii", "Epic", 1842);
-        1:  103-block  0
-call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        1:  103-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:  103-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:  103-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:  103-block  4
-call   12 returned 1
-        1:  103-block  5
-call   13 returned 1
-        1:  103-block  6
-call   14 returned 1
-    $$$$$:  103-block  7
-call   15 never executed
-    $$$$$:  103-block  8
-    $$$$$:  103-block  9
-    $$$$$:  103-block 10
-call   16 never executed
-    $$$$$:  103-block 11
-    $$$$$:  103-block 12
-    $$$$$:  103-block 13
-call   17 never executed
-    $$$$$:  103-block 14
-    $$$$$:  103-block 15
-    $$$$$:  103-block 16
-        6:  104:    srv.add_book_srv("Kong", "Maria", "Liric", 1940);
-        1:  104-block  0
-        1:  104-block  1
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  104-block  2
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:  104-block  3
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:  104-block  4
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:  104-block  5
-call   12 returned 1
-        1:  104-block  6
-call   13 returned 1
-        1:  104-block  7
-call   14 returned 1
-    $$$$$:  104-block  8
-call   15 never executed
-    $$$$$:  104-block  9
-    $$$$$:  104-block 10
-    $$$$$:  104-block 11
-call   16 never executed
-    $$$$$:  104-block 12
-    $$$$$:  104-block 13
-    $$$$$:  104-block 14
-call   17 never executed
-    $$$$$:  104-block 15
-    $$$$$:  104-block 16
-    $$$$$:  104-block 17
-        -:  105:
-        1:  106:    vector<carte> vec_carti = book_repo.get_all();
-        1:  106-block  0
+        1:   97:    }
+        1:   97-block  0
 call    0 returned 1
 call    1 returned 1
 branch  2 taken 1 (fallthrough)
 branch  3 taken 0 (throw)
+    $$$$$:   97-block  1
+call    4 never executed
+    $$$$$:   97-block  2
+call    5 never executed
+        1:   98:}
+        1:   98-block  0
+call    0 returned 1
+    $$$$$:   98-block  1
+call    1 never executed
+        -:   99:
+function _ZN12test_service12test_get_allEv called 1 returned 100% blocks executed 55%
+        1:  100:void test_service::test_get_all() {
+        1:  101:    repo book_repo;
+        1:  101-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  102:    validator_carte validator;
+        1:  103:    service_biblioteca srv{book_repo, validator};
+        1:  103-block  0
+call    0 returned 1
+        -:  104:
+        6:  105:    srv.add_book_srv("Luis", "Jupanii", "Epic", 1842);
+        1:  105-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  105-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  105-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  105-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  105-block  4
+call   12 returned 1
+        1:  105-block  5
+call   13 returned 1
+        1:  105-block  6
+call   14 returned 1
+    $$$$$:  105-block  7
+call   15 never executed
+    $$$$$:  105-block  8
+    $$$$$:  105-block  9
+    $$$$$:  105-block 10
+call   16 never executed
+    $$$$$:  105-block 11
+    $$$$$:  105-block 12
+    $$$$$:  105-block 13
+call   17 never executed
+    $$$$$:  105-block 14
+    $$$$$:  105-block 15
+    $$$$$:  105-block 16
+        6:  106:    srv.add_book_srv("Kong", "Maria", "Liric", 1940);
+        1:  106-block  0
+        1:  106-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  106-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  106-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  106-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  106-block  5
+call   12 returned 1
+        1:  106-block  6
+call   13 returned 1
+        1:  106-block  7
+call   14 returned 1
+    $$$$$:  106-block  8
+call   15 never executed
+    $$$$$:  106-block  9
+    $$$$$:  106-block 10
+    $$$$$:  106-block 11
+call   16 never executed
+    $$$$$:  106-block 12
+    $$$$$:  106-block 13
+    $$$$$:  106-block 14
+call   17 never executed
+    $$$$$:  106-block 15
+    $$$$$:  106-block 16
+    $$$$$:  106-block 17
         -:  107:
-       1*:  108:    assert(vec_carti.size() == 2);
+        1:  108:    my_vector<carte> vec_carti{ book_repo.get_all() };
         1:  108-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        -:  109:
+       1*:  110:    assert(vec_carti.size() == 2);
+        1:  110-block  0
 call    0 returned 1
 branch  1 taken 0 (fallthrough)
 branch  2 taken 1
-    %%%%%:  108-block  1
+    %%%%%:  110-block  1
 call    3 never executed
-        1:  108-block  2
-        -:  109:
-       1*:  110:    assert(vec_carti[0].get_author() == "Luis");
-        1:  110-block  0
-call    0 returned 1
-call    1 returned 1
-branch  2 taken 1 (fallthrough)
-branch  3 taken 0 (throw)
-        1:  110-block  1
-call    4 returned 1
-branch  5 taken 1 (fallthrough)
-branch  6 taken 0 (throw)
         1:  110-block  2
-branch  7 taken 0 (fallthrough)
-branch  8 taken 1
-    %%%%%:  110-block  3
-call    9 never executed
-        1:  110-block  4
-        1:  110-block  5
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0
-        1:  110-block  6
-call   12 returned 1
-    $$$$$:  110-block  7
-branch 13 never executed (fallthrough)
-branch 14 never executed
-    $$$$$:  110-block  8
-call   15 never executed
-    $$$$$:  110-block  9
-       1*:  111:    assert(vec_carti[0].get_title() == "Jupanii");
-        1:  111-block  0
-call    0 returned 1
-call    1 returned 1
-branch  2 taken 1 (fallthrough)
-branch  3 taken 0 (throw)
-        1:  111-block  1
-call    4 returned 1
-branch  5 taken 1 (fallthrough)
-branch  6 taken 0 (throw)
-        1:  111-block  2
-branch  7 taken 0 (fallthrough)
-branch  8 taken 1
-    %%%%%:  111-block  3
-call    9 never executed
-        1:  111-block  4
-        1:  111-block  5
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0
-        1:  111-block  6
-call   12 returned 1
-    $$$$$:  111-block  7
-branch 13 never executed (fallthrough)
-branch 14 never executed
-    $$$$$:  111-block  8
-call   15 never executed
-    $$$$$:  111-block  9
-       1*:  112:    assert(vec_carti[0].get_genre() == "Epic");
+        -:  111:
+       1*:  112:    assert(vec_carti[0].get_author() == "Luis");
         1:  112-block  0
 call    0 returned 1
 call    1 returned 1
@@ -780,140 +746,1228 @@ branch 14 never executed
     $$$$$:  112-block  8
 call   15 never executed
     $$$$$:  112-block  9
-       1*:  113:    assert(vec_carti[0].get_publication_year() == 1842);
+       1*:  113:    assert(vec_carti[0].get_title() == "Jupanii");
         1:  113-block  0
 call    0 returned 1
 call    1 returned 1
 branch  2 taken 1 (fallthrough)
 branch  3 taken 0 (throw)
         1:  113-block  1
-branch  4 taken 0 (fallthrough)
-branch  5 taken 1
-    %%%%%:  113-block  2
-call    6 never executed
-        1:  113-block  3
-       1*:  114:    assert(vec_carti[0].get_book_id() == 0);
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  113-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  113-block  3
+call    9 never executed
+        1:  113-block  4
+        1:  113-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:  113-block  6
+call   12 returned 1
+    $$$$$:  113-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:  113-block  8
+call   15 never executed
+    $$$$$:  113-block  9
+       1*:  114:    assert(vec_carti[0].get_genre() == "Epic");
         1:  114-block  0
 call    0 returned 1
 call    1 returned 1
 branch  2 taken 1 (fallthrough)
 branch  3 taken 0 (throw)
         1:  114-block  1
-branch  4 taken 0 (fallthrough)
-branch  5 taken 1
-    %%%%%:  114-block  2
-call    6 never executed
-        1:  114-block  3
-        1:  115:}
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  114-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  114-block  3
+call    9 never executed
+        1:  114-block  4
+        1:  114-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:  114-block  6
+call   12 returned 1
+    $$$$$:  114-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:  114-block  8
+call   15 never executed
+    $$$$$:  114-block  9
+       1*:  115:    assert(vec_carti[0].get_publication_year() == 1842);
         1:  115-block  0
 call    0 returned 1
 call    1 returned 1
-    $$$$$:  115-block  1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  115-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  115-block  2
+call    6 never executed
+        1:  115-block  3
+       1*:  116:    assert(vec_carti[0].get_book_id() == 0);
+        1:  116-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  116-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  116-block  2
+call    6 never executed
+        1:  116-block  3
+        1:  117:}
+        1:  117-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:  117-block  1
 call    2 never executed
-    $$$$$:  115-block  2
+    $$$$$:  117-block  2
 call    3 never executed
-        -:  116:
-function _ZN12test_service14test_filter_anEv called 1 returned 100% blocks executed 48%
-        1:  117:void test_service::test_filter_an(){
-        1:  118:    repo book_repo;
-        -:  119:    validator_carte validator;
-        1:  120:    service_biblioteca srv{book_repo, validator};
+        -:  118:
+function _ZN12test_service16test_search_bookEv called 1 returned 100% blocks executed 53%
+        1:  119:void test_service::test_search_book() {
+        1:  120:    repo books_repo;
         1:  120-block  0
 call    0 returned 1
-        -:  121:
-        6:  122:    srv.add_book_srv("Luis", "Jupanii", "Epic", 1842);
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  121:    validator_carte validator;
+        1:  122:    service_biblioteca srv(books_repo, validator);
         1:  122-block  0
 call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  122-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:  122-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:  122-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:  122-block  4
-call   12 returned 1
-        1:  122-block  5
-call   13 returned 1
-        1:  122-block  6
-call   14 returned 1
-    $$$$$:  122-block  7
-call   15 never executed
-    $$$$$:  122-block  8
-    $$$$$:  122-block  9
-    $$$$$:  122-block 10
-call   16 never executed
-    $$$$$:  122-block 11
-    $$$$$:  122-block 12
-    $$$$$:  122-block 13
-call   17 never executed
-    $$$$$:  122-block 14
-    $$$$$:  122-block 15
-    $$$$$:  122-block 16
-        6:  123:    srv.add_book_srv("Kong", "Maria", "Liric", 1940);
-        1:  123-block  0
-        1:  123-block  1
+        -:  123:
+        6:  124:    srv.add_book_srv("Luis", "Jupanii", "Epic", 1842);
+        1:  124-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        1:  123-block  2
+        1:  124-block  1
 call    3 returned 1
 branch  4 taken 1 (fallthrough)
 branch  5 taken 0 (throw)
-        1:  123-block  3
+        1:  124-block  2
 call    6 returned 1
 branch  7 taken 1 (fallthrough)
 branch  8 taken 0 (throw)
-        1:  123-block  4
+        1:  124-block  3
 call    9 returned 1
 branch 10 taken 1 (fallthrough)
 branch 11 taken 0 (throw)
-        1:  123-block  5
+        1:  124-block  4
 call   12 returned 1
-        1:  123-block  6
+        1:  124-block  5
 call   13 returned 1
-        1:  123-block  7
+        1:  124-block  6
 call   14 returned 1
-    $$$$$:  123-block  8
+    $$$$$:  124-block  7
 call   15 never executed
-    $$$$$:  123-block  9
-    $$$$$:  123-block 10
-    $$$$$:  123-block 11
+    $$$$$:  124-block  8
+    $$$$$:  124-block  9
+    $$$$$:  124-block 10
 call   16 never executed
-    $$$$$:  123-block 12
-    $$$$$:  123-block 13
-    $$$$$:  123-block 14
+    $$$$$:  124-block 11
+    $$$$$:  124-block 12
+    $$$$$:  124-block 13
 call   17 never executed
-    $$$$$:  123-block 15
-    $$$$$:  123-block 16
-    $$$$$:  123-block 17
-        -:  124:
-        1:  125:    vector<carte> crt = srv.filter_srv_an_aparitie(1900);
+    $$$$$:  124-block 14
+    $$$$$:  124-block 15
+    $$$$$:  124-block 16
+        6:  125:    srv.add_book_srv("Kong", "Maria", "Liric", 1940);
         1:  125-block  0
+        1:  125-block  1
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-    $$$$$:  125-block  1
-       1*:  126:    assert(crt.size() == 1);
+        1:  125-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  125-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  125-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  125-block  5
+call   12 returned 1
+        1:  125-block  6
+call   13 returned 1
+        1:  125-block  7
+call   14 returned 1
+    $$$$$:  125-block  8
+call   15 never executed
+    $$$$$:  125-block  9
+    $$$$$:  125-block 10
+    $$$$$:  125-block 11
+call   16 never executed
+    $$$$$:  125-block 12
+    $$$$$:  125-block 13
+    $$$$$:  125-block 14
+call   17 never executed
+    $$$$$:  125-block 15
+    $$$$$:  125-block 16
+    $$$$$:  125-block 17
+        6:  126:    srv.add_book_srv("I.L.C", "O scrisoare pierduta", "Dramatic", 2000);
         1:  126-block  0
+        1:  126-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  126-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  126-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  126-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  126-block  5
+call   12 returned 1
+        1:  126-block  6
+call   13 returned 1
+        1:  126-block  7
+call   14 returned 1
+    $$$$$:  126-block  8
+call   15 never executed
+    $$$$$:  126-block  9
+    $$$$$:  126-block 10
+    $$$$$:  126-block 11
+call   16 never executed
+    $$$$$:  126-block 12
+    $$$$$:  126-block 13
+    $$$$$:  126-block 14
+call   17 never executed
+    $$$$$:  126-block 15
+    $$$$$:  126-block 16
+    $$$$$:  126-block 17
+        6:  127:    srv.add_book_srv("Mihai Eminescu", "Luceafar", "Liric", 1883);
+        1:  127-block  0
+        1:  127-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  127-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  127-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  127-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  127-block  5
+call   12 returned 1
+        1:  127-block  6
+call   13 returned 1
+        1:  127-block  7
+call   14 returned 1
+    $$$$$:  127-block  8
+call   15 never executed
+    $$$$$:  127-block  9
+    $$$$$:  127-block 10
+    $$$$$:  127-block 11
+call   16 never executed
+    $$$$$:  127-block 12
+    $$$$$:  127-block 13
+    $$$$$:  127-block 14
+call   17 never executed
+    $$$$$:  127-block 15
+    $$$$$:  127-block 16
+    $$$$$:  127-block 17
+        -:  128:
+        6:  129:    carte book_found { srv.search_for_book("Mihai Eminescu", "/" , "p", 12)};
+        1:  129-block  0
+        1:  129-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  129-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  129-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  129-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  129-block  5
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  129-block  6
+call   15 returned 1
+        1:  129-block  7
+call   16 returned 1
+        1:  129-block  8
+call   17 returned 1
+    $$$$$:  129-block  9
+call   18 never executed
+    $$$$$:  129-block 10
+    $$$$$:  129-block 11
+    $$$$$:  129-block 12
+call   19 never executed
+    $$$$$:  129-block 13
+    $$$$$:  129-block 14
+    $$$$$:  129-block 15
+call   20 never executed
+    $$$$$:  129-block 16
+    $$$$$:  129-block 17
+    $$$$$:  129-block 18
+        -:  130:
+       1*:  131:    assert(book_found.get_book_id() == 3);
+        1:  131-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  131-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:  131-block  2
+call    5 never executed
+        1:  131-block  3
+        -:  132:
+        -:  133:    try{
+       7*:  134:        carte book_found { srv.search_for_book("d", "s", "k", 1700) };
+        1:  134-block  0
+        1:  134-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  134-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  134-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  134-block  4
+call    9 returned 1
+branch 10 taken 0 (fallthrough)
+branch 11 taken 1 (throw)
+    %%%%%:  134-block  5
+call   12 never executed
+branch 13 never executed (fallthrough)
+branch 14 never executed (throw)
+    %%%%%:  134-block  6
+call   15 never executed
+    %%%%%:  134-block  7
+call   16 never executed
+    %%%%%:  134-block  8
+call   17 never executed
+        1:  134-block  9
+call   18 returned 1
+        1:  134-block 10
+        1:  134-block 11
+        1:  134-block 12
+call   19 returned 1
+        1:  134-block 13
+        1:  134-block 14
+        1:  134-block 15
+call   20 returned 1
+        1:  134-block 16
+        1:  134-block 17
+        1:  134-block 18
+    #####:  135:        assert(false);
+    %%%%%:  135-block  0
+call    0 never executed
+    =====:  136:    }
+    $$$$$:  136-block  0
+call    0 never executed
+        1:  137:    catch(std::exception){
+        1:  137-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  137-block  1
+call    2 returned 1
+call    3 returned 1
+        -:  138:        assert(true);
+        1:  139:    }
+call    0 returned 1
+call    1 returned 1
+        -:  140:
+        -:  141:    // testez cu get_reference_from_vector_srv
+        1:  142:    my_vector<carte> books_vec { srv.get_reference_from_vector_srv() };
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  143:    assert(books_vec.size() == 4);
+        1:  143-block  0
 call    0 returned 1
 branch  1 taken 0 (fallthrough)
 branch  2 taken 1
-    %%%%%:  126-block  1
+    $$$$$:  143-block  1
 call    3 never executed
-        1:  126-block  2
-        1:  127:}
-        1:  127-block  0
+        1:  143-block  2
+        1:  144:}
+        1:  144-block  0
 call    0 returned 1
 call    1 returned 1
-    $$$$$:  127-block  1
-call    2 never executed
-    $$$$$:  127-block  2
+call    2 returned 1
+    $$$$$:  144-block  1
 call    3 never executed
+    $$$$$:  144-block  2
+call    4 never executed
+    $$$$$:  144-block  3
+call    5 never executed
+        -:  145:
+function _ZN12test_service11test_filterEv called 1 returned 100% blocks executed 53%
+        1:  146:void test_service::test_filter() {
+        1:  147:    repo books_repo;
+        1:  147-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  148:    validator_carte validator;
+        1:  149:    service_biblioteca srv(books_repo, validator);
+        1:  149-block  0
+call    0 returned 1
+        -:  150:
+        6:  151:    srv.add_book_srv("Luis", "Jupanii", "Epic", 1842);
+        1:  151-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  151-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  151-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  151-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  151-block  4
+call   12 returned 1
+        1:  151-block  5
+call   13 returned 1
+        1:  151-block  6
+call   14 returned 1
+    $$$$$:  151-block  7
+call   15 never executed
+    $$$$$:  151-block  8
+    $$$$$:  151-block  9
+    $$$$$:  151-block 10
+call   16 never executed
+    $$$$$:  151-block 11
+    $$$$$:  151-block 12
+    $$$$$:  151-block 13
+call   17 never executed
+    $$$$$:  151-block 14
+    $$$$$:  151-block 15
+    $$$$$:  151-block 16
+        6:  152:    srv.add_book_srv("Kong", "Maria", "Liric", 1940);
+        1:  152-block  0
+        1:  152-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  152-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  152-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  152-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  152-block  5
+call   12 returned 1
+        1:  152-block  6
+call   13 returned 1
+        1:  152-block  7
+call   14 returned 1
+    $$$$$:  152-block  8
+call   15 never executed
+    $$$$$:  152-block  9
+    $$$$$:  152-block 10
+    $$$$$:  152-block 11
+call   16 never executed
+    $$$$$:  152-block 12
+    $$$$$:  152-block 13
+    $$$$$:  152-block 14
+call   17 never executed
+    $$$$$:  152-block 15
+    $$$$$:  152-block 16
+    $$$$$:  152-block 17
+        6:  153:    srv.add_book_srv("I.L.C", "O scrisoare pierduta", "Dramatic", 2000);
+        1:  153-block  0
+        1:  153-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  153-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  153-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  153-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  153-block  5
+call   12 returned 1
+        1:  153-block  6
+call   13 returned 1
+        1:  153-block  7
+call   14 returned 1
+    $$$$$:  153-block  8
+call   15 never executed
+    $$$$$:  153-block  9
+    $$$$$:  153-block 10
+    $$$$$:  153-block 11
+call   16 never executed
+    $$$$$:  153-block 12
+    $$$$$:  153-block 13
+    $$$$$:  153-block 14
+call   17 never executed
+    $$$$$:  153-block 15
+    $$$$$:  153-block 16
+    $$$$$:  153-block 17
+        7:  154:    srv.add_book_srv("Mihai Eminescu", "Luceafar", "Liric", 1883);
+        1:  154-block  0
+        1:  154-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  154-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  154-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  154-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  154-block  5
+call   12 returned 1
+        1:  154-block  6
+call   13 returned 1
+        1:  154-block  7
+call   14 returned 1
+        1:  154-block  8
+    $$$$$:  154-block  9
+call   15 never executed
+    $$$$$:  154-block 10
+    $$$$$:  154-block 11
+    $$$$$:  154-block 12
+call   16 never executed
+    $$$$$:  154-block 13
+    $$$$$:  154-block 14
+    $$$$$:  154-block 15
+call   17 never executed
+    $$$$$:  154-block 16
+    $$$$$:  154-block 17
+    $$$$$:  154-block 18
+        -:  155:
+        1:  156:    my_vector<carte> vec_carti{ srv.filter_srv(2000, "Maria") };
+        1:  156-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  156-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  156-block  2
+call    6 returned 1
+    $$$$$:  156-block  3
+call    7 never executed
+    $$$$$:  156-block  4
+    $$$$$:  156-block  5
+       1*:  157:    assert(vec_carti.size() == 2);
+        1:  157-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  157-block  1
+call    3 never executed
+        1:  157-block  2
+        -:  158:
+       1*:  159:    assert(vec_carti[0].get_book_id() == 1);
+        1:  159-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  159-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  159-block  2
+call    6 never executed
+        1:  159-block  3
+       1*:  160:    assert(vec_carti[0].get_genre() == "Liric");
+        1:  160-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  160-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  160-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  160-block  3
+call    9 never executed
+        1:  160-block  4
+        1:  160-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:  160-block  6
+call   12 returned 1
+    $$$$$:  160-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:  160-block  8
+call   15 never executed
+    $$$$$:  160-block  9
+       1*:  161:    assert(vec_carti[0].get_publication_year() == 1940);
+        1:  161-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  161-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  161-block  2
+call    6 never executed
+        1:  161-block  3
+       1*:  162:    assert(vec_carti[0].get_author() == "Kong");
+        1:  162-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  162-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  162-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  162-block  3
+call    9 never executed
+        1:  162-block  4
+        1:  162-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:  162-block  6
+call   12 returned 1
+    $$$$$:  162-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:  162-block  8
+call   15 never executed
+    $$$$$:  162-block  9
+       1*:  163:    assert(vec_carti[0].get_title() == "Maria");
+        1:  163-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  163-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  163-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  163-block  3
+call    9 never executed
+        1:  163-block  4
+        1:  163-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:  163-block  6
+call   12 returned 1
+    $$$$$:  163-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:  163-block  8
+call   15 never executed
+    $$$$$:  163-block  9
+        -:  164:
+       1*:  165:    assert(vec_carti[1].get_book_id() == 2);
+        1:  165-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  165-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  165-block  2
+call    6 never executed
+        1:  165-block  3
+       1*:  166:    assert(vec_carti[1].get_genre() == "Dramatic");
+        1:  166-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  166-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  166-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  166-block  3
+call    9 never executed
+        1:  166-block  4
+        1:  166-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:  166-block  6
+call   12 returned 1
+    $$$$$:  166-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:  166-block  8
+call   15 never executed
+    $$$$$:  166-block  9
+       1*:  167:    assert(vec_carti[1].get_publication_year() == 2000);
+        1:  167-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  167-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  167-block  2
+call    6 never executed
+        1:  167-block  3
+       1*:  168:    assert(vec_carti[1].get_author() == "I.L.C");
+        1:  168-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  168-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  168-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  168-block  3
+call    9 never executed
+        1:  168-block  4
+        1:  168-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:  168-block  6
+call   12 returned 1
+    $$$$$:  168-block  7
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:  168-block  8
+call   15 never executed
+    $$$$$:  168-block  9
+       1*:  169:    assert(vec_carti[1].get_title() == "O scrisoare pierduta");
+        1:  169-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  169-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  169-block  2
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  169-block  3
+call    9 never executed
+        1:  169-block  4
+        1:  169-block  5
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0
+        1:  169-block  6
+call   12 returned 1
+        1:  169-block  7
+    $$$$$:  169-block  8
+branch 13 never executed (fallthrough)
+branch 14 never executed
+    $$$$$:  169-block  9
+call   15 never executed
+    $$$$$:  169-block 10
+        -:  170:
+        1:  171:    my_vector<carte> vec_carti_2{ srv.filter_srv(1941, "Corola de minini a lumii") };
+        1:  171-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  171-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  171-block  2
+call    6 returned 1
+    $$$$$:  171-block  3
+call    7 never executed
+    $$$$$:  171-block  4
+    $$$$$:  171-block  5
+       1*:  172:    assert(vec_carti_2.size() == 0);
+        1:  172-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  172-block  1
+call    3 never executed
+        1:  172-block  2
+        1:  173:}
+        1:  173-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+    $$$$$:  173-block  1
+call    3 never executed
+    $$$$$:  173-block  2
+call    4 never executed
+    $$$$$:  173-block  3
+call    5 never executed
+        -:  174:
+function _ZN12test_service9test_sortEv called 1 returned 100% blocks executed 57%
+        1:  175:void test_service::test_sort() {
+        1:  176:    repo books_repo;
+        1:  176-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  177:    validator_carte validator;
+        1:  178:    service_biblioteca srv(books_repo, validator);
+        1:  178-block  0
+call    0 returned 1
+        -:  179:
+        6:  180:    srv.add_book_srv("Luis", "Jupanii", "Epic", 1842);
+        1:  180-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  180-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  180-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  180-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  180-block  4
+call   12 returned 1
+        1:  180-block  5
+call   13 returned 1
+        1:  180-block  6
+call   14 returned 1
+    $$$$$:  180-block  7
+call   15 never executed
+    $$$$$:  180-block  8
+    $$$$$:  180-block  9
+    $$$$$:  180-block 10
+call   16 never executed
+    $$$$$:  180-block 11
+    $$$$$:  180-block 12
+    $$$$$:  180-block 13
+call   17 never executed
+    $$$$$:  180-block 14
+    $$$$$:  180-block 15
+    $$$$$:  180-block 16
+        6:  181:    srv.add_book_srv("Kong", "Maria", "Liric", 2000);
+        1:  181-block  0
+        1:  181-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  181-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  181-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  181-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  181-block  5
+call   12 returned 1
+        1:  181-block  6
+call   13 returned 1
+        1:  181-block  7
+call   14 returned 1
+    $$$$$:  181-block  8
+call   15 never executed
+    $$$$$:  181-block  9
+    $$$$$:  181-block 10
+    $$$$$:  181-block 11
+call   16 never executed
+    $$$$$:  181-block 12
+    $$$$$:  181-block 13
+    $$$$$:  181-block 14
+call   17 never executed
+    $$$$$:  181-block 15
+    $$$$$:  181-block 16
+    $$$$$:  181-block 17
+        6:  182:    srv.add_book_srv("I.L.C", "O scrisoare pierduta", "Dramatic", 2000);
+        1:  182-block  0
+        1:  182-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  182-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  182-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  182-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  182-block  5
+call   12 returned 1
+        1:  182-block  6
+call   13 returned 1
+        1:  182-block  7
+call   14 returned 1
+    $$$$$:  182-block  8
+call   15 never executed
+    $$$$$:  182-block  9
+    $$$$$:  182-block 10
+    $$$$$:  182-block 11
+call   16 never executed
+    $$$$$:  182-block 12
+    $$$$$:  182-block 13
+    $$$$$:  182-block 14
+call   17 never executed
+    $$$$$:  182-block 15
+    $$$$$:  182-block 16
+    $$$$$:  182-block 17
+        6:  183:    srv.add_book_srv("Mihai Eminescu", "Luceafar", "Liric", 1883);
+        1:  183-block  0
+        1:  183-block  1
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  183-block  2
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  183-block  3
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  183-block  4
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  183-block  5
+call   12 returned 1
+        1:  183-block  6
+call   13 returned 1
+        1:  183-block  7
+call   14 returned 1
+    $$$$$:  183-block  8
+call   15 never executed
+    $$$$$:  183-block  9
+    $$$$$:  183-block 10
+    $$$$$:  183-block 11
+call   16 never executed
+    $$$$$:  183-block 12
+    $$$$$:  183-block 13
+    $$$$$:  183-block 14
+call   17 never executed
+    $$$$$:  183-block 15
+    $$$$$:  183-block 16
+    $$$$$:  183-block 17
+        -:  184:
+        1:  185:    my_vector<carte> books_vec{ srv.sorter_based_on_option(1) };
+        1:  185-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  186:
+       1*:  187:    assert(books_vec.size() == 4);
+        1:  187-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  187-block  1
+call    3 never executed
+        1:  187-block  2
+       1*:  188:    assert(books_vec[0].get_book_id() == 0);
+        1:  188-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  188-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  188-block  2
+call    6 never executed
+        1:  188-block  3
+       1*:  189:    assert(books_vec[1].get_book_id() == 3);
+        1:  189-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  189-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  189-block  2
+call    6 never executed
+        1:  189-block  3
+       1*:  190:    assert(books_vec[2].get_book_id() == 1);
+        1:  190-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  190-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  190-block  2
+call    6 never executed
+        1:  190-block  3
+       1*:  191:    assert(books_vec[3].get_book_id() == 2);
+        1:  191-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  191-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  191-block  2
+call    6 never executed
+        1:  191-block  3
+        -:  192:
+        1:  193:    my_vector<carte> books_vec_2{ srv.sorter_based_on_option(2) };
+        1:  193-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  194:
+       1*:  195:    assert(books_vec_2.size() == 4);
+        1:  195-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  195-block  1
+call    3 never executed
+        1:  195-block  2
+       1*:  196:    assert(books_vec_2[0].get_book_id() == 2);
+        1:  196-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  196-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  196-block  2
+call    6 never executed
+        1:  196-block  3
+       1*:  197:    assert(books_vec_2[1].get_book_id() == 1);
+        1:  197-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  197-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  197-block  2
+call    6 never executed
+        1:  197-block  3
+       1*:  198:    assert(books_vec_2[2].get_book_id() == 0);
+        1:  198-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  198-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  198-block  2
+call    6 never executed
+        1:  198-block  3
+       1*:  199:    assert(books_vec_2[3].get_book_id() == 3);
+        1:  199-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  199-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  199-block  2
+call    6 never executed
+        1:  199-block  3
+        -:  200:
+        1:  201:    my_vector<carte> books_vec_3{ srv.sorter_based_on_option(3) };
+        1:  201-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  202:
+       1*:  203:    assert(books_vec_3.size() == 4);
+        1:  203-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  203-block  1
+call    3 never executed
+        1:  203-block  2
+       1*:  204:    assert(books_vec_3[0].get_book_id() == 0);
+        1:  204-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  204-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  204-block  2
+call    6 never executed
+        1:  204-block  3
+       1*:  205:    assert(books_vec_3[1].get_book_id() == 3);
+        1:  205-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  205-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  205-block  2
+call    6 never executed
+        1:  205-block  3
+       1*:  206:    assert(books_vec_3[2].get_book_id() == 2);
+        1:  206-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  206-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  206-block  2
+call    6 never executed
+        1:  206-block  3
+       1*:  207:    assert(books_vec_3[3].get_book_id() == 1);
+        1:  207-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  207-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  207-block  2
+call    6 never executed
+        1:  207-block  3
+        -:  208:
+        1:  209:    srv.delete_book_srv(1);
+        1:  209-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  209-block  1
+        1:  210:    srv.delete_book_srv(2);
+        1:  210-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  210-block  1
+        1:  211:    srv.delete_book_srv(0);
+        1:  211-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  211-block  1
+        1:  212:    srv.delete_book_srv(3);
+        1:  212-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:  212-block  1
+        -:  213:
+        1:  214:    my_vector<carte> books_vec_4{ srv.sorter_based_on_option(3) };
+        1:  214-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  215:
+       1*:  216:    assert(books_vec_4.size() == 0);
+        1:  216-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  216-block  1
+call    3 never executed
+        1:  216-block  2
+        1:  217:}
+        1:  217-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+    $$$$$:  217-block  1
+call    5 never executed
+    $$$$$:  217-block  2
+call    6 never executed
+    $$$$$:  217-block  3
+call    7 never executed
+    $$$$$:  217-block  4
+call    8 never executed
+    $$$$$:  217-block  5
+call    9 never executed

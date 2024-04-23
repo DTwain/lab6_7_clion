@@ -22,4 +22,5 @@ add_executable(lab6_7_clion main.cpp
         teste/test_validator.cpp
         teste/test_service.cpp
         Headers/my_vector.h
+        Headers/vector_iterator.h
 )

@@ -1,6 +1,6 @@
-        -:    0:Source:D:/Aplicatii/CLion 2024.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h
-        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_domain.cpp.gcno
-        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_domain.cpp.gcda
+        -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_domain.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_domain.cpp.gcda
         -:    0:Runs:1
         -:    1:// Allocator that wraps operator new -*- C++ -*-
         -:    2:
@@ -89,7 +89,7 @@
         -:   85:
         -:   86:      __attribute__((__always_inline__))
         -:   87:      _GLIBCXX20_CONSTEXPR
-       15:   88:      __new_allocator() _GLIBCXX_USE_NOEXCEPT { }
+       21:   88:      __new_allocator() _GLIBCXX_USE_NOEXCEPT { }
         1:   88-block  0
         1:   88-block  1
         1:   88-block  2
@@ -105,6 +105,12 @@
         1:   88-block 12
         1:   88-block 13
         1:   88-block 14
+        1:   88-block 15
+        1:   88-block 16
+        1:   88-block 17
+        1:   88-block 18
+        1:   88-block 19
+        1:   88-block 20
         -:   89:
         -:   90:      __attribute__((__always_inline__))
         -:   91:      _GLIBCXX20_CONSTEXPR

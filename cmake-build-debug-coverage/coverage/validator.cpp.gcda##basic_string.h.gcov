@@ -1,6 +1,6 @@
-        -:    0:Source:D:/Aplicatii/CLion 2024.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.h
-        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcno
-        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcda
+        -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.h
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcda
         -:    0:Runs:1
         -:    1:// Components for manipulating sequences of characters -*- C++ -*-
         -:    2:
@@ -1101,13 +1101,13 @@ call    1 never executed
         -:  951:       */
         -:  952:      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
         -:  953:      iterator
-function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5beginEv called 18 returned 100% blocks executed 100%
-       18:  954:      begin() _GLIBCXX_NOEXCEPT
-       18:  955:      { return iterator(_M_data()); }
-       18:  955-block  0
-call    0 returned 18
-call    1 returned 18
-       18:  955-block  1
+function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5beginEv called 28 returned 100% blocks executed 100%
+       28:  954:      begin() _GLIBCXX_NOEXCEPT
+       28:  955:      { return iterator(_M_data()); }
+       28:  955-block  0
+call    0 returned 28
+call    1 returned 28
+       28:  955-block  1
         -:  956:
         -:  957:      /**
         -:  958:       *  Returns a read-only (constant) iterator that points to the first
@@ -1124,14 +1124,14 @@ call    1 returned 18
         -:  969:       */
         -:  970:      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
         -:  971:      iterator
-function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE3endEv called 18 returned 100% blocks executed 100%
-       18:  972:      end() _GLIBCXX_NOEXCEPT
-       18:  973:      { return iterator(_M_data() + this->size()); }
-       18:  973-block  0
-call    0 returned 18
-call    1 returned 18
-call    2 returned 18
-       18:  973-block  1
+function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE3endEv called 28 returned 100% blocks executed 100%
+       28:  972:      end() _GLIBCXX_NOEXCEPT
+       28:  973:      { return iterator(_M_data() + this->size()); }
+       28:  973-block  0
+call    0 returned 28
+call    1 returned 28
+call    2 returned 28
+       28:  973-block  1
         -:  974:
         -:  975:      /**
         -:  976:       *  Returns a read-only (constant) iterator that points one past the

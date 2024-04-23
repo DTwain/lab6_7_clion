@@ -1,6 +1,6 @@
-        -:    0:Source:D:/Aplicatii/CLion 2024.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h
-        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcno
-        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcda
+        -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcda
         -:    0:Runs:1
         -:    1:// Core algorithmic facilities -*- C++ -*-
         -:    2:
@@ -234,20 +234,20 @@
         -:  230:  template<typename _Tp>
         -:  231:    _GLIBCXX14_CONSTEXPR
         -:  232:    inline const _Tp&
-function _ZSt3minIyERKT_S2_S2_ called 66 returned 100% blocks executed 75%
-       66:  233:    min(const _Tp& __a, const _Tp& __b)
+function _ZSt3minIyERKT_S2_S2_ called 30 returned 100% blocks executed 100%
+       30:  233:    min(const _Tp& __a, const _Tp& __b)
         -:  234:    {
         -:  235:      // concept requirements
         -:  236:      __glibcxx_function_requires(_LessThanComparableConcept<_Tp>)
         -:  237:      //return __b < __a ? __b : __a;
-       66:  238:      if (__b < __a)
-       66:  238-block  0
-branch  0 taken 0 (fallthrough)
-branch  1 taken 66
-    #####:  239:	return __b;
-    %%%%%:  239-block  0
-       66:  240:      return __a;
-       66:  240-block  0
+       30:  238:      if (__b < __a)
+       30:  238-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 28
+        2:  239:	return __b;
+        2:  239-block  0
+       28:  240:      return __a;
+       28:  240-block  0
         -:  241:    }
         -:  242:
         -:  243:  /**
@@ -264,20 +264,14 @@ branch  1 taken 66
         -:  254:  template<typename _Tp>
         -:  255:    _GLIBCXX14_CONSTEXPR
         -:  256:    inline const _Tp&
-function _ZSt3maxIyERKT_S2_S2_ called 33 returned 100% blocks executed 100%
-       33:  257:    max(const _Tp& __a, const _Tp& __b)
+        -:  257:    max(const _Tp& __a, const _Tp& __b)
         -:  258:    {
         -:  259:      // concept requirements
         -:  260:      __glibcxx_function_requires(_LessThanComparableConcept<_Tp>)
         -:  261:      //return  __a < __b ? __b : __a;
-       33:  262:      if (__a < __b)
-       33:  262-block  0
-branch  0 taken 19 (fallthrough)
-branch  1 taken 14
-       19:  263:	return __b;
-       19:  263-block  0
-       14:  264:      return __a;
-       14:  264-block  0
+        -:  262:      if (__a < __b)
+        -:  263:	return __b;
+        -:  264:      return __a;
         -:  265:    }
         -:  266:
         -:  267:  /**
@@ -329,11 +323,9 @@ branch  1 taken 14
         -:  313:  template<typename _Iterator>
         -:  314:    _GLIBCXX20_CONSTEXPR
         -:  315:    inline _Iterator
-function _ZSt12__niter_baseIP5carteET_S2_ called 150 returned 100% blocks executed 100%
-      150:  316:    __niter_base(_Iterator __it)
+        -:  316:    __niter_base(_Iterator __it)
         -:  317:    _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
-      150:  318:    { return __it; }
-      150:  318-block  0
+        -:  318:    { return __it; }
         -:  319:
         -:  320:  template<typename _Ite, typename _Seq>
         -:  321:    _Ite
@@ -346,12 +338,8 @@ function _ZSt12__niter_baseIP5carteET_S2_ called 150 returned 100% blocks execut
         -:  328:  template<typename _From, typename _To>
         -:  329:    _GLIBCXX20_CONSTEXPR
         -:  330:    inline _From
-function _ZSt12__niter_wrapIN9__gnu_cxx17__normal_iteratorIP5carteSt6vectorIS2_SaIS2_EEEES3_ET_S8_T0_ called 0 returned 0% blocks executed 0%
-    #####:  331:    __niter_wrap(_From __from, _To __res)
-    #####:  332:    { return __from + (__res - std::__niter_base(__from)); }
-    %%%%%:  332-block  0
-call    0 never executed
-call    1 never executed
+        -:  331:    __niter_wrap(_From __from, _To __res)
+        -:  332:    { return __from + (__res - std::__niter_base(__from)); }
         -:  333:
         -:  334:  // No need to wrap, iterator already has the right type.
         -:  335:  template<typename _Iterator>
@@ -427,25 +415,16 @@ call    1 never executed
         -:  405:      template<typename _II, typename _OI>
         -:  406:	_GLIBCXX20_CONSTEXPR
         -:  407:	static _OI
-function _ZNSt11__copy_moveILb1ELb0ESt26random_access_iterator_tagE8__copy_mIP5carteS4_EET0_T_S6_S5_ called 0 returned 0% blocks executed 0%
-    #####:  408:	__copy_m(_II __first, _II __last, _OI __result)
+        -:  408:	__copy_m(_II __first, _II __last, _OI __result)
         -:  409:	{
         -:  410:	  typedef typename iterator_traits<_II>::difference_type _Distance;
-    #####:  411:	  for(_Distance __n = __last - __first; __n > 0; --__n)
-    %%%%%:  411-block  0
-    %%%%%:  411-block  1
-branch  0 never executed
-branch  1 never executed (fallthrough)
+        -:  411:	  for(_Distance __n = __last - __first; __n > 0; --__n)
         -:  412:	    {
-    #####:  413:	      *__result = std::move(*__first);
-    %%%%%:  413-block  0
-call    0 never executed
-call    1 never executed
-    #####:  414:	      ++__first;
-    #####:  415:	      ++__result;
+        -:  413:	      *__result = std::move(*__first);
+        -:  414:	      ++__first;
+        -:  415:	      ++__result;
         -:  416:	    }
-    #####:  417:	  return __result;
-    %%%%%:  417-block  0
+        -:  417:	  return __result;
         -:  418:	}
         -:  419:
         -:  420:      template<typename _Tp, typename _Up>
@@ -525,25 +504,16 @@ call    1 never executed
         -:  494:  template<bool _IsMove, typename _II, typename _OI>
         -:  495:    _GLIBCXX20_CONSTEXPR
         -:  496:    inline _OI
-function _ZSt14__copy_move_a2ILb1EP5carteS1_ET1_T0_S3_S2_ called 0 returned 0% blocks executed 0%
-    #####:  497:    __copy_move_a2(_II __first, _II __last, _OI __result)
+        -:  497:    __copy_move_a2(_II __first, _II __last, _OI __result)
         -:  498:    {
         -:  499:      typedef typename iterator_traits<_II>::iterator_category _Category;
         -:  500:#ifdef __cpp_lib_is_constant_evaluated
-    #####:  501:      if (std::is_constant_evaluated())
-    %%%%%:  501-block  0
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed
+        -:  501:      if (std::is_constant_evaluated())
         -:  502:	return std::__copy_move<_IsMove, false, _Category>::
-    #####:  503:	  __copy_m(__first, __last, __result);
-    %%%%%:  503-block  0
-call    0 never executed
+        -:  503:	  __copy_m(__first, __last, __result);
         -:  504:#endif
         -:  505:      return std::__copy_move<_IsMove, __memcpyable<_OI, _II>::__value,
-    #####:  506:			      _Category>::__copy_m(__first, __last, __result);
-    %%%%%:  506-block  0
-call    0 never executed
+        -:  506:			      _Category>::__copy_m(__first, __last, __result);
         -:  507:    }
         -:  508:
         -:  509:  template<bool _IsMove,
@@ -569,28 +539,18 @@ call    0 never executed
         -:  529:  template<bool _IsMove, typename _II, typename _OI>
         -:  530:    _GLIBCXX20_CONSTEXPR
         -:  531:    inline _OI
-function _ZSt14__copy_move_a1ILb1EP5carteS1_ET1_T0_S3_S2_ called 0 returned 0% blocks executed 0%
-    #####:  532:    __copy_move_a1(_II __first, _II __last, _OI __result)
-    #####:  533:    { return std::__copy_move_a2<_IsMove>(__first, __last, __result); }
-    %%%%%:  533-block  0
-call    0 never executed
+        -:  532:    __copy_move_a1(_II __first, _II __last, _OI __result)
+        -:  533:    { return std::__copy_move_a2<_IsMove>(__first, __last, __result); }
         -:  534:
         -:  535:  template<bool _IsMove, typename _II, typename _OI>
         -:  536:    _GLIBCXX20_CONSTEXPR
         -:  537:    inline _OI
-function _ZSt13__copy_move_aILb1EN9__gnu_cxx17__normal_iteratorIP5carteSt6vectorIS2_SaIS2_EEEES7_ET1_T0_S9_S8_ called 0 returned 0% blocks executed 0%
-    #####:  538:    __copy_move_a(_II __first, _II __last, _OI __result)
+        -:  538:    __copy_move_a(_II __first, _II __last, _OI __result)
         -:  539:    {
-    #####:  540:      return std::__niter_wrap(__result,
-    %%%%%:  540-block  0
-call    0 never executed
-call    1 never executed
-call    2 never executed
-call    3 never executed
-call    4 never executed
+        -:  540:      return std::__niter_wrap(__result,
         -:  541:		std::__copy_move_a1<_IsMove>(std::__niter_base(__first),
         -:  542:					     std::__niter_base(__last),
-    #####:  543:					     std::__niter_base(__result)));
+        -:  543:					     std::__niter_base(__result)));
         -:  544:    }
         -:  545:
         -:  546:  template<bool _IsMove,
@@ -704,8 +664,7 @@ call    4 never executed
         -:  654:  template<typename _II, typename _OI>
         -:  655:    _GLIBCXX20_CONSTEXPR
         -:  656:    inline _OI
-function _ZSt4moveIN9__gnu_cxx17__normal_iteratorIP5carteSt6vectorIS2_SaIS2_EEEES7_ET0_T_S9_S8_ called 0 returned 0% blocks executed 0%
-    #####:  657:    move(_II __first, _II __last, _OI __result)
+        -:  657:    move(_II __first, _II __last, _OI __result)
         -:  658:    {
         -:  659:      // concept requirements
         -:  660:      __glibcxx_function_requires(_InputIteratorConcept<_II>)
@@ -713,12 +672,8 @@ function _ZSt4moveIN9__gnu_cxx17__normal_iteratorIP5carteSt6vectorIS2_SaIS2_EEEE
         -:  662:	    typename iterator_traits<_II>::value_type&&>)
         -:  663:      __glibcxx_requires_can_increment_range(__first, __last, __result);
         -:  664:
-    #####:  665:      return std::__copy_move_a<true>(std::__miter_base(__first),
-    %%%%%:  665-block  0
-call    0 never executed
-call    1 never executed
-call    2 never executed
-    #####:  666:				      std::__miter_base(__last), __result);
+        -:  665:      return std::__copy_move_a<true>(std::__miter_base(__first),
+        -:  666:				      std::__miter_base(__last), __result);
         -:  667:    }
         -:  668:
         -:  669:#define _GLIBCXX_MOVE3(_Tp, _Up, _Vp) std::move(_Tp, _Up, _Vp)
@@ -2116,124 +2071,61 @@ call    2 never executed
         -: 2061:  template<typename _RandomAccessIterator, typename _Predicate>
         -: 2062:    _GLIBCXX20_CONSTEXPR
         -: 2063:    _RandomAccessIterator
-function _ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIP5carteSt6vectorIS2_SaIS2_EEEENS0_5__ops10_Iter_predIZN4repo11delete_bookERKiEUlRKS2_E_EEET_SH_SH_T0_St26random_access_iterator_tag called 2 returned 100% blocks executed 25%
-        2: 2064:    __find_if(_RandomAccessIterator __first, _RandomAccessIterator __last,
+        -: 2064:    __find_if(_RandomAccessIterator __first, _RandomAccessIterator __last,
         -: 2065:	      _Predicate __pred, random_access_iterator_tag)
         -: 2066:    {
         -: 2067:      typename iterator_traits<_RandomAccessIterator>::difference_type
-        2: 2068:	__trip_count = (__last - __first) >> 2;
-        2: 2068-block  0
-call    0 returned 2
+        -: 2068:	__trip_count = (__last - __first) >> 2;
         -: 2069:
-       2*: 2070:      for (; __trip_count > 0; --__trip_count)
-        2: 2070-block  0
-branch  0 taken 0
-branch  1 taken 2 (fallthrough)
+        -: 2070:      for (; __trip_count > 0; --__trip_count)
         -: 2071:	{
-    #####: 2072:	  if (__pred(__first))
-    %%%%%: 2072-block  0
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed
-    #####: 2073:	    return __first;
-    %%%%%: 2073-block  0
-    #####: 2074:	  ++__first;
-    %%%%%: 2074-block  0
-call    0 never executed
+        -: 2072:	  if (__pred(__first))
+        -: 2073:	    return __first;
+        -: 2074:	  ++__first;
         -: 2075:
-    #####: 2076:	  if (__pred(__first))
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed
-    #####: 2077:	    return __first;
-    %%%%%: 2077-block  0
-    #####: 2078:	  ++__first;
-    %%%%%: 2078-block  0
-call    0 never executed
+        -: 2076:	  if (__pred(__first))
+        -: 2077:	    return __first;
+        -: 2078:	  ++__first;
         -: 2079:
-    #####: 2080:	  if (__pred(__first))
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed
-    #####: 2081:	    return __first;
-    %%%%%: 2081-block  0
-    #####: 2082:	  ++__first;
-    %%%%%: 2082-block  0
-call    0 never executed
+        -: 2080:	  if (__pred(__first))
+        -: 2081:	    return __first;
+        -: 2082:	  ++__first;
         -: 2083:
-    #####: 2084:	  if (__pred(__first))
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed
-    #####: 2085:	    return __first;
-    %%%%%: 2085-block  0
-    #####: 2086:	  ++__first;
-    %%%%%: 2086-block  0
-call    0 never executed
+        -: 2084:	  if (__pred(__first))
+        -: 2085:	    return __first;
+        -: 2086:	  ++__first;
         -: 2087:	}
         -: 2088:
-        2: 2089:      switch (__last - __first)
-        2: 2089-block  0
-call    0 returned 2
-branch  1 taken 0
-branch  2 taken 2
-branch  3 taken 0
-branch  4 taken 0
+        -: 2089:      switch (__last - __first)
         -: 2090:	{
-    #####: 2091:	case 3:
-    #####: 2092:	  if (__pred(__first))
-    %%%%%: 2092-block  0
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed
-    #####: 2093:	    return __first;
-    %%%%%: 2093-block  0
-    #####: 2094:	  ++__first;
-    %%%%%: 2094-block  0
-call    0 never executed
+        -: 2091:	case 3:
+        -: 2092:	  if (__pred(__first))
+        -: 2093:	    return __first;
+        -: 2094:	  ++__first;
         -: 2095:	  // FALLTHRU
-        2: 2096:	case 2:
-        2: 2097:	  if (__pred(__first))
-        2: 2097-block  0
-call    0 returned 2
-branch  1 taken 2 (fallthrough)
-branch  2 taken 0
-        2: 2098:	    return __first;
-        2: 2098-block  0
-    #####: 2099:	  ++__first;
-    %%%%%: 2099-block  0
-call    0 never executed
+        -: 2096:	case 2:
+        -: 2097:	  if (__pred(__first))
+        -: 2098:	    return __first;
+        -: 2099:	  ++__first;
         -: 2100:	  // FALLTHRU
-    #####: 2101:	case 1:
-    #####: 2102:	  if (__pred(__first))
-    %%%%%: 2102-block  0
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed
-    #####: 2103:	    return __first;
-    %%%%%: 2103-block  0
-    #####: 2104:	  ++__first;
-    %%%%%: 2104-block  0
-call    0 never executed
+        -: 2101:	case 1:
+        -: 2102:	  if (__pred(__first))
+        -: 2103:	    return __first;
+        -: 2104:	  ++__first;
         -: 2105:	  // FALLTHRU
-    #####: 2106:	case 0:
+        -: 2106:	case 0:
         -: 2107:	default:
-    #####: 2108:	  return __last;
-    %%%%%: 2108-block  0
+        -: 2108:	  return __last;
         -: 2109:	}
         -: 2110:    }
         -: 2111:
         -: 2112:  template<typename _Iterator, typename _Predicate>
         -: 2113:    _GLIBCXX20_CONSTEXPR
         -: 2114:    inline _Iterator
-function _ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIP5carteSt6vectorIS2_SaIS2_EEEENS0_5__ops10_Iter_predIZN4repo11delete_bookERKiEUlRKS2_E_EEET_SH_SH_T0_ called 2 returned 100% blocks executed 100%
-        2: 2115:    __find_if(_Iterator __first, _Iterator __last, _Predicate __pred)
-        2: 2115-block  0
+        -: 2115:    __find_if(_Iterator __first, _Iterator __last, _Predicate __pred)
         -: 2116:    {
-        2: 2117:      return __find_if(__first, __last, __pred,
-        2: 2118:		       std::__iterator_category(__first));
-        2: 2118-block  0
-call    0 returned 2
+        -: 2117:      return __find_if(__first, __last, __pred,
+        -: 2118:		       std::__iterator_category(__first));
         -: 2119:    }
         -: 2120:
         -: 2121:  template<typename _InputIterator, typename _Predicate>
@@ -2251,53 +2143,21 @@ call    0 returned 2
         -: 2133:  template<typename _ForwardIterator, typename _Predicate>
         -: 2134:    _GLIBCXX20_CONSTEXPR
         -: 2135:    _ForwardIterator
-function _ZSt11__remove_ifIN9__gnu_cxx17__normal_iteratorIP5carteSt6vectorIS2_SaIS2_EEEENS0_5__ops10_Iter_predIZN4repo11delete_bookERKiEUlRKS2_E_EEET_SH_SH_T0_ called 2 returned 100% blocks executed 95%
-        2: 2136:    __remove_if(_ForwardIterator __first, _ForwardIterator __last,
+        -: 2136:    __remove_if(_ForwardIterator __first, _ForwardIterator __last,
         -: 2137:		_Predicate __pred)
         -: 2138:    {
-        2: 2139:      __first = std::__find_if(__first, __last, __pred);
-        2: 2139-block  0
-call    0 returned 2
-branch  1 taken 2 (fallthrough)
-branch  2 taken 0 (throw)
-        2: 2140:      if (__first == __last)
-        2: 2140-block  0
-call    0 returned 2
-branch  1 taken 0 (fallthrough)
-branch  2 taken 2
-    #####: 2141:	return __first;
-    %%%%%: 2141-block  0
-        2: 2142:      _ForwardIterator __result = __first;
-        2: 2143:      ++__first;
-        2: 2143-block  0
-call    0 returned 2
-        4: 2144:      for (; __first != __last; ++__first)
-        2: 2144-block  0
-call    0 returned 2
-        4: 2144-block  1
-call    1 returned 4
-branch  2 taken 2
-branch  3 taken 2 (fallthrough)
-        2: 2145:	if (!__pred(__first))
-        2: 2145-block  0
-call    0 returned 2
-branch  1 taken 2 (fallthrough)
-branch  2 taken 0 (throw)
-        2: 2145-block  1
-branch  3 taken 2 (fallthrough)
-branch  4 taken 0
+        -: 2139:      __first = std::__find_if(__first, __last, __pred);
+        -: 2140:      if (__first == __last)
+        -: 2141:	return __first;
+        -: 2142:      _ForwardIterator __result = __first;
+        -: 2143:      ++__first;
+        -: 2144:      for (; __first != __last; ++__first)
+        -: 2145:	if (!__pred(__first))
         -: 2146:	  {
-        2: 2147:	    *__result = _GLIBCXX_MOVE(*__first);
-        2: 2147-block  0
-call    0 returned 2
-call    1 returned 2
-call    2 returned 2
-call    3 returned 2
-        2: 2148:	    ++__result;
-call    0 returned 2
+        -: 2147:	    *__result = _GLIBCXX_MOVE(*__first);
+        -: 2148:	    ++__result;
         -: 2149:	  }
-        2: 2150:      return __result;
-        2: 2150-block  0
+        -: 2150:      return __result;
         -: 2151:    }
         -: 2152:
         -: 2153:#if __cplusplus >= 201103L

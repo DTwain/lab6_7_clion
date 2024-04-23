@@ -1,38 +1,46 @@
-        -:    0:Source:D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion/domain/carte.cpp
-        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcno
-        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcda
+        -:    0:Source:D:/INFO 2/SEM 2/OOP/lab6-7---oop/domain/carte.cpp
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcda
         -:    0:Runs:1
         -:    1:#include "../Headers/carte.h"
         -:    2:
-function _ZNK5carte10get_authorB5cxx11Ev called 23 returned 100% blocks executed 100%
-       23:    3:string carte::get_author() const {
-       23:    4:    return this->author;
-       23:    4-block  0
-call    0 returned 23
+function _ZNK5carte10get_authorB5cxx11Ev called 55 returned 100% blocks executed 100%
+       55:    3:string carte::get_author() const {
+       55:    4:    return this->author;
+       55:    4-block  0
+call    0 returned 55
         -:    5:}
         -:    6:
-function _ZNK5carte9get_genreB5cxx11Ev called 23 returned 100% blocks executed 100%
-       23:    7:string carte::get_genre()const {
-       23:    8:    return this->genre;
-       23:    8-block  0
-call    0 returned 23
+function _ZNK5carte9get_genreB5cxx11Ev called 46 returned 100% blocks executed 100%
+       46:    7:string carte::get_genre()const {
+       46:    8:    return this->genre;
+       46:    8-block  0
+call    0 returned 46
         -:    9:}
         -:   10:
-function _ZNK5carte9get_titleB5cxx11Ev called 24 returned 100% blocks executed 100%
-       24:   11:string carte::get_title() const {
-       24:   12:    return this->title;
-       24:   12-block  0
-call    0 returned 24
+function _ZNK5carte9get_titleB5cxx11Ev called 62 returned 100% blocks executed 100%
+       62:   11:string carte::get_title() const {
+       62:   12:    return this->title;
+       62:   12-block  0
+call    0 returned 62
         -:   13:}
         -:   14:
-function _ZNK5carte20get_publication_yearEv called 25 returned 100% blocks executed 100%
-       25:   15:int carte::get_publication_year() const {
-       25:   16:    return this->publication_year;
-       25:   16-block  0
+function _ZNK5carte20get_publication_yearEv called 72 returned 100% blocks executed 100%
+       72:   15:int carte::get_publication_year() const {
+       72:   16:    return this->publication_year;
+       72:   16-block  0
         -:   17:}
         -:   18:
-function _ZNK5carte11get_book_idEv called 75 returned 100% blocks executed 100%
-       75:   19:int carte::get_book_id() const {
-       75:   20:    return this->book_id;
-       75:   20-block  0
+function _ZNK5carte11get_book_idEv called 425 returned 100% blocks executed 100%
+      425:   19:int carte::get_book_id() const {
+      425:   20:    return this->book_id;
+      425:   20-block  0
         -:   21:}
+        -:   22:
+function _ZNK5carteeqERKS_ called 2 returned 100% blocks executed 100%
+        2:   23:bool carte::operator==(const carte &other) const {
+        2:   24:    return this->get_book_id() == other.get_book_id();
+        2:   24-block  0
+call    0 returned 2
+call    1 returned 2
+        -:   25:}

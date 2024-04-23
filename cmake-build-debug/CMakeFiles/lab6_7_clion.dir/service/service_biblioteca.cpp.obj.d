@@ -158,5 +158,6 @@ CMakeFiles/lab6_7_clion.dir/service/service_biblioteca.cpp.obj: \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
  D:/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/Headers/repo.h \
- D:/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/Headers/carte.h \
- D:/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/Headers/validator.h
+ D:/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/Headers/my_vector.h \
+ D:/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/Headers/validator.h \
+ D:/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/Headers/vector_iterator.h

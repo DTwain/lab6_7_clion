@@ -1,6 +1,6 @@
-        -:    0:Source:D:/Aplicatii/CLion 2024.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc
-        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_repo.cpp.gcno
-        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_repo.cpp.gcda
+        -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_repo.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_repo.cpp.gcda
         -:    0:Runs:1
         -:    1:// Components for manipulating sequences of characters -*- C++ -*-
         -:    2:
@@ -240,16 +240,16 @@ call    0 never executed
         -:  214:    template<typename _InIterator>
         -:  215:      _GLIBCXX20_CONSTEXPR
         -:  216:      void
-     125*:  217:      basic_string<_CharT, _Traits, _Alloc>::
+    #####:  217:      basic_string<_CharT, _Traits, _Alloc>::
         -:  218:      _M_construct(_InIterator __beg, _InIterator __end,
         -:  219:		   std::forward_iterator_tag)
         -:  220:      {
-     125*:  221:	size_type __dnew = static_cast<size_type>(std::distance(__beg, __end));
+    #####:  221:	size_type __dnew = static_cast<size_type>(std::distance(__beg, __end));
         -:  222:
-     125*:  223:	if (__dnew > size_type(_S_local_capacity))
+    #####:  223:	if (__dnew > size_type(_S_local_capacity))
         -:  224:	  {
-       9*:  225:	    _M_data(_M_create(__dnew, size_type(0)));
-       9*:  226:	    _M_capacity(__dnew);
+    #####:  225:	    _M_data(_M_create(__dnew, size_type(0)));
+    #####:  226:	    _M_capacity(__dnew);
         -:  227:	  }
         -:  228:	else
         -:  229:	  _M_use_local_data();
@@ -258,20 +258,20 @@ call    0 never executed
         -:  232:	struct _Guard
         -:  233:	{
         -:  234:	  _GLIBCXX20_CONSTEXPR
-     125*:  235:	  explicit _Guard(basic_string* __s) : _M_guarded(__s) { }
+    #####:  235:	  explicit _Guard(basic_string* __s) : _M_guarded(__s) { }
         -:  236:
         -:  237:	  _GLIBCXX20_CONSTEXPR
-     125*:  238:	  ~_Guard() { if (_M_guarded) _M_guarded->_M_dispose(); }
+    #####:  238:	  ~_Guard() { if (_M_guarded) _M_guarded->_M_dispose(); }
         -:  239:
         -:  240:	  basic_string* _M_guarded;
-     125*:  241:	} __guard(this);
+    #####:  241:	} __guard(this);
         -:  242:
-     125*:  243:	this->_S_copy_chars(_M_data(), __beg, __end);
+    #####:  243:	this->_S_copy_chars(_M_data(), __beg, __end);
         -:  244:
-     125*:  245:	__guard._M_guarded = 0;
+    #####:  245:	__guard._M_guarded = 0;
         -:  246:
-     125*:  247:	_M_set_length(__dnew);
-     125*:  248:      }
+    #####:  247:	_M_set_length(__dnew);
+    #####:  248:      }
 ------------------
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag:
 function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag called 0 returned 0% blocks executed 0%
@@ -326,28 +326,28 @@ call    0 never executed
 call    0 never executed
 ------------------
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag:
-function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag called 125 returned 100% blocks executed 88%
-      125:  217:      basic_string<_CharT, _Traits, _Alloc>::
-      125:  217-block  0
+function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag called 0 returned 0% blocks executed 0%
+    #####:  217:      basic_string<_CharT, _Traits, _Alloc>::
+    %%%%%:  217-block  0
         -:  218:      _M_construct(_InIterator __beg, _InIterator __end,
         -:  219:		   std::forward_iterator_tag)
         -:  220:      {
-      125:  221:	size_type __dnew = static_cast<size_type>(std::distance(__beg, __end));
+    #####:  221:	size_type __dnew = static_cast<size_type>(std::distance(__beg, __end));
         -:  222:
-      125:  223:	if (__dnew > size_type(_S_local_capacity))
-      125:  223-block  0
-branch  0 taken 9 (fallthrough)
-branch  1 taken 116
+    #####:  223:	if (__dnew > size_type(_S_local_capacity))
+    %%%%%:  223-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
         -:  224:	  {
-        9:  225:	    _M_data(_M_create(__dnew, size_type(0)));
-        9:  225-block  0
-call    0 returned 9
-branch  1 taken 9 (fallthrough)
-branch  2 taken 0 (throw)
-        9:  225-block  1
-call    3 returned 9
-        9:  226:	    _M_capacity(__dnew);
-call    0 returned 9
+    #####:  225:	    _M_data(_M_create(__dnew, size_type(0)));
+    %%%%%:  225-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  225-block  1
+call    3 never executed
+    #####:  226:	    _M_capacity(__dnew);
+call    0 never executed
         -:  227:	  }
         -:  228:	else
         -:  229:	  _M_use_local_data();
@@ -362,20 +362,20 @@ call    0 returned 9
         -:  238:	  ~_Guard() { if (_M_guarded) _M_guarded->_M_dispose(); }
         -:  239:
         -:  240:	  basic_string* _M_guarded;
-      125:  241:	} __guard(this);
-      125:  241-block  0
-call    0 returned 125
+    #####:  241:	} __guard(this);
+    %%%%%:  241-block  0
+call    0 never executed
         -:  242:
-      125:  243:	this->_S_copy_chars(_M_data(), __beg, __end);
-call    0 returned 125
-call    1 returned 125
+    #####:  243:	this->_S_copy_chars(_M_data(), __beg, __end);
+call    0 never executed
+call    1 never executed
         -:  244:
-      125:  245:	__guard._M_guarded = 0;
+    #####:  245:	__guard._M_guarded = 0;
         -:  246:
-      125:  247:	_M_set_length(__dnew);
-call    0 returned 125
-      125:  248:      }
-call    0 returned 125
+    #####:  247:	_M_set_length(__dnew);
+call    0 never executed
+    #####:  248:      }
+call    0 never executed
 ------------------
         -:  249:
         -:  250:  template<typename _CharT, typename _Traits, typename _Alloc>
@@ -401,29 +401,60 @@ call    0 returned 125
         -:  270:  template<typename _CharT, typename _Traits, typename _Alloc>
         -:  271:    _GLIBCXX20_CONSTEXPR
         -:  272:    void
-        -:  273:    basic_string<_CharT, _Traits, _Alloc>::
+function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_assignERKS4_ called 0 returned 0% blocks executed 0%
+    #####:  273:    basic_string<_CharT, _Traits, _Alloc>::
         -:  274:    _M_assign(const basic_string& __str)
         -:  275:    {
-        -:  276:      if (this != std::__addressof(__str))
+    #####:  276:      if (this != std::__addressof(__str))
+    %%%%%:  276-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
         -:  277:	{
-        -:  278:	  const size_type __rsize = __str.length();
-        -:  279:	  const size_type __capacity = capacity();
+    #####:  278:	  const size_type __rsize = __str.length();
+    %%%%%:  278-block  0
+call    0 never executed
+    #####:  279:	  const size_type __capacity = capacity();
+call    0 never executed
         -:  280:
-        -:  281:	  if (__rsize > __capacity)
+    #####:  281:	  if (__rsize > __capacity)
+branch  0 never executed (fallthrough)
+branch  1 never executed
         -:  282:	    {
-        -:  283:	      size_type __new_capacity = __rsize;
-        -:  284:	      pointer __tmp = _M_create(__new_capacity, __capacity);
-        -:  285:	      _M_dispose();
-        -:  286:	      _M_data(__tmp);
-        -:  287:	      _M_capacity(__new_capacity);
+    #####:  283:	      size_type __new_capacity = __rsize;
+    #####:  284:	      pointer __tmp = _M_create(__new_capacity, __capacity);
+    %%%%%:  284-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  285:	      _M_dispose();
+    %%%%%:  285-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  286:	      _M_data(__tmp);
+    %%%%%:  286-block  0
+call    0 never executed
+    #####:  287:	      _M_capacity(__new_capacity);
+call    0 never executed
         -:  288:	    }
         -:  289:
-        -:  290:	  if (__rsize)
-        -:  291:	    this->_S_copy(_M_data(), __str._M_data(), __rsize);
+    #####:  290:	  if (__rsize)
+    %%%%%:  290-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  291:	    this->_S_copy(_M_data(), __str._M_data(), __rsize);
+    %%%%%:  291-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
         -:  292:
-        -:  293:	  _M_set_length(__rsize);
+    #####:  293:	  _M_set_length(__rsize);
+    %%%%%:  293-block  0
+call    0 never executed
         -:  294:	}
-        -:  295:    }
+    #####:  295:    }
+    %%%%%:  295-block  0
         -:  296:
         -:  297:  template<typename _CharT, typename _Traits, typename _Alloc>
         -:  298:    _GLIBCXX20_CONSTEXPR

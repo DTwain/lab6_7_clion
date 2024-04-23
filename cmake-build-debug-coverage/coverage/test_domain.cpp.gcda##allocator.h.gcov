@@ -1,6 +1,6 @@
-        -:    0:Source:D:/Aplicatii/CLion 2024.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h
-        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_domain.cpp.gcno
-        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_domain.cpp.gcda
+        -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_domain.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_domain.cpp.gcda
         -:    0:Runs:1
         -:    1:// Allocators -*- C++ -*-
         -:    2:
@@ -164,7 +164,7 @@
         -:  160:      // 3035. std::allocator's constructors should be constexpr
         -:  161:      __attribute__((__always_inline__))
         -:  162:      _GLIBCXX20_CONSTEXPR
-       15:  163:      allocator() _GLIBCXX_NOTHROW { }
+       21:  163:      allocator() _GLIBCXX_NOTHROW { }
         1:  163-block  0
         1:  163-block  1
         1:  163-block  2
@@ -180,6 +180,12 @@
         1:  163-block 12
         1:  163-block 13
         1:  163-block 14
+        1:  163-block 15
+        1:  163-block 16
+        1:  163-block 17
+        1:  163-block 18
+        1:  163-block 19
+        1:  163-block 20
         -:  164:
         -:  165:      __attribute__((__always_inline__))
         -:  166:      _GLIBCXX20_CONSTEXPR
@@ -203,7 +209,7 @@
         -:  181:#if __cpp_constexpr_dynamic_alloc
         -:  182:      constexpr
         -:  183:#endif
-      15*:  184:      ~allocator() _GLIBCXX_NOTHROW { }
+      21*:  184:      ~allocator() _GLIBCXX_NOTHROW { }
     $$$$$:  184-block  0
     $$$$$:  184-block  1
     $$$$$:  184-block  2
@@ -219,6 +225,12 @@
     $$$$$:  184-block 12
     $$$$$:  184-block 13
     $$$$$:  184-block 14
+    $$$$$:  184-block 15
+    $$$$$:  184-block 16
+    $$$$$:  184-block 17
+    $$$$$:  184-block 18
+    $$$$$:  184-block 19
+    $$$$$:  184-block 20
         -:  185:
         -:  186:#if __cplusplus > 201703L
         -:  187:      [[nodiscard,__gnu__::__always_inline__]]

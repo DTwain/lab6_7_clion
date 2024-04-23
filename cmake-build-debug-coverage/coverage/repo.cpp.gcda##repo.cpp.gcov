@@ -1,317 +1,457 @@
-        -:    0:Source:D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion/repository/repo.cpp
-        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcno
-        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcda
+        -:    0:Source:D:/INFO 2/SEM 2/OOP/lab6-7---oop/repository/repo.cpp
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcda
         -:    0:Runs:1
         -:    1://
         -:    2:// Created by obrej on 4/10/2024.
         -:    3://
         -:    4:
         -:    5:#include "../Headers/repo.h"
-        -:    6:#include <sstream>
-        -:    7:#include <string>
-        -:    8:#include <algorithm>
+        -:    6:#include "../Headers/vector_iterator.h"
+        -:    7:#include <sstream>
+        -:    8:#include <cstring>
         -:    9:
         -:   10:using std::string;
         -:   11:using std::ostream;
         -:   12:using std::stringstream;
         -:   13:using std::to_string;
         -:   14:
-function _ZN4repo15incrementare_idEv called 24 returned 100% blocks executed 100%
-       24:   15:void repo::incrementare_id(){
-       24:   16:    this->id += 1;
-       24:   17:}
+function _ZN4repo15incrementare_idEv called 54 returned 100% blocks executed 100%
+       54:   15:void repo::incrementare_id(){
+       54:   16:    this->id += 1;
+       54:   17:}
         -:   18:/*
         -:   19: * Returneaza un id pentru cartea pe care dorim sa o adaugam
         -:   20: * Return type: int
         -:   21: */
-function _ZNK4repo32get_id_for_next_book_to_be_addedEv called 15 returned 100% blocks executed 100%
-       15:   22:const int& repo::get_id_for_next_book_to_be_added() const {
-       15:   23:    return this->id;
-       15:   23-block  0
+function _ZNK4repo32get_id_for_next_book_to_be_addedEv called 25 returned 100% blocks executed 100%
+       25:   22:const int& repo::get_id_for_next_book_to_be_added() const {
+       25:   23:    return this->id;
+       25:   23-block  0
         -:   24:}
-        -:   25:/*
-        -:   26: * Adauga cartea in repo
-        -:   27: * Arunca book_repo_exception daca mai exista o cartte cu acelasi Id
-        -:   28: */
-function _ZN4repo3addERK5carte called 25 returned 96% blocks executed 61%
-       25:   29:void repo::add(const carte& obj_carte){
-       25:   30:    if(carte_in_repo(obj_carte.get_book_id()))
-       25:   30-block  0
-call    0 returned 25
-branch  1 taken 25 (fallthrough)
+        -:   25:
+function _ZNK4repo25get_reference_from_vectorEv called 4 returned 100% blocks executed 100%
+        4:   26:const my_vector<carte>& repo::get_reference_from_vector() const {
+        4:   27:    return carte_vec;
+        4:   27-block  0
+        -:   28:}
+        -:   29:
+        -:   30:/*
+        -:   31: * Adauga cartea in repo
+        -:   32: * Arunca book_repo_exception daca mai exista o cartte cu acelasi Id
+        -:   33: */
+function _ZN4repo3addERK5carte called 55 returned 98% blocks executed 61%
+       55:   34:void repo::add(const carte& obj_carte){
+       55:   35:    if(carte_in_repo(obj_carte.get_book_id()))
+       55:   35-block  0
+call    0 returned 55
+branch  1 taken 55 (fallthrough)
 branch  2 taken 0 (throw)
-       25:   30-block  1
-call    3 returned 25
-branch  4 taken 25 (fallthrough)
+       55:   35-block  1
+call    3 returned 55
+branch  4 taken 55 (fallthrough)
 branch  5 taken 0 (throw)
-       25:   30-block  2
+       55:   35-block  2
 branch  6 taken 1 (fallthrough)
-branch  7 taken 24
-    $$$$$:   30-block  3
+branch  7 taken 54
+    $$$$$:   35-block  3
 call    8 never executed
-        1:   31:        throw book_repo_exception("Cartea cu id - ul: " + to_string(obj_carte.get_book_id()) + "exista deja");
-        1:   31-block  0
+        1:   36:        throw book_repo_exception("Cartea cu id - ul: " + to_string(obj_carte.get_book_id()) + "exista deja");
+        1:   36-block  0
 call    0 returned 1
 call    1 returned 1
 branch  2 taken 1 (fallthrough)
 branch  3 taken 0 (throw)
-        1:   31-block  1
+        1:   36-block  1
 call    4 returned 1
 call    5 returned 1
 branch  6 taken 1 (fallthrough)
 branch  7 taken 0 (throw)
-        1:   31-block  2
+        1:   36-block  2
 call    8 returned 1
 branch  9 taken 1 (fallthrough)
 branch 10 taken 0 (throw)
-        1:   31-block  3
+        1:   36-block  3
 call   11 returned 1
 branch 12 taken 1 (fallthrough)
 branch 13 taken 0 (throw)
-        1:   31-block  4
+        1:   36-block  4
 call   14 returned 1
 call   15 returned 1
 call   16 returned 1
 call   17 returned 0
-    $$$$$:   31-block  5
+    $$$$$:   36-block  5
 call   18 never executed
-    $$$$$:   31-block  6
+    $$$$$:   36-block  6
 call   19 never executed
-    $$$$$:   31-block  7
+    $$$$$:   36-block  7
 call   20 never executed
-    $$$$$:   31-block  8
-    $$$$$:   31-block  9
-    $$$$$:   31-block 10
-    $$$$$:   31-block 11
+    $$$$$:   36-block  8
+    $$$$$:   36-block  9
+    $$$$$:   36-block 10
+    $$$$$:   36-block 11
 call   21 never executed
-       24:   32:    this->carte_vec.push_back(obj_carte);
-       24:   32-block  0
-call    0 returned 24
-       24:   33:    this->incrementare_id();
-call    0 returned 24
-       24:   34:}
-        -:   35:
-function _ZNK4repo13carte_in_repoERKi called 30 returned 100% blocks executed 86%
-       30:   36:bool repo::carte_in_repo(const int& id_to_find ) const {
-        -:   37:    try {
-       30:   38:        find_book_by_id(id_to_find);
-       30:   38-block  0
-call    0 returned 30
-branch  1 taken 3 (fallthrough)
-branch  2 taken 27 (throw)
-        3:   39:        return true;
-        3:   39-block  0
-        -:   40:    }
-       27:   41:    catch(book_repo_exception&){
-       27:   41-block  0
+       54:   37:    this->carte_vec.add(obj_carte);
+       54:   37-block  0
+call    0 returned 54
+       54:   38:    this->incrementare_id();
+call    0 returned 54
+       54:   39:}
+        -:   40:
+        -:   41:/*
+        -:   42: * Verifica daca cartea cu id ul dat apare in repo
+        -:   43: * Return type:
+        -:   44: *      true: carta apare in repo
+        -:   45: *      false: nu apare in repo
+        -:   46: */
+function _ZNK4repo13carte_in_repoERKi called 64 returned 100% blocks executed 86%
+       64:   47:bool repo::carte_in_repo(const int& id_to_find ) const {
+        -:   48:    try {
+       64:   49:        find_book_by_id(id_to_find);
+       64:   49-block  0
+call    0 returned 64
+branch  1 taken 7 (fallthrough)
+branch  2 taken 57 (throw)
+        7:   50:        return true;
+        7:   50-block  0
+        -:   51:    }
+       57:   52:    catch(book_repo_exception&){
+       57:   52-block  0
 branch  0 taken 0 (fallthrough)
-branch  1 taken 27
-       27:   41-block  1
-call    2 returned 27
-       27:   42:        return false;
-       27:   43:    }
-        -:   44:}
-function _ZNK4repo15find_book_by_idERKi called 37 returned 24% blocks executed 65%
-       37:   45:const carte& repo::find_book_by_id(const int& id) const{
-       60:   46:    for(const auto& carte: this->carte_vec){
-       37:   46-block  0
-call    0 returned 37
-call    1 returned 37
-       32:   46-block  1
-call    2 returned 32
-       23:   46-block  2
-call    3 returned 23
-       60:   46-block  3
-call    4 returned 60
-branch  5 taken 32
-branch  6 taken 28 (fallthrough)
-       32:   47:        if(carte.get_book_id() == id)
-call    0 returned 32
-branch  1 taken 32 (fallthrough)
+branch  1 taken 57
+       57:   52-block  1
+call    2 returned 57
+       57:   53:        return false;
+       57:   54:    }
+        -:   55:}
+        -:   56:/*
+        -:   57: *  Returneaza cartea cu id ul dat sau ridica o exceptie daca nu exista
+        -:   58: *
+        -:   59: */
+function _ZNK4repo15find_book_by_idERKi called 72 returned 19% blocks executed 66%
+       72:   60:const carte& repo::find_book_by_id(const int& id) const{
+       72:   61:    iterator_vector<carte> iter{carte_vec};
+       72:   61-block  0
+call    0 returned 72
+       72:   62:    iter.prim();
+call    0 returned 72
+      386:   63:    while(iter.valid()){
+      386:   63-block  0
+call    0 returned 386
+branch  1 taken 328
+branch  2 taken 58 (fallthrough)
+      328:   64:        const carte& book{ iter.element() };
+      328:   64-block  0
+call    0 returned 328
+      328:   65:        if(book.get_book_id() == id)
+call    0 returned 328
+branch  1 taken 328 (fallthrough)
 branch  2 taken 0 (throw)
-       32:   47-block  0
-branch  3 taken 9 (fallthrough)
-branch  4 taken 23
-        9:   48:            return carte;
-        9:   48-block  0
-        9:   48-block  1
-        -:   49:    }
-       28:   50:    throw book_repo_exception("Book with id: " + to_string(id) + " doesn't exist");
-       28:   50-block  0
-call    0 returned 28
-call    1 returned 28
-call    2 returned 28
-branch  3 taken 28 (fallthrough)
+      328:   65-block  0
+branch  3 taken 14 (fallthrough)
+branch  4 taken 314
+       14:   66:            return book;
+       14:   66-block  0
+       14:   66-block  1
+      314:   67:        iter.next();
+      314:   67-block  0
+call    0 returned 314
+        -:   68:    }
+       58:   69:    throw book_repo_exception("Book with id: " + to_string(id) + " doesn't exist");
+       58:   69-block  0
+call    0 returned 58
+call    1 returned 58
+call    2 returned 58
+branch  3 taken 58 (fallthrough)
 branch  4 taken 0 (throw)
-       28:   50-block  1
-call    5 returned 28
-branch  6 taken 28 (fallthrough)
+       58:   69-block  1
+call    5 returned 58
+branch  6 taken 58 (fallthrough)
 branch  7 taken 0 (throw)
-       28:   50-block  2
-call    8 returned 28
-branch  9 taken 28 (fallthrough)
+       58:   69-block  2
+call    8 returned 58
+branch  9 taken 58 (fallthrough)
 branch 10 taken 0 (throw)
-       28:   50-block  3
-call   11 returned 28
-call   12 returned 28
-call   13 returned 28
-call   14 returned 0
-    $$$$$:   50-block  4
+       58:   69-block  3
+call   11 returned 58
+call   12 returned 58
+call   13 returned 58
+call   14 returned 58
+    $$$$$:   69-block  4
 call   15 never executed
-    $$$$$:   50-block  5
+    $$$$$:   69-block  5
 call   16 never executed
-    $$$$$:   50-block  6
+    $$$$$:   69-block  6
 call   17 never executed
-    $$$$$:   50-block  7
-    $$$$$:   50-block  8
-    $$$$$:   50-block  9
-    $$$$$:   50-block 10
+    $$$$$:   69-block  7
+    $$$$$:   69-block  8
+    $$$$$:   69-block  9
+    $$$$$:   69-block 10
 call   18 never executed
-        -:   51:}
-        -:   52:
-function _ZN4repo11delete_bookERKi called 5 returned 40% blocks executed 59%
-        5:   53:void repo::delete_book(const int &id) {
-        5:   54:    if(!carte_in_repo(id))
-        5:   54-block  0
-call    0 returned 5
-branch  1 taken 5 (fallthrough)
+        -:   70:}
+        -:   71:/*
+        -:   72: * Sterge cartea cu id ul dat sau ridica o exceptie daca nu gaseste cartea
+        -:   73: *
+        -:   74: */
+function _ZN4repo11delete_bookERKi called 9 returned 67% blocks executed 69%
+        9:   75:void repo::delete_book(const int &id) {
+        9:   76:    if(!carte_in_repo(id))
+        9:   76-block  0
+call    0 returned 9
+branch  1 taken 9 (fallthrough)
 branch  2 taken 0 (throw)
-        5:   54-block  1
+        9:   76-block  1
 branch  3 taken 3 (fallthrough)
-branch  4 taken 2
-        3:   55:        throw book_repo_exception("Cartea cu id-ul " + to_string(id) + " nu exista!");
-        3:   55-block  0
+branch  4 taken 6
+        3:   77:        throw book_repo_exception("Cartea cu id-ul " + to_string(id) + " nu exista!");
+        3:   77-block  0
 call    0 returned 3
 call    1 returned 3
 call    2 returned 3
 branch  3 taken 3 (fallthrough)
 branch  4 taken 0 (throw)
-        3:   55-block  1
+        3:   77-block  1
 call    5 returned 3
 branch  6 taken 3 (fallthrough)
 branch  7 taken 0 (throw)
-        3:   55-block  2
+        3:   77-block  2
 call    8 returned 3
 branch  9 taken 3 (fallthrough)
 branch 10 taken 0 (throw)
-        3:   55-block  3
+        3:   77-block  3
 call   11 returned 3
 call   12 returned 3
 call   13 returned 3
 call   14 returned 3
-    $$$$$:   55-block  4
+    $$$$$:   77-block  4
 call   15 never executed
-    $$$$$:   55-block  5
+    $$$$$:   77-block  5
 call   16 never executed
-    $$$$$:   55-block  6
+    $$$$$:   77-block  6
 call   17 never executed
-    $$$$$:   55-block  7
-    $$$$$:   55-block  8
-    $$$$$:   55-block  9
-    $$$$$:   55-block 10
+    $$$$$:   77-block  7
+    $$$$$:   77-block  8
+    $$$$$:   77-block  9
+    $$$$$:   77-block 10
 call   18 never executed
-        2:   56:    auto remove_begin = std::remove_if(carte_vec.begin(), carte_vec.end(),
-call    0 returned 2
-call    1 returned 2
-branch  2 taken 2 (fallthrough)
-branch  3 taken 0 (throw)
-function _ZZN4repo11delete_bookERKiENKUlRK5carteE_clES4_ called 4 returned 100% blocks executed 100%
-        6:   57:                                       [id](const carte& obj_carte) { return obj_carte.get_book_id() == id; });
-        2:   57-block  0
-call    0 returned 2
-        4:   57-block  1
-call    1 returned 4
-        2:   58:    carte_vec.erase(remove_begin, carte_vec.end());
-        2:   58-block  0
-call    0 returned 2
-call    1 returned 2
-call    2 returned 2
-call    3 returned 2
-branch  4 taken 2 (fallthrough)
-branch  5 taken 0 (throw)
-    $$$$$:   58-block  1
-    $$$$$:   58-block  2
-    $$$$$:   58-block  3
-        2:   59:}
-        2:   59-block  0
-        -:   60:
-function _ZN4repo11modify_bookERK5carte called 3 returned 33% blocks executed 72%
-        3:   61:void repo::modify_book(const carte& obj_carte) {
-        3:   62:    int book_id = obj_carte.get_book_id();
-        3:   62-block  0
+        -:   78:
+        6:   79:    int poz = 0;
+        -:   80:
+        6:   81:    iterator_vector<carte> iter{carte_vec};
+        6:   81-block  0
+call    0 returned 6
+        6:   82:    iter.prim();
+call    0 returned 6
+        9:   83:    while(iter.valid()){
+        9:   83-block  0
+call    0 returned 9
+branch  1 taken 9
+branch  2 taken 0 (fallthrough)
+        9:   84:        const carte& book{ iter.element() };
+        9:   84-block  0
+call    0 returned 9
+        9:   85:        if(book.get_book_id() == id){
+call    0 returned 9
+branch  1 taken 9 (fallthrough)
+branch  2 taken 0 (throw)
+        9:   85-block  0
+branch  3 taken 6 (fallthrough)
+branch  4 taken 3
+        6:   86:            break;
+        6:   86-block  0
+        -:   87:        }
+        3:   88:        iter.next();
+        3:   88-block  0
 call    0 returned 3
-        3:   63:    bool found = false;
-        -:   64:
-        8:   65:    for(auto& carte : carte_vec) {
-call    0 returned 3
-call    1 returned 3
-        6:   65-block  0
-call    2 returned 6
-        5:   65-block  1
-call    3 returned 5
-        8:   65-block  2
-call    4 returned 8
-branch  5 taken 6
-branch  6 taken 2 (fallthrough)
-        6:   66:        if(carte.get_book_id() == book_id) {
+        3:   89:        poz += 1;
+        -:   90:    }
+        6:   91:    carte_vec.erase(poz);
+        6:   91-block  0
 call    0 returned 6
 branch  1 taken 6 (fallthrough)
 branch  2 taken 0 (throw)
-        6:   66-block  0
+        6:   92:}
+        6:   92-block  0
+        -:   93:/*
+        -:   94: * Modifica cartea cu id ul egal cu cel al cartii care
+        -:   95: *
+        -:   96: */
+function _ZN4repo11modify_bookERK5carte called 3 returned 33% blocks executed 73%
+        3:   97:void repo::modify_book(const carte& obj_carte) {
+        3:   98:    int book_id = obj_carte.get_book_id();
+        3:   98-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:   99:    bool found = false;
+        -:  100:
+        3:  101:    iterator_vector<carte> iter{carte_vec};
+        3:  101-block  0
+call    0 returned 3
+        3:  102:    iter.prim();
+call    0 returned 3
+        8:  103:    while(iter.valid()){
+        8:  103-block  0
+call    0 returned 8
+branch  1 taken 6
+branch  2 taken 2 (fallthrough)
+        6:  104:        carte& book{ iter.element() };
+        6:  104-block  0
+call    0 returned 6
+        6:  105:        if(book.get_book_id() == book_id) {
+call    0 returned 6
+branch  1 taken 6 (fallthrough)
+branch  2 taken 0 (throw)
+        6:  105-block  0
 branch  3 taken 1 (fallthrough)
 branch  4 taken 5
-        1:   67:            carte = obj_carte; // Update the found book with obj_carte
-        1:   67-block  0
+        1:  106:            book = obj_carte; // Update the found book with obj_carte
+        1:  106-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        1:   68:            found = true;
-        1:   69:            break; // Break out of the loop since we found the book
-        1:   69-block  0
-        -:   70:        }
-        -:   71:    }
-        -:   72:
-        3:   73:    if(!found) {
-        3:   73-block  0
+        1:  107:            found = true;
+        1:  108:            break; // Break out of the loop since we found the book
+        1:  108-block  0
+        -:  109:        }
+        5:  110:        iter.next();
+        5:  110-block  0
+call    0 returned 5
+        -:  111:    }
+        -:  112:
+        3:  113:    if(!found) {
+        3:  113-block  0
 branch  0 taken 2 (fallthrough)
 branch  1 taken 1
-        2:   74:        throw book_repo_exception("Doesn't exist book with id: " + to_string(book_id));
-        2:   74-block  0
+        2:  114:        throw book_repo_exception("Doesn't exist book with id: " + to_string(book_id));
+        2:  114-block  0
 call    0 returned 2
 call    1 returned 2
 call    2 returned 2
 branch  3 taken 2 (fallthrough)
 branch  4 taken 0 (throw)
-        2:   74-block  1
+        2:  114-block  1
 call    5 returned 2
 branch  6 taken 2 (fallthrough)
 branch  7 taken 0 (throw)
-        2:   74-block  2
+        2:  114-block  2
 call    8 returned 2
 call    9 returned 2
-call   10 returned 0
-    $$$$$:   74-block  3
+call   10 returned 2
+    $$$$$:  114-block  3
 call   11 never executed
-    $$$$$:   74-block  4
+    $$$$$:  114-block  4
 call   12 never executed
-    $$$$$:   74-block  5
-    $$$$$:   74-block  6
-    $$$$$:   74-block  7
+    $$$$$:  114-block  5
+    $$$$$:  114-block  6
+    $$$$$:  114-block  7
 call   13 never executed
-        -:   75:    }
-        1:   76:}
-        1:   76-block  0
-        -:   77:
-function _ZNK4repo7get_allEv called 6 returned 100% blocks executed 100%
-        6:   78:const vector<carte>& repo::get_all() const noexcept{
-        6:   79:    return carte_vec;
-        6:   79-block  0
-        -:   80:}
-        -:   81:
+        -:  115:    }
+        1:  116:}
+        1:  116-block  0
+        -:  117:
+function _ZNK4repo7get_allEv called 10 returned 100% blocks executed 100%
+       10:  118:const my_vector<carte>& repo::get_all() const noexcept{
+       10:  119:    return carte_vec;
+       10:  119-block  0
+        -:  120:}
+        -:  121:
 function _ZlsRSoRK19book_repo_exception called 5 returned 100% blocks executed 100%
-        5:   82:ostream& operator<<(ostream& out, const book_repo_exception& ex){
-        5:   83:    out << ex.msg;
-        5:   83-block  0
+        5:  122:ostream& operator<<(ostream& out, const book_repo_exception& ex){
+        5:  123:    out << ex.msg;
+        5:  123-block  0
 call    0 returned 5
-        5:   84:    return out;
-        -:   85:}
+        5:  124:    return out;
+        -:  125:}
+        -:  126:
+        -:  127:// urmeaza cele trei functii de camparare a doua carti
+        -:  128:
+        -:  129:// comparare dupa titlu
+function _ZN4repo13sort_by_titleERK5carteS2_ called 6 returned 100% blocks executed 71%
+        6:  130:bool repo::sort_by_title(const carte &book1, const carte &book2) {
+        6:  131:    return book1.get_title() > book2.get_title();
+        6:  131-block  0
+call    0 returned 6
+call    1 returned 6
+branch  2 taken 6 (fallthrough)
+branch  3 taken 0 (throw)
+        6:  131-block  1
+call    4 returned 6
+branch  5 taken 6 (fallthrough)
+branch  6 taken 0 (throw)
+        6:  131-block  2
+call    7 returned 6
+call    8 returned 6
+call    9 returned 6
+call   10 returned 6
+        6:  131-block  3
+    $$$$$:  131-block  4
+    $$$$$:  131-block  5
+call   11 never executed
+    $$$$$:  131-block  6
+        -:  132:}
+        -:  133:
+        -:  134:// comparare dupa autor
+function _ZN4repo14sort_by_authorERK5carteS2_ called 6 returned 100% blocks executed 71%
+        6:  135:bool repo::sort_by_author(const carte &book1, const carte &book2) {
+        6:  136:    return book1.get_author() > book2.get_author();
+        6:  136-block  0
+call    0 returned 6
+call    1 returned 6
+branch  2 taken 6 (fallthrough)
+branch  3 taken 0 (throw)
+        6:  136-block  1
+call    4 returned 6
+branch  5 taken 6 (fallthrough)
+branch  6 taken 0 (throw)
+        6:  136-block  2
+call    7 returned 6
+call    8 returned 6
+call    9 returned 6
+call   10 returned 6
+        6:  136-block  3
+    $$$$$:  136-block  4
+    $$$$$:  136-block  5
+call   11 never executed
+    $$$$$:  136-block  6
+        -:  137:}
+        -:  138:
+        -:  139://comaparare dupa an si gen
+function _ZN4repo32sort_by_publication_year_and_genERK5carteS2_ called 6 returned 100% blocks executed 82%
+        6:  140:bool repo::sort_by_publication_year_and_gen(const carte &book1, const carte &book2) {
+        6:  141:    if(book1.get_publication_year() > book2.get_publication_year())
+        6:  141-block  0
+call    0 returned 6
+call    1 returned 6
+branch  2 taken 1 (fallthrough)
+branch  3 taken 5
+        1:  142:        return true;
+        1:  142-block  0
+        5:  143:    else if(book1.get_publication_year() == book2.get_publication_year())
+        5:  143-block  0
+call    0 returned 5
+call    1 returned 5
+branch  2 taken 2 (fallthrough)
+branch  3 taken 3
+        2:  144:        return book1.get_genre() > book2.get_genre();
+        2:  144-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  144-block  1
+call    4 returned 2
+branch  5 taken 2 (fallthrough)
+branch  6 taken 0 (throw)
+        2:  144-block  2
+call    7 returned 2
+call    8 returned 2
+call    9 returned 2
+call   10 returned 2
+    $$$$$:  144-block  3
+    $$$$$:  144-block  4
+call   11 never executed
+    $$$$$:  144-block  5
+        3:  145:    return false;
+        3:  145-block  0
+        -:  146:}

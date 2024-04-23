@@ -1,6 +1,6 @@
-        -:    0:Source:D:/Aplicatii/CLion 2024.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h
-        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcno
-        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcda
+        -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcda
         -:    0:Runs:1
         -:    1:// Allocator that wraps operator new -*- C++ -*-
         -:    2:
@@ -93,7 +93,7 @@
         -:   89:
         -:   90:      __attribute__((__always_inline__))
         -:   91:      _GLIBCXX20_CONSTEXPR
-      840:   92:      __new_allocator(const __new_allocator&) _GLIBCXX_USE_NOEXCEPT { }
+     2730:   92:      __new_allocator(const __new_allocator&) _GLIBCXX_USE_NOEXCEPT { }
         -:   93:
         -:   94:      template<typename _Tp1>
         -:   95:	__attribute__((__always_inline__))
@@ -123,8 +123,8 @@
         -:  119:      // NB: __n is permitted to be 0.  The C++ standard says nothing
         -:  120:      // about what the return value is when __n == 0.
         -:  121:      _GLIBCXX_NODISCARD _Tp*
-function _ZNSt15__new_allocatorIcE8allocateEyPKv called 89 returned 100% blocks executed 86%
-       89:  122:      allocate(size_type __n, const void* = static_cast<const void*>(0))
+function _ZNSt15__new_allocatorIcE8allocateEyPKv called 184 returned 100% blocks executed 86%
+      184:  122:      allocate(size_type __n, const void* = static_cast<const void*>(0))
         -:  123:      {
         -:  124:#if __cplusplus >= 201103L
         -:  125:	// _GLIBCXX_RESOLVE_LIB_DEFECTS
@@ -132,10 +132,10 @@ function _ZNSt15__new_allocatorIcE8allocateEyPKv called 89 returned 100% blocks 
         -:  127:	static_assert(sizeof(_Tp) != 0, "cannot allocate incomplete types");
         -:  128:#endif
         -:  129:
-       89:  130:	if (__builtin_expect(__n > this->_M_max_size(), false))
-       89:  130-block  0
+      184:  130:	if (__builtin_expect(__n > this->_M_max_size(), false))
+      184:  130-block  0
 branch  0 taken 0 (fallthrough)
-branch  1 taken 89
+branch  1 taken 184
         -:  131:	  {
         -:  132:	    // _GLIBCXX_RESOLVE_LIB_DEFECTS
         -:  133:	    // 3190. allocator::allocate sometimes returns too little storage
@@ -154,16 +154,16 @@ call    0 never executed
         -:  144:							   __al));
         -:  145:	  }
         -:  146:#endif
-       89:  147:	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
-       89:  147-block  0
-call    0 returned 89
+      184:  147:	return static_cast<_Tp*>(_GLIBCXX_OPERATOR_NEW(__n * sizeof(_Tp)));
+      184:  147-block  0
+call    0 returned 184
         -:  148:      }
         -:  149:
         -:  150:      // __p is not permitted to be a null pointer.
         -:  151:      void
-function _ZNSt15__new_allocatorIcE10deallocateEPcy called 0 returned 0% blocks executed 0%
-    #####:  152:      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
-    %%%%%:  152-block  0
+function _ZNSt15__new_allocatorIcE10deallocateEPcy called 193 returned 100% blocks executed 100%
+      193:  152:      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
+      193:  152-block  0
         -:  153:      {
         -:  154:#if __cpp_sized_deallocation
         -:  155:# define _GLIBCXX_SIZED_DEALLOC(p, n) (p), (n) * sizeof(_Tp)
@@ -179,9 +179,9 @@ function _ZNSt15__new_allocatorIcE10deallocateEPcy called 0 returned 0% blocks e
         -:  165:	    return;
         -:  166:	  }
         -:  167:#endif
-    #####:  168:	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
-    %%%%%:  168-block  0
-call    0 never executed
+      193:  168:	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+      193:  168-block  0
+call    0 returned 193
         -:  169:      }
         -:  170:
         -:  171:#undef _GLIBCXX_SIZED_DEALLOC
@@ -242,8 +242,8 @@ call    0 never executed
         -:  226:      _M_max_size() const _GLIBCXX_USE_NOEXCEPT
         -:  227:      {
         -:  228:#if __PTRDIFF_MAX__ < __SIZE_MAX__
-       89:  229:	return std::size_t(__PTRDIFF_MAX__) / sizeof(_Tp);
-       89:  229-block  0
+      184:  229:	return std::size_t(__PTRDIFF_MAX__) / sizeof(_Tp);
+      184:  229-block  0
         -:  230:#else
         -:  231:	return std::size_t(-1) / sizeof(_Tp);
         -:  232:#endif

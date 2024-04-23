@@ -27,7 +27,7 @@ private:
     void test_get_genre();
     void test_get_publication_year();
     void test_get_book_id();
-
+    void test_equal();
 public:
     void run_domain_tests();
 };
@@ -43,7 +43,9 @@ private:
     void test_delete();
     void test_modify();
     void test_get_all();
-    void test_filter_an();
+    void test_filter();
+    void test_sort();
+    void test_search_book();
 public:
     void run_service_tests();
 };

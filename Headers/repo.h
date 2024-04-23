@@ -25,9 +25,12 @@ private:
     void incrementare_id();
 public:
     repo() = default;
-    repo(const carte&) = delete; // pt a bloca copierea
+
+    repo(const repo& other) = delete; // pt a bloca copierea
 
     const int& get_id_for_next_book_to_be_added() const;
+
+    const my_vector<carte>& get_reference_from_vector() const;
 
     void add(const carte& carte_obj);
 
@@ -37,7 +40,13 @@ public:
 
     const carte& find_book_by_id(const int& id) const;
 
-    const vector<carte>& get_all() const noexcept;
+    const my_vector<carte>& get_all() const noexcept;
+
+
+    static bool sort_by_title(const carte& book1, const carte& book2);
+    static bool sort_by_author(const carte& book1, const carte& book2);
+    static bool sort_by_publication_year_and_gen(const carte& book1, const carte& book2);
+
 };
 
 class book_repo_exception : std::exception{

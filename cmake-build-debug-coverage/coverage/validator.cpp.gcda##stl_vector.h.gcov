@@ -1,6 +1,6 @@
-        -:    0:Source:D:/Aplicatii/CLion 2024.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h
-        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcno
-        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcda
+        -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcda
         -:    0:Runs:1
         -:    1:// Vector implementation -*- C++ -*-
         -:    2:
@@ -304,10 +304,10 @@ call    0 returned 6
         -:  295:
         -:  296:      _GLIBCXX20_CONSTEXPR
         -:  297:      _Tp_alloc_type&
-function _ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_get_Tp_allocatorEv called 46 returned 100% blocks executed 100%
-       46:  298:      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
-       46:  299:      { return this->_M_impl; }
-       46:  299-block  0
+function _ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE19_M_get_Tp_allocatorEv called 56 returned 100% blocks executed 100%
+       56:  298:      _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
+       56:  299:      { return this->_M_impl; }
+       56:  299-block  0
         -:  300:
         -:  301:      _GLIBCXX20_CONSTEXPR
         -:  302:      const _Tp_alloc_type&
@@ -383,15 +383,15 @@ call    3 never executed
         -:  361:#endif
         -:  362:
         -:  363:      _GLIBCXX20_CONSTEXPR
-function _ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev called 24 returned 100% blocks executed 100%
-       24:  364:      ~_Vector_base() _GLIBCXX_NOEXCEPT
+function _ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev called 34 returned 100% blocks executed 100%
+       34:  364:      ~_Vector_base() _GLIBCXX_NOEXCEPT
         -:  365:      {
-       24:  366:	_M_deallocate(_M_impl._M_start,
-       24:  367:		      _M_impl._M_end_of_storage - _M_impl._M_start);
-       24:  367-block  0
-call    0 returned 24
-       24:  368:      }
-call    0 returned 24
+       34:  366:	_M_deallocate(_M_impl._M_start,
+       34:  367:		      _M_impl._M_end_of_storage - _M_impl._M_start);
+       34:  367-block  0
+call    0 returned 34
+       34:  368:      }
+call    0 returned 34
         -:  369:
         -:  370:    public:
         -:  371:      _Vector_impl _M_impl;
@@ -415,18 +415,18 @@ call    2 returned 14
         -:  380:
         -:  381:      _GLIBCXX20_CONSTEXPR
         -:  382:      void
-function _ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE13_M_deallocateEPS5_y called 32 returned 100% blocks executed 78%
-       32:  383:      _M_deallocate(pointer __p, size_t __n)
+function _ZNSt12_Vector_baseINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE13_M_deallocateEPS5_y called 42 returned 100% blocks executed 78%
+       42:  383:      _M_deallocate(pointer __p, size_t __n)
         -:  384:      {
         -:  385:	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
-       32:  386:	if (__p)
-       32:  386-block  0
+       42:  386:	if (__p)
+       42:  386-block  0
 branch  0 taken 14 (fallthrough)
-branch  1 taken 18
+branch  1 taken 28
        14:  387:	  _Tr::deallocate(_M_impl, __p, __n);
        14:  387-block  0
 call    0 returned 14
-       32:  388:      }
+       42:  388:      }
         -:  389:
         -:  390:    protected:
         -:  391:      _GLIBCXX20_CONSTEXPR
@@ -792,18 +792,18 @@ call    0 never executed
         -:  725:       *  responsibility.
         -:  726:       */
         -:  727:      _GLIBCXX20_CONSTEXPR
-function _ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED1Ev called 24 returned 100% blocks executed 100%
-       24:  728:      ~vector() _GLIBCXX_NOEXCEPT
+function _ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED1Ev called 34 returned 100% blocks executed 100%
+       34:  728:      ~vector() _GLIBCXX_NOEXCEPT
         -:  729:      {
-       24:  730:	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
-call    0 returned 24
-       24:  731:		      _M_get_Tp_allocator());
-       24:  731-block  0
-call    0 returned 24
+       34:  730:	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
+call    0 returned 34
+       34:  731:		      _M_get_Tp_allocator());
+       34:  731-block  0
+call    0 returned 34
         -:  732:	_GLIBCXX_ASAN_ANNOTATE_BEFORE_DEALLOC;
-       24:  733:      }
-       24:  733-block  0
-call    0 returned 24
+       34:  733:      }
+       34:  733-block  0
+call    0 returned 34
         -:  734:
         -:  735:      /**
         -:  736:       *  @brief  %Vector assignment operator.
@@ -1073,10 +1073,10 @@ call    0 returned 10
         -:  984:      /**  Returns the number of elements in the %vector.  */
         -:  985:      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
         -:  986:      size_type
-function _ZNKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE4sizeEv called 56 returned 100% blocks executed 100%
-       56:  987:      size() const _GLIBCXX_NOEXCEPT
-       56:  988:      { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
-       56:  988-block  0
+function _ZNKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE4sizeEv called 66 returned 100% blocks executed 100%
+       66:  987:      size() const _GLIBCXX_NOEXCEPT
+       66:  988:      { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
+       66:  988-block  0
         -:  989:
         -:  990:      /**  Returns the size() of the largest possible %vector.  */
         -:  991:      _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR

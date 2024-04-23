@@ -1,261 +1,174 @@
-#pragma once
-#include <iostream>
-#define INITIAL_CAPACITY 20
-template <typename Telem>
-class Iterator;
+#ifndef MY_VECTOR_H
+#define MY_VECTOR_H
 
-template <typename Telem>
-class my_vector{
+#define CAPACITY 20
+
+template<typename TElem> class iterator_vector;
+
+template<typename TElem> class my_vector{
 private:
-    Telem* elemente;
-    int lg;
-    int cap;
-    void redimensionare();
-
+    int capacity,
+        nr_elemente;
+    TElem* vec;
+    void redimensionare_vec();
 public:
     my_vector();
 
-    //copy constructor
-    my_vector(const my_vector& ot); //rule of 3
+    ~my_vector();
 
-    ~my_vector();//rule of 3
+    // copy constructor
+    my_vector(const my_vector& other);
 
-    //operator assignment
-    my_vector& operator=(const my_vector& ot);//rule of 3
-
+    // assigment overload
+    my_vector& operator=(my_vector& other);
 
     //move constructor
-    my_vector(my_vector&& ot); //rule of 5
+    my_vector(my_vector&& other);
 
-    //move assignment
-    my_vector& operator=(my_vector&& ot); //rule of 5
+    //move assigment
+    my_vector& operator=(my_vector&& other) noexcept;
 
+    // pentru a accesa my_vec_obj[poz]
+    TElem& operator[](int poz) const;
 
-    //Adauga in vector
-    void push_back(const Telem& el);
+    void add(const TElem& elem);
 
-    //sterge de pe pozitia poz
-    void erase(int position);
+    void erase(int poz);
 
-    Telem& get(int poz) const;
+    void modify(const TElem& modified_elem);
 
-    void set(int poz, const Telem& el);
+    const TElem& get_elem(int poz) const noexcept;
 
     int size() const noexcept;
 
-    bool empty() const noexcept;
-
-    friend class Iterator<Telem>;
-    //functii care creaza iteratori
-    Iterator<Telem> begin();
-    Iterator<Telem> end();
-
-    Telem& operator[](int poz) const;
+    friend class iterator_vector<TElem>;
+    iterator_vector<TElem> begin() const;
+    iterator_vector<TElem> end() const;
 
 };
 
-template<typename Telem>
-Telem& my_vector<Telem>::operator[](int poz) const {
-    return elemente[poz];
+template<typename TElem>
+void my_vector<TElem>::redimensionare_vec() {
+    capacity *= 2;
+    TElem *new_vec = new TElem[capacity];
+    for(int i = 0; i < nr_elemente; ++i)
+        new_vec[i] = vec[i];
+    delete[] vec;
+    vec = new_vec;
 }
 
-template<typename Telem>
-my_vector<Telem>::my_vector() :elemente{ new Telem[INITIAL_CAPACITY] }, cap{ INITIAL_CAPACITY }, lg{ 0 } {}
-
-
-template<typename Telem>
-my_vector<Telem>::my_vector(const my_vector<Telem>& ot) {
-    elemente = new Telem[ot.cap];
-    //copiez elementele
-    for (int i = 0; i < ot.lg; i++) {
-        elemente[i] = ot.elemente[i];  //assignment din Pet
-    }
-    lg = ot.lg;
-    cap = ot.cap;
+template<typename TElem>
+my_vector<TElem>::my_vector() {
+    this->vec = new TElem[CAPACITY];
+    this->capacity = CAPACITY;
+    this->nr_elemente = 0;
 }
 
-template<typename Telem>
-my_vector<Telem>& my_vector<Telem>::operator=(const my_vector<Telem>& ot) {
-    if (this == &ot) {
+template<typename TElem>
+my_vector<TElem>::~my_vector() {
+    delete[]vec;
+}
+
+template<typename TElem>
+my_vector<TElem>::my_vector(const my_vector<TElem> &other) {
+    this->vec = new TElem[other.capacity];
+    for(int i = 0; i < other.nr_elemente; ++i)
+        vec[i] = other.vec[i];
+
+    this->nr_elemente = other.nr_elemente;
+    this->capacity = other.capacity;
+}
+
+template<typename TElem>
+my_vector<TElem>& my_vector<TElem>::operator=(my_vector<TElem> &other) {
+    if(this == &other)
         return *this;
-    }
-    delete[] elemente;
-    elemente = new Telem[ot.cap];
-    for (int i = 0; i < ot.lg; i++) {
-        elemente[i] = ot.elemente[i];
-    }
-    lg = ot.lg;
-    cap = ot.cap;
+    delete[] this->vec;
+
+    this->capacity = other.capacity;
+    this->nr_elemente = other.nr_elemente;
+    this->vec = other.vec;
+
+    other.vec = nullptr;
+    other.capacity = 0;
+    other.nr_elemente = 0;
     return *this;
 }
 
-template<typename Telem>
-my_vector<Telem>::~my_vector() {
-    delete[] elemente;
+template<typename TElem>
+my_vector<TElem>::my_vector(my_vector<TElem> &&other) {
+    this->vec = other.vec;
+    this->nr_elemente = other.nr_elemente;
+    this->capacity = other.capacity;
+
+    other.vec = nullptr;
+    other.nr_elemente = 0;
+    other.capacity = 0;
 }
 
-
-template<typename Telem>
-my_vector<Telem>::my_vector(my_vector&& ot) {
-    // Copy the data pointer from other
-    elemente = ot.elemente;
-    lg = ot.lg;
-    cap = ot.cap;
-
-    ot.elemente = nullptr;
-    ot.lg = 0;
-    ot.cap = 0;
-}
-
-template<typename Telem>
-my_vector<Telem>& my_vector<Telem>::operator=(my_vector<Telem>&& ot) {
-    if (this == &ot) {
+template<typename TElem>
+my_vector<TElem>& my_vector<TElem>::operator=(my_vector<TElem> &&other) noexcept {
+    if(this == &other)
         return *this;
-    }
-    delete[] elemente;
-    // Copy the data pointer from other
-    elemente = ot.elemente;
-    lg = ot.lg;
-    cap = ot.cap;
+    delete[] this->vec;
 
-    ot.elemente = nullptr;
-    ot.lg = 0;
-    ot.cap = 0;
-    return *this;
-}
-template<typename Telem>
-void my_vector<Telem>::redimensionare() {
-    if (lg < cap) {
-        return;
-    }
-    cap *= 2;
-    auto* aux = new Telem[cap];
-    for (int i = 0; i < lg; i++) {
-        aux[i] = elemente[i];
-    }
-    delete[] elemente;
-    elemente = aux;
-}
+    this->capacity = other.capacity;
+    this->nr_elemente = other.nr_elemente;
+    this->vec = other.vec;
 
-template<typename Telem>
-void my_vector<Telem>::push_back(const Telem& el) {
-    if (lg == cap)
-        redimensionare();
-    elemente[lg++] = el;
-}
-
-template<typename Telem>
-void my_vector<Telem>::erase(int position) {
-    this->lg--;
-    for (int i = position; i < this->lg; i++) {
-        this->elemente[i] = this->elemente[i + 1];
-    }
-}
-
-template<typename Telem>
-Telem& my_vector<Telem>::get(int poz) const {
-    return elemente[poz];
-}
-
-template<typename Telem>
-void my_vector<Telem>::set(int poz, const Telem& el) {
-    elemente[poz] = el;
-}
-
-template<typename Telem>
-int my_vector<Telem>::size() const noexcept {
-    return lg;
-}
-
-template<typename Telem>
-bool my_vector<Telem>::empty() const noexcept {
-    return lg == 0;
-}
-
-template<typename Telem>
-Iterator<Telem> my_vector<Telem>::begin()
-{
-    return Iterator<Telem>(*this);
-}
-
-template<typename Telem>
-Iterator<Telem> my_vector<Telem>::end()
-{
-    return Iterator<Telem>(*this, lg);
-}
-
-template<typename Telem>
-class Iterator {
-private:
-    const my_vector<Telem>& vec; // ref la vectorul dinamic
-    int poz = 0; // prima poz o sa fie 0
-public:
-    //constructor iterator
-    Iterator(const my_vector<Telem>& v);
-
-    Iterator(const my_vector<Telem>& v, int poz) noexcept;
-
-    //veridica daca iteratorul e valid
-    bool valid() const;
-
-    //get element
-    Telem& element() const;
-
-    //trece la urmatorul element din vector
-    void next();
-
-    //suprascriu pointerul
-    Telem& operator* ();
-
-    //suprascriu operatorul de incrementare
-    Iterator& operator++();
-
-    //verific egalitatea
-    bool operator==(const Iterator& ot) noexcept;
-    bool operator!=(const Iterator& ot) noexcept;
-
-};
-
-template<typename Telem>
-Iterator<Telem>::Iterator(const my_vector<Telem>& v) : vec{ v } {}
-
-
-template<typename Telem>
-Iterator<Telem>::Iterator(const my_vector<Telem>& v, int poz) noexcept :vec{ v }, poz{ poz } {}
-
-template<typename Telem>
-bool Iterator<Telem>::valid()const {
-    return poz < vec.lg;
-}
-
-template<typename Telem>
-Telem& Iterator<Telem>::element() const {
-    return vec.elemente[poz];
-}
-
-template<typename Telem>
-void Iterator<Telem>::next() {
-    poz++;
-}
-
-template<typename Telem>
-Telem& Iterator<Telem>::operator*() {
-    return element();
-}
-
-template<typename Telem>
-Iterator<Telem>& Iterator<Telem>::operator++() {
-    next();
+    other.vec = nullptr;
+    other.capacity = 0;
+    other.nr_elemente = 0;
     return *this;
 }
 
-template<typename Telem>
-bool Iterator<Telem>::operator==(const Iterator<Telem>& ot) noexcept {
-    return ot.poz == poz;
+template<typename TElem>
+TElem& my_vector<TElem>::operator[](int poz) const {
+    return vec[poz];
 }
 
-template<typename Telem>
-bool Iterator<Telem>::operator!=(const Iterator<Telem>& ot) noexcept {
-    return !(*this == ot);
+template<typename TElem>
+void my_vector<TElem>::add(const TElem &elem) {
+    if(capacity == nr_elemente)
+        redimensionare_vec();
+    this->vec[nr_elemente] = elem;
+    nr_elemente += 1;
 }
 
+template<typename TElem>
+void my_vector<TElem>::erase(int poz) {
+    for(int i = poz; i < nr_elemente - 1; ++i){
+        this->vec[i] = this->vec[i + 1];
+    }
+    this->nr_elemente -= 1;
+}
+
+template<typename TElem>
+void my_vector<TElem>::modify(const TElem &modified_elem) {
+    int poz = 0;
+    for(int i = 0; i < nr_elemente; ++i)
+        if(this->vec[i] == modified_elem)
+            this->vec[i] = modified_elem;
+}
+
+template<typename TElem>
+int my_vector<TElem>::size() const noexcept{
+    return nr_elemente;
+}
+
+template<typename TElem>
+const TElem& my_vector<TElem>::get_elem(int poz) const noexcept {
+    return vec[poz];
+}
+
+template<typename TElem>
+iterator_vector<TElem> my_vector<TElem>::begin() const{
+    return iterator_vector<TElem>(*this);
+}
+
+template<typename TElem>
+iterator_vector<TElem> my_vector<TElem>::end() const{
+    return iterator_vector<TElem>(*this, nr_elemente);
+}
+
+#endif

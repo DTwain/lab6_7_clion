@@ -105,6 +105,9 @@
 		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/validator.h">
 			<Option target="lab6_7_clion"/>
 		</Unit>
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/vector_iterator.h">
+			<Option target="lab6_7_clion"/>
+		</Unit>
 		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/domain/carte.cpp">
 			<Option target="lab6_7_clion"/>
 		</Unit>

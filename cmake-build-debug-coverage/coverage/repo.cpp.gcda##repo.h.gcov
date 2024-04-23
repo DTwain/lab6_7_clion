@@ -1,6 +1,6 @@
-        -:    0:Source:D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion/Headers/repo.h
-        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcno
-        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcda
+        -:    0:Source:D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/repo.h
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcda
         -:    0:Runs:1
         -:    1://
         -:    2:// Created by obrej on 4/10/2024.
@@ -11,48 +11,64 @@
         -:    7:#ifndef LAB6_7_CLION_REPO_H
         -:    8:#define LAB6_7_CLION_REPO_H
         -:    9:
-        -:   10:#include "../Headers/carte.h"
-        -:   11:#include <ostream>
-        -:   12:#include <vector>
-        -:   13:#include <string>
-        -:   14:
-        -:   15:using std::ostream;
-        -:   16:using std::string;
-        -:   17:using std::vector;
-        -:   18:
-        -:   19:class repo {
-        -:   20:private:
-        -:   21:    vector< carte > carte_vec;
-        -:   22:    int id = 0;
-        -:   23:    bool carte_in_repo(const int& id ) const;
-        -:   24:    void incrementare_id();
-        -:   25:public:
-        -:   26:    repo() = default;
-        -:   27:    repo(const carte&) = delete; // pt a bloca copierea
+        -:   10:#include "carte.h"
+        -:   11:#include "my_vector.h"
+        -:   12:#include <ostream>
+        -:   13:#include <vector>
+        -:   14:#include <string>
+        -:   15:
+        -:   16:using std::ostream;
+        -:   17:using std::string;
+        -:   18:using std::vector;
+        -:   19:
+        -:   20:class repo {
+        -:   21:private:
+        -:   22:    my_vector<carte> carte_vec;
+        -:   23:    int id = 0;
+        -:   24:    bool carte_in_repo(const int& id ) const;
+        -:   25:    void incrementare_id();
+        -:   26:public:
+        -:   27:    repo() = default;
         -:   28:
-        -:   29:    const int& get_id_for_next_book_to_be_added() const;
+        -:   29:    repo(const carte&) = delete; // pt a bloca copierea
         -:   30:
-        -:   31:    void add(const carte& carte_obj);
+        -:   31:    const int& get_id_for_next_book_to_be_added() const;
         -:   32:
-        -:   33:    void delete_book(const int& id);
+        -:   33:    const my_vector<carte>& get_reference_from_vector() const;
         -:   34:
-        -:   35:    void modify_book(const carte& obj_carte);
+        -:   35:    void add(const carte& carte_obj);
         -:   36:
-        -:   37:    const carte& find_book_by_id(const int& id) const;
+        -:   37:    void delete_book(const int& id);
         -:   38:
-        -:   39:    const vector<carte>& get_all() const noexcept;
-        -:   40:};
-        -:   41:
-        -:   42:class book_repo_exception{
-        -:   43:    string msg;
-        -:   44:public:
-function _ZN19book_repo_exceptionC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 34 returned 100% blocks executed 100%
-       34:   45:    explicit book_repo_exception(string error_msg): msg{error_msg} {}
-       34:   45-block  0
-call    0 returned 34
-        -:   46:    friend ostream& operator<<(ostream& out, const book_repo_exception& ex);
-        -:   47:};
-        -:   48:
-        -:   49:ostream& operator<<(ostream& out, const book_repo_exception& ex);
-        -:   50:
-        -:   51:#endif //LAB6_7_CLION_REPO_H
+        -:   39:    void modify_book(const carte& obj_carte);
+        -:   40:
+        -:   41:    const carte& find_book_by_id(const int& id) const;
+        -:   42:
+        -:   43:    const my_vector<carte>& get_all() const noexcept;
+        -:   44:
+        -:   45:
+        -:   46:    static bool sort_by_title(const carte& book1, const carte& book2);
+        -:   47:    static bool sort_by_author(const carte& book1, const carte& book2);
+        -:   48:    static bool sort_by_publication_year_and_gen(const carte& book1, const carte& book2);
+        -:   49:
+        -:   50:};
+        -:   51:
+        -:   52:class book_repo_exception : std::exception{
+        -:   53:    string msg;
+        -:   54:public:
+function _ZN19book_repo_exceptionC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 64 returned 100% blocks executed 80%
+       64:   55:    explicit book_repo_exception(string error_msg): msg{error_msg} {}
+       64:   55-block  0
+call    0 returned 64
+call    1 returned 64
+branch  2 taken 64 (fallthrough)
+branch  3 taken 0 (throw)
+       64:   55-block  1
+    $$$$$:   55-block  2
+call    4 never executed
+        -:   56:    friend ostream& operator<<(ostream& out, const book_repo_exception& ex);
+        -:   57:};
+        -:   58:
+        -:   59:ostream& operator<<(ostream& out, const book_repo_exception& ex);
+        -:   60:
+        -:   61:#endif //LAB6_7_CLION_REPO_H

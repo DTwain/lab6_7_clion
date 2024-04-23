@@ -1,6 +1,6 @@
-        -:    0:Source:D:/Aplicatii/CLion 2024.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/alloc_traits.h
-        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_repo.cpp.gcno
-        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_repo.cpp.gcda
+        -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/alloc_traits.h
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_repo.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_repo.cpp.gcda
         -:    0:Runs:1
         -:    1:// Allocator traits -*- C++ -*-
         -:    2:
@@ -102,8 +102,6 @@
     #####:   98:    { return _Base_type::select_on_container_copy_construction(__a); }
     %%%%%:   98-block  0
     %%%%%:   98-block  1
-    %%%%%:   98-block  2
-    %%%%%:   98-block  3
         -:   99:
         -:  100:    [[__gnu__::__always_inline__]]
         -:  101:    static _GLIBCXX14_CONSTEXPR void _S_on_swap(_Alloc& __a, _Alloc& __b)
@@ -111,7 +109,8 @@
         -:  103:
         -:  104:    [[__gnu__::__always_inline__]]
         -:  105:    static constexpr bool _S_propagate_on_copy_assign()
-        -:  106:    { return _Base_type::propagate_on_container_copy_assignment::value; }
+    #####:  106:    { return _Base_type::propagate_on_container_copy_assignment::value; }
+    %%%%%:  106-block  0
         -:  107:
         -:  108:    [[__gnu__::__always_inline__]]
         -:  109:    static constexpr bool _S_propagate_on_move_assign()
@@ -123,7 +122,8 @@
         -:  115:
         -:  116:    [[__gnu__::__always_inline__]]
         -:  117:    static constexpr bool _S_always_equal()
-        -:  118:    { return _Base_type::is_always_equal::value; }
+    #####:  118:    { return _Base_type::is_always_equal::value; }
+    %%%%%:  118-block  0
         -:  119:
         -:  120:    __attribute__((__always_inline__))
         -:  121:    static constexpr bool _S_nothrow_move()

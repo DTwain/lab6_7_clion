@@ -1,6 +1,6 @@
-        -:    0:Source:D:/Aplicatii/CLion 2024.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h
-        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcno
-        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcda
+        -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcda
         -:    0:Runs:1
         -:    1:// nonstandard construct and destroy functions -*- C++ -*-
         -:    2:
@@ -229,19 +229,19 @@ call    0 returned 16
         -:  157:    {
         -:  158:      template<typename _ForwardIterator>
         -:  159:	static _GLIBCXX20_CONSTEXPR void
-function _ZNSt12_Destroy_auxILb0EE9__destroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEvT_S9_ called 24 returned 100% blocks executed 100%
-       24:  160:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZNSt12_Destroy_auxILb0EE9__destroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEvT_S9_ called 34 returned 100% blocks executed 100%
+       34:  160:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  161:	{
-       40:  162:	  for (; __first != __last; ++__first)
-       24:  162-block  0
-       40:  162-block  1
+       50:  162:	  for (; __first != __last; ++__first)
+       34:  162-block  0
+       50:  162-block  1
 branch  0 taken 16
-branch  1 taken 24 (fallthrough)
+branch  1 taken 34 (fallthrough)
        16:  163:	    std::_Destroy(std::__addressof(*__first));
        16:  163-block  0
 call    0 returned 16
 call    1 returned 16
-       24:  164:	}
+       34:  164:	}
         -:  165:    };
         -:  166:
         -:  167:  template<>
@@ -259,8 +259,8 @@ call    1 returned 16
         -:  179:   */
         -:  180:  template<typename _ForwardIterator>
         -:  181:    _GLIBCXX20_CONSTEXPR inline void
-function _ZSt8_DestroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEvT_S7_ called 24 returned 100% blocks executed 67%
-       24:  182:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZSt8_DestroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEvT_S7_ called 34 returned 100% blocks executed 67%
+       34:  182:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  183:    {
         -:  184:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  185:                       _Value_type;
@@ -270,19 +270,19 @@ function _ZSt8_DestroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEvT_
         -:  189:		    "value type is destructible");
         -:  190:#endif
         -:  191:#if __cplusplus >= 202002L
-       24:  192:      if (std::__is_constant_evaluated())
-       24:  192-block  0
-call    0 returned 24
+       34:  192:      if (std::__is_constant_evaluated())
+       34:  192-block  0
+call    0 returned 34
 branch  1 taken 0 (fallthrough)
-branch  2 taken 24
+branch  2 taken 34
     #####:  193:	return _Destroy_aux<false>::__destroy(__first, __last);
     %%%%%:  193-block  0
 call    0 never executed
         -:  194:#endif
         -:  195:      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
-       24:  196:	__destroy(__first, __last);
-       24:  196-block  0
-call    0 returned 24
+       34:  196:	__destroy(__first, __last);
+       34:  196-block  0
+call    0 returned 34
         -:  197:    }
         -:  198:
         -:  199:  template<bool>

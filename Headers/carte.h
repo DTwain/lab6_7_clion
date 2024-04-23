@@ -25,11 +25,16 @@ private:
             book_id;
 
 public:
+    carte() = default;
+
     carte(const string author, const string title, const string genre, const int year, const int id)
             :author{ author }, title{ title }, genre{ genre }, publication_year{ year }, book_id{ id }{}
     carte(const carte& ceva): author{ceva.author}, title{ceva.title}, genre{ceva.genre}, book_id{ceva.book_id}, publication_year{ceva.publication_year}{
             std::cout<<"hi\n";
     }
+
+    bool operator==(const carte& other) const;
+
     string get_author() const;
     string get_title() const;
     string get_genre() const;

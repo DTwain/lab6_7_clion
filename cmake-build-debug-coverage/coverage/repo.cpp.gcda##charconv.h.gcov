@@ -1,6 +1,6 @@
-        -:    0:Source:D:/Aplicatii/CLion 2024.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h
-        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcno
-        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcda
+        -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcda
         -:    0:Runs:1
         -:    1:// Numeric conversions (to_string, to_chars) -*- C++ -*-
         -:    2:
@@ -56,30 +56,30 @@
         -:   52:  // Generic implementation for arbitrary bases.
         -:   53:  template<typename _Tp>
         -:   54:    _GLIBCXX14_CONSTEXPR unsigned
-function _ZNSt8__detail14__to_chars_lenIjEEjT_i called 34 returned 100% blocks executed 36%
-       34:   55:    __to_chars_len(_Tp __value, int __base = 10) noexcept
+function _ZNSt8__detail14__to_chars_lenIjEEjT_i called 64 returned 100% blocks executed 55%
+       64:   55:    __to_chars_len(_Tp __value, int __base = 10) noexcept
         -:   56:    {
         -:   57:#if __cpp_variable_templates
         -:   58:      static_assert(__integer_to_chars_is_unsigned<_Tp>, "implementation bug");
         -:   59:#endif
         -:   60:
-       34:   61:      unsigned __n = 1;
-       34:   62:      const unsigned __b2 = __base  * __base;
-       34:   63:      const unsigned __b3 = __b2 * __base;
-       34:   64:      const unsigned long __b4 = __b3 * __base;
-       34:   64-block  0
+       64:   61:      unsigned __n = 1;
+       64:   62:      const unsigned __b2 = __base  * __base;
+       64:   63:      const unsigned __b3 = __b2 * __base;
+       64:   64:      const unsigned long __b4 = __b3 * __base;
+       64:   64-block  0
         -:   65:      for (;;)
         -:   66:	{
-       34:   67:	  if (__value < (unsigned)__base) return __n;
-       34:   67-block  0
-branch  0 taken 34 (fallthrough)
+       64:   67:	  if (__value < (unsigned)__base) return __n;
+       64:   67-block  0
+branch  0 taken 51 (fallthrough)
+branch  1 taken 13
+       51:   67-block  1
+       13:   68:	  if (__value < __b2) return __n + 1;
+       13:   68-block  0
+branch  0 taken 13 (fallthrough)
 branch  1 taken 0
-       34:   67-block  1
-    #####:   68:	  if (__value < __b2) return __n + 1;
-    %%%%%:   68-block  0
-branch  0 never executed (fallthrough)
-branch  1 never executed
-    %%%%%:   68-block  1
+       13:   68-block  1
     #####:   69:	  if (__value < __b3) return __n + 2;
     %%%%%:   69-block  0
 branch  0 never executed (fallthrough)
@@ -101,25 +101,25 @@ branch  1 never executed
         -:   78:  // (which can be determined by the __to_chars_len function).
         -:   79:  template<typename _Tp>
         -:   80:    _GLIBCXX23_CONSTEXPR void
-function _ZNSt8__detail18__to_chars_10_implIjEEvPcjT_ called 34 returned 100% blocks executed 71%
-       34:   81:    __to_chars_10_impl(char* __first, unsigned __len, _Tp __val) noexcept
+function _ZNSt8__detail18__to_chars_10_implIjEEvPcjT_ called 64 returned 100% blocks executed 86%
+       64:   81:    __to_chars_10_impl(char* __first, unsigned __len, _Tp __val) noexcept
         -:   82:    {
         -:   83:#if __cpp_variable_templates
         -:   84:      static_assert(__integer_to_chars_is_unsigned<_Tp>, "implementation bug");
         -:   85:#endif
         -:   86:
-       34:   87:      constexpr char __digits[201] =
+       64:   87:      constexpr char __digits[201] =
         -:   88:	"0001020304050607080910111213141516171819"
         -:   89:	"2021222324252627282930313233343536373839"
         -:   90:	"4041424344454647484950515253545556575859"
         -:   91:	"6061626364656667686970717273747576777879"
         -:   92:	"8081828384858687888990919293949596979899";
-       34:   93:      unsigned __pos = __len - 1;
-       34:   94:      while (__val >= 100)
-       34:   94-block  0
-       34:   94-block  1
+       64:   93:      unsigned __pos = __len - 1;
+       64:   94:      while (__val >= 100)
+       64:   94-block  0
+       64:   94-block  1
 branch  0 taken 0
-branch  1 taken 34 (fallthrough)
+branch  1 taken 64 (fallthrough)
         -:   95:	{
     #####:   96:	  auto const __num = (__val % 100) * 2;
     #####:   97:	  __val /= 100;
@@ -128,20 +128,20 @@ branch  1 taken 34 (fallthrough)
     #####:  100:	  __pos -= 2;
     %%%%%:  100-block  0
         -:  101:	}
-       34:  102:      if (__val >= 10)
-       34:  102-block  0
-branch  0 taken 0 (fallthrough)
-branch  1 taken 34
+       64:  102:      if (__val >= 10)
+       64:  102-block  0
+branch  0 taken 13 (fallthrough)
+branch  1 taken 51
         -:  103:	{
-    #####:  104:	  auto const __num = __val * 2;
-    #####:  105:	  __first[1] = __digits[__num + 1];
-    #####:  106:	  __first[0] = __digits[__num];
-    %%%%%:  106-block  0
+       13:  104:	  auto const __num = __val * 2;
+       13:  105:	  __first[1] = __digits[__num + 1];
+       13:  106:	  __first[0] = __digits[__num];
+       13:  106-block  0
         -:  107:	}
         -:  108:      else
-       34:  109:	__first[0] = '0' + __val;
-       34:  109-block  0
-       34:  110:    }
+       51:  109:	__first[0] = '0' + __val;
+       51:  109-block  0
+       64:  110:    }
         -:  111:
         -:  112:} // namespace __detail
         -:  113:_GLIBCXX_END_NAMESPACE_VERSION

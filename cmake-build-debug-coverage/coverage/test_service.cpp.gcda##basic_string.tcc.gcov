@@ -1,6 +1,6 @@
-        -:    0:Source:D:/Aplicatii/CLion 2024.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc
-        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_service.cpp.gcno
-        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_service.cpp.gcda
+        -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_service.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_service.cpp.gcda
         -:    0:Runs:1
         -:    1:// Components for manipulating sequences of characters -*- C++ -*-
         -:    2:
@@ -401,29 +401,60 @@ call    0 never executed
         -:  270:  template<typename _CharT, typename _Traits, typename _Alloc>
         -:  271:    _GLIBCXX20_CONSTEXPR
         -:  272:    void
-        -:  273:    basic_string<_CharT, _Traits, _Alloc>::
+function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_assignERKS4_ called 0 returned 0% blocks executed 0%
+    #####:  273:    basic_string<_CharT, _Traits, _Alloc>::
         -:  274:    _M_assign(const basic_string& __str)
         -:  275:    {
-        -:  276:      if (this != std::__addressof(__str))
+    #####:  276:      if (this != std::__addressof(__str))
+    %%%%%:  276-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
         -:  277:	{
-        -:  278:	  const size_type __rsize = __str.length();
-        -:  279:	  const size_type __capacity = capacity();
+    #####:  278:	  const size_type __rsize = __str.length();
+    %%%%%:  278-block  0
+call    0 never executed
+    #####:  279:	  const size_type __capacity = capacity();
+call    0 never executed
         -:  280:
-        -:  281:	  if (__rsize > __capacity)
+    #####:  281:	  if (__rsize > __capacity)
+branch  0 never executed (fallthrough)
+branch  1 never executed
         -:  282:	    {
-        -:  283:	      size_type __new_capacity = __rsize;
-        -:  284:	      pointer __tmp = _M_create(__new_capacity, __capacity);
-        -:  285:	      _M_dispose();
-        -:  286:	      _M_data(__tmp);
-        -:  287:	      _M_capacity(__new_capacity);
+    #####:  283:	      size_type __new_capacity = __rsize;
+    #####:  284:	      pointer __tmp = _M_create(__new_capacity, __capacity);
+    %%%%%:  284-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  285:	      _M_dispose();
+    %%%%%:  285-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  286:	      _M_data(__tmp);
+    %%%%%:  286-block  0
+call    0 never executed
+    #####:  287:	      _M_capacity(__new_capacity);
+call    0 never executed
         -:  288:	    }
         -:  289:
-        -:  290:	  if (__rsize)
-        -:  291:	    this->_S_copy(_M_data(), __str._M_data(), __rsize);
+    #####:  290:	  if (__rsize)
+    %%%%%:  290-block  0
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  291:	    this->_S_copy(_M_data(), __str._M_data(), __rsize);
+    %%%%%:  291-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
         -:  292:
-        -:  293:	  _M_set_length(__rsize);
+    #####:  293:	  _M_set_length(__rsize);
+    %%%%%:  293-block  0
+call    0 never executed
         -:  294:	}
-        -:  295:    }
+    #####:  295:    }
+    %%%%%:  295-block  0
         -:  296:
         -:  297:  template<typename _CharT, typename _Traits, typename _Alloc>
         -:  298:    _GLIBCXX20_CONSTEXPR

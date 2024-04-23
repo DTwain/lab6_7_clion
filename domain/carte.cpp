@@ -19,3 +19,7 @@ int carte::get_publication_year() const {
 int carte::get_book_id() const {
     return this->book_id;
 }
+
+bool carte::operator==(const carte &other) const {
+    return this->get_book_id() == other.get_book_id();
+}

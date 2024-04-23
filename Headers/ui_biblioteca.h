@@ -15,8 +15,10 @@ private:
     void add_book();
     void delete_book();
     void modify_book();
-    void afiseaza(const std::vector<carte>& books);
+    void afiseaza(const my_vector<carte>& books);
     void cautare();
+    void filtare();
+    void sortare();
 public:
     ui_biblioteca(service_biblioteca &srv_obj): srv{srv_obj}{}
     ui_biblioteca(const ui_biblioteca& other_ui) = delete;

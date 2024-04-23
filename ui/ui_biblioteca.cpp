@@ -3,29 +3,40 @@
 //
 
 #include "../Headers/ui_biblioteca.h"
+#include "../Headers/carte.h"
+#include "../Headers/my_vector.h"
+#include "../Headers/vector_iterator.h"
 #include <iostream>
 #include <string>
-#include "../Headers/carte.h"
 
 using std::string;
 using std::cin;
 using std::cout;
 
-void ui_biblioteca::afiseaza(const std::vector<carte> &books) {
+void ui_biblioteca::afiseaza(const my_vector<carte>& books) {
+    if(books.size() == 0){
+        cout << "Nu sunt carti de afisat\n";
+        return;
+    }
     cout << "\nCartile sunt:\n";
-    for(const auto& carte: books){
-        cout << "Author: " << carte.get_author() << '\n';
-        cout << "Title: " << carte.get_title() << '\n';
-        cout << "Genre: " << carte.get_genre() << '\n';
-        cout << "Publication Year: " << carte.get_publication_year() << '\n';
-        cout << "Book ID: " << carte.get_book_id() << '\n';
+    iterator_vector<carte> iter{books};
+    iter.prim();
+    while(iter.valid()) {
+        const carte &book = iter.element();
 
+        cout << "Author: " << book.get_author() << '\n';
+        cout << "Title: " << book.get_title() << '\n';
+        cout << "Genre: " << book.get_genre() << '\n';
+        cout << "Publication Year: " << book.get_publication_year() << '\n';
+        cout << "Book ID: " << book.get_book_id() << '\n';
+
+        iter.next();
         cout << '\n';
     }
 }
 
 void ui_biblioteca::meniu(){
-    cout<< "< 1 > Adaugare carte\n< 2 > Sterge carte\n< 3 > Modifica carte\n< 4 > Afiseaza cartile\n< 5 > Cautare\n< 6 > EXIT\nOption: ";
+    cout<< "< 1 > Adaugare carte\n< 2 > Sterge carte\n< 3 > Modifica carte\n< 4 > Afiseaza cartile\n< 5 > Cautare\n< 6 > Filtrare: \n< 7 > Sortare\n< 8 > EXIT\nOption: ";
 }
 void ui_biblioteca::add_book() {
     string autor, titlu, gen;
@@ -52,7 +63,7 @@ void ui_biblioteca::delete_book() {
 void ui_biblioteca::modify_book() {
     int id_carte_to_be_modified;
     afiseaza(srv.get_all_srv());
-    cout<<"Id carte pentru a fi stearsa: "; cin>> id_carte_to_be_modified;
+    cout<<"Id carte pentru a fi modificata: "; cin>> id_carte_to_be_modified;
     string autor, titlu, gen;
     int an_pub;
     cout<<"autor: "; cin>>autor;
@@ -77,13 +88,37 @@ void ui_biblioteca::cautare(){
 
     cout<<"an: "; cin >> an_pub;
 
-    carte carte = srv.search_for_book(autor, titlu, gen, an_pub);
+    carte carte{ srv.search_for_book(autor, titlu, gen, an_pub) };
 
     cout << "Author: " << carte.get_author() << '\n';
     cout << "Title: " << carte.get_title() << '\n';
     cout << "Genre: " << carte.get_genre() << '\n';
     cout << "Publication Year: " << carte.get_publication_year() << '\n';
     cout << "Book ID: " << carte.get_book_id() << '\n';
+}
+void ui_biblioteca::filtare() {
+    cout<<"\nFiltrare dupa an si titlu:\n";
+    int an;
+    string titlu;
+    cout << "an: "; cin >> an;
+    cout << "titlu: "; cin >> titlu;
+
+    const my_vector<carte>& filtered_books{ srv.filter_srv(an,titlu) };
+
+    afiseaza(filtered_books);
+}
+void ui_biblioteca::sortare() {
+    cout << "\nSortare dupa titlu / autor / anul aparitiei + gen\n";
+    int optiune = 0;
+    cout<<"Alege:\n";
+    cout<<"< 1 > Dupa titlu:\n";
+    cout<<"< 2 > Dupa autor:\n";
+    cout<<"< 3 > Dupa anul aparitiei + gen:\n";
+    while(!(optiune == 1 || optiune == 2 || optiune == 3)){
+        std::cout<<"Optiune: "; cin >> optiune;
+    }
+    const my_vector<carte>& sorted_books = srv.sorter_based_on_option(optiune);
+    afiseaza(sorted_books);
 }
 void ui_biblioteca::run(){
     srv.add_book_srv("Luis", "Jupanii", "Epic", 1842);
@@ -109,7 +144,14 @@ void ui_biblioteca::run(){
                     break;
                 case 5:
                     cautare();
+                    break;
                 case 6:
+                    filtare();
+                    break;
+                case 7:
+                    sortare();
+                    break;
+                case 8:
                     return;
                 default:
                     cout << "Optiunea nu exista!\n";
@@ -121,7 +163,9 @@ void ui_biblioteca::run(){
         catch (const book_repo_exception& ex){
             cout << ex << '\n';
         }
-        catch (const std::exception){}
+        catch (const std::exception){
+            cout<< "Alta eroare!!\n";
+        }
     }
 }
 

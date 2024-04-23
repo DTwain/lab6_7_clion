@@ -152,14 +152,14 @@ CMakeFiles/lab6_7_clion.dir/main.cpp.obj: \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
  D:\INFO\ 2\SEM\ 2\OOP\lab6-7---oop\Headers/teste.h \
  D:\INFO\ 2\SEM\ 2\OOP\lab6-7---oop\Headers/repo.h \
- D:/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/Headers/carte.h \
+ D:\INFO\ 2\SEM\ 2\OOP\lab6-7---oop\Headers/carte.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
+ D:\INFO\ 2\SEM\ 2\OOP\lab6-7---oop\Headers/my_vector.h \
  D:\INFO\ 2\SEM\ 2\OOP\lab6-7---oop\Headers/validator.h \
- D:\INFO\ 2\SEM\ 2\OOP\lab6-7---oop\Headers/carte.h \
  D:\INFO\ 2\SEM\ 2\OOP\lab6-7---oop\Headers/service_biblioteca.h \
  D:\INFO\ 2\SEM\ 2\OOP\lab6-7---oop\Headers/repo.h \
  D:\INFO\ 2\SEM\ 2\OOP\lab6-7---oop\Headers/validator.h \
@@ -174,4 +174,6 @@ CMakeFiles/lab6_7_clion.dir/main.cpp.obj: \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_algo.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_algobase.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h \
- D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h
+ D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
+ D:\INFO\ 2\SEM\ 2\OOP\lab6-7---oop\Headers/my_vector.h \
+ D:\INFO\ 2\SEM\ 2\OOP\lab6-7---oop\Headers/vector_iterator.h

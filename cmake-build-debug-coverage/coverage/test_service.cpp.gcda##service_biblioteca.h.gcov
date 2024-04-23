@@ -1,6 +1,6 @@
-        -:    0:Source:D:/SEM 2 AN 1/OOP/lab6-7_clion/lab6-7_clion/Headers/service_biblioteca.h
-        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_service.cpp.gcno
-        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_service.cpp.gcda
+        -:    0:Source:D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/service_biblioteca.h
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_service.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_service.cpp.gcda
         -:    0:Runs:1
         -:    1://
         -:    2:// Created by obrej on 4/10/2024.
@@ -22,23 +22,32 @@
         -:   18:private:
         -:   19:    repo& repo_carti;
         -:   20:    validator_carte& validator;
-        -:   21:public:
-function _ZN18service_bibliotecaC1ER4repoR15validator_carte called 0 returned 0% blocks executed 0%
-    #####:   22:    service_biblioteca(repo &repo_carti_obj, validator_carte& validator_obj):
-    #####:   23:        repo_carti{repo_carti_obj}, validator{validator_obj}{}
-        -:   24:
-        -:   25:        service_biblioteca(const service_biblioteca& other) = delete; // blocam copierea service lui
-        -:   26:
-        -:   27:        void add_book_srv(const string& autor, const string& titlu, const string& genre, const int& an);
-        -:   28:
-        -:   29:        void delete_book_srv(const int& id);
-        -:   30:
-        -:   31:        void modify_book_srv(const string& autor, const string& titlu, const string& genre, const int& an, const int& id);
-        -:   32:
-        -:   33:        const vector<carte>& get_all_srv() noexcept;
-        -:   34:
-        -:   35:        const vector<carte> filter_srv_an_aparitie(const int& an) const;
-        -:   36:};
+        -:   21:    void my_sort(const my_vector<carte>& all, bool(*func)(const carte&, const carte&)) const;
+        -:   22:public:
+function _ZN18service_bibliotecaC1ER4repoR15validator_carte called 7 returned 100% blocks executed 100%
+        7:   23:    service_biblioteca(repo &repo_carti_obj, validator_carte& validator_obj):
+        7:   24:        repo_carti{repo_carti_obj}, validator{validator_obj}{}
+        -:   25:
+        -:   26:    service_biblioteca(const service_biblioteca& other) = delete; // blocam copierea service lui
+        -:   27:
+        -:   28:    const my_vector<carte>& get_reference_from_vector_srv() const noexcept;
+        -:   29:
+        -:   30:    void add_book_srv(const string& autor, const string& titlu, const string& genre, const int& an);
+        -:   31:
+        -:   32:    void delete_book_srv(const int& id);
+        -:   33:
+        -:   34:    void modify_book_srv(const string& autor, const string& titlu, const string& genre, const int& an, const int& id);
+        -:   35:
+        -:   36:    const my_vector<carte>& get_all_srv() noexcept;
         -:   37:
-        -:   38:
-        -:   39:#endif //LAB6_7_CLION_SERVICE_BIBLIOTECA_H
+        -:   38:    const my_vector<carte> filter_srv(int an, string titlu) const;
+        -:   39:
+        -:   40:    const my_vector<carte> sorter_based_on_option(int option) const;
+        -:   41:
+        -:   42:    const carte& search_for_book(const std::string &autor, const std::string &titlu, const std::string &genre,
+        -:   43:                                 const int &an);
+        -:   44:
+        -:   45:};
+        -:   46:
+        -:   47:
+        -:   48:#endif //LAB6_7_CLION_SERVICE_BIBLIOTECA_H

@@ -1,6 +1,6 @@
-        -:    0:Source:D:/Aplicatii/CLion 2024.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h
-        -:    0:Graph:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcno
-        -:    0:Data:D:\SEM 2 AN 1\OOP\lab6-7_clion\lab6-7_clion\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcda
+        -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcda
         -:    0:Runs:1
         -:    1:// Pointer Traits -*- C++ -*-
         -:    2:
@@ -142,22 +142,22 @@
         -:  138:       *  @return `addressof(__r)`
         -:  139:      */
         -:  140:      static _GLIBCXX20_CONSTEXPR pointer
-    1217*:  141:      pointer_to(element_type& __r) noexcept
-    1217*:  142:      { return std::addressof(__r); }
+     8092:  141:      pointer_to(element_type& __r) noexcept
+     8092:  142:      { return std::addressof(__r); }
 ------------------
 _ZNSt19__ptr_traits_ptr_toIPKcS0_Lb0EE10pointer_toERS0_:
-function _ZNSt19__ptr_traits_ptr_toIPKcS0_Lb0EE10pointer_toERS0_ called 0 returned 0% blocks executed 0%
-    #####:  141:      pointer_to(element_type& __r) noexcept
-    #####:  142:      { return std::addressof(__r); }
-    %%%%%:  142-block  0
-call    0 never executed
+function _ZNSt19__ptr_traits_ptr_toIPKcS0_Lb0EE10pointer_toERS0_ called 3245 returned 100% blocks executed 100%
+     3245:  141:      pointer_to(element_type& __r) noexcept
+     3245:  142:      { return std::addressof(__r); }
+     3245:  142-block  0
+call    0 returned 3245
 ------------------
 _ZNSt19__ptr_traits_ptr_toIPccLb0EE10pointer_toERc:
-function _ZNSt19__ptr_traits_ptr_toIPccLb0EE10pointer_toERc called 1217 returned 100% blocks executed 100%
-     1217:  141:      pointer_to(element_type& __r) noexcept
-     1217:  142:      { return std::addressof(__r); }
-     1217:  142-block  0
-call    0 returned 1217
+function _ZNSt19__ptr_traits_ptr_toIPccLb0EE10pointer_toERc called 4847 returned 100% blocks executed 100%
+     4847:  141:      pointer_to(element_type& __r) noexcept
+     4847:  142:      { return std::addressof(__r); }
+     4847:  142-block  0
+call    0 returned 4847
 ------------------
         -:  143:    };
         -:  144:
