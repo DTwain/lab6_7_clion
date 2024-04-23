@@ -1,10 +1,10 @@
-        -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/move.h
-        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcno
-        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcda
+        -:    0:Source:/usr/include/c++/11/bits/move.h
+        -:    0:Graph:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug-coverage/CMakeFiles/lab6_7_clion.dir/service/service_biblioteca.cpp.gcno
+        -:    0:Data:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug-coverage/CMakeFiles/lab6_7_clion.dir/service/service_biblioteca.cpp.gcda
         -:    0:Runs:1
         -:    1:// Move, forward and identity for C++11 + swap -*- C++ -*-
         -:    2:
-        -:    3:// Copyright (C) 2007-2023 Free Software Foundation, Inc.
+        -:    3:// Copyright (C) 2007-2021 Free Software Foundation, Inc.
         -:    4://
         -:    5:// This file is part of the GNU ISO C++ Library.  This library is free
         -:    6:// software; you can redistribute it and/or modify it under the
@@ -50,11 +50,17 @@
         -:   46:   */
         -:   47:  template<typename _Tp>
         -:   48:    inline _GLIBCXX_CONSTEXPR _Tp*
-    #####:   49:    __addressof(_Tp& __r) _GLIBCXX_NOEXCEPT
-    #####:   50:    { return __builtin_addressof(__r); }
+       2*:   49:    __addressof(_Tp& __r) _GLIBCXX_NOEXCEPT
+       2*:   50:    { return __builtin_addressof(__r); }
 ------------------
 _ZSt11__addressofIKcEPT_RS1_:
 function _ZSt11__addressofIKcEPT_RS1_ called 0 returned 0% blocks executed 0%
+    #####:   49:    __addressof(_Tp& __r) _GLIBCXX_NOEXCEPT
+    #####:   50:    { return __builtin_addressof(__r); }
+    %%%%%:   50-block  0
+------------------
+_ZSt11__addressofI5carteEPT_RS1_:
+function _ZSt11__addressofI5carteEPT_RS1_ called 0 returned 0% blocks executed 0%
     #####:   49:    __addressof(_Tp& __r) _GLIBCXX_NOEXCEPT
     #####:   50:    { return __builtin_addressof(__r); }
     %%%%%:   50-block  0
@@ -65,11 +71,11 @@ function _ZSt11__addressofIcEPT_RS0_ called 0 returned 0% blocks executed 0%
     #####:   50:    { return __builtin_addressof(__r); }
     %%%%%:   50-block  0
 ------------------
-_ZSt11__addressofIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEPT_RS7_:
-function _ZSt11__addressofIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEPT_RS7_ called 0 returned 0% blocks executed 0%
-    #####:   49:    __addressof(_Tp& __r) _GLIBCXX_NOEXCEPT
-    #####:   50:    { return __builtin_addressof(__r); }
-    %%%%%:   50-block  0
+_ZSt11__addressofISt6vectorI5carteSaIS1_EEEPT_RS4_:
+function _ZSt11__addressofISt6vectorI5carteSaIS1_EEEPT_RS4_ called 2 returned 100% blocks executed 100%
+        2:   49:    __addressof(_Tp& __r) _GLIBCXX_NOEXCEPT
+        2:   50:    { return __builtin_addressof(__r); }
+        2:   50-block  0
 ------------------
         -:   51:
         -:   52:#if __cplusplus >= 201103L
@@ -97,7 +103,7 @@ function _ZSt11__addressofIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
         -:   74:  template<typename _Tp>
         -:   75:    _GLIBCXX_NODISCARD
         -:   76:    constexpr _Tp&&
-function _ZSt7forwardIRKcEOT_RNSt16remove_referenceIS2_E4typeE called 0 returned 0% blocks executed 0%
+function _ZSt7forwardIRK5carteEOT_RNSt16remove_referenceIS3_E4typeE called 0 returned 0% blocks executed 0%
     #####:   77:    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
     #####:   78:    { return static_cast<_Tp&&>(__t); }
     %%%%%:   78-block  0
@@ -126,10 +132,39 @@ function _ZSt7forwardIRKcEOT_RNSt16remove_referenceIS2_E4typeE called 0 returned
         -:  101:  template<typename _Tp>
         -:  102:    _GLIBCXX_NODISCARD
         -:  103:    constexpr typename std::remove_reference<_Tp>::type&&
+      26*:  104:    move(_Tp&& __t) noexcept
+      26*:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
+------------------
+_ZSt4moveIRN9__gnu_cxx5__ops15_Iter_comp_iterIPFbRK5carteS5_EEEEONSt16remove_referenceIT_E4typeEOSB_:
+function _ZSt4moveIRN9__gnu_cxx5__ops15_Iter_comp_iterIPFbRK5carteS5_EEEEONSt16remove_referenceIT_E4typeEOSB_ called 7 returned 100% blocks executed 100%
+        7:  104:    move(_Tp&& __t) noexcept
+        7:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
+        7:  105-block  0
+------------------
+_ZSt4moveIR5carteEONSt16remove_referenceIT_E4typeEOS3_:
+function _ZSt4moveIR5carteEONSt16remove_referenceIT_E4typeEOS3_ called 0 returned 0% blocks executed 0%
+    #####:  104:    move(_Tp&& __t) noexcept
+    #####:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
+    %%%%%:  105-block  0
+------------------
+_ZSt4moveIRPFbRK5carteS2_EEONSt16remove_referenceIT_E4typeEOS7_:
+function _ZSt4moveIRPFbRK5carteS2_EEONSt16remove_referenceIT_E4typeEOS7_ called 15 returned 100% blocks executed 100%
+       15:  104:    move(_Tp&& __t) noexcept
+       15:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
+       15:  105-block  0
+------------------
+_ZSt4moveIRZN18service_biblioteca15search_for_bookERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_S8_RKiEUlRK5carteE_EONSt16remove_referenceIT_E4typeEOSH_:
+function _ZSt4moveIRZN18service_biblioteca15search_for_bookERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_S8_RKiEUlRK5carteE_EONSt16remove_referenceIT_E4typeEOSH_ called 4 returned 100% blocks executed 100%
+        4:  104:    move(_Tp&& __t) noexcept
+        4:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
+        4:  105-block  0
+------------------
+_ZSt4moveIRSaIcEEONSt16remove_referenceIT_E4typeEOS3_:
 function _ZSt4moveIRSaIcEEONSt16remove_referenceIT_E4typeEOS3_ called 0 returned 0% blocks executed 0%
     #####:  104:    move(_Tp&& __t) noexcept
     #####:  105:    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
     %%%%%:  105-block  0
+------------------
         -:  106:
         -:  107:
         -:  108:  template<typename _Tp>
@@ -147,8 +182,8 @@ function _ZSt4moveIRSaIcEEONSt16remove_referenceIT_E4typeEOS3_ called 0 returned
         -:  120:   */
         -:  121:  template<typename _Tp>
         -:  122:    _GLIBCXX_NODISCARD
-        -:  123:    constexpr
-        -:  124:    __conditional_t<__move_if_noexcept_cond<_Tp>::value, const _Tp&, _Tp&&>
+        -:  123:    constexpr typename
+        -:  124:    conditional<__move_if_noexcept_cond<_Tp>::value, const _Tp&, _Tp&&>::type
         -:  125:    move_if_noexcept(_Tp& __x) noexcept
         -:  126:    { return std::move(__x); }
         -:  127:
@@ -157,7 +192,7 @@ function _ZSt4moveIRSaIcEEONSt16remove_referenceIT_E4typeEOS3_ called 0 returned
         -:  130:#if __cplusplus > 201402L
         -:  131:  // _GLIBCXX_RESOLVE_LIB_DEFECTS
         -:  132:  // 2296. std::addressof should be constexpr
-        -:  133:# define __cpp_lib_addressof_constexpr 201603L
+        -:  133:# define __cpp_lib_addressof_constexpr 201603
         -:  134:#endif
         -:  135:  /**
         -:  136:   *  @brief Returns the actual address of the object or function
@@ -235,7 +270,8 @@ call    0 never executed
         -:  193:#else
         -:  194:    void
         -:  195:#endif
-        -:  196:    swap(_Tp& __a, _Tp& __b)
+function _ZSt4swapI5carteENSt9enable_ifIXsrSt6__and_IJSt6__not_ISt15__is_tuple_likeIT_EESt21is_move_constructibleIS5_ESt18is_move_assignableIS5_EEE5valueEvE4typeERS5_SF_ called 0 returned 0% blocks executed 0%
+    #####:  196:    swap(_Tp& __a, _Tp& __b)
         -:  197:    _GLIBCXX_NOEXCEPT_IF(__and_<is_nothrow_move_constructible<_Tp>,
         -:  198:				is_nothrow_move_assignable<_Tp>>::value)
         -:  199:    {
@@ -243,10 +279,29 @@ call    0 never executed
         -:  201:      // concept requirements
         -:  202:      __glibcxx_function_requires(_SGIAssignableConcept<_Tp>)
         -:  203:#endif
-        -:  204:      _Tp __tmp = _GLIBCXX_MOVE(__a);
-        -:  205:      __a = _GLIBCXX_MOVE(__b);
-        -:  206:      __b = _GLIBCXX_MOVE(__tmp);
-        -:  207:    }
+    #####:  204:      _Tp __tmp = _GLIBCXX_MOVE(__a);
+    %%%%%:  204-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    #####:  205:      __a = _GLIBCXX_MOVE(__b);
+    %%%%%:  205-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    #####:  206:      __b = _GLIBCXX_MOVE(__tmp);
+    %%%%%:  206-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    #####:  207:    }
+    %%%%%:  207-block  0
+call    0 never executed
+    $$$$$:  207-block  1
+call    1 never executed
         -:  208:
         -:  209:  // _GLIBCXX_RESOLVE_LIB_DEFECTS
         -:  210:  // DR 809. std::swap should be overloaded for array types.

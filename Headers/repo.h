@@ -19,7 +19,7 @@ using std::vector;
 
 class repo {
 private:
-    my_vector<carte> carte_vec;
+    vector<carte> carte_vec;
     int id = 0;
     bool carte_in_repo(const int& id ) const;
     void incrementare_id();
@@ -30,17 +30,21 @@ public:
 
     const int& get_id_for_next_book_to_be_added() const;
 
-    const my_vector<carte>& get_reference_from_vector() const;
+    const vector<carte>& get_reference_from_vector() const;
 
     void add(const carte& carte_obj);
+
+    void add_pt_cos(const carte& obj_carte);
 
     void delete_book(const int& id);
 
     void modify_book(const carte& obj_carte);
 
+    void goleste_repo();
+
     const carte& find_book_by_id(const int& id) const;
 
-    const my_vector<carte>& get_all() const noexcept;
+    const vector<carte>& get_all() const noexcept;
 
 
     static bool sort_by_title(const carte& book1, const carte& book2);

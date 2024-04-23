@@ -1,35 +1,38 @@
-        -:    0:Source:D:/INFO 2/SEM 2/OOP/lab6-7---oop/main.cpp
-        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\main.cpp.gcno
-        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\main.cpp.gcda
+        -:    0:Source:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/main.cpp
+        -:    0:Graph:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug-coverage/CMakeFiles/lab6_7_clion.dir/main.cpp.gcno
+        -:    0:Data:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug-coverage/CMakeFiles/lab6_7_clion.dir/main.cpp.gcda
         -:    0:Runs:1
         -:    1:#include <iostream>
         -:    2:#include "Headers/teste.h"
         -:    3:#include "Headers/repo.h"
         -:    4:#include "Headers/validator.h"
         -:    5:#include "Headers/service_biblioteca.h"
-        -:    6:#include "Headers/ui_biblioteca.h"
-        -:    7:
+        -:    6:#include "Headers/cos_carti.h"
+        -:    7:#include "Headers/ui_biblioteca.h"
         -:    8:
+        -:    9:
 function main called 1 returned 100% blocks executed 100%
-        1:    9:int main() {
-        -:   10:    tests tester;
-        1:   11:    tester.run_all_tests();
-        1:   11-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:   12:    std::cout<<"ok boss\n";
+        1:   10:int main() {
+        -:   11:    tests tester;
+        1:   12:    tester.run_all_tests();
         1:   12-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        -:   13:
-        -:   14:    /*repo book_repo;
-        -:   15:    validator_carte validator;
-        -:   16:    service_biblioteca srv{book_repo, validator};
-        -:   17:    ui_biblioteca service{srv};
-        -:   18:    service.run();*/
-        -:   19:
-        1:   20:    return 0;
-        1:   20-block  0
-        -:   21:}
+        1:   13:    std::cout<<"ok boss\n";
+        1:   13-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   14:
+        -:   15:    /*repo book_repo;
+        -:   16:    repo cos;
+        -:   17:    validator_carte validator;
+        -:   18:    service_biblioteca srv{book_repo, validator};
+        -:   19:    cos_carti cos_srv{book_repo, cos};
+        -:   20:    ui_biblioteca service{srv, cos_srv};
+        -:   21:    service.run();*/
+        -:   22:
+        1:   23:    return 0;
+        1:   23-block  0
+        -:   24:}

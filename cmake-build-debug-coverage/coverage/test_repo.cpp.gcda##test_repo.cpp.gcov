@@ -1,6 +1,6 @@
-        -:    0:Source:D:/INFO 2/SEM 2/OOP/lab6-7---oop/teste/test_repo.cpp
-        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_repo.cpp.gcno
-        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_repo.cpp.gcda
+        -:    0:Source:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/teste/test_repo.cpp
+        -:    0:Graph:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug-coverage/CMakeFiles/lab6_7_clion.dir/teste/test_repo.cpp.gcno
+        -:    0:Data:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug-coverage/CMakeFiles/lab6_7_clion.dir/teste/test_repo.cpp.gcda
         -:    0:Runs:1
         -:    1://
         -:    2:// Created by obrej on 4/10/2024.
@@ -31,808 +31,674 @@ call    0 returned 1
         -:   18:
         1:   19:}
         -:   20:
-function _ZN9test_repo13test_repo_addEv called 1 returned 100% blocks executed 48%
+function _ZN9test_repo13test_repo_addEv called 1 returned 100% blocks executed 44%
         1:   21:void test_repo::test_repo_add() {
         1:   22:    repo book_repo;
         1:   22-block  0
 call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        6:   23:    carte book0 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+        2:   23:    carte book0 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   23-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   23-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   23-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   23-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   23-block  4
 call   12 returned 1
-        1:   23-block  5
-call   13 returned 1
-        1:   23-block  6
-call   14 returned 1
-        1:   23-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   23-block  3
+    $$$$$:   23-block  4
+    $$$$$:   23-block  5
+    $$$$$:   23-block  6
+    $$$$$:   23-block  7
     $$$$$:   23-block  8
-call   15 never executed
-    $$$$$:   23-block  9
-    $$$$$:   23-block 10
-    $$$$$:   23-block 11
-call   16 never executed
-    $$$$$:   23-block 12
-    $$$$$:   23-block 13
-    $$$$$:   23-block 14
-call   17 never executed
-    $$$$$:   23-block 15
-    $$$$$:   23-block 16
-        6:   24:    carte book1 = carte("Kong", "Maria", "Liric", 1940, 1);
+        2:   24:    carte book1 = carte("Kong", "Maria", "Liric", 1940, 1);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   24-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   24-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   24-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   24-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   24-block  4
 call   12 returned 1
-        1:   24-block  5
-call   13 returned 1
-        1:   24-block  6
-call   14 returned 1
-        1:   24-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   24-block  3
+    $$$$$:   24-block  4
+    $$$$$:   24-block  5
+    $$$$$:   24-block  6
+    $$$$$:   24-block  7
     $$$$$:   24-block  8
-call   15 never executed
-    $$$$$:   24-block  9
-    $$$$$:   24-block 10
-    $$$$$:   24-block 11
-call   16 never executed
-    $$$$$:   24-block 12
-    $$$$$:   24-block 13
-    $$$$$:   24-block 14
-call   17 never executed
-    $$$$$:   24-block 15
-    $$$$$:   24-block 16
-        6:   25:    carte book2 = carte("Kong", "Maria", "Liric", 1940, 2);
+        2:   25:    carte book2 = carte("Kong", "Maria", "Liric", 1940, 2);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   25-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   25-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   25-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   25-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   25-block  4
 call   12 returned 1
-        1:   25-block  5
-call   13 returned 1
-        1:   25-block  6
-call   14 returned 1
-        1:   25-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   25-block  3
+    $$$$$:   25-block  4
+    $$$$$:   25-block  5
+    $$$$$:   25-block  6
+    $$$$$:   25-block  7
     $$$$$:   25-block  8
-call   15 never executed
-    $$$$$:   25-block  9
-    $$$$$:   25-block 10
-    $$$$$:   25-block 11
-call   16 never executed
-    $$$$$:   25-block 12
-    $$$$$:   25-block 13
-    $$$$$:   25-block 14
-call   17 never executed
-    $$$$$:   25-block 15
-    $$$$$:   25-block 16
-        6:   26:    carte book3 = carte("Kong", "Maria", "Liric", 1940, 3);
+        2:   26:    carte book3 = carte("Kong", "Maria", "Liric", 1940, 3);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   26-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   26-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   26-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   26-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   26-block  4
 call   12 returned 1
-        1:   26-block  5
-call   13 returned 1
-        1:   26-block  6
-call   14 returned 1
-        1:   26-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   26-block  3
+    $$$$$:   26-block  4
+    $$$$$:   26-block  5
+    $$$$$:   26-block  6
+    $$$$$:   26-block  7
     $$$$$:   26-block  8
-call   15 never executed
-    $$$$$:   26-block  9
-    $$$$$:   26-block 10
-    $$$$$:   26-block 11
-call   16 never executed
-    $$$$$:   26-block 12
-    $$$$$:   26-block 13
-    $$$$$:   26-block 14
-call   17 never executed
-    $$$$$:   26-block 15
-    $$$$$:   26-block 16
-        6:   27:    carte book4 = carte("Kong", "Maria", "Liric", 1940, 4);
+        2:   27:    carte book4 = carte("Kong", "Maria", "Liric", 1940, 4);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   27-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   27-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   27-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   27-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   27-block  4
 call   12 returned 1
-        1:   27-block  5
-call   13 returned 1
-        1:   27-block  6
-call   14 returned 1
-        1:   27-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   27-block  3
+    $$$$$:   27-block  4
+    $$$$$:   27-block  5
+    $$$$$:   27-block  6
+    $$$$$:   27-block  7
     $$$$$:   27-block  8
-call   15 never executed
-    $$$$$:   27-block  9
-    $$$$$:   27-block 10
-    $$$$$:   27-block 11
-call   16 never executed
-    $$$$$:   27-block 12
-    $$$$$:   27-block 13
-    $$$$$:   27-block 14
-call   17 never executed
-    $$$$$:   27-block 15
-    $$$$$:   27-block 16
-        6:   28:    carte book5 = carte("Kong", "Maria", "Liric", 1940, 5);
+        2:   28:    carte book5 = carte("Kong", "Maria", "Liric", 1940, 5);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   28-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   28-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   28-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   28-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   28-block  4
 call   12 returned 1
-        1:   28-block  5
-call   13 returned 1
-        1:   28-block  6
-call   14 returned 1
-        1:   28-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   28-block  3
+    $$$$$:   28-block  4
+    $$$$$:   28-block  5
+    $$$$$:   28-block  6
+    $$$$$:   28-block  7
     $$$$$:   28-block  8
-call   15 never executed
-    $$$$$:   28-block  9
-    $$$$$:   28-block 10
-    $$$$$:   28-block 11
-call   16 never executed
-    $$$$$:   28-block 12
-    $$$$$:   28-block 13
-    $$$$$:   28-block 14
-call   17 never executed
-    $$$$$:   28-block 15
-    $$$$$:   28-block 16
-        6:   29:    carte book6 = carte("Kong", "Maria", "Liric", 1940, 6);
+        2:   29:    carte book6 = carte("Kong", "Maria", "Liric", 1940, 6);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   29-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   29-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   29-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   29-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   29-block  4
 call   12 returned 1
-        1:   29-block  5
-call   13 returned 1
-        1:   29-block  6
-call   14 returned 1
-        1:   29-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   29-block  3
+    $$$$$:   29-block  4
+    $$$$$:   29-block  5
+    $$$$$:   29-block  6
+    $$$$$:   29-block  7
     $$$$$:   29-block  8
-call   15 never executed
-    $$$$$:   29-block  9
-    $$$$$:   29-block 10
-    $$$$$:   29-block 11
-call   16 never executed
-    $$$$$:   29-block 12
-    $$$$$:   29-block 13
-    $$$$$:   29-block 14
-call   17 never executed
-    $$$$$:   29-block 15
-    $$$$$:   29-block 16
-        6:   30:    carte book7 = carte("Kong", "Maria", "Liric", 1940, 7);
+        2:   30:    carte book7 = carte("Kong", "Maria", "Liric", 1940, 7);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   30-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   30-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   30-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   30-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   30-block  4
 call   12 returned 1
-        1:   30-block  5
-call   13 returned 1
-        1:   30-block  6
-call   14 returned 1
-        1:   30-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   30-block  3
+    $$$$$:   30-block  4
+    $$$$$:   30-block  5
+    $$$$$:   30-block  6
+    $$$$$:   30-block  7
     $$$$$:   30-block  8
-call   15 never executed
-    $$$$$:   30-block  9
-    $$$$$:   30-block 10
-    $$$$$:   30-block 11
-call   16 never executed
-    $$$$$:   30-block 12
-    $$$$$:   30-block 13
-    $$$$$:   30-block 14
-call   17 never executed
-    $$$$$:   30-block 15
-    $$$$$:   30-block 16
-        6:   31:    carte book8 = carte("Kong", "Maria", "Liric", 1940, 8);
+        2:   31:    carte book8 = carte("Kong", "Maria", "Liric", 1940, 8);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   31-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   31-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   31-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   31-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   31-block  4
 call   12 returned 1
-        1:   31-block  5
-call   13 returned 1
-        1:   31-block  6
-call   14 returned 1
-        1:   31-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   31-block  3
+    $$$$$:   31-block  4
+    $$$$$:   31-block  5
+    $$$$$:   31-block  6
+    $$$$$:   31-block  7
     $$$$$:   31-block  8
-call   15 never executed
-    $$$$$:   31-block  9
-    $$$$$:   31-block 10
-    $$$$$:   31-block 11
-call   16 never executed
-    $$$$$:   31-block 12
-    $$$$$:   31-block 13
-    $$$$$:   31-block 14
-call   17 never executed
-    $$$$$:   31-block 15
-    $$$$$:   31-block 16
-        6:   32:    carte book9 = carte("Kong", "Maria", "Liric", 1940, 9);
+        2:   32:    carte book9 = carte("Kong", "Maria", "Liric", 1940, 9);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   32-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   32-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   32-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   32-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   32-block  4
 call   12 returned 1
-        1:   32-block  5
-call   13 returned 1
-        1:   32-block  6
-call   14 returned 1
-        1:   32-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   32-block  3
+    $$$$$:   32-block  4
+    $$$$$:   32-block  5
+    $$$$$:   32-block  6
+    $$$$$:   32-block  7
     $$$$$:   32-block  8
-call   15 never executed
-    $$$$$:   32-block  9
-    $$$$$:   32-block 10
-    $$$$$:   32-block 11
-call   16 never executed
-    $$$$$:   32-block 12
-    $$$$$:   32-block 13
-    $$$$$:   32-block 14
-call   17 never executed
-    $$$$$:   32-block 15
-    $$$$$:   32-block 16
-        6:   33:    carte book10 = carte("Kong", "Maria", "Liric", 1940, 10);
+        2:   33:    carte book10 = carte("Kong", "Maria", "Liric", 1940, 10);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   33-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   33-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   33-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   33-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   33-block  4
 call   12 returned 1
-        1:   33-block  5
-call   13 returned 1
-        1:   33-block  6
-call   14 returned 1
-        1:   33-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   33-block  3
+    $$$$$:   33-block  4
+    $$$$$:   33-block  5
+    $$$$$:   33-block  6
+    $$$$$:   33-block  7
     $$$$$:   33-block  8
-call   15 never executed
-    $$$$$:   33-block  9
-    $$$$$:   33-block 10
-    $$$$$:   33-block 11
-call   16 never executed
-    $$$$$:   33-block 12
-    $$$$$:   33-block 13
-    $$$$$:   33-block 14
-call   17 never executed
-    $$$$$:   33-block 15
-    $$$$$:   33-block 16
-        6:   34:    carte book11 = carte("Kong", "Maria", "Liric", 1940, 11);
+        2:   34:    carte book11 = carte("Kong", "Maria", "Liric", 1940, 11);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   34-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   34-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   34-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   34-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   34-block  4
 call   12 returned 1
-        1:   34-block  5
-call   13 returned 1
-        1:   34-block  6
-call   14 returned 1
-        1:   34-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   34-block  3
+    $$$$$:   34-block  4
+    $$$$$:   34-block  5
+    $$$$$:   34-block  6
+    $$$$$:   34-block  7
     $$$$$:   34-block  8
-call   15 never executed
-    $$$$$:   34-block  9
-    $$$$$:   34-block 10
-    $$$$$:   34-block 11
-call   16 never executed
-    $$$$$:   34-block 12
-    $$$$$:   34-block 13
-    $$$$$:   34-block 14
-call   17 never executed
-    $$$$$:   34-block 15
-    $$$$$:   34-block 16
-        6:   35:    carte book12 = carte("Kong", "Maria", "Liric", 1940, 12);
+        2:   35:    carte book12 = carte("Kong", "Maria", "Liric", 1940, 12);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   35-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   35-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   35-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   35-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   35-block  4
 call   12 returned 1
-        1:   35-block  5
-call   13 returned 1
-        1:   35-block  6
-call   14 returned 1
-        1:   35-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   35-block  3
+    $$$$$:   35-block  4
+    $$$$$:   35-block  5
+    $$$$$:   35-block  6
+    $$$$$:   35-block  7
     $$$$$:   35-block  8
-call   15 never executed
-    $$$$$:   35-block  9
-    $$$$$:   35-block 10
-    $$$$$:   35-block 11
-call   16 never executed
-    $$$$$:   35-block 12
-    $$$$$:   35-block 13
-    $$$$$:   35-block 14
-call   17 never executed
-    $$$$$:   35-block 15
-    $$$$$:   35-block 16
-        6:   36:    carte book13 = carte("Kong", "Maria", "Liric", 1940, 13);
+        2:   36:    carte book13 = carte("Kong", "Maria", "Liric", 1940, 13);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   36-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   36-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   36-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   36-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   36-block  4
 call   12 returned 1
-        1:   36-block  5
-call   13 returned 1
-        1:   36-block  6
-call   14 returned 1
-        1:   36-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   36-block  3
+    $$$$$:   36-block  4
+    $$$$$:   36-block  5
+    $$$$$:   36-block  6
+    $$$$$:   36-block  7
     $$$$$:   36-block  8
-call   15 never executed
-    $$$$$:   36-block  9
-    $$$$$:   36-block 10
-    $$$$$:   36-block 11
-call   16 never executed
-    $$$$$:   36-block 12
-    $$$$$:   36-block 13
-    $$$$$:   36-block 14
-call   17 never executed
-    $$$$$:   36-block 15
-    $$$$$:   36-block 16
-        6:   37:    carte book14 = carte("Kong", "Maria", "Liric", 1940, 14);
+        2:   37:    carte book14 = carte("Kong", "Maria", "Liric", 1940, 14);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   37-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   37-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   37-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   37-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   37-block  4
 call   12 returned 1
-        1:   37-block  5
-call   13 returned 1
-        1:   37-block  6
-call   14 returned 1
-        1:   37-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   37-block  3
+    $$$$$:   37-block  4
+    $$$$$:   37-block  5
+    $$$$$:   37-block  6
+    $$$$$:   37-block  7
     $$$$$:   37-block  8
-call   15 never executed
-    $$$$$:   37-block  9
-    $$$$$:   37-block 10
-    $$$$$:   37-block 11
-call   16 never executed
-    $$$$$:   37-block 12
-    $$$$$:   37-block 13
-    $$$$$:   37-block 14
-call   17 never executed
-    $$$$$:   37-block 15
-    $$$$$:   37-block 16
-        6:   38:    carte book15 = carte("Kong", "Maria", "Liric", 1940, 15);
+        2:   38:    carte book15 = carte("Kong", "Maria", "Liric", 1940, 15);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   38-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   38-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   38-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   38-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   38-block  4
 call   12 returned 1
-        1:   38-block  5
-call   13 returned 1
-        1:   38-block  6
-call   14 returned 1
-        1:   38-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   38-block  3
+    $$$$$:   38-block  4
+    $$$$$:   38-block  5
+    $$$$$:   38-block  6
+    $$$$$:   38-block  7
     $$$$$:   38-block  8
-call   15 never executed
-    $$$$$:   38-block  9
-    $$$$$:   38-block 10
-    $$$$$:   38-block 11
-call   16 never executed
-    $$$$$:   38-block 12
-    $$$$$:   38-block 13
-    $$$$$:   38-block 14
-call   17 never executed
-    $$$$$:   38-block 15
-    $$$$$:   38-block 16
-        6:   39:    carte book16 = carte("Kong", "Maria", "Liric", 1940, 16);
+        2:   39:    carte book16 = carte("Kong", "Maria", "Liric", 1940, 16);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   39-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   39-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   39-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   39-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   39-block  4
 call   12 returned 1
-        1:   39-block  5
-call   13 returned 1
-        1:   39-block  6
-call   14 returned 1
-        1:   39-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   39-block  3
+    $$$$$:   39-block  4
+    $$$$$:   39-block  5
+    $$$$$:   39-block  6
+    $$$$$:   39-block  7
     $$$$$:   39-block  8
-call   15 never executed
-    $$$$$:   39-block  9
-    $$$$$:   39-block 10
-    $$$$$:   39-block 11
-call   16 never executed
-    $$$$$:   39-block 12
-    $$$$$:   39-block 13
-    $$$$$:   39-block 14
-call   17 never executed
-    $$$$$:   39-block 15
-    $$$$$:   39-block 16
-        6:   40:    carte book17 = carte("Kong", "Maria", "Liric", 1940, 17);
+        2:   40:    carte book17 = carte("Kong", "Maria", "Liric", 1940, 17);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   40-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   40-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   40-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   40-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   40-block  4
 call   12 returned 1
-        1:   40-block  5
-call   13 returned 1
-        1:   40-block  6
-call   14 returned 1
-        1:   40-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   40-block  3
+    $$$$$:   40-block  4
+    $$$$$:   40-block  5
+    $$$$$:   40-block  6
+    $$$$$:   40-block  7
     $$$$$:   40-block  8
-call   15 never executed
-    $$$$$:   40-block  9
-    $$$$$:   40-block 10
-    $$$$$:   40-block 11
-call   16 never executed
-    $$$$$:   40-block 12
-    $$$$$:   40-block 13
-    $$$$$:   40-block 14
-call   17 never executed
-    $$$$$:   40-block 15
-    $$$$$:   40-block 16
-        6:   41:    carte book18 = carte("Kong", "Maria", "Liric", 1940, 18);
+        2:   41:    carte book18 = carte("Kong", "Maria", "Liric", 1940, 18);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   41-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   41-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   41-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   41-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   41-block  4
 call   12 returned 1
-        1:   41-block  5
-call   13 returned 1
-        1:   41-block  6
-call   14 returned 1
-        1:   41-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   41-block  3
+    $$$$$:   41-block  4
+    $$$$$:   41-block  5
+    $$$$$:   41-block  6
+    $$$$$:   41-block  7
     $$$$$:   41-block  8
-call   15 never executed
-    $$$$$:   41-block  9
-    $$$$$:   41-block 10
-    $$$$$:   41-block 11
-call   16 never executed
-    $$$$$:   41-block 12
-    $$$$$:   41-block 13
-    $$$$$:   41-block 14
-call   17 never executed
-    $$$$$:   41-block 15
-    $$$$$:   41-block 16
-        6:   42:    carte book19 = carte("Kong", "Maria", "Liric", 1940, 19);
+        2:   42:    carte book19 = carte("Kong", "Maria", "Liric", 1940, 19);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   42-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   42-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   42-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   42-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   42-block  4
 call   12 returned 1
-        1:   42-block  5
-call   13 returned 1
-        1:   42-block  6
-call   14 returned 1
-        1:   42-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   42-block  3
+    $$$$$:   42-block  4
+    $$$$$:   42-block  5
+    $$$$$:   42-block  6
+    $$$$$:   42-block  7
     $$$$$:   42-block  8
-call   15 never executed
-    $$$$$:   42-block  9
-    $$$$$:   42-block 10
-    $$$$$:   42-block 11
-call   16 never executed
-    $$$$$:   42-block 12
-    $$$$$:   42-block 13
-    $$$$$:   42-block 14
-call   17 never executed
-    $$$$$:   42-block 15
-    $$$$$:   42-block 16
-        6:   43:    carte book20 = carte("Kong", "Maria", "Liric", 1940, 20);
+        2:   43:    carte book20 = carte("Kong", "Maria", "Liric", 1940, 20);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   43-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   43-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   43-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   43-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   43-block  4
 call   12 returned 1
-        1:   43-block  5
-call   13 returned 1
-        1:   43-block  6
-call   14 returned 1
-        1:   43-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   43-block  3
+    $$$$$:   43-block  4
+    $$$$$:   43-block  5
+    $$$$$:   43-block  6
+    $$$$$:   43-block  7
     $$$$$:   43-block  8
-call   15 never executed
-    $$$$$:   43-block  9
-    $$$$$:   43-block 10
-    $$$$$:   43-block 11
-call   16 never executed
-    $$$$$:   43-block 12
-    $$$$$:   43-block 13
-    $$$$$:   43-block 14
-call   17 never executed
-    $$$$$:   43-block 15
-    $$$$$:   43-block 16
-        5:   44:    carte book21 = carte("Kong", "Maria", "Liric", 1940, 21);
-        1:   44-block  0
+        2:   44:    carte book21 = carte("Kong", "Maria", "Liric", 1940, 21);
 call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   44-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   44-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:   44-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   44-block  3
+call    8 returned 1
 call    9 returned 1
 branch 10 taken 1 (fallthrough)
 branch 11 taken 0 (throw)
-        1:   44-block  4
+        1:   44-block  2
 call   12 returned 1
-        1:   44-block  5
-call   13 returned 1
-        1:   44-block  6
-call   14 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   44-block  3
+    $$$$$:   44-block  4
+    $$$$$:   44-block  5
+    $$$$$:   44-block  6
     $$$$$:   44-block  7
-call   15 never executed
     $$$$$:   44-block  8
-    $$$$$:   44-block  9
-    $$$$$:   44-block 10
-call   16 never executed
-    $$$$$:   44-block 11
-    $$$$$:   44-block 12
-    $$$$$:   44-block 13
-call   17 never executed
-    $$$$$:   44-block 14
-    $$$$$:   44-block 15
         -:   45:
         -:   46:
         1:   47:    book_repo.add(book0);
-        1:   47-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
@@ -939,7 +805,6 @@ branch  4 taken 0 (fallthrough)
 branch  5 taken 1
     %%%%%:   56-block  2
 call    6 never executed
-        1:   56-block  3
        1*:   57:    assert(book_repo.find_book_by_id(0).get_title() == "Jupanii");
         1:   57-block  0
 call    0 returned 1
@@ -951,43 +816,28 @@ branch  4 taken 1 (fallthrough)
 branch  5 taken 0 (throw)
         1:   57-block  2
 call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   57-block  3
-branch  9 taken 0 (fallthrough)
-branch 10 taken 1
-    %%%%%:   57-block  4
-call   11 never executed
-        1:   57-block  5
-        1:   57-block  6
-branch 12 taken 1 (fallthrough)
-branch 13 taken 0
-        1:   57-block  7
-call   14 returned 1
-    $$$$$:   57-block  8
-branch 15 never executed (fallthrough)
-branch 16 never executed
-    $$$$$:   57-block  9
-call   17 never executed
-    $$$$$:   57-block 10
-    $$$$$:   57-block 11
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   57-block  3
+call    9 never executed
+        1:   57-block  4
+call   10 returned 1
+    $$$$$:   57-block  5
         -:   58:
        1*:   59:    assert(book_repo.find_book_by_id(20) == book20);
-        1:   59-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        1:   59-block  1
+        1:   59-block  0
 call    3 returned 1
 branch  4 taken 1 (fallthrough)
 branch  5 taken 0 (throw)
-        1:   59-block  2
+        1:   59-block  1
 branch  6 taken 0 (fallthrough)
 branch  7 taken 1
-    %%%%%:   59-block  3
+    %%%%%:   59-block  2
 call    8 never executed
-        1:   59-block  4
-    $$$$$:   59-block  5
+    $$$$$:   59-block  3
         -:   60:
         -:   61:    try{
         1:   62:        book_repo.add(book2);
@@ -1049,26 +899,15 @@ branch  5 taken 1
     $$$$$:   76-block  2
 call    6 never executed
         1:   76-block  3
-        1:   76-block  4
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0
-        1:   76-block  5
-call    9 returned 1
-    $$$$$:   76-block  6
-branch 10 never executed (fallthrough)
-branch 11 never executed
-    $$$$$:   76-block  7
-call   12 never executed
-    $$$$$:   76-block  8
+call    7 returned 1
         1:   77:    }
-        1:   77-block  0
 call    0 returned 1
 call    1 returned 1
 branch  2 taken 1 (fallthrough)
 branch  3 taken 0 (throw)
-    $$$$$:   77-block  1
+    $$$$$:   77-block  0
 call    4 never executed
-    $$$$$:   77-block  2
+    $$$$$:   77-block  1
 call    5 never executed
         -:   78:
         1:   79:}
@@ -1143,87 +982,73 @@ call   44 never executed
     $$$$$:   79-block 23
 call   45 never executed
         -:   80:
-function _ZN9test_repo16test_repo_deleteEv called 1 returned 100% blocks executed 51%
+function _ZN9test_repo16test_repo_deleteEv called 1 returned 100% blocks executed 50%
         1:   81:void test_repo::test_repo_delete() {
         1:   82:    repo book_repo;
         1:   82-block  0
 call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        6:   83:    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+        2:   83:    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:   83-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   83-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
         1:   83-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   83-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   83-block  4
 call   12 returned 1
-        1:   83-block  5
-call   13 returned 1
-        1:   83-block  6
-call   14 returned 1
-        1:   83-block  7
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   83-block  3
+    $$$$$:   83-block  4
+    $$$$$:   83-block  5
+    $$$$$:   83-block  6
+    $$$$$:   83-block  7
     $$$$$:   83-block  8
-call   15 never executed
-    $$$$$:   83-block  9
-    $$$$$:   83-block 10
-    $$$$$:   83-block 11
-call   16 never executed
-    $$$$$:   83-block 12
-    $$$$$:   83-block 13
-    $$$$$:   83-block 14
-call   17 never executed
-    $$$$$:   83-block 15
-    $$$$$:   83-block 16
-        5:   84:    carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
-        1:   84-block  0
+        2:   84:    carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
 call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   84-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:   84-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:   84-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:   84-block  3
+call    8 returned 1
 call    9 returned 1
 branch 10 taken 1 (fallthrough)
 branch 11 taken 0 (throw)
-        1:   84-block  4
+        1:   84-block  2
 call   12 returned 1
-        1:   84-block  5
-call   13 returned 1
-        1:   84-block  6
-call   14 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:   84-block  3
+    $$$$$:   84-block  4
+    $$$$$:   84-block  5
+    $$$$$:   84-block  6
     $$$$$:   84-block  7
-call   15 never executed
     $$$$$:   84-block  8
-    $$$$$:   84-block  9
-    $$$$$:   84-block 10
-call   16 never executed
-    $$$$$:   84-block 11
-    $$$$$:   84-block 12
-    $$$$$:   84-block 13
-call   17 never executed
-    $$$$$:   84-block 14
-    $$$$$:   84-block 15
         -:   85:
         1:   86:    book_repo.add(book1);
-        1:   86-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
@@ -1248,7 +1073,6 @@ branch  2 taken 0 (fallthrough)
 branch  3 taken 1
     %%%%%:   91-block  1
 call    4 never executed
-        1:   91-block  2
         -:   92:
         -:   93:    try{
        1*:   94:        book_repo.delete_book(1);
@@ -1288,301 +1112,185 @@ branch  5 taken 1
     $$$$$:  100-block  2
 call    6 never executed
         1:  100-block  3
-        1:  100-block  4
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0
-        1:  100-block  5
-call    9 returned 1
-    $$$$$:  100-block  6
-branch 10 never executed (fallthrough)
-branch 11 never executed
-    $$$$$:  100-block  7
-call   12 never executed
-    $$$$$:  100-block  8
+call    7 returned 1
         1:  101:    }
-        1:  101-block  0
 call    0 returned 1
 call    1 returned 1
 branch  2 taken 1 (fallthrough)
 branch  3 taken 0 (throw)
-    $$$$$:  101-block  1
+    $$$$$:  101-block  0
 call    4 never executed
-    $$$$$:  101-block  2
+    $$$$$:  101-block  1
 call    5 never executed
         -:  102:
-        1:  103:}
+        1:  103:    book_repo.goleste_repo();
         1:  103-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  104:    assert(book_repo.get_all().size() == 0);
+        1:  104-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    $$$$$:  104-block  1
+call    4 never executed
+        -:  105:
+        1:  106:}
+        1:  106-block  0
 call    0 returned 1
 call    1 returned 1
 call    2 returned 1
-    $$$$$:  103-block  1
+    $$$$$:  106-block  1
 call    3 never executed
-    $$$$$:  103-block  2
+    $$$$$:  106-block  2
 call    4 never executed
-    $$$$$:  103-block  3
+    $$$$$:  106-block  3
 call    5 never executed
-        -:  104:
-function _ZN9test_repo16test_repo_modifyEv called 1 returned 100% blocks executed 50%
-        1:  105:void test_repo::test_repo_modify() {
-        1:  106:    repo book_repo;
-        1:  106-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        6:  107:    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
-        1:  107-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  107-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:  107-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:  107-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:  107-block  4
-call   12 returned 1
-        1:  107-block  5
-call   13 returned 1
-        1:  107-block  6
-call   14 returned 1
-        1:  107-block  7
-    $$$$$:  107-block  8
-call   15 never executed
-    $$$$$:  107-block  9
-    $$$$$:  107-block 10
-    $$$$$:  107-block 11
-call   16 never executed
-    $$$$$:  107-block 12
-    $$$$$:  107-block 13
-    $$$$$:  107-block 14
-call   17 never executed
-    $$$$$:  107-block 15
-    $$$$$:  107-block 16
-        6:  108:    carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
-        1:  108-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  108-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:  108-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:  108-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:  108-block  4
-call   12 returned 1
-        1:  108-block  5
-call   13 returned 1
-        1:  108-block  6
-call   14 returned 1
-        1:  108-block  7
-    $$$$$:  108-block  8
-call   15 never executed
-    $$$$$:  108-block  9
-    $$$$$:  108-block 10
-    $$$$$:  108-block 11
-call   16 never executed
-    $$$$$:  108-block 12
-    $$$$$:  108-block 13
-    $$$$$:  108-block 14
-call   17 never executed
-    $$$$$:  108-block 15
-    $$$$$:  108-block 16
-        6:  109:    carte new_book = carte("Ottmar", "Comandant la auschwitz", "Epic", 1960, 1);
+        -:  107:
+function _ZN9test_repo16test_repo_modifyEv called 1 returned 100% blocks executed 48%
+        1:  108:void test_repo::test_repo_modify() {
+        1:  109:    repo book_repo;
         1:  109-block  0
 call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  109-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:  109-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:  109-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:  109-block  4
-call   12 returned 1
-        1:  109-block  5
-call   13 returned 1
-        1:  109-block  6
-call   14 returned 1
-        1:  109-block  7
-    $$$$$:  109-block  8
-call   15 never executed
-    $$$$$:  109-block  9
-    $$$$$:  109-block 10
-    $$$$$:  109-block 11
-call   16 never executed
-    $$$$$:  109-block 12
-    $$$$$:  109-block 13
-    $$$$$:  109-block 14
-call   17 never executed
-    $$$$$:  109-block 15
-    $$$$$:  109-block 16
-        5:  110:    carte bad_new_book = carte("Julia", "Luiza", "Dramatic", 1940, 2);
+        2:  110:    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:  110-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
         1:  110-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:  110-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:  110-block  3
+call    8 returned 1
 call    9 returned 1
 branch 10 taken 1 (fallthrough)
 branch 11 taken 0 (throw)
-        1:  110-block  4
+        1:  110-block  2
 call   12 returned 1
-        1:  110-block  5
-call   13 returned 1
-        1:  110-block  6
-call   14 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:  110-block  3
+    $$$$$:  110-block  4
+    $$$$$:  110-block  5
+    $$$$$:  110-block  6
     $$$$$:  110-block  7
-call   15 never executed
     $$$$$:  110-block  8
-    $$$$$:  110-block  9
-    $$$$$:  110-block 10
-call   16 never executed
-    $$$$$:  110-block 11
-    $$$$$:  110-block 12
-    $$$$$:  110-block 13
-call   17 never executed
-    $$$$$:  110-block 14
-    $$$$$:  110-block 15
-        1:  111:    book_repo.add(book1);
+        2:  111:    carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:  111-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  111-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  111-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:  111-block  3
+    $$$$$:  111-block  4
+    $$$$$:  111-block  5
+    $$$$$:  111-block  6
+    $$$$$:  111-block  7
+    $$$$$:  111-block  8
+        2:  112:    carte new_book = carte("Ottmar", "Comandant la auschwitz", "Epic", 1960, 1);
 call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  112:    book_repo.add(book2);
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:  112-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  112-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  112-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:  112-block  3
+    $$$$$:  112-block  4
+    $$$$$:  112-block  5
+    $$$$$:  112-block  6
+    $$$$$:  112-block  7
+    $$$$$:  112-block  8
+        2:  113:    carte bad_new_book = carte("Julia", "Luiza", "Dramatic", 1940, 2);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  113-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  113-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  113-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:  113-block  3
+    $$$$$:  113-block  4
+    $$$$$:  113-block  5
+    $$$$$:  113-block  6
+    $$$$$:  113-block  7
+    $$$$$:  113-block  8
+        1:  114:    book_repo.add(book1);
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        -:  113:
-        1:  114:    book_repo.modify_book(new_book);
-        1:  114-block  0
+        1:  115:    book_repo.add(book2);
+        1:  115-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        -:  115:
-       1*:  116:    assert(book_repo.find_book_by_id(1).get_author() == "Ottmar");
-        1:  116-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  116-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:  116-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:  116-block  3
-branch  9 taken 0 (fallthrough)
-branch 10 taken 1
-    %%%%%:  116-block  4
-call   11 never executed
-        1:  116-block  5
-        1:  116-block  6
-branch 12 taken 1 (fallthrough)
-branch 13 taken 0
-        1:  116-block  7
-call   14 returned 1
-    $$$$$:  116-block  8
-branch 15 never executed (fallthrough)
-branch 16 never executed
-    $$$$$:  116-block  9
-call   17 never executed
-    $$$$$:  116-block 10
-    $$$$$:  116-block 11
-       1*:  117:    assert(book_repo.find_book_by_id(1).get_title() == "Comandant la auschwitz");
+        -:  116:
+        1:  117:    book_repo.modify_book(new_book);
         1:  117-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        1:  117-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:  117-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:  117-block  3
-branch  9 taken 0 (fallthrough)
-branch 10 taken 1
-    %%%%%:  117-block  4
-call   11 never executed
-        1:  117-block  5
-        1:  117-block  6
-branch 12 taken 1 (fallthrough)
-branch 13 taken 0
-        1:  117-block  7
-call   14 returned 1
-    $$$$$:  117-block  8
-branch 15 never executed (fallthrough)
-branch 16 never executed
-    $$$$$:  117-block  9
-call   17 never executed
-    $$$$$:  117-block 10
-    $$$$$:  117-block 11
-       1*:  118:    assert(book_repo.find_book_by_id(1).get_genre() == "Epic");
-        1:  118-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  118-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:  118-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:  118-block  3
-branch  9 taken 0 (fallthrough)
-branch 10 taken 1
-    %%%%%:  118-block  4
-call   11 never executed
-        1:  118-block  5
-        1:  118-block  6
-branch 12 taken 1 (fallthrough)
-branch 13 taken 0
-        1:  118-block  7
-call   14 returned 1
-    $$$$$:  118-block  8
-branch 15 never executed (fallthrough)
-branch 16 never executed
-    $$$$$:  118-block  9
-call   17 never executed
-    $$$$$:  118-block 10
-    $$$$$:  118-block 11
-       1*:  119:    assert(book_repo.find_book_by_id(1).get_publication_year() == 1960);
+        -:  118:
+       1*:  119:    assert(book_repo.find_book_by_id(1).get_author() == "Ottmar");
         1:  119-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
@@ -1592,442 +1300,371 @@ call    3 returned 1
 branch  4 taken 1 (fallthrough)
 branch  5 taken 0 (throw)
         1:  119-block  2
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  119-block  3
+call    9 never executed
+        1:  119-block  4
+call   10 returned 1
+    $$$$$:  119-block  5
+       1*:  120:    assert(book_repo.find_book_by_id(1).get_title() == "Comandant la auschwitz");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  120-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  120-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  120-block  2
+call    9 never executed
+        1:  120-block  3
+call   10 returned 1
+    $$$$$:  120-block  4
+       1*:  121:    assert(book_repo.find_book_by_id(1).get_genre() == "Epic");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  121-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  121-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  121-block  2
+call    9 never executed
+        1:  121-block  3
+call   10 returned 1
+    $$$$$:  121-block  4
+       1*:  122:    assert(book_repo.find_book_by_id(1).get_publication_year() == 1960);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  122-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  122-block  1
 branch  6 taken 0 (fallthrough)
 branch  7 taken 1
-    %%%%%:  119-block  3
+    %%%%%:  122-block  2
 call    8 never executed
-        1:  119-block  4
-    $$$$$:  119-block  5
-        -:  120:
-        -:  121:    try{
-        1:  122:        book_repo.modify_book(bad_new_book);
-        1:  122-block  0
+    $$$$$:  122-block  3
+        -:  123:
+        -:  124:    try{
+        1:  125:        book_repo.modify_book(bad_new_book);
+        1:  125-block  0
 call    0 returned 1
 branch  1 taken 0 (fallthrough)
 branch  2 taken 1 (throw)
-    #####:  123:        assert(false);
-    %%%%%:  123-block  0
+    #####:  126:        assert(false);
+    %%%%%:  126-block  0
 call    0 never executed
-        -:  124:    }
-        1:  125:    catch(const book_repo_exception& ex){
-        1:  125-block  0
+        -:  127:    }
+        1:  128:    catch(const book_repo_exception& ex){
+        1:  128-block  0
 branch  0 taken 0 (fallthrough)
 branch  1 taken 1
-        1:  125-block  1
-call    2 returned 1
-        1:  126:        stringstream ss;
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  127:        ss << ex;
-        1:  127-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  128:        assert(ss.str().find("Doesn't exist book with id:") == 0);
-        1:  128-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
         1:  128-block  1
+call    2 returned 1
+        1:  129:        stringstream ss;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  130:        ss << ex;
+        1:  130-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  131:        assert(ss.str().find("Doesn't exist book with id:") == 0);
+        1:  131-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  131-block  1
 call    3 returned 1
 branch  4 taken 0 (fallthrough)
 branch  5 taken 1
-    $$$$$:  128-block  2
+    $$$$$:  131-block  2
 call    6 never executed
-        1:  128-block  3
-        1:  128-block  4
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0
-        1:  128-block  5
-call    9 returned 1
-    $$$$$:  128-block  6
-branch 10 never executed (fallthrough)
-branch 11 never executed
-    $$$$$:  128-block  7
-call   12 never executed
-    $$$$$:  128-block  8
-        1:  129:    }
-        1:  129-block  0
+        1:  131-block  3
+call    7 returned 1
+        1:  132:    }
 call    0 returned 1
 call    1 returned 1
 branch  2 taken 1 (fallthrough)
 branch  3 taken 0 (throw)
-    $$$$$:  129-block  1
+    $$$$$:  132-block  0
 call    4 never executed
-    $$$$$:  129-block  2
+    $$$$$:  132-block  1
 call    5 never executed
-        1:  130:}
-        1:  130-block  0
+        1:  133:}
+        1:  133-block  0
 call    0 returned 1
 call    1 returned 1
 call    2 returned 1
 call    3 returned 1
 call    4 returned 1
-    $$$$$:  130-block  1
+    $$$$$:  133-block  1
 call    5 never executed
-    $$$$$:  130-block  2
+    $$$$$:  133-block  2
 call    6 never executed
-    $$$$$:  130-block  3
+    $$$$$:  133-block  3
 call    7 never executed
-    $$$$$:  130-block  4
+    $$$$$:  133-block  4
 call    8 never executed
-    $$$$$:  130-block  5
+    $$$$$:  133-block  5
 call    9 never executed
-        -:  131:
+        -:  134:
 function _ZN9test_repo17test_repo_get_allEv called 1 returned 100% blocks executed 55%
-        1:  132:void test_repo::test_repo_get_all() {
-        1:  133:    repo book_repo;
-        1:  133-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        6:  134:    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
-        1:  134-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  134-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:  134-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:  134-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:  134-block  4
-call   12 returned 1
-        1:  134-block  5
-call   13 returned 1
-        1:  134-block  6
-call   14 returned 1
-        1:  134-block  7
-    $$$$$:  134-block  8
-call   15 never executed
-    $$$$$:  134-block  9
-    $$$$$:  134-block 10
-    $$$$$:  134-block 11
-call   16 never executed
-    $$$$$:  134-block 12
-    $$$$$:  134-block 13
-    $$$$$:  134-block 14
-call   17 never executed
-    $$$$$:  134-block 15
-    $$$$$:  134-block 16
-        5:  135:    carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
-        1:  135-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  135-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:  135-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:  135-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:  135-block  4
-call   12 returned 1
-        1:  135-block  5
-call   13 returned 1
-        1:  135-block  6
-call   14 returned 1
-    $$$$$:  135-block  7
-call   15 never executed
-    $$$$$:  135-block  8
-    $$$$$:  135-block  9
-    $$$$$:  135-block 10
-call   16 never executed
-    $$$$$:  135-block 11
-    $$$$$:  135-block 12
-    $$$$$:  135-block 13
-call   17 never executed
-    $$$$$:  135-block 14
-    $$$$$:  135-block 15
-        1:  136:    book_repo.add(book1);
+        1:  135:void test_repo::test_repo_get_all() {
+        1:  136:    repo book_repo;
         1:  136-block  0
 call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  137:    book_repo.add(book2);
-        1:  137-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        -:  138:
-        1:  139:    my_vector<carte> vec_carti = book_repo.get_all();
-        1:  139-block  0
+        2:  137:    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
 call    0 returned 1
 call    1 returned 1
 branch  2 taken 1 (fallthrough)
 branch  3 taken 0 (throw)
-        -:  140:
-       1*:  141:    assert(vec_carti.size() == 2);
-        1:  141-block  0
+        1:  137-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  137-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  137-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:  137-block  3
+    $$$$$:  137-block  4
+    $$$$$:  137-block  5
+    $$$$$:  137-block  6
+    $$$$$:  137-block  7
+    $$$$$:  137-block  8
+        2:  138:    carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  138-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  138-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  138-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:  138-block  3
+    $$$$$:  138-block  4
+    $$$$$:  138-block  5
+    $$$$$:  138-block  6
+    $$$$$:  138-block  7
+    $$$$$:  138-block  8
+        1:  139:    book_repo.add(book1);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  140:    book_repo.add(book2);
+        1:  140-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  141:
+        1:  142:    vector<carte> vec_carti = book_repo.get_all();
+        1:  142-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        -:  143:
+       1*:  144:    assert(vec_carti.size() == 2);
+        1:  144-block  0
 call    0 returned 1
 branch  1 taken 0 (fallthrough)
 branch  2 taken 1
-    %%%%%:  141-block  1
+    %%%%%:  144-block  1
 call    3 never executed
-        1:  141-block  2
-        -:  142:
-       1*:  143:    assert(vec_carti[0].get_author() == "Luis");
-        1:  143-block  0
-call    0 returned 1
-call    1 returned 1
-branch  2 taken 1 (fallthrough)
-branch  3 taken 0 (throw)
-        1:  143-block  1
-call    4 returned 1
-branch  5 taken 1 (fallthrough)
-branch  6 taken 0 (throw)
-        1:  143-block  2
-branch  7 taken 0 (fallthrough)
-branch  8 taken 1
-    %%%%%:  143-block  3
-call    9 never executed
-        1:  143-block  4
-        1:  143-block  5
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0
-        1:  143-block  6
-call   12 returned 1
-    $$$$$:  143-block  7
-branch 13 never executed (fallthrough)
-branch 14 never executed
-    $$$$$:  143-block  8
-call   15 never executed
-    $$$$$:  143-block  9
-       1*:  144:    assert(vec_carti[0].get_title() == "Jupanii");
-        1:  144-block  0
-call    0 returned 1
-call    1 returned 1
-branch  2 taken 1 (fallthrough)
-branch  3 taken 0 (throw)
-        1:  144-block  1
-call    4 returned 1
-branch  5 taken 1 (fallthrough)
-branch  6 taken 0 (throw)
-        1:  144-block  2
-branch  7 taken 0 (fallthrough)
-branch  8 taken 1
-    %%%%%:  144-block  3
-call    9 never executed
-        1:  144-block  4
-        1:  144-block  5
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0
-        1:  144-block  6
-call   12 returned 1
-    $$$$$:  144-block  7
-branch 13 never executed (fallthrough)
-branch 14 never executed
-    $$$$$:  144-block  8
-call   15 never executed
-    $$$$$:  144-block  9
-       1*:  145:    assert(vec_carti[0].get_genre() == "Epic");
-        1:  145-block  0
-call    0 returned 1
-call    1 returned 1
-branch  2 taken 1 (fallthrough)
-branch  3 taken 0 (throw)
-        1:  145-block  1
-call    4 returned 1
-branch  5 taken 1 (fallthrough)
-branch  6 taken 0 (throw)
-        1:  145-block  2
-branch  7 taken 0 (fallthrough)
-branch  8 taken 1
-    %%%%%:  145-block  3
-call    9 never executed
-        1:  145-block  4
-        1:  145-block  5
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0
-        1:  145-block  6
-call   12 returned 1
-    $$$$$:  145-block  7
-branch 13 never executed (fallthrough)
-branch 14 never executed
-    $$$$$:  145-block  8
-call   15 never executed
-    $$$$$:  145-block  9
-       1*:  146:    assert(vec_carti[0].get_publication_year() == 1842);
+        -:  145:
+       1*:  146:    assert(vec_carti[0].get_author() == "Luis");
         1:  146-block  0
 call    0 returned 1
 call    1 returned 1
 branch  2 taken 1 (fallthrough)
 branch  3 taken 0 (throw)
         1:  146-block  1
-branch  4 taken 0 (fallthrough)
-branch  5 taken 1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
     %%%%%:  146-block  2
-call    6 never executed
+call    7 never executed
         1:  146-block  3
-       1*:  147:    assert(vec_carti[0].get_book_id() == 0);
-        1:  147-block  0
+call    8 returned 1
+       1*:  147:    assert(vec_carti[0].get_title() == "Jupanii");
 call    0 returned 1
 call    1 returned 1
 branch  2 taken 1 (fallthrough)
 branch  3 taken 0 (throw)
-        1:  147-block  1
+        1:  147-block  0
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    %%%%%:  147-block  1
+call    7 never executed
+        1:  147-block  2
+call    8 returned 1
+       1*:  148:    assert(vec_carti[0].get_genre() == "Epic");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  148-block  0
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    %%%%%:  148-block  1
+call    7 never executed
+        1:  148-block  2
+call    8 returned 1
+       1*:  149:    assert(vec_carti[0].get_publication_year() == 1842);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  149-block  0
 branch  4 taken 0 (fallthrough)
 branch  5 taken 1
-    %%%%%:  147-block  2
+    %%%%%:  149-block  1
 call    6 never executed
-        1:  147-block  3
-        -:  148:
-        1:  149:}
-        1:  149-block  0
+       1*:  150:    assert(vec_carti[0].get_book_id() == 0);
+        1:  150-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  150-block  1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  150-block  2
+call    6 never executed
+        -:  151:
+        1:  152:}
+        1:  152-block  0
 call    0 returned 1
 call    1 returned 1
 call    2 returned 1
 call    3 returned 1
-    $$$$$:  149-block  1
+    $$$$$:  152-block  1
 call    4 never executed
-    $$$$$:  149-block  2
+    $$$$$:  152-block  2
 call    5 never executed
-    $$$$$:  149-block  3
+    $$$$$:  152-block  3
 call    6 never executed
-    $$$$$:  149-block  4
+    $$$$$:  152-block  4
 call    7 never executed
-        -:  150:
-function _ZN9test_repo25test_repo_find_book_by_idEv called 1 returned 100% blocks executed 52%
-        1:  151:void test_repo::test_repo_find_book_by_id() {
-        1:  152:    repo book_repo;
-        1:  152-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        6:  153:    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
-        1:  153-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  153-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:  153-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:  153-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:  153-block  4
-call   12 returned 1
-        1:  153-block  5
-call   13 returned 1
-        1:  153-block  6
-call   14 returned 1
-        1:  153-block  7
-    $$$$$:  153-block  8
-call   15 never executed
-    $$$$$:  153-block  9
-    $$$$$:  153-block 10
-    $$$$$:  153-block 11
-call   16 never executed
-    $$$$$:  153-block 12
-    $$$$$:  153-block 13
-    $$$$$:  153-block 14
-call   17 never executed
-    $$$$$:  153-block 15
-    $$$$$:  153-block 16
-        5:  154:    carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
-        1:  154-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  154-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:  154-block  2
-call    6 returned 1
-branch  7 taken 1 (fallthrough)
-branch  8 taken 0 (throw)
-        1:  154-block  3
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:  154-block  4
-call   12 returned 1
-        1:  154-block  5
-call   13 returned 1
-        1:  154-block  6
-call   14 returned 1
-    $$$$$:  154-block  7
-call   15 never executed
-    $$$$$:  154-block  8
-    $$$$$:  154-block  9
-    $$$$$:  154-block 10
-call   16 never executed
-    $$$$$:  154-block 11
-    $$$$$:  154-block 12
-    $$$$$:  154-block 13
-call   17 never executed
-    $$$$$:  154-block 14
-    $$$$$:  154-block 15
-        1:  155:    book_repo.add(book1);
+        -:  153:
+function _ZN9test_repo25test_repo_find_book_by_idEv called 1 returned 100% blocks executed 51%
+        1:  154:void test_repo::test_repo_find_book_by_id() {
+        1:  155:    repo book_repo;
         1:  155-block  0
 call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  156:    book_repo.add(book2);
+        2:  156:    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
         1:  156-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  156-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  156-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:  156-block  3
+    $$$$$:  156-block  4
+    $$$$$:  156-block  5
+    $$$$$:  156-block  6
+    $$$$$:  156-block  7
+    $$$$$:  156-block  8
+        2:  157:    carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  157-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  157-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  157-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+    $$$$$:  157-block  3
+    $$$$$:  157-block  4
+    $$$$$:  157-block  5
+    $$$$$:  157-block  6
+    $$$$$:  157-block  7
+    $$$$$:  157-block  8
+        1:  158:    book_repo.add(book1);
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        -:  157:
-        1:  158:    carte book_found = book_repo.find_book_by_id(1);
-        1:  158-block  0
+        1:  159:    book_repo.add(book2);
+        1:  159-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        1:  158-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-    $$$$$:  158-block  2
-        -:  159:
-       1*:  160:    assert(book_found.get_author() == "Kong");
-        1:  160-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  160-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:  160-block  2
-branch  6 taken 0 (fallthrough)
-branch  7 taken 1
-    %%%%%:  160-block  3
-call    8 never executed
-        1:  160-block  4
-        1:  160-block  5
-branch  9 taken 1 (fallthrough)
-branch 10 taken 0
-        1:  160-block  6
-call   11 returned 1
-    $$$$$:  160-block  7
-branch 12 never executed (fallthrough)
-branch 13 never executed
-    $$$$$:  160-block  8
-call   14 never executed
-    $$$$$:  160-block  9
-       1*:  161:    assert(book_found.get_title() == "Maria");
+        -:  160:
+        1:  161:    carte book_found = book_repo.find_book_by_id(1);
         1:  161-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
@@ -2036,215 +1673,192 @@ branch  2 taken 0 (throw)
 call    3 returned 1
 branch  4 taken 1 (fallthrough)
 branch  5 taken 0 (throw)
-        1:  161-block  2
-branch  6 taken 0 (fallthrough)
-branch  7 taken 1
-    %%%%%:  161-block  3
-call    8 never executed
-        1:  161-block  4
-        1:  161-block  5
-branch  9 taken 1 (fallthrough)
-branch 10 taken 0
-        1:  161-block  6
-call   11 returned 1
-    $$$$$:  161-block  7
-branch 12 never executed (fallthrough)
-branch 13 never executed
-    $$$$$:  161-block  8
-call   14 never executed
-    $$$$$:  161-block  9
-       1*:  162:    assert(book_found.get_genre() == "Liric");
-        1:  162-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        1:  162-block  1
-call    3 returned 1
-branch  4 taken 1 (fallthrough)
-branch  5 taken 0 (throw)
-        1:  162-block  2
-branch  6 taken 0 (fallthrough)
-branch  7 taken 1
-    %%%%%:  162-block  3
-call    8 never executed
-        1:  162-block  4
-        1:  162-block  5
-branch  9 taken 1 (fallthrough)
-branch 10 taken 0
-        1:  162-block  6
-call   11 returned 1
-    $$$$$:  162-block  7
-branch 12 never executed (fallthrough)
-branch 13 never executed
-    $$$$$:  162-block  8
-call   14 never executed
-    $$$$$:  162-block  9
-       1*:  163:    assert(book_found.get_publication_year() == 1940);
+    $$$$$:  161-block  2
+        -:  162:
+       1*:  163:    assert(book_found.get_author() == "Kong");
         1:  163-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
         1:  163-block  1
-branch  3 taken 0 (fallthrough)
-branch  4 taken 1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
     %%%%%:  163-block  2
-call    5 never executed
+call    6 never executed
         1:  163-block  3
-       1*:  164:    assert(book_found.get_book_id() == 1);
-        1:  164-block  0
+call    7 returned 1
+       1*:  164:    assert(book_found.get_title() == "Maria");
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        1:  164-block  1
+        1:  164-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  164-block  1
+call    6 never executed
+        1:  164-block  2
+call    7 returned 1
+       1*:  165:    assert(book_found.get_genre() == "Liric");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  165-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  165-block  1
+call    6 never executed
+        1:  165-block  2
+call    7 returned 1
+       1*:  166:    assert(book_found.get_publication_year() == 1940);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  166-block  0
 branch  3 taken 0 (fallthrough)
 branch  4 taken 1
-    %%%%%:  164-block  2
+    %%%%%:  166-block  1
 call    5 never executed
-        1:  164-block  3
-        1:  165:}
-        1:  165-block  0
+       1*:  167:    assert(book_found.get_book_id() == 1);
+        1:  167-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  167-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:  167-block  2
+call    5 never executed
+        1:  168:}
+        1:  168-block  0
 call    0 returned 1
 call    1 returned 1
 call    2 returned 1
 call    3 returned 1
-    $$$$$:  165-block  1
+    $$$$$:  168-block  1
 call    4 never executed
-    $$$$$:  165-block  2
+    $$$$$:  168-block  2
 call    5 never executed
-    $$$$$:  165-block  3
+    $$$$$:  168-block  3
 call    6 never executed
-    $$$$$:  165-block  4
+    $$$$$:  168-block  4
 call    7 never executed
-        -:  166:
-function _ZN9test_repo17test_increment_idEv called 2 returned 100% blocks executed 51%
-        2:  167:void test_repo::test_increment_id() {
-        2:  168:    repo book_repo;
-        2:  168-block  0
-call    0 returned 2
-branch  1 taken 2 (fallthrough)
-branch  2 taken 0 (throw)
-       12:  169:    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
-        2:  169-block  0
-call    0 returned 2
-branch  1 taken 2 (fallthrough)
-branch  2 taken 0 (throw)
-        2:  169-block  1
-call    3 returned 2
-branch  4 taken 2 (fallthrough)
-branch  5 taken 0 (throw)
-        2:  169-block  2
-call    6 returned 2
-branch  7 taken 2 (fallthrough)
-branch  8 taken 0 (throw)
-        2:  169-block  3
-call    9 returned 2
-branch 10 taken 2 (fallthrough)
-branch 11 taken 0 (throw)
-        2:  169-block  4
-call   12 returned 2
-        2:  169-block  5
-call   13 returned 2
-        2:  169-block  6
-call   14 returned 2
-        2:  169-block  7
-    $$$$$:  169-block  8
-call   15 never executed
-    $$$$$:  169-block  9
-    $$$$$:  169-block 10
-    $$$$$:  169-block 11
-call   16 never executed
-    $$$$$:  169-block 12
-    $$$$$:  169-block 13
-    $$$$$:  169-block 14
-call   17 never executed
-    $$$$$:  169-block 15
-    $$$$$:  169-block 16
-       10:  170:    carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
-        2:  170-block  0
-call    0 returned 2
-branch  1 taken 2 (fallthrough)
-branch  2 taken 0 (throw)
-        2:  170-block  1
-call    3 returned 2
-branch  4 taken 2 (fallthrough)
-branch  5 taken 0 (throw)
-        2:  170-block  2
-call    6 returned 2
-branch  7 taken 2 (fallthrough)
-branch  8 taken 0 (throw)
-        2:  170-block  3
-call    9 returned 2
-branch 10 taken 2 (fallthrough)
-branch 11 taken 0 (throw)
-        2:  170-block  4
-call   12 returned 2
-        2:  170-block  5
-call   13 returned 2
-        2:  170-block  6
-call   14 returned 2
-    $$$$$:  170-block  7
-call   15 never executed
-    $$$$$:  170-block  8
-    $$$$$:  170-block  9
-    $$$$$:  170-block 10
-call   16 never executed
-    $$$$$:  170-block 11
-    $$$$$:  170-block 12
-    $$$$$:  170-block 13
-call   17 never executed
-    $$$$$:  170-block 14
-    $$$$$:  170-block 15
-        2:  171:    book_repo.add(book1);
+        -:  169:
+function _ZN9test_repo17test_increment_idEv called 2 returned 100% blocks executed 46%
+        2:  170:void test_repo::test_increment_id() {
+        2:  171:    repo book_repo;
         2:  171-block  0
 call    0 returned 2
-branch  1 taken 2 (fallthrough)
-branch  2 taken 0 (throw)
-        -:  172:
-       2*:  173:    assert(book_repo.get_id_for_next_book_to_be_added() == 1);
+        4:  172:    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  172-block  0
+call    4 returned 2
+call    5 returned 2
+branch  6 taken 2 (fallthrough)
+branch  7 taken 0 (throw)
+        2:  172-block  1
+call    8 returned 2
+call    9 returned 2
+branch 10 taken 2 (fallthrough)
+branch 11 taken 0 (throw)
+        2:  172-block  2
+call   12 returned 2
+branch 13 taken 2 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 2
+call   16 returned 2
+call   17 returned 2
+call   18 returned 2
+call   19 returned 2
+    $$$$$:  172-block  3
+    $$$$$:  172-block  4
+    $$$$$:  172-block  5
+    $$$$$:  172-block  6
+    $$$$$:  172-block  7
+    $$$$$:  172-block  8
+        4:  173:    carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
         2:  173-block  0
-call    0 returned 2
-branch  1 taken 2 (fallthrough)
-branch  2 taken 0 (throw)
+call    4 returned 2
+call    5 returned 2
+branch  6 taken 2 (fallthrough)
+branch  7 taken 0 (throw)
         2:  173-block  1
-branch  3 taken 0 (fallthrough)
-branch  4 taken 2
-    %%%%%:  173-block  2
-call    5 never executed
-        2:  173-block  3
-        -:  174:
-        2:  175:    book_repo.add(book2);
-        2:  175-block  0
+call    8 returned 2
+call    9 returned 2
+branch 10 taken 2 (fallthrough)
+branch 11 taken 0 (throw)
+        2:  173-block  2
+call   12 returned 2
+branch 13 taken 2 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 2
+call   16 returned 2
+call   17 returned 2
+call   18 returned 2
+call   19 returned 2
+    $$$$$:  173-block  3
+    $$$$$:  173-block  4
+    $$$$$:  173-block  5
+    $$$$$:  173-block  6
+    $$$$$:  173-block  7
+    $$$$$:  173-block  8
+        2:  174:    book_repo.add(book1);
 call    0 returned 2
 branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-        -:  176:
-       2*:  177:    assert(book_repo.get_id_for_next_book_to_be_added() == 2);
-        2:  177-block  0
+        -:  175:
+       2*:  176:    assert(book_repo.get_id_for_next_book_to_be_added() == 1);
+        2:  176-block  0
 call    0 returned 2
 branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-        2:  177-block  1
+        2:  176-block  1
 branch  3 taken 0 (fallthrough)
 branch  4 taken 2
-    %%%%%:  177-block  2
+    %%%%%:  176-block  2
 call    5 never executed
-        2:  177-block  3
-        -:  178:
-        2:  179:}
-        2:  179-block  0
+        -:  177:
+        2:  178:    book_repo.add(book2);
+        2:  178-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  179:
+       2*:  180:    assert(book_repo.get_id_for_next_book_to_be_added() == 2);
+        2:  180-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:  180-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 2
+    %%%%%:  180-block  2
+call    5 never executed
+        -:  181:
+        2:  182:}
+        2:  182-block  0
 call    0 returned 2
 call    1 returned 2
 call    2 returned 2
-    $$$$$:  179-block  1
+    $$$$$:  182-block  1
 call    3 never executed
-    $$$$$:  179-block  2
+    $$$$$:  182-block  2
 call    4 never executed
-    $$$$$:  179-block  3
+    $$$$$:  182-block  3
 call    5 never executed
-        -:  180:
+        -:  183:
 function _ZN9test_repo37test_get_id_for_next_book_to_be_addedEv called 1 returned 100% blocks executed 100%
-        1:  181:void test_repo::test_get_id_for_next_book_to_be_added(){
-        1:  182:    test_increment_id();
-        1:  182-block  0
+        1:  184:void test_repo::test_get_id_for_next_book_to_be_added(){
+        1:  185:    test_increment_id();
+        1:  185-block  0
 call    0 returned 1
-        1:  183:}
+        1:  186:}

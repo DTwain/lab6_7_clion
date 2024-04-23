@@ -1,6 +1,6 @@
-        -:    0:Source:D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/service_biblioteca.h
-        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_service.cpp.gcno
-        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_service.cpp.gcda
+        -:    0:Source:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/service_biblioteca.h
+        -:    0:Graph:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug-coverage/CMakeFiles/lab6_7_clion.dir/teste/test_service.cpp.gcno
+        -:    0:Data:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug-coverage/CMakeFiles/lab6_7_clion.dir/teste/test_service.cpp.gcda
         -:    0:Runs:1
         -:    1://
         -:    2:// Created by obrej on 4/10/2024.
@@ -11,43 +11,39 @@
         -:    7:#define LAB6_7_CLION_SERVICE_BIBLIOTECA_H
         -:    8:
         -:    9:#include <string>
-        -:   10:#include <vector>
-        -:   11:#include "carte.h"
-        -:   12:#include "repo.h"
-        -:   13:#include "validator.h"
-        -:   14:
-        -:   15:using std::vector;
-        -:   16:
-        -:   17:class service_biblioteca {
-        -:   18:private:
-        -:   19:    repo& repo_carti;
-        -:   20:    validator_carte& validator;
-        -:   21:    void my_sort(const my_vector<carte>& all, bool(*func)(const carte&, const carte&)) const;
-        -:   22:public:
-function _ZN18service_bibliotecaC1ER4repoR15validator_carte called 7 returned 100% blocks executed 100%
-        7:   23:    service_biblioteca(repo &repo_carti_obj, validator_carte& validator_obj):
-        7:   24:        repo_carti{repo_carti_obj}, validator{validator_obj}{}
+        -:   10:#include "carte.h"
+        -:   11:#include "repo.h"
+        -:   12:#include "validator.h"
+        -:   13:
+        -:   14:class service_biblioteca {
+        -:   15:private:
+        -:   16:    repo& repo_carti;
+        -:   17:    validator_carte& validator;
+        -:   18:public:
+function _ZN18service_bibliotecaC2ER4repoR15validator_carte called 7 returned 100% blocks executed 100%
+        7:   19:    service_biblioteca(repo &repo_carti_obj, validator_carte& validator_obj):
+        7:   20:        repo_carti{repo_carti_obj}, validator{validator_obj}{}
+        -:   21:
+        -:   22:    service_biblioteca(const service_biblioteca& other) = delete; // blocam copierea service lui
+        -:   23:
+        -:   24:    const vector<carte>& get_reference_from_vector_srv() const noexcept;
         -:   25:
-        -:   26:    service_biblioteca(const service_biblioteca& other) = delete; // blocam copierea service lui
+        -:   26:    void add_book_srv(const string& autor, const string& titlu, const string& genre, const int& an);
         -:   27:
-        -:   28:    const my_vector<carte>& get_reference_from_vector_srv() const noexcept;
+        -:   28:    void delete_book_srv(const int& id);
         -:   29:
-        -:   30:    void add_book_srv(const string& autor, const string& titlu, const string& genre, const int& an);
+        -:   30:    void modify_book_srv(const string& autor, const string& titlu, const string& genre, const int& an, const int& id);
         -:   31:
-        -:   32:    void delete_book_srv(const int& id);
+        -:   32:    const vector<carte>& get_all_srv() noexcept;
         -:   33:
-        -:   34:    void modify_book_srv(const string& autor, const string& titlu, const string& genre, const int& an, const int& id);
+        -:   34:    const vector<carte> filter_srv(const int an, const string titlu) const;
         -:   35:
-        -:   36:    const my_vector<carte>& get_all_srv() noexcept;
+        -:   36:    const vector<carte> sorter_based_on_option(int option) const;
         -:   37:
-        -:   38:    const my_vector<carte> filter_srv(int an, string titlu) const;
-        -:   39:
-        -:   40:    const my_vector<carte> sorter_based_on_option(int option) const;
-        -:   41:
-        -:   42:    const carte& search_for_book(const std::string &autor, const std::string &titlu, const std::string &genre,
-        -:   43:                                 const int &an);
-        -:   44:
-        -:   45:};
-        -:   46:
-        -:   47:
-        -:   48:#endif //LAB6_7_CLION_SERVICE_BIBLIOTECA_H
+        -:   38:    const carte& search_for_book(const std::string &autor, const std::string &titlu, const std::string &genre,
+        -:   39:                                 const int &an);
+        -:   40:
+        -:   41:};
+        -:   42:
+        -:   43:
+        -:   44:#endif //LAB6_7_CLION_SERVICE_BIBLIOTECA_H

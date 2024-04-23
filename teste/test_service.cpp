@@ -2,6 +2,7 @@
 // Created by obrej on 4/12/2024.
 //
 
+#include <vector>
 #include <cassert>
 #include <sstream>
 #include "../Headers/teste.h"
@@ -9,6 +10,7 @@
 #include "../Headers/validator.h"
 
 using std::stringstream;
+using std::vector;
 void test_service::run_service_tests() {
     test_add();
     test_delete();
@@ -105,7 +107,7 @@ void test_service::test_get_all() {
     srv.add_book_srv("Luis", "Jupanii", "Epic", 1842);
     srv.add_book_srv("Kong", "Maria", "Liric", 1940);
 
-    my_vector<carte> vec_carti{ book_repo.get_all() };
+    vector<carte> vec_carti{ book_repo.get_all() };
 
     assert(vec_carti.size() == 2);
 
@@ -139,7 +141,7 @@ void test_service::test_search_book() {
     }
 
     // testez cu get_reference_from_vector_srv
-    my_vector<carte> books_vec { srv.get_reference_from_vector_srv() };
+    vector<carte> books_vec { srv.get_reference_from_vector_srv() };
     assert(books_vec.size() == 4);
 }
 
@@ -153,7 +155,7 @@ void test_service::test_filter() {
     srv.add_book_srv("I.L.C", "O scrisoare pierduta", "Dramatic", 2000);
     srv.add_book_srv("Mihai Eminescu", "Luceafar", "Liric", 1883);
 
-    my_vector<carte> vec_carti{ srv.filter_srv(2000, "Maria") };
+    vector<carte> vec_carti = srv.filter_srv(2000, "Maria") ;
     assert(vec_carti.size() == 2);
 
     assert(vec_carti[0].get_book_id() == 1);
@@ -168,7 +170,7 @@ void test_service::test_filter() {
     assert(vec_carti[1].get_author() == "I.L.C");
     assert(vec_carti[1].get_title() == "O scrisoare pierduta");
 
-    my_vector<carte> vec_carti_2{ srv.filter_srv(1941, "Corola de minini a lumii") };
+    vector<carte> vec_carti_2{ srv.filter_srv(1941, "Corola de minini a lumii") };
     assert(vec_carti_2.size() == 0);
 }
 
@@ -182,7 +184,7 @@ void test_service::test_sort() {
     srv.add_book_srv("I.L.C", "O scrisoare pierduta", "Dramatic", 2000);
     srv.add_book_srv("Mihai Eminescu", "Luceafar", "Liric", 1883);
 
-    my_vector<carte> books_vec{ srv.sorter_based_on_option(1) };
+    vector<carte> books_vec{ srv.sorter_based_on_option(1) };
 
     assert(books_vec.size() == 4);
     assert(books_vec[0].get_book_id() == 0);
@@ -190,7 +192,7 @@ void test_service::test_sort() {
     assert(books_vec[2].get_book_id() == 1);
     assert(books_vec[3].get_book_id() == 2);
 
-    my_vector<carte> books_vec_2{ srv.sorter_based_on_option(2) };
+    vector<carte> books_vec_2{ srv.sorter_based_on_option(2) };
 
     assert(books_vec_2.size() == 4);
     assert(books_vec_2[0].get_book_id() == 2);
@@ -198,7 +200,7 @@ void test_service::test_sort() {
     assert(books_vec_2[2].get_book_id() == 0);
     assert(books_vec_2[3].get_book_id() == 3);
 
-    my_vector<carte> books_vec_3{ srv.sorter_based_on_option(3) };
+    vector<carte> books_vec_3{ srv.sorter_based_on_option(3) };
 
     assert(books_vec_3.size() == 4);
     assert(books_vec_3[0].get_book_id() == 0);
@@ -211,7 +213,7 @@ void test_service::test_sort() {
     srv.delete_book_srv(0);
     srv.delete_book_srv(3);
 
-    my_vector<carte> books_vec_4{ srv.sorter_based_on_option(3) };
+    vector<carte> books_vec_4{ srv.sorter_based_on_option(3) };
 
     assert(books_vec_4.size() == 0);
 }

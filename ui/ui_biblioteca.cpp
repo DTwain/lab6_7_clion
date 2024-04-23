@@ -4,39 +4,36 @@
 
 #include "../Headers/ui_biblioteca.h"
 #include "../Headers/carte.h"
-#include "../Headers/my_vector.h"
-#include "../Headers/vector_iterator.h"
 #include <iostream>
 #include <string>
+#include <vector>
 
 using std::string;
 using std::cin;
 using std::cout;
+using std::vector;
 
-void ui_biblioteca::afiseaza(const my_vector<carte>& books) {
+int nr_cos;
+
+void ui_biblioteca::afiseaza(const vector<carte>& books) {
     if(books.size() == 0){
         cout << "Nu sunt carti de afisat\n";
         return;
     }
     cout << "\nCartile sunt:\n";
-    iterator_vector<carte> iter{books};
-    iter.prim();
-    while(iter.valid()) {
-        const carte &book = iter.element();
-
+    for(const carte& book: books){
         cout << "Author: " << book.get_author() << '\n';
         cout << "Title: " << book.get_title() << '\n';
         cout << "Genre: " << book.get_genre() << '\n';
         cout << "Publication Year: " << book.get_publication_year() << '\n';
         cout << "Book ID: " << book.get_book_id() << '\n';
 
-        iter.next();
         cout << '\n';
     }
 }
 
 void ui_biblioteca::meniu(){
-    cout<< "< 1 > Adaugare carte\n< 2 > Sterge carte\n< 3 > Modifica carte\n< 4 > Afiseaza cartile\n< 5 > Cautare\n< 6 > Filtrare: \n< 7 > Sortare\n< 8 > EXIT\nOption: ";
+    cout<< "< 1 > Adaugare carte\n< 2 > Sterge carte\n< 3 > Modifica carte\n< 4 > Afiseaza cartile\n< 5 > Cautare\n< 6 > Filtrare: \n< 7 > Sortare\n< 8 > Adauga carte in cos\n< 9 > Goleste cos\n< 10 > Genereaza cos\n< 11 > Export\n< 12 > EXIT\nOption: ";
 }
 void ui_biblioteca::add_book() {
     string autor, titlu, gen;
@@ -103,7 +100,7 @@ void ui_biblioteca::filtare() {
     cout << "an: "; cin >> an;
     cout << "titlu: "; cin >> titlu;
 
-    const my_vector<carte>& filtered_books{ srv.filter_srv(an,titlu) };
+    const vector<carte>& filtered_books{ srv.filter_srv(an,titlu) };
 
     afiseaza(filtered_books);
 }
@@ -117,8 +114,36 @@ void ui_biblioteca::sortare() {
     while(!(optiune == 1 || optiune == 2 || optiune == 3)){
         std::cout<<"Optiune: "; cin >> optiune;
     }
-    const my_vector<carte>& sorted_books = srv.sorter_based_on_option(optiune);
+    const vector<carte>& sorted_books = srv.sorter_based_on_option(optiune);
     afiseaza(sorted_books);
+}
+
+void ui_biblioteca::add_cos(){
+    afiseaza(srv.get_all_srv());
+    string titlu;
+    cout << "Introdu titlul cartii pe care doresti sa o adaugi in cos: ";
+    cin >> titlu;
+    service_cos.add_carte_in_cos(titlu);
+}
+
+void ui_biblioteca::goleste_cos() {
+    service_cos.goleste_cos();
+}
+
+void ui_biblioteca::genereaza_cos() {
+    int nr_carti_de_adaugat;
+    cout << "Introdu cate carti doresti sa fie in cos: ";
+    cin >> nr_carti_de_adaugat;
+
+    service_cos.genereaza_cos(nr_carti_de_adaugat);
+}
+
+void ui_biblioteca::export_cos() {
+    string nume_fisier;
+    cout << "Nume fisier pentru export cos: ";
+    cin >> nume_fisier;
+
+    service_cos.export_cos(nume_fisier, nr_cos);
 }
 void ui_biblioteca::run(){
     srv.add_book_srv("Luis", "Jupanii", "Epic", 1842);
@@ -152,6 +177,18 @@ void ui_biblioteca::run(){
                     sortare();
                     break;
                 case 8:
+                    add_cos();
+                    break;
+                case 9:
+                    goleste_cos();
+                    break;
+                case 10:
+                    genereaza_cos();
+                    break;
+                case 11:
+                    export_cos();
+                    break;
+                case 12:
                     return;
                 default:
                     cout << "Optiunea nu exista!\n";

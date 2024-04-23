@@ -50,18 +50,30 @@ public:
     void run_service_tests();
 };
 
+class test_service_cos{
+private:
+    void test_add_cos();
+    void test_goleste_cos();
+    void test_genereaza_cos();
+    void test_export_cos();
+public:
+    void run_service_cos_tests();
+};
+
 class tests{
 private:
     test_domain tester_domain;
     test_repo tester_repo;
     test_validator t_validator;
     test_service tester_service;
+    test_service_cos tester_cos;
 public:
     void run_all_tests(){
         tester_domain.run_domain_tests();
         tester_repo.run_repo_tests();
         t_validator.tester_validator();
         tester_service.run_service_tests();
+        tester_cos.run_service_cos_tests();
     }
 };
 #endif //LAB6_7_CLION_TEST_REPO_H

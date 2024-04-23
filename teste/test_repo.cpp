@@ -100,6 +100,9 @@ void test_repo::test_repo_delete() {
         assert(ss.str().find("nu exista!") > 0);
     }
 
+    book_repo.goleste_repo();
+    assert(book_repo.get_all().size() == 0);
+
 }
 
 void test_repo::test_repo_modify() {
@@ -136,7 +139,7 @@ void test_repo::test_repo_get_all() {
     book_repo.add(book1);
     book_repo.add(book2);
 
-    my_vector<carte> vec_carti = book_repo.get_all();
+    vector<carte> vec_carti = book_repo.get_all();
 
     assert(vec_carti.size() == 2);
 

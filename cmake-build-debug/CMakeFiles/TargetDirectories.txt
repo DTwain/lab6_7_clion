@@ -1,3 +1,3 @@
-D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/CMakeFiles/lab6_7_clion.dir
-D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/CMakeFiles/lab6_7_clion.dir
+/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/CMakeFiles/rebuild_cache.dir
