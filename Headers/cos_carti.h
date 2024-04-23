@@ -14,6 +14,7 @@ private:
 public:
     cos_carti(repo& all, repo& cos): repo_carti{all}, cos{cos}{}
 
+    int get_nr_carti_din_cos();
     void add_carte_in_cos(string titlu);
     void goleste_cos();
     void genereaza_cos(int nr_carti);

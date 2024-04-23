@@ -6,10 +6,13 @@
 #ifndef LAB6_7_CLION_SERVICE_BIBLIOTECA_H
 #define LAB6_7_CLION_SERVICE_BIBLIOTECA_H
 
+#include <map>
 #include <string>
 #include "carte.h"
 #include "repo.h"
 #include "validator.h"
+
+using std::map;
 
 class service_biblioteca {
 private:
@@ -28,6 +31,8 @@ public:
     void delete_book_srv(const int& id);
 
     void modify_book_srv(const string& autor, const string& titlu, const string& genre, const int& an, const int& id);
+
+    map<string, DTO_carte> raport();
 
     const vector<carte>& get_all_srv() noexcept;
 

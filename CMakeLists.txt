@@ -21,8 +21,6 @@ add_executable(lab6_7_clion main.cpp
         Headers/validator.h
         teste/test_validator.cpp
         teste/test_service.cpp
-        Headers/my_vector.h
-        Headers/vector_iterator.h
         service/cos_carti.cpp
         Headers/cos_carti.h
         teste/test_cos_srv.cpp

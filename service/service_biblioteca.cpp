@@ -44,7 +44,10 @@ void service_biblioteca::modify_book_srv(const std::string &autor, const std::st
 const vector<carte>& service_biblioteca::get_all_srv() noexcept{
     return repo_carti.get_all();
 }
-
+/*
+ * Returneaza o referinta catre o carte care are cel putin unui din campuri egal cu autor, titlu, genre sau an
+ * Daca nu gaseste nicio carte ridica o exceptie
+ */
 const carte& service_biblioteca::search_for_book(const std::string &autor, const std::string &titlu, const std::string &genre,
                                                  const int &an) {
     const vector<carte>& all{ repo_carti.get_all() };
@@ -53,7 +56,7 @@ const carte& service_biblioteca::search_for_book(const std::string &autor, const
                book.get_title() == titlu ||
                book.get_genre() == genre ||
                book.get_publication_year() == an;
-    });
+    }); // find_if returneaza un iterator care pointeaza catre primul match pe care ul gaseste
 
     if (itr != all.end()) {
         return *itr;
@@ -61,7 +64,28 @@ const carte& service_biblioteca::search_for_book(const std::string &autor, const
         throw std::exception{};
 }
 
+/*
+ * Raport privind numarul de carti de fiecare tip, liric / epic / dramatic
+ * Return type: map<string, DTO_carte>
+ * string: liric / epic / dramatic
+ *
+ */
+std::map<string, DTO_carte> service_biblioteca::raport(){
+    const vector<carte>& all{ repo_carti.get_all() };
+    map<string, DTO_carte> raport;
 
+    for(const carte& book: all){
+        string gen = book.get_genre();
+        for(auto &c: gen)
+            c = tolower(c);
+
+        if(raport.find(gen) != raport.end())
+            raport[gen].numar_entitati += 1;
+        else
+            raport[gen] = DTO_carte(gen, 1);
+    }
+    return raport;
+}
 /*
  * Filtreaza cartile dupa an si titlu
  * Daca gaseste o carte cu un camp egal cu $an sau $titlu o adauga in lista

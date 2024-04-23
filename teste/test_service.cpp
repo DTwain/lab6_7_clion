@@ -19,6 +19,7 @@ void test_service::run_service_tests() {
     test_filter();
     test_sort();
     test_search_book();
+    test_raport();
 }
 
 void test_service::test_add() {
@@ -216,4 +217,25 @@ void test_service::test_sort() {
     vector<carte> books_vec_4{ srv.sorter_based_on_option(3) };
 
     assert(books_vec_4.size() == 0);
+}
+void test_service::test_raport() {
+    repo books_repo;
+    validator_carte validator;
+    service_biblioteca srv(books_repo, validator);
+
+    srv.add_book_srv("Luis", "Jupanii", "Epic", 1842);
+    srv.add_book_srv("Kong", "Maria", "Liric", 2000);
+    srv.add_book_srv("I.L.C", "O scrisoare pierduta", "Dramatic", 2000);
+
+    map<string, DTO_carte> rezultat_raport { srv.raport() };
+
+    assert(rezultat_raport.size() == 3);
+    assert(rezultat_raport["liric"].numar_entitati == 1);
+
+    srv.add_book_srv("Mihai Eminescu", "Luceafar", "Liric", 1883);
+
+    map<string, DTO_carte> rezultat_raport_2 { srv.raport() };
+
+    assert(rezultat_raport_2.size() == 3);
+    assert(rezultat_raport_2["liric"].numar_entitati == 2);
 }

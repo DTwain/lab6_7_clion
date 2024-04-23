@@ -1,6 +1,6 @@
-        -:    0:Source:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/domain/validator.cpp
-        -:    0:Graph:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug-coverage/CMakeFiles/lab6_7_clion.dir/domain/validator.cpp.gcno
-        -:    0:Data:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug-coverage/CMakeFiles/lab6_7_clion.dir/domain/validator.cpp.gcda
+        -:    0:Source:D:/INFO 2/SEM 2/OOP/lab6-7---oop/domain/validator.cpp
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcda
         -:    0:Runs:1
         -:    1://
         -:    2:// Created by obrej on 4/11/2024.
@@ -18,41 +18,41 @@
         -:   14: * return true , daca genul curespunde
         -:   15: * return false, altfel
         -:   16:*/
-function _Z11is_good_genRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 28 returned 100% blocks executed 100%
-       28:   17:bool is_good_gen(string& gen){
-      158:   18:    for(auto& c: gen){
-       28:   18-block  0
-call    0 returned 28
-call    1 returned 28
-      130:   18-block  1
-call    2 returned 130
-      158:   18-block  2
-call    3 returned 158
-branch  4 taken 130
-branch  5 taken 28 (fallthrough)
-      130:   19:        c = tolower(c);
-call    0 returned 130
+function _Z11is_good_genRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 35 returned 100% blocks executed 100%
+       35:   17:bool is_good_gen(string& gen){
+      204:   18:    for(auto& c: gen){
+       35:   18-block  0
+call    0 returned 35
+call    1 returned 35
+      169:   18-block  1
+call    2 returned 169
+      204:   18-block  2
+call    3 returned 204
+branch  4 taken 169
+branch  5 taken 35 (fallthrough)
+      169:   19:        c = tolower(c);
+call    0 returned 169
         -:   20:    }
-       28:   21:    if(gen == "epic" || gen == "liric" || gen == "dramatic")
-       28:   21-block  0
-call    0 returned 28
-branch  1 taken 19 (fallthrough)
-branch  2 taken 9
-       19:   21-block  1
-call    3 returned 19
-branch  4 taken 5 (fallthrough)
-branch  5 taken 14
-        5:   21-block  2
-call    6 returned 5
-branch  7 taken 3 (fallthrough)
+       35:   21:    if(gen == "epic" || gen == "liric" || gen == "dramatic")
+       35:   21-block  0
+call    0 returned 35
+branch  1 taken 24 (fallthrough)
+branch  2 taken 11
+       24:   21-block  1
+call    3 returned 24
+branch  4 taken 7 (fallthrough)
+branch  5 taken 17
+        7:   21-block  2
+call    6 returned 7
+branch  7 taken 5 (fallthrough)
 branch  8 taken 2
-       26:   21-block  3
+       33:   21-block  3
         2:   21-block  4
-       28:   21-block  5
-branch  9 taken 26 (fallthrough)
+       35:   21-block  5
+branch  9 taken 33 (fallthrough)
 branch 10 taken 2
-       26:   22:        return true;
-       26:   22-block  0
+       33:   22:        return true;
+       33:   22-block  0
         2:   23:    return false;
         2:   23-block  0
         -:   24:}
@@ -63,135 +63,124 @@ branch 10 taken 2
         -:   29: * gen : string egal cu "liric" / "epic" / "dramatic"
         -:   30: * anul publicatiei: Mai mic decat 2025
         -:   31: */
-function _ZN15validator_carte8validateERK5carte called 28 returned 79% blocks executed 66%
-       28:   32:void validator_carte::validate(const carte &book) {
-       28:   33:    vector<string> errors;
-       28:   33-block  0
-call    0 returned 28
-       28:   34:    if(book.get_author().length() == 0)
-call    0 returned 28
-branch  1 taken 28 (fallthrough)
+function _ZN15validator_carte8validateERK5carte called 35 returned 83% blocks executed 66%
+       35:   32:void validator_carte::validate(const carte &book) {
+       35:   33:    vector<string> errors;
+       35:   34:    if(book.get_author().length() == 0)
+       35:   34-block  0
+call    0 returned 35
+branch  1 taken 35 (fallthrough)
 branch  2 taken 0 (throw)
-       28:   34-block  0
-call    3 returned 28
-call    4 returned 28
+       35:   34-block  1
+call    3 returned 35
+call    4 returned 35
 branch  5 taken 3 (fallthrough)
-branch  6 taken 25
-        3:   35:        errors.push_back("Autorul introdus este vid");
+branch  6 taken 32
+    $$$$$:   34-block  2
+        6:   35:        errors.push_back("Autorul introdus este vid");
         3:   35-block  0
 call    0 returned 3
-call    1 returned 3
-branch  2 taken 3 (fallthrough)
-branch  3 taken 0 (throw)
-        3:   35-block  1
-call    4 returned 3
-branch  5 taken 3 (fallthrough)
-branch  6 taken 0 (throw)
-        3:   35-block  2
-call    7 returned 3
-call    8 returned 3
-    $$$$$:   35-block  3
-call    9 never executed
-    $$$$$:   35-block  4
-    $$$$$:   35-block  5
-call   10 never executed
-    $$$$$:   35-block  6
-       28:   36:    if(book.get_title().length() == 0)
-       28:   36-block  0
-call    0 returned 28
-branch  1 taken 28 (fallthrough)
+branch  1 taken 3 (fallthrough)
 branch  2 taken 0 (throw)
-       28:   36-block  1
-call    3 returned 28
-call    4 returned 28
+        3:   35-block  1
+call    3 returned 3
+branch  4 taken 3 (fallthrough)
+branch  5 taken 0 (throw)
+        3:   35-block  2
+call    6 returned 3
+        3:   35-block  3
+    $$$$$:   35-block  4
+call    7 never executed
+    $$$$$:   35-block  5
+    $$$$$:   35-block  6
+       35:   36:    if(book.get_title().length() == 0)
+       35:   36-block  0
+call    0 returned 35
+branch  1 taken 35 (fallthrough)
+branch  2 taken 0 (throw)
+       35:   36-block  1
+call    3 returned 35
+call    4 returned 35
 branch  5 taken 2 (fallthrough)
-branch  6 taken 26
-        2:   37:        errors.push_back("Titlul introdus este vid");
+branch  6 taken 33
+    $$$$$:   36-block  2
+        4:   37:        errors.push_back("Titlul introdus este vid");
         2:   37-block  0
 call    0 returned 2
-call    1 returned 2
-branch  2 taken 2 (fallthrough)
-branch  3 taken 0 (throw)
-        2:   37-block  1
-call    4 returned 2
-branch  5 taken 2 (fallthrough)
-branch  6 taken 0 (throw)
-        2:   37-block  2
-call    7 returned 2
-call    8 returned 2
-    $$$$$:   37-block  3
-call    9 never executed
-    $$$$$:   37-block  4
-    $$$$$:   37-block  5
-call   10 never executed
-    $$$$$:   37-block  6
-       28:   38:    if(book.get_publication_year() > 2025)
-       28:   38-block  0
-call    0 returned 28
-branch  1 taken 28 (fallthrough)
+branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-       28:   38-block  1
+        2:   37-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   37-block  2
+call    6 returned 2
+        2:   37-block  3
+    $$$$$:   37-block  4
+call    7 never executed
+    $$$$$:   37-block  5
+    $$$$$:   37-block  6
+       35:   38:    if(book.get_publication_year() > 2025)
+       35:   38-block  0
+call    0 returned 35
+branch  1 taken 35 (fallthrough)
+branch  2 taken 0 (throw)
+       35:   38-block  1
 branch  3 taken 1 (fallthrough)
-branch  4 taken 27
-        1:   39:        errors.push_back("Anul introdus nu poate fi din viitor");
+branch  4 taken 34
+        2:   39:        errors.push_back("Anul introdus nu poate fi din viitor");
         1:   39-block  0
 call    0 returned 1
-call    1 returned 1
-branch  2 taken 1 (fallthrough)
-branch  3 taken 0 (throw)
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
         1:   39-block  1
-call    4 returned 1
-branch  5 taken 1 (fallthrough)
-branch  6 taken 0 (throw)
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
         1:   39-block  2
-call    7 returned 1
-call    8 returned 1
-    $$$$$:   39-block  3
-call    9 never executed
+call    6 returned 1
+        1:   39-block  3
     $$$$$:   39-block  4
+call    7 never executed
     $$$$$:   39-block  5
-call   10 never executed
     $$$$$:   39-block  6
         -:   40:
-       28:   41:    string gen = book.get_genre();
-       28:   41-block  0
-call    0 returned 28
-branch  1 taken 28 (fallthrough)
+       35:   41:    string gen = book.get_genre();
+       35:   41-block  0
+call    0 returned 35
+branch  1 taken 35 (fallthrough)
 branch  2 taken 0 (throw)
-       28:   42:    if(!is_good_gen(gen))
-       28:   42-block  0
-call    0 returned 28
-branch  1 taken 28 (fallthrough)
+       35:   42:    if(!is_good_gen(gen))
+       35:   42-block  0
+call    0 returned 35
+branch  1 taken 35 (fallthrough)
 branch  2 taken 0 (throw)
-       28:   42-block  1
+       35:   42-block  1
 branch  3 taken 2 (fallthrough)
-branch  4 taken 26
-        2:   43:        errors.push_back("Genul introdus nu este epic / liric / dramatic");
+branch  4 taken 33
+        4:   43:        errors.push_back("Genul introdus nu este epic / liric / dramatic");
         2:   43-block  0
 call    0 returned 2
-call    1 returned 2
-branch  2 taken 2 (fallthrough)
-branch  3 taken 0 (throw)
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
         2:   43-block  1
-call    4 returned 2
-branch  5 taken 2 (fallthrough)
-branch  6 taken 0 (throw)
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
         2:   43-block  2
-call    7 returned 2
-call    8 returned 2
-    $$$$$:   43-block  3
-call    9 never executed
+call    6 returned 2
+        2:   43-block  3
     $$$$$:   43-block  4
+call    7 never executed
     $$$$$:   43-block  5
-call   10 never executed
     $$$$$:   43-block  6
         -:   44:
         -:   45:
-       28:   46:    if(errors.size() > 0){
-       28:   46-block  0
-call    0 returned 28
+       35:   46:    if(errors.size() > 0){
+       35:   46-block  0
+call    0 returned 35
 branch  1 taken 6 (fallthrough)
-branch  2 taken 22
+branch  2 taken 29
         6:   47:        throw book_validation_exception(errors);
         6:   47-block  0
 call    0 returned 6
@@ -203,10 +192,10 @@ call    4 returned 6
     $$$$$:   47-block  2
 call    5 never executed
         -:   48:    }
-       34:   49:}
-       22:   49-block  0
-call    0 returned 22
-call    1 returned 22
+       41:   49:}
+       29:   49-block  0
+call    0 returned 29
+call    1 returned 29
         6:   49-block  1
 call    2 returned 6
         6:   49-block  2

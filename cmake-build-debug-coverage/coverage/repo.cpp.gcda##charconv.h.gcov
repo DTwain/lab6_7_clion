@@ -1,10 +1,10 @@
-        -:    0:Source:/usr/include/c++/11/bits/charconv.h
-        -:    0:Graph:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug-coverage/CMakeFiles/lab6_7_clion.dir/repository/repo.cpp.gcno
-        -:    0:Data:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug-coverage/CMakeFiles/lab6_7_clion.dir/repository/repo.cpp.gcda
+        -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcda
         -:    0:Runs:1
         -:    1:// Numeric conversions (to_string, to_chars) -*- C++ -*-
         -:    2:
-        -:    3:// Copyright (C) 2017-2021 Free Software Foundation, Inc.
+        -:    3:// Copyright (C) 2017-2023 Free Software Foundation, Inc.
         -:    4://
         -:    5:// This file is part of the GNU ISO C++ Library.  This library is free
         -:    6:// software; you can redistribute it and/or modify it under the
@@ -39,102 +39,112 @@
         -:   35:#if __cplusplus >= 201103L
         -:   36:
         -:   37:#include <type_traits>
-        -:   38:
-        -:   39:namespace std _GLIBCXX_VISIBILITY(default)
-        -:   40:{
-        -:   41:_GLIBCXX_BEGIN_NAMESPACE_VERSION
-        -:   42:namespace __detail
-        -:   43:{
-        -:   44:  // Generic implementation for arbitrary bases.
-        -:   45:  template<typename _Tp>
-        -:   46:    _GLIBCXX14_CONSTEXPR unsigned
-function _ZNSt8__detail14__to_chars_lenIjEEjT_i called 64 returned 100% blocks executed 55%
-       64:   47:    __to_chars_len(_Tp __value, int __base = 10) noexcept
-        -:   48:    {
-        -:   49:      static_assert(is_integral<_Tp>::value, "implementation bug");
-        -:   50:      static_assert(is_unsigned<_Tp>::value, "implementation bug");
+        -:   38:#include <ext/numeric_traits.h>
+        -:   39:
+        -:   40:namespace std _GLIBCXX_VISIBILITY(default)
+        -:   41:{
+        -:   42:_GLIBCXX_BEGIN_NAMESPACE_VERSION
+        -:   43:namespace __detail
+        -:   44:{
+        -:   45:#if __cpp_variable_templates
+        -:   46:  // This accepts 128-bit integers even in strict mode.
+        -:   47:  template<typename _Tp>
+        -:   48:    constexpr bool __integer_to_chars_is_unsigned
+        -:   49:      = ! __gnu_cxx::__int_traits<_Tp>::__is_signed;
+        -:   50:#endif
         -:   51:
-       64:   52:      unsigned __n = 1;
-       64:   53:      const unsigned __b2 = __base  * __base;
-       64:   54:      const unsigned __b3 = __b2 * __base;
-       64:   55:      const unsigned long __b4 = __b3 * __base;
-       64:   55-block  0
-        -:   56:      for (;;)
-        -:   57:	{
-       64:   58:	  if (__value < (unsigned)__base) return __n;
-       64:   58-block  0
-branch  0 taken 51 (fallthrough)
-branch  1 taken 13
-       51:   58-block  1
-       13:   59:	  if (__value < __b2) return __n + 1;
-       13:   59-block  0
+        -:   52:  // Generic implementation for arbitrary bases.
+        -:   53:  template<typename _Tp>
+        -:   54:    _GLIBCXX14_CONSTEXPR unsigned
+function _ZNSt8__detail14__to_chars_lenIjEEjT_i called 94 returned 100% blocks executed 82%
+       94:   55:    __to_chars_len(_Tp __value, int __base = 10) noexcept
+        -:   56:    {
+        -:   57:#if __cpp_variable_templates
+        -:   58:      static_assert(__integer_to_chars_is_unsigned<_Tp>, "implementation bug");
+        -:   59:#endif
+        -:   60:
+       94:   61:      unsigned __n = 1;
+       94:   62:      const unsigned __b2 = __base  * __base;
+       94:   63:      const unsigned __b3 = __b2 * __base;
+       94:   64:      const unsigned long __b4 = __b3 * __base;
+       94:   64-block  0
+        -:   65:      for (;;)
+        -:   66:	{
+       94:   67:	  if (__value < (unsigned)__base) return __n;
+       94:   67-block  0
+branch  0 taken 76 (fallthrough)
+branch  1 taken 18
+       76:   67-block  1
+       18:   68:	  if (__value < __b2) return __n + 1;
+       18:   68-block  0
 branch  0 taken 13 (fallthrough)
+branch  1 taken 5
+       13:   68-block  1
+       5*:   69:	  if (__value < __b3) return __n + 2;
+        5:   69-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 5
+    %%%%%:   69-block  1
+        5:   70:	  if (__value < __b4) return __n + 3;
+        5:   70-block  0
+branch  0 taken 5 (fallthrough)
 branch  1 taken 0
-       13:   59-block  1
-    #####:   60:	  if (__value < __b3) return __n + 2;
-    %%%%%:   60-block  0
-branch  0 never executed
-branch  1 never executed
-    %%%%%:   60-block  1
-    #####:   61:	  if (__value < __b4) return __n + 3;
-    %%%%%:   61-block  0
-branch  0 never executed
-branch  1 never executed
-    %%%%%:   61-block  1
-    #####:   62:	  __value /= __b4;
-    #####:   63:	  __n += 4;
-    %%%%%:   63-block  0
-        -:   64:	}
-        -:   65:    }
-        -:   66:
-        -:   67:  // Write an unsigned integer value to the range [first,first+len).
-        -:   68:  // The caller is required to provide a buffer of exactly the right size
-        -:   69:  // (which can be determined by the __to_chars_len function).
-        -:   70:  template<typename _Tp>
-        -:   71:    void
-function _ZNSt8__detail18__to_chars_10_implIjEEvPcjT_ called 64 returned 100% blocks executed 86%
-       64:   72:    __to_chars_10_impl(char* __first, unsigned __len, _Tp __val) noexcept
-        -:   73:    {
-        -:   74:      static_assert(is_integral<_Tp>::value, "implementation bug");
-        -:   75:      static_assert(is_unsigned<_Tp>::value, "implementation bug");
-        -:   76:
-        -:   77:      static constexpr char __digits[201] =
-        -:   78:	"0001020304050607080910111213141516171819"
-        -:   79:	"2021222324252627282930313233343536373839"
-        -:   80:	"4041424344454647484950515253545556575859"
-        -:   81:	"6061626364656667686970717273747576777879"
-        -:   82:	"8081828384858687888990919293949596979899";
-       64:   83:      unsigned __pos = __len - 1;
-       64:   84:      while (__val >= 100)
-       64:   84-block  0
-       64:   84-block  1
-branch  0 taken 0
-branch  1 taken 64 (fallthrough)
-        -:   85:	{
-    #####:   86:	  auto const __num = (__val % 100) * 2;
-    #####:   87:	  __val /= 100;
-    #####:   88:	  __first[__pos] = __digits[__num + 1];
-    #####:   89:	  __first[__pos - 1] = __digits[__num];
-    #####:   90:	  __pos -= 2;
-    %%%%%:   90-block  0
-        -:   91:	}
-       64:   92:      if (__val >= 10)
-       64:   92-block  0
-branch  0 taken 13 (fallthrough)
-branch  1 taken 51
-        -:   93:	{
-       13:   94:	  auto const __num = __val * 2;
-       13:   95:	  __first[1] = __digits[__num + 1];
-       13:   96:	  __first[0] = __digits[__num];
-       13:   96-block  0
-        -:   97:	}
-        -:   98:      else
-       51:   99:	__first[0] = '0' + __val;
-       51:   99-block  0
-       64:  100:    }
-        -:  101:
-        -:  102:} // namespace __detail
-        -:  103:_GLIBCXX_END_NAMESPACE_VERSION
-        -:  104:} // namespace std
-        -:  105:#endif // C++11
-        -:  106:#endif // _GLIBCXX_CHARCONV_H
+        5:   70-block  1
+    #####:   71:	  __value /= __b4;
+    #####:   72:	  __n += 4;
+    %%%%%:   72-block  0
+        -:   73:	}
+        -:   74:    }
+        -:   75:
+        -:   76:  // Write an unsigned integer value to the range [first,first+len).
+        -:   77:  // The caller is required to provide a buffer of exactly the right size
+        -:   78:  // (which can be determined by the __to_chars_len function).
+        -:   79:  template<typename _Tp>
+        -:   80:    _GLIBCXX23_CONSTEXPR void
+function _ZNSt8__detail18__to_chars_10_implIjEEvPcjT_ called 94 returned 100% blocks executed 100%
+       94:   81:    __to_chars_10_impl(char* __first, unsigned __len, _Tp __val) noexcept
+        -:   82:    {
+        -:   83:#if __cpp_variable_templates
+        -:   84:      static_assert(__integer_to_chars_is_unsigned<_Tp>, "implementation bug");
+        -:   85:#endif
+        -:   86:
+       94:   87:      constexpr char __digits[201] =
+        -:   88:	"0001020304050607080910111213141516171819"
+        -:   89:	"2021222324252627282930313233343536373839"
+        -:   90:	"4041424344454647484950515253545556575859"
+        -:   91:	"6061626364656667686970717273747576777879"
+        -:   92:	"8081828384858687888990919293949596979899";
+       94:   93:      unsigned __pos = __len - 1;
+       99:   94:      while (__val >= 100)
+       94:   94-block  0
+       99:   94-block  1
+branch  0 taken 5
+branch  1 taken 94 (fallthrough)
+        -:   95:	{
+        5:   96:	  auto const __num = (__val % 100) * 2;
+        5:   97:	  __val /= 100;
+        5:   98:	  __first[__pos] = __digits[__num + 1];
+        5:   99:	  __first[__pos - 1] = __digits[__num];
+        5:  100:	  __pos -= 2;
+        5:  100-block  0
+        -:  101:	}
+       94:  102:      if (__val >= 10)
+       94:  102-block  0
+branch  0 taken 18 (fallthrough)
+branch  1 taken 76
+        -:  103:	{
+       18:  104:	  auto const __num = __val * 2;
+       18:  105:	  __first[1] = __digits[__num + 1];
+       18:  106:	  __first[0] = __digits[__num];
+       18:  106-block  0
+        -:  107:	}
+        -:  108:      else
+       76:  109:	__first[0] = '0' + __val;
+       76:  109-block  0
+       94:  110:    }
+        -:  111:
+        -:  112:} // namespace __detail
+        -:  113:_GLIBCXX_END_NAMESPACE_VERSION
+        -:  114:} // namespace std
+        -:  115:#endif // C++11
+        -:  116:#endif // _GLIBCXX_CHARCONV_H

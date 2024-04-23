@@ -1,6 +1,6 @@
-        -:    0:Source:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/teste/test_validator.cpp
-        -:    0:Graph:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug-coverage/CMakeFiles/lab6_7_clion.dir/teste/test_validator.cpp.gcno
-        -:    0:Data:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug-coverage/CMakeFiles/lab6_7_clion.dir/teste/test_validator.cpp.gcda
+        -:    0:Source:D:/INFO 2/SEM 2/OOP/lab6-7---oop/teste/test_validator.cpp
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_validator.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_validator.cpp.gcda
         -:    0:Runs:1
         -:    1://
         -:    2:// Created by obrej on 4/11/2024.
@@ -11,162 +11,192 @@
         -:    7:#include "../Headers/teste.h"
         -:    8:#include "../Headers/validator.h"
         -:    9:
-function _ZN14test_validator16tester_validatorEv called 1 returned 100% blocks executed 47%
+function _ZN14test_validator16tester_validatorEv called 1 returned 100% blocks executed 51%
         1:   10:void test_validator::tester_validator(){
+        1:   10-block  0
         -:   11:    validator_carte validator;
-        2:   12:    carte book1 = carte("Luis", "Jupanii", "epic", 1842, 0);
+        6:   12:    carte book1 = carte("Luis", "Jupanii", "epic", 1842, 0);
         1:   12-block  0
 call    0 returned 1
-call    1 returned 1
-branch  2 taken 1 (fallthrough)
-branch  3 taken 0 (throw)
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
         1:   12-block  1
-call    4 returned 1
-call    5 returned 1
-branch  6 taken 1 (fallthrough)
-branch  7 taken 0 (throw)
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
         1:   12-block  2
-call    8 returned 1
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
         1:   12-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   12-block  4
 call   12 returned 1
-branch 13 taken 1 (fallthrough)
-branch 14 taken 0 (throw)
-call   15 returned 1
-call   16 returned 1
-call   17 returned 1
-call   18 returned 1
-call   19 returned 1
-    $$$$$:   12-block  4
-    $$$$$:   12-block  5
-    $$$$$:   12-block  6
-    $$$$$:   12-block  7
+        1:   12-block  5
+call   13 returned 1
+        1:   12-block  6
+call   14 returned 1
+        1:   12-block  7
     $$$$$:   12-block  8
+call   15 never executed
     $$$$$:   12-block  9
-        2:   13:    carte book2 = carte("Kong", "", "liric", 1940, 1);
-call    0 returned 1
-call    1 returned 1
-branch  2 taken 1 (fallthrough)
-branch  3 taken 0 (throw)
+    $$$$$:   12-block 10
+    $$$$$:   12-block 11
+call   16 never executed
+    $$$$$:   12-block 12
+    $$$$$:   12-block 13
+    $$$$$:   12-block 14
+call   17 never executed
+    $$$$$:   12-block 15
+    $$$$$:   12-block 16
+        6:   13:    carte book2 = carte("Kong", "", "liric", 1940, 1);
         1:   13-block  0
-call    4 returned 1
-call    5 returned 1
-branch  6 taken 1 (fallthrough)
-branch  7 taken 0 (throw)
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
         1:   13-block  1
-call    8 returned 1
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
         1:   13-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   13-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   13-block  4
 call   12 returned 1
-branch 13 taken 1 (fallthrough)
-branch 14 taken 0 (throw)
-call   15 returned 1
-call   16 returned 1
-call   17 returned 1
-call   18 returned 1
-call   19 returned 1
-    $$$$$:   13-block  3
-    $$$$$:   13-block  4
-    $$$$$:   13-block  5
-    $$$$$:   13-block  6
-    $$$$$:   13-block  7
+        1:   13-block  5
+call   13 returned 1
+        1:   13-block  6
+call   14 returned 1
+        1:   13-block  7
     $$$$$:   13-block  8
-        2:   14:    carte book3 = carte("Luis", "", "", 1842, 2);
-call    0 returned 1
-call    1 returned 1
-branch  2 taken 1 (fallthrough)
-branch  3 taken 0 (throw)
+call   15 never executed
+    $$$$$:   13-block  9
+    $$$$$:   13-block 10
+    $$$$$:   13-block 11
+call   16 never executed
+    $$$$$:   13-block 12
+    $$$$$:   13-block 13
+    $$$$$:   13-block 14
+call   17 never executed
+    $$$$$:   13-block 15
+    $$$$$:   13-block 16
+        6:   14:    carte book3 = carte("Luis", "", "", 1842, 2);
         1:   14-block  0
-call    4 returned 1
-call    5 returned 1
-branch  6 taken 1 (fallthrough)
-branch  7 taken 0 (throw)
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
         1:   14-block  1
-call    8 returned 1
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
         1:   14-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   14-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   14-block  4
 call   12 returned 1
-branch 13 taken 1 (fallthrough)
-branch 14 taken 0 (throw)
-call   15 returned 1
-call   16 returned 1
-call   17 returned 1
-call   18 returned 1
-call   19 returned 1
-    $$$$$:   14-block  3
-    $$$$$:   14-block  4
-    $$$$$:   14-block  5
-    $$$$$:   14-block  6
-    $$$$$:   14-block  7
+        1:   14-block  5
+call   13 returned 1
+        1:   14-block  6
+call   14 returned 1
+        1:   14-block  7
     $$$$$:   14-block  8
-        2:   15:    carte book4 = carte("", "Maria", "", 1940, 3);
-call    0 returned 1
-call    1 returned 1
-branch  2 taken 1 (fallthrough)
-branch  3 taken 0 (throw)
+call   15 never executed
+    $$$$$:   14-block  9
+    $$$$$:   14-block 10
+    $$$$$:   14-block 11
+call   16 never executed
+    $$$$$:   14-block 12
+    $$$$$:   14-block 13
+    $$$$$:   14-block 14
+call   17 never executed
+    $$$$$:   14-block 15
+    $$$$$:   14-block 16
+        6:   15:    carte book4 = carte("", "Maria", "", 1940, 3);
         1:   15-block  0
-call    4 returned 1
-call    5 returned 1
-branch  6 taken 1 (fallthrough)
-branch  7 taken 0 (throw)
-        1:   15-block  1
-call    8 returned 1
-call    9 returned 1
-branch 10 taken 1 (fallthrough)
-branch 11 taken 0 (throw)
-        1:   15-block  2
-call   12 returned 1
-branch 13 taken 1 (fallthrough)
-branch 14 taken 0 (throw)
-call   15 returned 1
-call   16 returned 1
-call   17 returned 1
-call   18 returned 1
-call   19 returned 1
-    $$$$$:   15-block  3
-    $$$$$:   15-block  4
-    $$$$$:   15-block  5
-    $$$$$:   15-block  6
-    $$$$$:   15-block  7
-    $$$$$:   15-block  8
-        2:   16:    carte book5 = carte("Luis", "Jupanii", "epic", 2034, 4);
 call    0 returned 1
-call    1 returned 1
-branch  2 taken 1 (fallthrough)
-branch  3 taken 0 (throw)
-        1:   16-block  0
-call    4 returned 1
-call    5 returned 1
-branch  6 taken 1 (fallthrough)
-branch  7 taken 0 (throw)
-        1:   16-block  1
-call    8 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   15-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   15-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   15-block  3
 call    9 returned 1
 branch 10 taken 1 (fallthrough)
 branch 11 taken 0 (throw)
-        1:   16-block  2
+        1:   15-block  4
 call   12 returned 1
-branch 13 taken 1 (fallthrough)
-branch 14 taken 0 (throw)
-call   15 returned 1
-call   16 returned 1
-call   17 returned 1
-call   18 returned 1
-call   19 returned 1
-    $$$$$:   16-block  3
-    $$$$$:   16-block  4
-    $$$$$:   16-block  5
-    $$$$$:   16-block  6
+        1:   15-block  5
+call   13 returned 1
+        1:   15-block  6
+call   14 returned 1
+        1:   15-block  7
+    $$$$$:   15-block  8
+call   15 never executed
+    $$$$$:   15-block  9
+    $$$$$:   15-block 10
+    $$$$$:   15-block 11
+call   16 never executed
+    $$$$$:   15-block 12
+    $$$$$:   15-block 13
+    $$$$$:   15-block 14
+call   17 never executed
+    $$$$$:   15-block 15
+    $$$$$:   15-block 16
+        5:   16:    carte book5 = carte("Luis", "Jupanii", "epic", 2034, 4);
+        1:   16-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   16-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   16-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   16-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   16-block  4
+call   12 returned 1
+        1:   16-block  5
+call   13 returned 1
+        1:   16-block  6
+call   14 returned 1
     $$$$$:   16-block  7
+call   15 never executed
     $$$$$:   16-block  8
+    $$$$$:   16-block  9
+    $$$$$:   16-block 10
+call   16 never executed
+    $$$$$:   16-block 11
+    $$$$$:   16-block 12
+    $$$$$:   16-block 13
+call   17 never executed
+    $$$$$:   16-block 14
+    $$$$$:   16-block 15
         -:   17:
         1:   18:    validator.validate(book1);
+        1:   18-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
@@ -205,6 +235,7 @@ branch  1 taken 0 (fallthrough)
 branch  2 taken 1
     $$$$$:   27-block  1
 call    3 never executed
+        1:   27-block  2
         1:   28:        ss.clear();
         1:   28-block  0
 call    0 returned 1
@@ -258,10 +289,12 @@ branch  1 taken 0 (fallthrough)
 branch  2 taken 1
     $$$$$:   38-block  1
 call    3 never executed
+        1:   38-block  2
         1:   39:        assert(mesaj.find("Genul") >= 0);
         1:   39-block  0
 call    0 returned 1
         1:   40:        ss.clear();
+        1:   40-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
@@ -313,10 +346,12 @@ branch  1 taken 0 (fallthrough)
 branch  2 taken 1
     $$$$$:   50-block  1
 call    3 never executed
+        1:   50-block  2
         1:   51:        assert(mesaj.find("Genul") >= 0);
         1:   51-block  0
 call    0 returned 1
         1:   52:        ss.clear();
+        1:   52-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
@@ -368,6 +403,7 @@ branch  1 taken 0 (fallthrough)
 branch  2 taken 1
     $$$$$:   62-block  1
 call    3 never executed
+        1:   62-block  2
         1:   63:        ss.clear();
         1:   63-block  0
 call    0 returned 1

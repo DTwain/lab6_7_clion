@@ -1,6 +1,6 @@
-        -:    0:Source:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/carte.h
-        -:    0:Graph:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug-coverage/CMakeFiles/lab6_7_clion.dir/teste/test_repo.cpp.gcno
-        -:    0:Data:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug-coverage/CMakeFiles/lab6_7_clion.dir/teste/test_repo.cpp.gcda
+        -:    0:Source:D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/carte.h
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_repo.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_repo.cpp.gcda
         -:    0:Runs:1
         -:    1://
         -:    2:// Created by obrej on 4/10/2024.
@@ -31,41 +31,47 @@
         -:   27:public:
         -:   28:    carte() = default;
         -:   29:
-function _ZN5carteC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_S5_ii called 0 returned 0% blocks executed 0%
+function _ZN5carteC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_S5_ii called 0 returned 0% blocks executed 0%
     #####:   30:    carte(const string author, const string title, const string genre, const int year, const int id)
     #####:   31:            :author{ author }, title{ title }, genre{ genre }, publication_year{ year }, book_id{ id }{}
     %%%%%:   31-block  0
 call    0 never executed
 call    1 never executed
-branch  2 never executed
-branch  3 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
     %%%%%:   31-block  1
 call    4 never executed
-branch  5 never executed
-branch  6 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
     %%%%%:   31-block  2
     $$$$$:   31-block  3
 call    7 never executed
     $$$$$:   31-block  4
 call    8 never executed
-function _ZN5carteC2ERKS_ called 0 returned 0% blocks executed 0%
+function _ZN5carteC1ERKS_ called 0 returned 0% blocks executed 0%
     #####:   32:    carte(const carte& ceva): author{ceva.author}, title{ceva.title}, genre{ceva.genre}, book_id{ceva.book_id}, publication_year{ceva.publication_year}{
     %%%%%:   32-block  0
 call    0 never executed
 call    1 never executed
-branch  2 never executed
-branch  3 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
     %%%%%:   32-block  1
 call    4 never executed
-branch  5 never executed
-branch  6 never executed
-        -:   33:            //std::cout<<"hi\n";
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    #####:   33:            std::cout<<"hi\n";
+    %%%%%:   33-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
     #####:   34:    }
     %%%%%:   34-block  0
     $$$$$:   34-block  1
 call    0 never executed
     $$$$$:   34-block  2
 call    1 never executed
+    $$$$$:   34-block  3
+call    2 never executed
         -:   35:
         -:   36:    bool operator==(const carte& other) const;
         -:   37:
@@ -77,4 +83,14 @@ call    1 never executed
         -:   43:
         -:   44:};
         -:   45:
-        -:   46:#endif
+        -:   46:class DTO_carte{
+        -:   47:public:
+        -:   48:    string genre;
+        -:   49:    int numar_entitati;
+        -:   50:
+        -:   51:    DTO_carte() = default;
+        -:   52:    DTO_carte(const string& gen, int nr_entitati): genre{gen}, numar_entitati{nr_entitati}{};
+        -:   53:
+        -:   54:};
+        -:   55:
+        -:   56:#endif

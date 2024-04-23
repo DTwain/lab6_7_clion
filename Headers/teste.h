@@ -46,6 +46,7 @@ private:
     void test_filter();
     void test_sort();
     void test_search_book();
+    void test_raport();
 public:
     void run_service_tests();
 };

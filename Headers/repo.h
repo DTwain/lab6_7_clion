@@ -8,7 +8,6 @@
 #define LAB6_7_CLION_REPO_H
 
 #include "carte.h"
-#include "my_vector.h"
 #include <ostream>
 #include <vector>
 #include <string>

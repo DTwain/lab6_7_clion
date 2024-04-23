@@ -1,10 +1,10 @@
-        -:    0:Source:/usr/include/c++/11/bits/stl_construct.h
-        -:    0:Graph:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug-coverage/CMakeFiles/lab6_7_clion.dir/domain/validator.cpp.gcno
-        -:    0:Data:/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug-coverage/CMakeFiles/lab6_7_clion.dir/domain/validator.cpp.gcda
+        -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h
+        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\validator.cpp.gcda
         -:    0:Runs:1
         -:    1:// nonstandard construct and destroy functions -*- C++ -*-
         -:    2:
-        -:    3:// Copyright (C) 2001-2021 Free Software Foundation, Inc.
+        -:    3:// Copyright (C) 2001-2023 Free Software Foundation, Inc.
         -:    4://
         -:    5:// This file is part of the GNU ISO C++ Library.  This library is free
         -:    6:// software; you can redistribute it and/or modify it under the
@@ -98,6 +98,32 @@ call    0 returned 18
         -:   91:#if __cplusplus >= 202002L
         -:   92:  template<typename _Tp, typename... _Args>
         -:   93:    constexpr auto
+      10*:   94:    construct_at(_Tp* __location, _Args&&... __args)
+        -:   95:    noexcept(noexcept(::new((void*)0) _Tp(std::declval<_Args>()...)))
+        -:   96:    -> decltype(::new((void*)0) _Tp(std::declval<_Args>()...))
+      10*:   97:    { return ::new((void*)__location) _Tp(std::forward<_Args>(__args)...); }
+------------------
+_ZSt12construct_atINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEJRKS5_EEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS9_DpOSA_:
+function _ZSt12construct_atINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEJRKS5_EEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS9_DpOSA_ called 0 returned 0% blocks executed 0%
+    #####:   94:    construct_at(_Tp* __location, _Args&&... __args)
+        -:   95:    noexcept(noexcept(::new((void*)0) _Tp(std::declval<_Args>()...)))
+        -:   96:    -> decltype(::new((void*)0) _Tp(std::declval<_Args>()...))
+    #####:   97:    { return ::new((void*)__location) _Tp(std::forward<_Args>(__args)...); }
+    %%%%%:   97-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed (fallthrough)
+branch  4 never executed (throw)
+    %%%%%:   97-block  1
+    %%%%%:   97-block  2
+    $$$$$:   97-block  3
+branch  5 never executed (fallthrough)
+branch  6 never executed
+    $$$$$:   97-block  4
+call    7 never executed
+------------------
+_ZSt12construct_atINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEJS5_EEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS7_DpOS8_:
 function _ZSt12construct_atINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEJS5_EEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS7_DpOS8_ called 10 returned 100% blocks executed 100%
        10:   94:    construct_at(_Tp* __location, _Args&&... __args)
         -:   95:    noexcept(noexcept(::new((void*)0) _Tp(std::declval<_Args>()...)))
@@ -107,6 +133,17 @@ function _ZSt12construct_atINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 call    0 returned 10
 call    1 returned 10
 call    2 returned 10
+------------------
+_ZSt12construct_atIcJRKcEEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS3_DpOS4_:
+function _ZSt12construct_atIcJRKcEEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS3_DpOS4_ called 0 returned 0% blocks executed 0%
+    #####:   94:    construct_at(_Tp* __location, _Args&&... __args)
+        -:   95:    noexcept(noexcept(::new((void*)0) _Tp(std::declval<_Args>()...)))
+        -:   96:    -> decltype(::new((void*)0) _Tp(std::declval<_Args>()...))
+    #####:   97:    { return ::new((void*)__location) _Tp(std::forward<_Args>(__args)...); }
+    %%%%%:   97-block  0
+call    0 never executed
+call    1 never executed
+------------------
         -:   98:#endif // C++20
         -:   99:#endif// C++17
         -:  100:
@@ -118,16 +155,22 @@ call    2 returned 10
         -:  106:  template<typename _Tp, typename... _Args>
         -:  107:    _GLIBCXX20_CONSTEXPR
         -:  108:    inline void
-function _ZSt10_ConstructINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEJRKS5_EEvPT_DpOT0_ called 8 returned 100% blocks executed 86%
+function _ZSt10_ConstructINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEJRKS5_EEvPT_DpOT0_ called 8 returned 100% blocks executed 62%
         8:  109:    _Construct(_Tp* __p, _Args&&... __args)
-        8:  109-block  0
         -:  110:    {
-        -:  111:#if __cplusplus >= 202002L && __has_builtin(__builtin_is_constant_evaluated)
-        -:  112:      if (__builtin_is_constant_evaluated())
+        -:  111:#if __cplusplus >= 202002L
+        8:  112:      if (std::__is_constant_evaluated())
+        8:  112-block  0
+call    0 returned 8
+branch  1 taken 0 (fallthrough)
+branch  2 taken 8
         -:  113:	{
         -:  114:	  // Allow std::_Construct to be used in constant expressions.
-        -:  115:	  std::construct_at(__p, std::forward<_Args>(__args)...);
-        -:  116:	  return;
+    #####:  115:	  std::construct_at(__p, std::forward<_Args>(__args)...);
+    %%%%%:  115-block  0
+call    0 never executed
+call    1 never executed
+    #####:  116:	  return;
         -:  117:	}
         -:  118:#endif
         8:  119:      ::new((void*)__p) _Tp(std::forward<_Args>(__args)...);
@@ -137,8 +180,12 @@ call    1 returned 8
 call    2 returned 8
 branch  3 taken 8 (fallthrough)
 branch  4 taken 0 (throw)
-    $$$$$:  119-block  1
-call    5 never executed
+        8:  119-block  1
+    $$$$$:  119-block  2
+branch  5 never executed (fallthrough)
+branch  6 never executed
+    $$$$$:  119-block  3
+call    7 never executed
         -:  120:    }
         -:  121:#else
         -:  122:  template<typename _T1, typename _T2>
@@ -182,19 +229,19 @@ call    0 returned 16
         -:  157:    {
         -:  158:      template<typename _ForwardIterator>
         -:  159:	static _GLIBCXX20_CONSTEXPR void
-function _ZNSt12_Destroy_auxILb0EE9__destroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEvT_S9_ called 34 returned 100% blocks executed 100%
-       34:  160:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZNSt12_Destroy_auxILb0EE9__destroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEvT_S9_ called 41 returned 100% blocks executed 100%
+       41:  160:	__destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  161:	{
-       50:  162:	  for (; __first != __last; ++__first)
-       34:  162-block  0
-       50:  162-block  1
+       57:  162:	  for (; __first != __last; ++__first)
+       41:  162-block  0
+       57:  162-block  1
 branch  0 taken 16
-branch  1 taken 34 (fallthrough)
+branch  1 taken 41 (fallthrough)
        16:  163:	    std::_Destroy(std::__addressof(*__first));
        16:  163-block  0
 call    0 returned 16
 call    1 returned 16
-       34:  164:	}
+       41:  164:	}
         -:  165:    };
         -:  166:
         -:  167:  template<>
@@ -212,8 +259,8 @@ call    1 returned 16
         -:  179:   */
         -:  180:  template<typename _ForwardIterator>
         -:  181:    _GLIBCXX20_CONSTEXPR inline void
-function _ZSt8_DestroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEvT_S7_ called 34 returned 100% blocks executed 67%
-       34:  182:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
+function _ZSt8_DestroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEvT_S7_ called 41 returned 100% blocks executed 67%
+       41:  182:    _Destroy(_ForwardIterator __first, _ForwardIterator __last)
         -:  183:    {
         -:  184:      typedef typename iterator_traits<_ForwardIterator>::value_type
         -:  185:                       _Value_type;
@@ -222,20 +269,20 @@ function _ZSt8_DestroyIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEvT_
         -:  188:      static_assert(is_destructible<_Value_type>::value,
         -:  189:		    "value type is destructible");
         -:  190:#endif
-        -:  191:#if __cplusplus > 201703L && defined __cpp_lib_is_constant_evaluated
-       34:  192:      if (std::is_constant_evaluated())
-       34:  192-block  0
-call    0 returned 34
+        -:  191:#if __cplusplus >= 202002L
+       41:  192:      if (std::__is_constant_evaluated())
+       41:  192-block  0
+call    0 returned 41
 branch  1 taken 0 (fallthrough)
-branch  2 taken 34
+branch  2 taken 41
     #####:  193:	return _Destroy_aux<false>::__destroy(__first, __last);
     %%%%%:  193-block  0
 call    0 never executed
         -:  194:#endif
         -:  195:      std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
-       34:  196:	__destroy(__first, __last);
-       34:  196-block  0
-call    0 returned 34
+       41:  196:	__destroy(__first, __last);
+       41:  196-block  0
+call    0 returned 41
         -:  197:    }
         -:  198:
         -:  199:  template<bool>
@@ -279,8 +326,8 @@ call    0 returned 34
         -:  237:      static_assert(is_destructible<_Value_type>::value,
         -:  238:		    "value type is destructible");
         -:  239:#endif
-        -:  240:#if __cplusplus > 201703L && defined __cpp_lib_is_constant_evaluated
-        -:  241:      if (std::is_constant_evaluated())
+        -:  240:#if __cplusplus >= 202002L
+        -:  241:      if (std::__is_constant_evaluated())
         -:  242:	return _Destroy_n_aux<false>::__destroy_n(__first, __count);
         -:  243:#endif
         -:  244:      return std::_Destroy_n_aux<__has_trivial_destructor(_Value_type)>::

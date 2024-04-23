@@ -6,10 +6,24 @@
 #include <algorithm>
 #include <fstream>
 #include <random>
+/*
+ * Returneaza numarul de carti din cos
+ * Return type: int >= 0
+ */
+int cos_carti::get_nr_carti_din_cos(){
+    return cos.get_all().size();
+}
+/*
+ * Golirea cosului de carti
+ */
 void cos_carti::goleste_cos() {
     cos.goleste_repo();
 }
 
+/*
+ * Adauga o carte care are titlul egal cu cel dat ca parametru
+ * Sau arunca expectie daca nu exista o carte cu acel titlu
+ */
 void cos_carti::add_carte_in_cos(std::string titlu) {
     const vector<carte> &all{repo_carti.get_all()};
     auto itr = std::find_if(all.begin(), all.end(), [titlu](const carte &book) { return book.get_title() == titlu; });
@@ -19,7 +33,9 @@ void cos_carti::add_carte_in_cos(std::string titlu) {
     } else
         throw std::exception{};
 }
-
+/*
+ * Adauga nr_carti in cos, cartile se pot repeta
+ */
 void cos_carti::genereaza_cos(int nr_carti) {
     std::mt19937 mt{std::random_device{}()};
     std::uniform_int_distribution<> dist(0, repo_carti.get_all().size() - 1);
@@ -30,7 +46,9 @@ void cos_carti::genereaza_cos(int nr_carti) {
         cos.add_pt_cos(book);
     }
 }
-
+/*
+ * Se creaza un fisier html cu numele "nume_fisier" care contine un tabel cu datele din cos
+ */
 void cos_carti::export_cos(const string& nume_fisier, int nr_cos){
     const string HTML_BEGIN = "<!DOCTYPE html>\n<html  lang=\"ro\">\n<style>\n    table, th, td { \n        border:1px "
                               "\n        solid black; \n        text-align: center; \n    }"
@@ -108,5 +126,5 @@ void cos_carti::export_cos(const string& nume_fisier, int nr_cos){
     out_in_file << HTML_END;
     out_in_file.close();
 
-    //return "Fisier creat cu succes!\nLocatia fisierului: D:/oop/lab06/cmake-build-debug/" + file_name;
+    //fisierul in : D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage
 }

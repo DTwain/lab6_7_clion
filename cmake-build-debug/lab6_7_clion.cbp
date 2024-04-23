@@ -8,144 +8,146 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug"/>
+				<Option working_dir="D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lab6_7_clion">
-				<Option output="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/lab6_7_clion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug"/>
+				<Option output="D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/lab6_7_clion.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="D:/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="D:/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="D:/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="D:/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="D:/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="D:/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/mingw/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 lab6_7_clion"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 lab6_7_clion"/>
+					<CompileFile command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lab6_7_clion/fast">
-				<Option output="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/lab6_7_clion" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug"/>
+				<Option output="D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/lab6_7_clion.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="D:/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="D:/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="D:/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="D:/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="D:/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="D:/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/mingw/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 lab6_7_clion/fast"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 lab6_7_clion/fast"/>
+					<CompileFile command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug"/>
+				<Option working_dir="D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug"/>
+				<Option working_dir="D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/mnt/d/INFO\ 2/SEM\ 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/CLion 2023.3.4/bin/mingw/bin/mingw32-make.exe -f &quot;D:/INFO 2/SEM 2/OOP/lab6-7---oop/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/carte.h">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/carte.h">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/cos_carti.h">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/cos_carti.h">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/my_vector.h">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/my_vector.h">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/repo.h">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/repo.h">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/service_biblioteca.h">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/service_biblioteca.h">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/teste.h">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/teste.h">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/ui_biblioteca.h">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/ui_biblioteca.h">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/validator.h">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/validator.h">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/vector_iterator.h">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/vector_iterator.h">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/domain/carte.cpp">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/domain/carte.cpp">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/domain/validator.cpp">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/domain/validator.cpp">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/main.cpp">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/main.cpp">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/repository/repo.cpp">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/repository/repo.cpp">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/service/cos_carti.cpp">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/service/cos_carti.cpp">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/service/service_biblioteca.cpp">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/service/service_biblioteca.cpp">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/teste/test_cos_srv.cpp">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/teste/test_cos_srv.cpp">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/teste/test_domain.cpp">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/teste/test_domain.cpp">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/teste/test_repo.cpp">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/teste/test_repo.cpp">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/teste/test_service.cpp">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/teste/test_service.cpp">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/teste/test_validator.cpp">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/teste/test_validator.cpp">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/ui/ui_biblioteca.cpp">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/ui/ui_biblioteca.cpp">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="/mnt/d/INFO 2/SEM 2/OOP/lab6-7---oop/CMakeLists.txt">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
