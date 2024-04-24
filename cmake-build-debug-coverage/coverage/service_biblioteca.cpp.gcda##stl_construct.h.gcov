@@ -81,7 +81,7 @@
         -:   77:#if __cplusplus >= 201703L
         -:   78:  template <typename _Tp>
         -:   79:    _GLIBCXX20_CONSTEXPR inline void
-       6*:   80:    destroy_at(_Tp* __location)
+      65*:   80:    destroy_at(_Tp* __location)
         -:   81:    {
         -:   82:      if constexpr (__cplusplus > 201703L && is_array_v<_Tp>)
         -:   83:	{
@@ -89,23 +89,8 @@
         -:   85:	    std::destroy_at(std::__addressof(__x));
         -:   86:	}
         -:   87:      else
-       6*:   88:	__location->~_Tp();
-       6*:   89:    }
-------------------
-_ZSt10destroy_atI5carteEvPT_:
-function _ZSt10destroy_atI5carteEvPT_ called 0 returned 0% blocks executed 0%
-    #####:   80:    destroy_at(_Tp* __location)
-        -:   81:    {
-        -:   82:      if constexpr (__cplusplus > 201703L && is_array_v<_Tp>)
-        -:   83:	{
-        -:   84:	  for (auto& __x : *__location)
-        -:   85:	    std::destroy_at(std::__addressof(__x));
-        -:   86:	}
-        -:   87:      else
-    #####:   88:	__location->~_Tp();
-    %%%%%:   88-block  0
-call    0 never executed
-    #####:   89:    }
+      65*:   88:	__location->~_Tp();
+      65*:   89:    }
 ------------------
 _ZSt10destroy_atISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE9DTO_carteEEvPT_:
 function _ZSt10destroy_atISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE9DTO_carteEEvPT_ called 6 returned 100% blocks executed 100%
@@ -122,14 +107,44 @@ function _ZSt10destroy_atISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcE
 call    0 returned 6
         6:   89:    }
 ------------------
+_ZSt10destroy_atI5carteEvPT_:
+function _ZSt10destroy_atI5carteEvPT_ called 0 returned 0% blocks executed 0%
+    #####:   80:    destroy_at(_Tp* __location)
+        -:   81:    {
+        -:   82:      if constexpr (__cplusplus > 201703L && is_array_v<_Tp>)
+        -:   83:	{
+        -:   84:	  for (auto& __x : *__location)
+        -:   85:	    std::destroy_at(std::__addressof(__x));
+        -:   86:	}
+        -:   87:      else
+    #####:   88:	__location->~_Tp();
+    %%%%%:   88-block  0
+call    0 never executed
+    #####:   89:    }
+------------------
+_ZSt10destroy_atISt10unique_ptrI4undoSt14default_deleteIS1_EEEvPT_:
+function _ZSt10destroy_atISt10unique_ptrI4undoSt14default_deleteIS1_EEEvPT_ called 59 returned 100% blocks executed 100%
+       59:   80:    destroy_at(_Tp* __location)
+        -:   81:    {
+        -:   82:      if constexpr (__cplusplus > 201703L && is_array_v<_Tp>)
+        -:   83:	{
+        -:   84:	  for (auto& __x : *__location)
+        -:   85:	    std::destroy_at(std::__addressof(__x));
+        -:   86:	}
+        -:   87:      else
+       59:   88:	__location->~_Tp();
+       59:   88-block  0
+call    0 returned 59
+       59:   89:    }
+------------------
         -:   90:
         -:   91:#if __cplusplus >= 202002L
         -:   92:  template<typename _Tp, typename... _Args>
         -:   93:    constexpr auto
-       6*:   94:    construct_at(_Tp* __location, _Args&&... __args)
+      65*:   94:    construct_at(_Tp* __location, _Args&&... __args)
         -:   95:    noexcept(noexcept(::new((void*)0) _Tp(std::declval<_Args>()...)))
         -:   96:    -> decltype(::new((void*)0) _Tp(std::declval<_Args>()...))
-       6*:   97:    { return ::new((void*)__location) _Tp(std::forward<_Args>(__args)...); }
+      65*:   97:    { return ::new((void*)__location) _Tp(std::forward<_Args>(__args)...); }
 ------------------
 _ZSt12construct_atISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE9DTO_carteEJRKSt21piecewise_construct_tSt5tupleIJRS7_EESD_IJEEEEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPSI_DpOSJ_:
 function _ZSt12construct_atISt4pairIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE9DTO_carteEJRKSt21piecewise_construct_tSt5tupleIJRS7_EESD_IJEEEEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPSI_DpOSJ_ called 6 returned 100% blocks executed 77%
@@ -175,6 +190,17 @@ branch  5 never executed (fallthrough)
 branch  6 never executed
     $$$$$:   97-block  4
 call    7 never executed
+------------------
+_ZSt12construct_atISt10unique_ptrI4undoSt14default_deleteIS1_EEJS4_EEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS6_DpOS7_:
+function _ZSt12construct_atISt10unique_ptrI4undoSt14default_deleteIS1_EEJS4_EEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS6_DpOS7_ called 59 returned 100% blocks executed 100%
+       59:   94:    construct_at(_Tp* __location, _Args&&... __args)
+        -:   95:    noexcept(noexcept(::new((void*)0) _Tp(std::declval<_Args>()...)))
+        -:   96:    -> decltype(::new((void*)0) _Tp(std::declval<_Args>()...))
+       59:   97:    { return ::new((void*)__location) _Tp(std::forward<_Args>(__args)...); }
+       59:   97-block  0
+call    0 returned 59
+call    1 returned 59
+call    2 returned 59
 ------------------
 _ZSt12construct_atIcJRKcEEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS3_DpOS4_:
 function _ZSt12construct_atIcJRKcEEDTgsnwcvPvLi0E_T_pispcl7declvalIT0_EEEEPS3_DpOS4_ called 0 returned 0% blocks executed 0%

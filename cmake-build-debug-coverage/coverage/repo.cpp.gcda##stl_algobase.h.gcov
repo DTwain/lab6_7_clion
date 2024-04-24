@@ -234,20 +234,20 @@
         -:  230:  template<typename _Tp>
         -:  231:    _GLIBCXX14_CONSTEXPR
         -:  232:    inline const _Tp&
-function _ZSt3minIyERKT_S2_S2_ called 193 returned 100% blocks executed 100%
-      193:  233:    min(const _Tp& __a, const _Tp& __b)
+function _ZSt3minIyERKT_S2_S2_ called 243 returned 100% blocks executed 100%
+      243:  233:    min(const _Tp& __a, const _Tp& __b)
         -:  234:    {
         -:  235:      // concept requirements
         -:  236:      __glibcxx_function_requires(_LessThanComparableConcept<_Tp>)
         -:  237:      //return __b < __a ? __b : __a;
-      193:  238:      if (__b < __a)
-      193:  238-block  0
+      243:  238:      if (__b < __a)
+      243:  238-block  0
 branch  0 taken 17 (fallthrough)
-branch  1 taken 176
+branch  1 taken 226
        17:  239:	return __b;
        17:  239-block  0
-      176:  240:      return __a;
-      176:  240-block  0
+      226:  240:      return __a;
+      226:  240-block  0
         -:  241:    }
         -:  242:
         -:  243:  /**
@@ -264,20 +264,20 @@ branch  1 taken 176
         -:  254:  template<typename _Tp>
         -:  255:    _GLIBCXX14_CONSTEXPR
         -:  256:    inline const _Tp&
-function _ZSt3maxIyERKT_S2_S2_ called 75 returned 100% blocks executed 100%
-       75:  257:    max(const _Tp& __a, const _Tp& __b)
+function _ZSt3maxIyERKT_S2_S2_ called 100 returned 100% blocks executed 100%
+      100:  257:    max(const _Tp& __a, const _Tp& __b)
         -:  258:    {
         -:  259:      // concept requirements
         -:  260:      __glibcxx_function_requires(_LessThanComparableConcept<_Tp>)
         -:  261:      //return  __a < __b ? __b : __a;
-       75:  262:      if (__a < __b)
-       75:  262-block  0
-branch  0 taken 31 (fallthrough)
-branch  1 taken 44
-       31:  263:	return __b;
-       31:  263-block  0
-       44:  264:      return __a;
-       44:  264-block  0
+      100:  262:      if (__a < __b)
+      100:  262-block  0
+branch  0 taken 40 (fallthrough)
+branch  1 taken 60
+       40:  263:	return __b;
+       40:  263-block  0
+       60:  264:      return __a;
+       60:  264-block  0
         -:  265:    }
         -:  266:
         -:  267:  /**
@@ -329,9 +329,11 @@ branch  1 taken 44
         -:  313:  template<typename _Iterator>
         -:  314:    _GLIBCXX20_CONSTEXPR
         -:  315:    inline _Iterator
-        -:  316:    __niter_base(_Iterator __it)
+function _ZSt12__niter_baseIPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_S7_ called 48 returned 100% blocks executed 100%
+       48:  316:    __niter_base(_Iterator __it)
         -:  317:    _GLIBCXX_NOEXCEPT_IF(std::is_nothrow_copy_constructible<_Iterator>::value)
-        -:  318:    { return __it; }
+       48:  318:    { return __it; }
+       48:  318-block  0
         -:  319:
         -:  320:  template<typename _Ite, typename _Seq>
         -:  321:    _Ite
@@ -2114,19 +2116,19 @@ call    2 never executed
         -: 2061:  template<typename _RandomAccessIterator, typename _Predicate>
         -: 2062:    _GLIBCXX20_CONSTEXPR
         -: 2063:    _RandomAccessIterator
-function _ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIP5carteSt6vectorIS2_SaIS2_EEEENS0_5__ops10_Iter_predIZN4repo11delete_bookERKiEUlRKS2_E_EEET_SH_SH_T0_St26random_access_iterator_tag called 6 returned 100% blocks executed 61%
-        6: 2064:    __find_if(_RandomAccessIterator __first, _RandomAccessIterator __last,
+function _ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIP5carteSt6vectorIS2_SaIS2_EEEENS0_5__ops10_Iter_predIZN4repo11delete_bookERKiEUlRKS2_E_EEET_SH_SH_T0_St26random_access_iterator_tag called 10 returned 100% blocks executed 61%
+       10: 2064:    __find_if(_RandomAccessIterator __first, _RandomAccessIterator __last,
         -: 2065:	      _Predicate __pred, random_access_iterator_tag)
         -: 2066:    {
         -: 2067:      typename iterator_traits<_RandomAccessIterator>::difference_type
-        6: 2068:	__trip_count = (__last - __first) >> 2;
-        6: 2068-block  0
-call    0 returned 6
+       10: 2068:	__trip_count = (__last - __first) >> 2;
+       10: 2068-block  0
+call    0 returned 10
         -: 2069:
-       6*: 2070:      for (; __trip_count > 0; --__trip_count)
-        6: 2070-block  0
+      10*: 2070:      for (; __trip_count > 0; --__trip_count)
+       10: 2070-block  0
 branch  0 taken 1
-branch  1 taken 5 (fallthrough)
+branch  1 taken 9 (fallthrough)
         -: 2071:	{
         1: 2072:	  if (__pred(__first))
         1: 2072-block  0
@@ -2170,46 +2172,46 @@ branch  2 never executed
 call    0 never executed
         -: 2087:	}
         -: 2088:
-        5: 2089:      switch (__last - __first)
-        5: 2089-block  0
-call    0 returned 5
-branch  1 taken 1
-branch  2 taken 3
-branch  3 taken 1
+        9: 2089:      switch (__last - __first)
+        9: 2089-block  0
+call    0 returned 9
+branch  1 taken 2
+branch  2 taken 5
+branch  3 taken 2
 branch  4 taken 0
         -: 2090:	{
-        1: 2091:	case 3:
-        1: 2092:	  if (__pred(__first))
-        1: 2092-block  0
-call    0 returned 1
+        2: 2091:	case 3:
+        2: 2092:	  if (__pred(__first))
+        2: 2092-block  0
+call    0 returned 2
 branch  1 taken 0 (fallthrough)
-branch  2 taken 1
+branch  2 taken 2
     #####: 2093:	    return __first;
     %%%%%: 2093-block  0
-        1: 2094:	  ++__first;
-        1: 2094-block  0
-call    0 returned 1
+        2: 2094:	  ++__first;
+        2: 2094-block  0
+call    0 returned 2
         -: 2095:	  // FALLTHRU
-        4: 2096:	case 2:
-        4: 2097:	  if (__pred(__first))
-        4: 2097-block  0
-call    0 returned 4
+        7: 2096:	case 2:
+        7: 2097:	  if (__pred(__first))
+        7: 2097-block  0
+call    0 returned 7
 branch  1 taken 3 (fallthrough)
-branch  2 taken 1
+branch  2 taken 4
         3: 2098:	    return __first;
         3: 2098-block  0
-        1: 2099:	  ++__first;
-        1: 2099-block  0
-call    0 returned 1
+        4: 2099:	  ++__first;
+        4: 2099-block  0
+call    0 returned 4
         -: 2100:	  // FALLTHRU
-        2: 2101:	case 1:
-        2: 2102:	  if (__pred(__first))
-        2: 2102-block  0
-call    0 returned 2
-branch  1 taken 2 (fallthrough)
+        6: 2101:	case 1:
+        6: 2102:	  if (__pred(__first))
+        6: 2102-block  0
+call    0 returned 6
+branch  1 taken 6 (fallthrough)
 branch  2 taken 0
-        2: 2103:	    return __first;
-        2: 2103-block  0
+        6: 2103:	    return __first;
+        6: 2103-block  0
     #####: 2104:	  ++__first;
     %%%%%: 2104-block  0
 call    0 never executed
@@ -2224,14 +2226,14 @@ call    0 never executed
         -: 2112:  template<typename _Iterator, typename _Predicate>
         -: 2113:    _GLIBCXX20_CONSTEXPR
         -: 2114:    inline _Iterator
-function _ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIP5carteSt6vectorIS2_SaIS2_EEEENS0_5__ops10_Iter_predIZN4repo11delete_bookERKiEUlRKS2_E_EEET_SH_SH_T0_ called 6 returned 100% blocks executed 100%
-        6: 2115:    __find_if(_Iterator __first, _Iterator __last, _Predicate __pred)
-        6: 2115-block  0
+function _ZSt9__find_ifIN9__gnu_cxx17__normal_iteratorIP5carteSt6vectorIS2_SaIS2_EEEENS0_5__ops10_Iter_predIZN4repo11delete_bookERKiEUlRKS2_E_EEET_SH_SH_T0_ called 10 returned 100% blocks executed 100%
+       10: 2115:    __find_if(_Iterator __first, _Iterator __last, _Predicate __pred)
+       10: 2115-block  0
         -: 2116:    {
-        6: 2117:      return __find_if(__first, __last, __pred,
-        6: 2118:		       std::__iterator_category(__first));
-        6: 2118-block  0
-call    0 returned 6
+       10: 2117:      return __find_if(__first, __last, __pred,
+       10: 2118:		       std::__iterator_category(__first));
+       10: 2118-block  0
+call    0 returned 10
         -: 2119:    }
         -: 2120:
         -: 2121:  template<typename _InputIterator, typename _Predicate>
@@ -2249,33 +2251,33 @@ call    0 returned 6
         -: 2133:  template<typename _ForwardIterator, typename _Predicate>
         -: 2134:    _GLIBCXX20_CONSTEXPR
         -: 2135:    _ForwardIterator
-function _ZSt11__remove_ifIN9__gnu_cxx17__normal_iteratorIP5carteSt6vectorIS2_SaIS2_EEEENS0_5__ops10_Iter_predIZN4repo11delete_bookERKiEUlRKS2_E_EEET_SH_SH_T0_ called 6 returned 100% blocks executed 95%
-        6: 2136:    __remove_if(_ForwardIterator __first, _ForwardIterator __last,
+function _ZSt11__remove_ifIN9__gnu_cxx17__normal_iteratorIP5carteSt6vectorIS2_SaIS2_EEEENS0_5__ops10_Iter_predIZN4repo11delete_bookERKiEUlRKS2_E_EEET_SH_SH_T0_ called 10 returned 100% blocks executed 95%
+       10: 2136:    __remove_if(_ForwardIterator __first, _ForwardIterator __last,
         -: 2137:		_Predicate __pred)
         -: 2138:    {
-        6: 2139:      __first = std::__find_if(__first, __last, __pred);
-        6: 2139-block  0
-call    0 returned 6
-branch  1 taken 6 (fallthrough)
+       10: 2139:      __first = std::__find_if(__first, __last, __pred);
+       10: 2139-block  0
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
 branch  2 taken 0 (throw)
-        6: 2140:      if (__first == __last)
-        6: 2140-block  0
-call    0 returned 6
+       10: 2140:      if (__first == __last)
+       10: 2140-block  0
+call    0 returned 10
 branch  1 taken 0 (fallthrough)
-branch  2 taken 6
+branch  2 taken 10
     #####: 2141:	return __first;
     %%%%%: 2141-block  0
-        6: 2142:      _ForwardIterator __result = __first;
-        6: 2143:      ++__first;
-        6: 2143-block  0
-call    0 returned 6
-       11: 2144:      for (; __first != __last; ++__first)
+       10: 2142:      _ForwardIterator __result = __first;
+       10: 2143:      ++__first;
+       10: 2143-block  0
+call    0 returned 10
+       15: 2144:      for (; __first != __last; ++__first)
         5: 2144-block  0
 call    0 returned 5
-       11: 2144-block  1
-call    1 returned 11
+       15: 2144-block  1
+call    1 returned 15
 branch  2 taken 5
-branch  3 taken 6 (fallthrough)
+branch  3 taken 10 (fallthrough)
         5: 2145:	if (!__pred(__first))
         5: 2145-block  0
 call    0 returned 5
@@ -2297,8 +2299,8 @@ branch  5 taken 0 (throw)
         5: 2148-block  0
 call    0 returned 5
         -: 2149:	  }
-        6: 2150:      return __result;
-        6: 2150-block  0
+       10: 2150:      return __result;
+       10: 2150-block  0
         -: 2151:    }
         -: 2152:
         -: 2153:#if __cplusplus >= 201103L

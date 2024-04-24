@@ -15,6 +15,8 @@ private:
     void test_repo_find_book_by_id();
     void test_get_id_for_next_book_to_be_added();
     void test_increment_id();
+    void test_repo_file_write();
+    void test_repo_file_load();
 
 public:
     void run_repo_tests();
@@ -47,6 +49,7 @@ private:
     void test_sort();
     void test_search_book();
     void test_raport();
+    void test_undo();
 public:
     void run_service_tests();
 };
@@ -57,6 +60,7 @@ private:
     void test_goleste_cos();
     void test_genereaza_cos();
     void test_export_cos();
+
 public:
     void run_service_cos_tests();
 };

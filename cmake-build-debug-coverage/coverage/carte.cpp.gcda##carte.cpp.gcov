@@ -4,37 +4,37 @@
         -:    0:Runs:1
         -:    1:#include "../Headers/carte.h"
         -:    2:
-function _ZNK5carte10get_authorB5cxx11Ev called 63 returned 100% blocks executed 100%
-       63:    3:string carte::get_author() const {
-       63:    4:    return this->author;
-       63:    4-block  0
-call    0 returned 63
+function _ZNK5carte10get_authorB5cxx11Ev called 64 returned 100% blocks executed 100%
+       64:    3:string carte::get_author() const {
+       64:    4:    return this->author;
+       64:    4-block  0
+call    0 returned 64
         -:    5:}
         -:    6:
-function _ZNK5carte9get_genreB5cxx11Ev called 63 returned 100% blocks executed 100%
-       63:    7:string carte::get_genre()const {
-       63:    8:    return this->genre;
-       63:    8-block  0
-call    0 returned 63
+function _ZNK5carte9get_genreB5cxx11Ev called 64 returned 100% blocks executed 100%
+       64:    7:string carte::get_genre()const {
+       64:    8:    return this->genre;
+       64:    8-block  0
+call    0 returned 64
         -:    9:}
         -:   10:
-function _ZNK5carte9get_titleB5cxx11Ev called 97 returned 100% blocks executed 100%
-       97:   11:string carte::get_title() const {
-       97:   12:    return this->title;
-       97:   12-block  0
-call    0 returned 97
+function _ZNK5carte9get_titleB5cxx11Ev called 98 returned 100% blocks executed 100%
+       98:   11:string carte::get_title() const {
+       98:   12:    return this->title;
+       98:   12-block  0
+call    0 returned 98
         -:   13:}
         -:   14:
-function _ZNK5carte20get_publication_yearEv called 94 returned 100% blocks executed 100%
-       94:   15:int carte::get_publication_year() const {
-       94:   16:    return this->publication_year;
-       94:   16-block  0
+function _ZNK5carte20get_publication_yearEv called 95 returned 100% blocks executed 100%
+       95:   15:int carte::get_publication_year() const {
+       95:   16:    return this->publication_year;
+       95:   16-block  0
         -:   17:}
         -:   18:
-function _ZNK5carte11get_book_idEv called 485 returned 100% blocks executed 100%
-      485:   19:int carte::get_book_id() const {
-      485:   20:    return this->book_id;
-      485:   20-block  0
+function _ZNK5carte11get_book_idEv called 531 returned 100% blocks executed 100%
+      531:   19:int carte::get_book_id() const {
+      531:   20:    return this->book_id;
+      531:   20-block  0
         -:   21:}
         -:   22:
 function _ZNK5carteeqERKS_ called 2 returned 100% blocks executed 100%

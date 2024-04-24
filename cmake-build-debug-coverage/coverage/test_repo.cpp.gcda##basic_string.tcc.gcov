@@ -742,19 +742,19 @@ call    0 never executed
         -:  611:  template<typename _CharT, typename _Traits, typename _Alloc>
         -:  612:    _GLIBCXX_STRING_CONSTEXPR
         -:  613:    typename basic_string<_CharT, _Traits, _Alloc>::size_type
-function _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4findEPKcyy called 11 returned 100% blocks executed 67%
-       11:  614:    basic_string<_CharT, _Traits, _Alloc>::
+function _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4findEPKcyy called 12 returned 100% blocks executed 67%
+       12:  614:    basic_string<_CharT, _Traits, _Alloc>::
         -:  615:    find(const _CharT* __s, size_type __pos, size_type __n) const
         -:  616:    _GLIBCXX_NOEXCEPT
         -:  617:    {
         -:  618:      __glibcxx_requires_string_len(__s, __n);
-       11:  619:      const size_type __size = this->size();
-       11:  619-block  0
-call    0 returned 11
+       12:  619:      const size_type __size = this->size();
+       12:  619-block  0
+call    0 returned 12
         -:  620:
-       11:  621:      if (__n == 0)
+       12:  621:      if (__n == 0)
 branch  0 taken 0 (fallthrough)
-branch  1 taken 11
+branch  1 taken 12
     #####:  622:	return __pos <= __size ? __pos : npos;
     %%%%%:  622-block  0
 branch  0 never executed (fallthrough)
@@ -762,45 +762,45 @@ branch  1 never executed
     %%%%%:  622-block  1
     %%%%%:  622-block  2
     %%%%%:  622-block  3
-       11:  623:      if (__pos >= __size)
-       11:  623-block  0
+       12:  623:      if (__pos >= __size)
+       12:  623-block  0
 branch  0 taken 0 (fallthrough)
-branch  1 taken 11
+branch  1 taken 12
     #####:  624:	return npos;
     %%%%%:  624-block  0
         -:  625:
-       11:  626:      const _CharT __elem0 = __s[0];
-       11:  627:      const _CharT* const __data = data();
-       11:  627-block  0
-call    0 returned 11
-       11:  628:      const _CharT* __first = __data + __pos;
-       11:  629:      const _CharT* const __last = __data + __size;
-       11:  630:      size_type __len = __size - __pos;
+       12:  626:      const _CharT __elem0 = __s[0];
+       12:  627:      const _CharT* const __data = data();
+       12:  627-block  0
+call    0 returned 12
+       12:  628:      const _CharT* __first = __data + __pos;
+       12:  629:      const _CharT* const __last = __data + __size;
+       12:  630:      size_type __len = __size - __pos;
         -:  631:
-       11:  632:      while (__len >= __n)
-       11:  632-block  0
-branch  0 taken 11
+       12:  632:      while (__len >= __n)
+       12:  632-block  0
+branch  0 taken 12
 branch  1 taken 0 (fallthrough)
         -:  633:	{
         -:  634:	  // Find the first occurrence of __elem0:
-       11:  635:	  __first = traits_type::find(__first, __len - __n + 1, __elem0);
-       11:  635-block  0
-call    0 returned 11
-       11:  636:	  if (!__first)
+       12:  635:	  __first = traits_type::find(__first, __len - __n + 1, __elem0);
+       12:  635-block  0
+call    0 returned 12
+       12:  636:	  if (!__first)
 branch  0 taken 1 (fallthrough)
-branch  1 taken 10
+branch  1 taken 11
         1:  637:	    return npos;
         1:  637-block  0
         -:  638:	  // Compare the full strings from the first occurrence of __elem0.
         -:  639:	  // We already know that __first[0] == __s[0] but compare them again
         -:  640:	  // anyway because __s is probably aligned, which helps memcmp.
-       10:  641:	  if (traits_type::compare(__first, __s, __n) == 0)
-       10:  641-block  0
-call    0 returned 10
-branch  1 taken 10 (fallthrough)
+       11:  641:	  if (traits_type::compare(__first, __s, __n) == 0)
+       11:  641-block  0
+call    0 returned 11
+branch  1 taken 11 (fallthrough)
 branch  2 taken 0
-       10:  642:	    return __first - __data;
-       10:  642-block  0
+       11:  642:	    return __first - __data;
+       11:  642-block  0
     #####:  643:	  __len = __last - ++__first;
     %%%%%:  643-block  0
         -:  644:	}

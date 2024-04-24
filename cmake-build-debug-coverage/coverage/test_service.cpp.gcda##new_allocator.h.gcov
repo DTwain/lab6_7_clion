@@ -89,9 +89,9 @@
         -:   85:
         -:   86:      __attribute__((__always_inline__))
         -:   87:      _GLIBCXX20_CONSTEXPR
-      91*:   88:      __new_allocator() _GLIBCXX_USE_NOEXCEPT { }
+     112*:   88:      __new_allocator() _GLIBCXX_USE_NOEXCEPT { }
     %%%%%:   88-block  0
-        1:   88-block  1
+        9:   88-block  1
         1:   88-block  2
         1:   88-block  3
         1:   88-block  4
@@ -174,6 +174,18 @@
         1:   88-block 81
         1:   88-block 82
         1:   88-block 83
+        1:   88-block 84
+        1:   88-block 85
+        1:   88-block 86
+        1:   88-block 87
+        1:   88-block 88
+        1:   88-block 89
+        1:   88-block 90
+        1:   88-block 91
+        1:   88-block 92
+        1:   88-block 93
+        1:   88-block 94
+        1:   88-block 95
         -:   89:
         -:   90:      __attribute__((__always_inline__))
         -:   91:      _GLIBCXX20_CONSTEXPR
@@ -406,6 +418,30 @@ call    0 never executed
 ------------------
 _ZNSt15__new_allocatorIcE10deallocateEPcy:
 function _ZNSt15__new_allocatorIcE10deallocateEPcy called 0 returned 0% blocks executed 0%
+    #####:  152:      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
+    %%%%%:  152-block  0
+        -:  153:      {
+        -:  154:#if __cpp_sized_deallocation
+        -:  155:# define _GLIBCXX_SIZED_DEALLOC(p, n) (p), (n) * sizeof(_Tp)
+        -:  156:#else
+        -:  157:# define _GLIBCXX_SIZED_DEALLOC(p, n) (p)
+        -:  158:#endif
+        -:  159:
+        -:  160:#if __cpp_aligned_new
+        -:  161:	if (alignof(_Tp) > __STDCPP_DEFAULT_NEW_ALIGNMENT__)
+        -:  162:	  {
+        -:  163:	    _GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n),
+        -:  164:				     std::align_val_t(alignof(_Tp)));
+        -:  165:	    return;
+        -:  166:	  }
+        -:  167:#endif
+    #####:  168:	_GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+    %%%%%:  168-block  0
+call    0 never executed
+        -:  169:      }
+------------------
+_ZNSt15__new_allocatorISt10unique_ptrI4undoSt14default_deleteIS1_EEE10deallocateEPS4_y:
+function _ZNSt15__new_allocatorISt10unique_ptrI4undoSt14default_deleteIS1_EEE10deallocateEPS4_y called 0 returned 0% blocks executed 0%
     #####:  152:      deallocate(_Tp* __p, size_type __n __attribute__ ((__unused__)))
     %%%%%:  152-block  0
         -:  153:      {

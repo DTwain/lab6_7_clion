@@ -29,21 +29,26 @@
         -:   25:            book_id;
         -:   26:
         -:   27:public:
-        -:   28:    carte() = default;
+function _ZN5carteC1Ev called 8 returned 100% blocks executed 100%
+        8:   28:    carte() = default;
+        8:   28-block  0
+call    0 returned 8
+call    1 returned 8
+call    2 returned 8
         -:   29:
-function _ZN5carteC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_S5_ii called 94 returned 100% blocks executed 62%
-       94:   30:    carte(const string author, const string title, const string genre, const int year, const int id)
-       94:   31:            :author{ author }, title{ title }, genre{ genre }, publication_year{ year }, book_id{ id }{}
-       94:   31-block  0
-call    0 returned 94
-call    1 returned 94
-branch  2 taken 94 (fallthrough)
-branch  3 taken 0 (throw)
-       94:   31-block  1
-call    4 returned 94
-branch  5 taken 94 (fallthrough)
-branch  6 taken 0 (throw)
-       94:   31-block  2
+function _ZN5carteC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_S5_ii called 0 returned 0% blocks executed 0%
+    #####:   30:    carte(const string author, const string title, const string genre, const int year, const int id)
+    #####:   31:            :author{ author }, title{ title }, genre{ genre }, publication_year{ year }, book_id{ id }{}
+    %%%%%:   31-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    %%%%%:   31-block  1
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:   31-block  2
     $$$$$:   31-block  3
 call    7 never executed
     $$$$$:   31-block  4

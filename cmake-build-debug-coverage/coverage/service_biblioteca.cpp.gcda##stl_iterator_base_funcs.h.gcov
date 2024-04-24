@@ -157,6 +157,9 @@
     %%%%%:  152-block  0
     %%%%%:  152-block  1
     %%%%%:  152-block  2
+    %%%%%:  152-block  3
+    %%%%%:  152-block  4
+    %%%%%:  152-block  5
         -:  153:    }
         -:  154:
         -:  155:  template<typename _InputIterator, typename _Distance>

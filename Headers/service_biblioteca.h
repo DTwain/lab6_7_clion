@@ -7,10 +7,12 @@
 #define LAB6_7_CLION_SERVICE_BIBLIOTECA_H
 
 #include <map>
+#include <memory>
 #include <string>
 #include "carte.h"
 #include "repo.h"
 #include "validator.h"
+#include "undo.h"
 
 using std::map;
 
@@ -18,6 +20,7 @@ class service_biblioteca {
 private:
     repo& repo_carti;
     validator_carte& validator;
+    vector<std::unique_ptr<undo>> undo_actions_list;
 public:
     service_biblioteca(repo &repo_carti_obj, validator_carte& validator_obj):
         repo_carti{repo_carti_obj}, validator{validator_obj}{}
@@ -34,6 +37,8 @@ public:
 
     map<string, DTO_carte> raport();
 
+    void do_undo();
+
     const vector<carte>& get_all_srv() noexcept;
 
     const vector<carte> filter_srv(const int an, const string titlu) const;
@@ -45,5 +50,13 @@ public:
 
 };
 
+class books_service_exception : std::exception{
+    string msg;
+public:
+    explicit books_service_exception(string error_msg): msg{error_msg} {}
+    friend ostream& operator<<(ostream& out, const books_service_exception& ex);
+};
+
+ostream& operator<<(ostream& out, const books_service_exception& ex);
 
 #endif //LAB6_7_CLION_SERVICE_BIBLIOTECA_H

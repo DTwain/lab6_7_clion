@@ -412,15 +412,15 @@ function _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocato
         -:  359:      _M_use_local_data() _GLIBCXX_NOEXCEPT
         -:  360:      {
         -:  361:#if __cpp_lib_is_constant_evaluated
-     301*:  362:	if (std::is_constant_evaluated())
+    #####:  362:	if (std::is_constant_evaluated())
     %%%%%:  362-block  0
 call    0 never executed
 branch  1 never executed (fallthrough)
 branch  2 never executed
-      301:  362-block  1
-call    3 returned 301
-branch  4 taken 0 (fallthrough)
-branch  5 taken 301
+    %%%%%:  362-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed
 branch  6 never executed (fallthrough)
 branch  7 never executed
     #####:  363:	  for (size_type __i = 0; __i <= _S_local_capacity; ++__i)
@@ -441,11 +441,11 @@ branch  5 never executed (fallthrough)
     %%%%%:  364-block  1
     %%%%%:  364-block  2
         -:  365:#endif
-     301*:  366:	return _M_local_data();
+    #####:  366:	return _M_local_data();
     %%%%%:  366-block  0
 call    0 never executed
-      301:  366-block  1
-call    1 returned 301
+    %%%%%:  366-block  1
+call    1 never executed
     %%%%%:  366-block  2
 call    2 never executed
         -:  367:      }
@@ -575,12 +575,12 @@ call    0 never executed
         -:  480:
         -:  481:      _GLIBCXX20_CONSTEXPR
         -:  482:      static void
-function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_S_copy_charsEPcPKcS7_ called 320 returned 100% blocks executed 100%
-      320:  483:      _S_copy_chars(_CharT* __p, const _CharT* __k1, const _CharT* __k2)
+function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_S_copy_charsEPcPKcS7_ called 0 returned 0% blocks executed 0%
+    #####:  483:      _S_copy_chars(_CharT* __p, const _CharT* __k1, const _CharT* __k2)
         -:  484:      _GLIBCXX_NOEXCEPT
-      320:  485:      { _S_copy(__p, __k1, __k2 - __k1); }
-      320:  485-block  0
-call    0 returned 320
+    #####:  485:      { _S_copy(__p, __k1, __k2 - __k1); }
+    %%%%%:  485-block  0
+call    0 never executed
         -:  486:
         -:  487:      _GLIBCXX20_CONSTEXPR
         -:  488:      static int
@@ -762,33 +762,33 @@ call    0 never executed
         -:  639:      template<typename = _RequireAllocator<_Alloc>>
         -:  640:#endif
         -:  641:      _GLIBCXX20_CONSTEXPR
-function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1IS3_EEPKcRKS3_ called 320 returned 100% blocks executed 78%
-      320:  642:      basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
-      320:  643:      : _M_dataplus(_M_local_data(), __a)
-      320:  643-block  0
-call    0 returned 320
-call    1 returned 320
+function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1IS3_EEPKcRKS3_ called 0 returned 0% blocks executed 0%
+    #####:  642:      basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
+    #####:  643:      : _M_dataplus(_M_local_data(), __a)
+    %%%%%:  643-block  0
+call    0 never executed
+call    1 never executed
         -:  644:      {
         -:  645:	// NB: Not required, but considered best practice.
-      320:  646:	if (__s == 0)
-branch  0 taken 0 (fallthrough)
-branch  1 taken 320
+    #####:  646:	if (__s == 0)
+branch  0 never executed (fallthrough)
+branch  1 never executed
     #####:  647:	  std::__throw_logic_error(__N("basic_string: "
     %%%%%:  647-block  0
 call    0 never executed
         -:  648:				       "construction from null is not valid"));
-      320:  649:	const _CharT* __end = __s + traits_type::length(__s);
-      320:  649-block  0
-call    0 returned 320
-branch  1 taken 320 (fallthrough)
-branch  2 taken 0 (throw)
-      320:  650:	_M_construct(__s, __end, forward_iterator_tag());
-      320:  650-block  0
-call    0 returned 320
-branch  1 taken 320 (fallthrough)
-branch  2 taken 0 (throw)
-      320:  651:      }
-      320:  651-block  0
+    #####:  649:	const _CharT* __end = __s + traits_type::length(__s);
+    %%%%%:  649-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  650:	_M_construct(__s, __end, forward_iterator_tag());
+    %%%%%:  650-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  651:      }
+    %%%%%:  651-block  0
     $$$$$:  651-block  1
 call    0 never executed
         -:  652:

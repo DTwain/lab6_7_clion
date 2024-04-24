@@ -19,13 +19,23 @@ void service_biblioteca::add_book_srv(const std::string &autor, const std::strin
     carte book_to_be_added{autor, titlu, genre, an, repo_carti.get_id_for_next_book_to_be_added()};
     validator.validate(book_to_be_added);
     repo_carti.add(book_to_be_added);
+
+    undo_actions_list.push_back(std::make_unique<undo_add>(repo_carti, book_to_be_added));
 }
 
 /*
  * Sterge carte din repo
  */
 void service_biblioteca::delete_book_srv(const int &id) {
+    carte book_to_be_added_in_undo;
+    try {
+        carte book{ repo_carti.find_book_by_id(id) };
+        book_to_be_added_in_undo = book;
+    }
+    catch(book_repo_exception&){
+    }
     repo_carti.delete_book(id);
+    undo_actions_list.push_back(std::make_unique<undo_delete>(repo_carti, book_to_be_added_in_undo));
 }
 
 /*
@@ -36,6 +46,16 @@ void service_biblioteca::modify_book_srv(const std::string &autor, const std::st
     carte modified_book{autor, titlu, genre, an, id};
     validator.validate(modified_book);
     repo_carti.modify_book(modified_book);
+
+    undo_actions_list.push_back(std::make_unique<undo_modify>(repo_carti, modified_book));
+}
+
+void service_biblioteca::do_undo() {
+    if(undo_actions_list.size() == 0)
+        throw books_service_exception{"No undo to be done"};
+
+    undo_actions_list.back()->do_undo();
+    undo_actions_list.pop_back();
 }
 
 /*
@@ -61,7 +81,7 @@ const carte& service_biblioteca::search_for_book(const std::string &autor, const
     if (itr != all.end()) {
         return *itr;
     } else
-        throw std::exception{};
+        throw books_service_exception{"Nu s-a gasit nicio carte cu datele introduse"};
 }
 
 /*
@@ -114,6 +134,11 @@ const vector<carte> service_biblioteca::sorter_based_on_option(int option) const
     else
         sort(all.begin(), all.end(), repo_carti.sort_by_publication_year_and_gen);
     return all;
+}
+
+ostream& operator<<(ostream& out, const books_service_exception& ex){
+    out << ex.msg;
+    return out;
 }
 
 

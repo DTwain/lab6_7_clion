@@ -137,8 +137,10 @@
         -:  133:      }
         -:  134:
         -:  135:      static _GLIBCXX_CONSTEXPR bool
-        -:  136:      eq(const char_type& __c1, const char_type& __c2)
-        -:  137:      { return __c1 == __c2; }
+function _ZN9__gnu_cxx11char_traitsIcE2eqERKcS3_ called 0 returned 0% blocks executed 0%
+    #####:  136:      eq(const char_type& __c1, const char_type& __c2)
+    #####:  137:      { return __c1 == __c2; }
+    %%%%%:  137-block  0
         -:  138:
         -:  139:      static _GLIBCXX_CONSTEXPR bool
         -:  140:      lt(const char_type& __c1, const char_type& __c2)
@@ -200,13 +202,21 @@
         -:  196:
         -:  197:  template<typename _CharT>
         -:  198:    _GLIBCXX14_CONSTEXPR std::size_t
-        -:  199:    char_traits<_CharT>::
+function _ZN9__gnu_cxx11char_traitsIcE6lengthEPKc called 0 returned 0% blocks executed 0%
+    #####:  199:    char_traits<_CharT>::
         -:  200:    length(const char_type* __p)
         -:  201:    {
-        -:  202:      std::size_t __i = 0;
-        -:  203:      while (!eq(__p[__i], char_type()))
-        -:  204:        ++__i;
-        -:  205:      return __i;
+    #####:  202:      std::size_t __i = 0;
+    #####:  203:      while (!eq(__p[__i], char_type()))
+    %%%%%:  203-block  0
+    %%%%%:  203-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed (fallthrough)
+    #####:  204:        ++__i;
+    %%%%%:  204-block  0
+    #####:  205:      return __i;
+    %%%%%:  205-block  0
         -:  206:    }
         -:  207:
         -:  208:  template<typename _CharT>
@@ -457,13 +467,21 @@ branch  2 never executed
         -:  400:      }
         -:  401:
         -:  402:      static _GLIBCXX17_CONSTEXPR size_t
-        -:  403:      length(const char_type* __s)
+function _ZNSt11char_traitsIcE6lengthEPKc called 0 returned 0% blocks executed 0%
+    #####:  403:      length(const char_type* __s)
         -:  404:      {
         -:  405:#if __cplusplus >= 201703L
-        -:  406:	if (std::__is_constant_evaluated())
-        -:  407:	  return __gnu_cxx::char_traits<char_type>::length(__s);
+    #####:  406:	if (std::__is_constant_evaluated())
+    %%%%%:  406-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
+    #####:  407:	  return __gnu_cxx::char_traits<char_type>::length(__s);
+    %%%%%:  407-block  0
+call    0 never executed
         -:  408:#endif
-        -:  409:	return __builtin_strlen(__s);
+    #####:  409:	return __builtin_strlen(__s);
+    %%%%%:  409-block  0
         -:  410:      }
         -:  411:
         -:  412:      static _GLIBCXX17_CONSTEXPR const char_type*

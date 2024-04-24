@@ -56,25 +56,25 @@
         -:   52:  // Generic implementation for arbitrary bases.
         -:   53:  template<typename _Tp>
         -:   54:    _GLIBCXX14_CONSTEXPR unsigned
-function _ZNSt8__detail14__to_chars_lenIjEEjT_i called 94 returned 100% blocks executed 82%
-       94:   55:    __to_chars_len(_Tp __value, int __base = 10) noexcept
+function _ZNSt8__detail14__to_chars_lenIjEEjT_i called 97 returned 100% blocks executed 82%
+       97:   55:    __to_chars_len(_Tp __value, int __base = 10) noexcept
         -:   56:    {
         -:   57:#if __cpp_variable_templates
         -:   58:      static_assert(__integer_to_chars_is_unsigned<_Tp>, "implementation bug");
         -:   59:#endif
         -:   60:
-       94:   61:      unsigned __n = 1;
-       94:   62:      const unsigned __b2 = __base  * __base;
-       94:   63:      const unsigned __b3 = __b2 * __base;
-       94:   64:      const unsigned long __b4 = __b3 * __base;
-       94:   64-block  0
+       97:   61:      unsigned __n = 1;
+       97:   62:      const unsigned __b2 = __base  * __base;
+       97:   63:      const unsigned __b3 = __b2 * __base;
+       97:   64:      const unsigned long __b4 = __b3 * __base;
+       97:   64-block  0
         -:   65:      for (;;)
         -:   66:	{
-       94:   67:	  if (__value < (unsigned)__base) return __n;
-       94:   67-block  0
-branch  0 taken 76 (fallthrough)
+       97:   67:	  if (__value < (unsigned)__base) return __n;
+       97:   67-block  0
+branch  0 taken 79 (fallthrough)
 branch  1 taken 18
-       76:   67-block  1
+       79:   67-block  1
        18:   68:	  if (__value < __b2) return __n + 1;
        18:   68-block  0
 branch  0 taken 13 (fallthrough)
@@ -101,25 +101,25 @@ branch  1 taken 0
         -:   78:  // (which can be determined by the __to_chars_len function).
         -:   79:  template<typename _Tp>
         -:   80:    _GLIBCXX23_CONSTEXPR void
-function _ZNSt8__detail18__to_chars_10_implIjEEvPcjT_ called 94 returned 100% blocks executed 100%
-       94:   81:    __to_chars_10_impl(char* __first, unsigned __len, _Tp __val) noexcept
+function _ZNSt8__detail18__to_chars_10_implIjEEvPcjT_ called 97 returned 100% blocks executed 100%
+       97:   81:    __to_chars_10_impl(char* __first, unsigned __len, _Tp __val) noexcept
         -:   82:    {
         -:   83:#if __cpp_variable_templates
         -:   84:      static_assert(__integer_to_chars_is_unsigned<_Tp>, "implementation bug");
         -:   85:#endif
         -:   86:
-       94:   87:      constexpr char __digits[201] =
+       97:   87:      constexpr char __digits[201] =
         -:   88:	"0001020304050607080910111213141516171819"
         -:   89:	"2021222324252627282930313233343536373839"
         -:   90:	"4041424344454647484950515253545556575859"
         -:   91:	"6061626364656667686970717273747576777879"
         -:   92:	"8081828384858687888990919293949596979899";
-       94:   93:      unsigned __pos = __len - 1;
-       99:   94:      while (__val >= 100)
-       94:   94-block  0
-       99:   94-block  1
+       97:   93:      unsigned __pos = __len - 1;
+      102:   94:      while (__val >= 100)
+       97:   94-block  0
+      102:   94-block  1
 branch  0 taken 5
-branch  1 taken 94 (fallthrough)
+branch  1 taken 97 (fallthrough)
         -:   95:	{
         5:   96:	  auto const __num = (__val % 100) * 2;
         5:   97:	  __val /= 100;
@@ -128,10 +128,10 @@ branch  1 taken 94 (fallthrough)
         5:  100:	  __pos -= 2;
         5:  100-block  0
         -:  101:	}
-       94:  102:      if (__val >= 10)
-       94:  102-block  0
+       97:  102:      if (__val >= 10)
+       97:  102-block  0
 branch  0 taken 18 (fallthrough)
-branch  1 taken 76
+branch  1 taken 79
         -:  103:	{
        18:  104:	  auto const __num = __val * 2;
        18:  105:	  __first[1] = __digits[__num + 1];
@@ -139,9 +139,9 @@ branch  1 taken 76
        18:  106-block  0
         -:  107:	}
         -:  108:      else
-       76:  109:	__first[0] = '0' + __val;
-       76:  109-block  0
-       94:  110:    }
+       79:  109:	__first[0] = '0' + __val;
+       79:  109-block  0
+       97:  110:    }
         -:  111:
         -:  112:} // namespace __detail
         -:  113:_GLIBCXX_END_NAMESPACE_VERSION

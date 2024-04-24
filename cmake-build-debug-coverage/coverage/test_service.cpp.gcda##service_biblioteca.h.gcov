@@ -11,44 +11,59 @@
         -:    7:#define LAB6_7_CLION_SERVICE_BIBLIOTECA_H
         -:    8:
         -:    9:#include <map>
-        -:   10:#include <string>
-        -:   11:#include "carte.h"
-        -:   12:#include "repo.h"
-        -:   13:#include "validator.h"
-        -:   14:
-        -:   15:using std::map;
+        -:   10:#include <memory>
+        -:   11:#include <string>
+        -:   12:#include "carte.h"
+        -:   13:#include "repo.h"
+        -:   14:#include "validator.h"
+        -:   15:#include "undo.h"
         -:   16:
-        -:   17:class service_biblioteca {
-        -:   18:private:
-        -:   19:    repo& repo_carti;
-        -:   20:    validator_carte& validator;
-        -:   21:public:
-function _ZN18service_bibliotecaC1ER4repoR15validator_carte called 0 returned 0% blocks executed 0%
-    #####:   22:    service_biblioteca(repo &repo_carti_obj, validator_carte& validator_obj):
-    #####:   23:        repo_carti{repo_carti_obj}, validator{validator_obj}{}
-        -:   24:
-        -:   25:    service_biblioteca(const service_biblioteca& other) = delete; // blocam copierea service lui
-        -:   26:
-        -:   27:    const vector<carte>& get_reference_from_vector_srv() const noexcept;
-        -:   28:
-        -:   29:    void add_book_srv(const string& autor, const string& titlu, const string& genre, const int& an);
-        -:   30:
-        -:   31:    void delete_book_srv(const int& id);
-        -:   32:
-        -:   33:    void modify_book_srv(const string& autor, const string& titlu, const string& genre, const int& an, const int& id);
-        -:   34:
-        -:   35:    std::map<string, DTO_carte> raport();
-        -:   36:
-        -:   37:    const vector<carte>& get_all_srv() noexcept;
-        -:   38:
-        -:   39:    const vector<carte> filter_srv(const int an, const string titlu) const;
-        -:   40:
-        -:   41:    const vector<carte> sorter_based_on_option(int option) const;
-        -:   42:
-        -:   43:    const carte& search_for_book(const std::string &autor, const std::string &titlu, const std::string &genre,
-        -:   44:                                 const int &an);
+        -:   17:using std::map;
+        -:   18:
+        -:   19:class service_biblioteca {
+        -:   20:private:
+        -:   21:    repo& repo_carti;
+        -:   22:    validator_carte& validator;
+        -:   23:    vector<std::unique_ptr<undo>> undo_actions_list;
+        -:   24:public:
+function _ZN18service_bibliotecaC1ER4repoR15validator_carte called 9 returned 100% blocks executed 100%
+        9:   25:    service_biblioteca(repo &repo_carti_obj, validator_carte& validator_obj):
+        9:   26:        repo_carti{repo_carti_obj}, validator{validator_obj}{}
+        9:   26-block  0
+call    0 returned 9
+        -:   27:
+        -:   28:    service_biblioteca(const service_biblioteca& other) = delete; // blocam copierea service lui
+        -:   29:
+        -:   30:    const vector<carte>& get_reference_from_vector_srv() const noexcept;
+        -:   31:
+        -:   32:    void add_book_srv(const string& autor, const string& titlu, const string& genre, const int& an);
+        -:   33:
+        -:   34:    void delete_book_srv(const int& id);
+        -:   35:
+        -:   36:    void modify_book_srv(const string& autor, const string& titlu, const string& genre, const int& an, const int& id);
+        -:   37:
+        -:   38:    map<string, DTO_carte> raport();
+        -:   39:
+        -:   40:    void do_undo();
+        -:   41:
+        -:   42:    const vector<carte>& get_all_srv() noexcept;
+        -:   43:
+        -:   44:    const vector<carte> filter_srv(const int an, const string titlu) const;
         -:   45:
-        -:   46:};
+        -:   46:    const vector<carte> sorter_based_on_option(int option) const;
         -:   47:
-        -:   48:
-        -:   49:#endif //LAB6_7_CLION_SERVICE_BIBLIOTECA_H
+        -:   48:    const carte& search_for_book(const std::string &autor, const std::string &titlu, const std::string &genre,
+        -:   49:                                 const int &an);
+        -:   50:
+        -:   51:};
+        -:   52:
+        -:   53:class books_service_exception : std::exception{
+        -:   54:    string msg;
+        -:   55:public:
+        -:   56:    explicit books_service_exception(string error_msg): msg{error_msg} {}
+        -:   57:    friend ostream& operator<<(ostream& out, const books_service_exception& ex);
+        -:   58:};
+        -:   59:
+        -:   60:ostream& operator<<(ostream& out, const books_service_exception& ex);
+        -:   61:
+        -:   62:#endif //LAB6_7_CLION_SERVICE_BIBLIOTECA_H

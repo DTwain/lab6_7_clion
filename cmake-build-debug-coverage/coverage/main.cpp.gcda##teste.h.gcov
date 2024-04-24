@@ -51,41 +51,43 @@
         -:   47:    void test_sort();
         -:   48:    void test_search_book();
         -:   49:    void test_raport();
-        -:   50:public:
-        -:   51:    void run_service_tests();
-        -:   52:};
-        -:   53:
-        -:   54:class test_service_cos{
-        -:   55:private:
-        -:   56:    void test_add_cos();
-        -:   57:    void test_goleste_cos();
-        -:   58:    void test_genereaza_cos();
-        -:   59:    void test_export_cos();
-        -:   60:public:
-        -:   61:    void run_service_cos_tests();
-        -:   62:};
-        -:   63:
-        -:   64:class tests{
-        -:   65:private:
-        -:   66:    test_domain tester_domain;
-        -:   67:    test_repo tester_repo;
-        -:   68:    test_validator t_validator;
-        -:   69:    test_service tester_service;
-        -:   70:    test_service_cos tester_cos;
-        -:   71:public:
+        -:   50:    void test_undo();
+        -:   51:public:
+        -:   52:    void run_service_tests();
+        -:   53:};
+        -:   54:
+        -:   55:class test_service_cos{
+        -:   56:private:
+        -:   57:    void test_add_cos();
+        -:   58:    void test_goleste_cos();
+        -:   59:    void test_genereaza_cos();
+        -:   60:    void test_export_cos();
+        -:   61:
+        -:   62:public:
+        -:   63:    void run_service_cos_tests();
+        -:   64:};
+        -:   65:
+        -:   66:class tests{
+        -:   67:private:
+        -:   68:    test_domain tester_domain;
+        -:   69:    test_repo tester_repo;
+        -:   70:    test_validator t_validator;
+        -:   71:    test_service tester_service;
+        -:   72:    test_service_cos tester_cos;
+        -:   73:public:
 function _ZN5tests13run_all_testsEv called 1 returned 100% blocks executed 100%
-        1:   72:    void run_all_tests(){
-        1:   73:        tester_domain.run_domain_tests();
-        1:   73-block  0
+        1:   74:    void run_all_tests(){
+        1:   75:        tester_domain.run_domain_tests();
+        1:   75-block  0
 call    0 returned 1
-        1:   74:        tester_repo.run_repo_tests();
+        1:   76:        tester_repo.run_repo_tests();
 call    0 returned 1
-        1:   75:        t_validator.tester_validator();
+        1:   77:        t_validator.tester_validator();
 call    0 returned 1
-        1:   76:        tester_service.run_service_tests();
+        1:   78:        tester_service.run_service_tests();
 call    0 returned 1
-        1:   77:        tester_cos.run_service_cos_tests();
+        1:   79:        tester_cos.run_service_cos_tests();
 call    0 returned 1
-        1:   78:    }
-        -:   79:};
-        -:   80:#endif //LAB6_7_CLION_TEST_REPO_H
+        1:   80:    }
+        -:   81:};
+        -:   82:#endif //LAB6_7_CLION_TEST_REPO_H

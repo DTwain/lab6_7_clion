@@ -27,17 +27,19 @@ public:
 
     repo(const repo& other) = delete; // pt a bloca copierea
 
+    virtual ~repo() = default;
+
     const int& get_id_for_next_book_to_be_added() const;
 
     const vector<carte>& get_reference_from_vector() const;
 
-    void add(const carte& carte_obj);
+    virtual void add(const carte& carte_obj);
 
     void add_pt_cos(const carte& obj_carte);
 
-    void delete_book(const int& id);
+    virtual void delete_book(const int& id);
 
-    void modify_book(const carte& obj_carte);
+    virtual void modify_book(const carte& obj_carte);
 
     void goleste_repo();
 
@@ -51,6 +53,30 @@ public:
     static bool sort_by_publication_year_and_gen(const carte& book1, const carte& book2);
 
 };
+
+class repo_file : public repo {
+private:
+    string filename;
+    void write_to_file();
+    void load_from_file();
+public:
+    repo_file(const string &filename): repo(), filename{ filename } {
+        load_from_file();
+    }
+    void add(const carte& carte_obj) override{
+        repo::add(carte_obj);
+        write_to_file();
+    }
+    void delete_book(const int& id) override{
+        repo::delete_book(id);
+        write_to_file();
+    }
+    void modify_book(const carte& obj_carte) override{
+        repo::add(obj_carte);
+        write_to_file();
+    }
+};
+
 
 class book_repo_exception : std::exception{
     string msg;

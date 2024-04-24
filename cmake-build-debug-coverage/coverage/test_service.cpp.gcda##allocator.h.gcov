@@ -164,9 +164,9 @@
         -:  160:      // 3035. std::allocator's constructors should be constexpr
         -:  161:      __attribute__((__always_inline__))
         -:  162:      _GLIBCXX20_CONSTEXPR
-      91*:  163:      allocator() _GLIBCXX_NOTHROW { }
+     112*:  163:      allocator() _GLIBCXX_NOTHROW { }
     %%%%%:  163-block  0
-        1:  163-block  1
+        9:  163-block  1
         1:  163-block  2
         1:  163-block  3
         1:  163-block  4
@@ -257,6 +257,19 @@
         1:  163-block 89
         1:  163-block 90
         1:  163-block 91
+        1:  163-block 92
+        1:  163-block 93
+        1:  163-block 94
+        1:  163-block 95
+        1:  163-block 96
+        1:  163-block 97
+        1:  163-block 98
+        1:  163-block 99
+        1:  163-block 100
+        1:  163-block 101
+        1:  163-block 102
+        1:  163-block 103
+        1:  163-block 104
         -:  164:
         -:  165:      __attribute__((__always_inline__))
         -:  166:      _GLIBCXX20_CONSTEXPR
@@ -282,11 +295,11 @@
         -:  181:#if __cpp_constexpr_dynamic_alloc
         -:  182:      constexpr
         -:  183:#endif
-      91*:  184:      ~allocator() _GLIBCXX_NOTHROW { }
+     103*:  184:      ~allocator() _GLIBCXX_NOTHROW { }
     %%%%%:  184-block  0
     $$$$$:  184-block  1
-        1:  184-block  2
-        1:  184-block  3
+    $$$$$:  184-block  2
+    $$$$$:  184-block  3
     $$$$$:  184-block  4
     $$$$$:  184-block  5
     $$$$$:  184-block  6
@@ -297,8 +310,8 @@
     $$$$$:  184-block 11
     $$$$$:  184-block 12
     $$$$$:  184-block 13
-    $$$$$:  184-block 14
-    $$$$$:  184-block 15
+        1:  184-block 14
+        1:  184-block 15
     $$$$$:  184-block 16
     $$$$$:  184-block 17
     $$$$$:  184-block 18
@@ -342,9 +355,9 @@
     $$$$$:  184-block 56
     $$$$$:  184-block 57
     $$$$$:  184-block 58
-        1:  184-block 59
-        1:  184-block 60
-        1:  184-block 61
+    $$$$$:  184-block 59
+    $$$$$:  184-block 60
+    $$$$$:  184-block 61
     $$$$$:  184-block 62
     $$$$$:  184-block 63
     $$$$$:  184-block 64
@@ -354,30 +367,42 @@
     $$$$$:  184-block 68
     $$$$$:  184-block 69
     $$$$$:  184-block 70
-    $$$$$:  184-block 71
-    $$$$$:  184-block 72
-    $$$$$:  184-block 73
-        1:  184-block 74
-        1:  184-block 75
-        1:  184-block 76
-        1:  184-block 77
-        1:  184-block 78
-        1:  184-block 79
+        1:  184-block 71
+        1:  184-block 72
+        1:  184-block 73
+    $$$$$:  184-block 74
+    $$$$$:  184-block 75
+    $$$$$:  184-block 76
+    $$$$$:  184-block 77
+    $$$$$:  184-block 78
+    $$$$$:  184-block 79
     $$$$$:  184-block 80
     $$$$$:  184-block 81
     $$$$$:  184-block 82
     $$$$$:  184-block 83
     $$$$$:  184-block 84
     $$$$$:  184-block 85
-    $$$$$:  184-block 86
-    $$$$$:  184-block 87
-    $$$$$:  184-block 88
-    $$$$$:  184-block 89
-    $$$$$:  184-block 90
-    $$$$$:  184-block 91
-        1:  184-block 92
-        1:  184-block 93
-        1:  184-block 94
+        1:  184-block 86
+        1:  184-block 87
+        1:  184-block 88
+        1:  184-block 89
+        1:  184-block 90
+        1:  184-block 91
+    $$$$$:  184-block 92
+    $$$$$:  184-block 93
+    $$$$$:  184-block 94
+    $$$$$:  184-block 95
+    $$$$$:  184-block 96
+    $$$$$:  184-block 97
+    $$$$$:  184-block 98
+    $$$$$:  184-block 99
+    $$$$$:  184-block 100
+    $$$$$:  184-block 101
+    $$$$$:  184-block 102
+    $$$$$:  184-block 103
+        1:  184-block 104
+        1:  184-block 105
+        1:  184-block 106
         -:  185:
         -:  186:#if __cplusplus > 201703L
         -:  187:      [[nodiscard,__gnu__::__always_inline__]]
@@ -446,6 +471,10 @@ branch  5 never executed
 call    6 never executed
 branch  7 never executed (fallthrough)
 branch  8 never executed
+    %%%%%:  205-block  1
+call    9 never executed
+branch 10 never executed (fallthrough)
+branch 11 never executed
         -:  206:	  {
     #####:  207:	    ::operator delete(__p);
     %%%%%:  207-block  0
@@ -454,6 +483,8 @@ call    0 never executed
 call    1 never executed
     %%%%%:  207-block  2
 call    2 never executed
+    %%%%%:  207-block  3
+call    3 never executed
     #####:  208:	    return;
         -:  209:	  }
     #####:  210:	__allocator_base<_Tp>::deallocate(__p, __n);
@@ -463,6 +494,8 @@ call    0 never executed
 call    1 never executed
     %%%%%:  210-block  2
 call    2 never executed
+    %%%%%:  210-block  3
+call    3 never executed
         -:  211:      }
         -:  212:#endif // C++20
         -:  213:

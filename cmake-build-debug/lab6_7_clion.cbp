@@ -90,9 +90,6 @@
 		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/cos_carti.h">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/my_vector.h">
-			<Option target="lab6_7_clion"/>
-		</Unit>
 		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/repo.h">
 			<Option target="lab6_7_clion"/>
 		</Unit>
@@ -105,10 +102,10 @@
 		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/ui_biblioteca.h">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/validator.h">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/undo.h">
 			<Option target="lab6_7_clion"/>
 		</Unit>
-		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/vector_iterator.h">
+		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/validator.h">
 			<Option target="lab6_7_clion"/>
 		</Unit>
 		<Unit filename="D:/INFO 2/SEM 2/OOP/lab6-7---oop/domain/carte.cpp">

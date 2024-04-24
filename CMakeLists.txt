@@ -24,4 +24,5 @@ add_executable(lab6_7_clion main.cpp
         service/cos_carti.cpp
         Headers/cos_carti.h
         teste/test_cos_srv.cpp
+        Headers/undo.h
 )

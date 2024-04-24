@@ -20,6 +20,7 @@ void test_service::run_service_tests() {
     test_sort();
     test_search_book();
     test_raport();
+    test_undo();
 }
 
 void test_service::test_add() {
@@ -137,7 +138,7 @@ void test_service::test_search_book() {
         carte book_found { srv.search_for_book("d", "s", "k", 1700) };
         assert(false);
     }
-    catch(std::exception){
+    catch(books_service_exception){
         assert(true);
     }
 
@@ -238,4 +239,45 @@ void test_service::test_raport() {
 
     assert(rezultat_raport_2.size() == 3);
     assert(rezultat_raport_2["liric"].numar_entitati == 2);
+}
+
+void test_service::test_undo() {
+    repo books_repo;
+    validator_carte validator;
+    service_biblioteca srv(books_repo, validator);
+
+    srv.add_book_srv("Luis", "Jupanii", "Epic", 1842);
+    srv.add_book_srv("Kong", "Maria", "Liric", 2000);
+    srv.add_book_srv("I.L.C", "O scrisoare pierduta", "Dramatic", 2000);
+
+    srv.do_undo();
+
+    assert(srv.get_all_srv().size() == 2);
+
+    srv.delete_book_srv(1);
+
+    assert(srv.get_all_srv().size() == 1);
+
+    srv.do_undo();
+
+    assert(srv.get_all_srv().size() == 2);
+
+    srv.modify_book_srv("Marius Cimpeu", "O draga mama", "liric", 1973, 1);
+
+    srv.do_undo();
+
+    assert(srv.get_all_srv().size() == 2);
+
+    srv.do_undo();
+    srv.do_undo();
+
+    try{
+        srv.do_undo();
+        assert(false);
+    }
+    catch(const books_service_exception& ex){
+        stringstream ss;
+        ss << ex;
+        assert(ss.str().find("No undo to be done") == 0);
+    }
 }

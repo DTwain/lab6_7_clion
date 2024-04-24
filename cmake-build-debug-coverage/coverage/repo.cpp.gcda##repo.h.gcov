@@ -12,67 +12,106 @@
         -:    8:#define LAB6_7_CLION_REPO_H
         -:    9:
         -:   10:#include "carte.h"
-        -:   11:#include "my_vector.h"
-        -:   12:#include <ostream>
-        -:   13:#include <vector>
-        -:   14:#include <string>
-        -:   15:
-        -:   16:using std::ostream;
-        -:   17:using std::string;
-        -:   18:using std::vector;
-        -:   19:
-        -:   20:class repo {
-        -:   21:private:
-        -:   22:    vector<carte> carte_vec;
-        -:   23:    int id = 0;
-        -:   24:    bool carte_in_repo(const int& id ) const;
-        -:   25:    void incrementare_id();
-        -:   26:public:
-        -:   27:    repo() = default;
-        -:   28:
-        -:   29:    repo(const repo& other) = delete; // pt a bloca copierea
-        -:   30:
-        -:   31:    const int& get_id_for_next_book_to_be_added() const;
-        -:   32:
-        -:   33:    const vector<carte>& get_reference_from_vector() const;
-        -:   34:
-        -:   35:    void add(const carte& carte_obj);
-        -:   36:
-        -:   37:    void add_pt_cos(const carte& obj_carte);
-        -:   38:
-        -:   39:    void delete_book(const int& id);
-        -:   40:
-        -:   41:    void modify_book(const carte& obj_carte);
-        -:   42:
-        -:   43:    void goleste_repo();
-        -:   44:
-        -:   45:    const carte& find_book_by_id(const int& id) const;
-        -:   46:
-        -:   47:    const vector<carte>& get_all() const noexcept;
-        -:   48:
+        -:   11:#include <ostream>
+        -:   12:#include <vector>
+        -:   13:#include <string>
+        -:   14:
+        -:   15:using std::ostream;
+        -:   16:using std::string;
+        -:   17:using std::vector;
+        -:   18:
+        -:   19:class repo {
+        -:   20:private:
+        -:   21:    vector<carte> carte_vec;
+        -:   22:    int id = 0;
+        -:   23:    bool carte_in_repo(const int& id ) const;
+        -:   24:    void incrementare_id();
+        -:   25:public:
+        -:   26:    repo() = default;
+        -:   27:
+        -:   28:    repo(const repo& other) = delete; // pt a bloca copierea
+        -:   29:
+      24*:   30:    virtual ~repo() = default;
+------------------
+_ZN4repoD0Ev:
+function _ZN4repoD0Ev called 0 returned 0% blocks executed 0%
+    #####:   30:    virtual ~repo() = default;
+    %%%%%:   30-block  0
+call    0 never executed
+call    1 never executed
+------------------
+_ZN4repoD1Ev:
+function _ZN4repoD1Ev called 24 returned 100% blocks executed 100%
+       24:   30:    virtual ~repo() = default;
+       24:   30-block  0
+call    0 returned 24
+------------------
+        -:   31:
+        -:   32:    const int& get_id_for_next_book_to_be_added() const;
+        -:   33:
+        -:   34:    const vector<carte>& get_reference_from_vector() const;
+        -:   35:
+        -:   36:    virtual void add(const carte& carte_obj);
+        -:   37:
+        -:   38:    void add_pt_cos(const carte& obj_carte);
+        -:   39:
+        -:   40:    virtual void delete_book(const int& id);
+        -:   41:
+        -:   42:    virtual void modify_book(const carte& obj_carte);
+        -:   43:
+        -:   44:    void goleste_repo();
+        -:   45:
+        -:   46:    const carte& find_book_by_id(const int& id) const;
+        -:   47:
+        -:   48:    const vector<carte>& get_all() const noexcept;
         -:   49:
-        -:   50:    static bool sort_by_title(const carte& book1, const carte& book2);
-        -:   51:    static bool sort_by_author(const carte& book1, const carte& book2);
-        -:   52:    static bool sort_by_publication_year_and_gen(const carte& book1, const carte& book2);
-        -:   53:
-        -:   54:};
-        -:   55:
-        -:   56:class book_repo_exception : std::exception{
-        -:   57:    string msg;
-        -:   58:public:
-function _ZN19book_repo_exceptionC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 83 returned 100% blocks executed 80%
-       83:   59:    explicit book_repo_exception(string error_msg): msg{error_msg} {}
-       83:   59-block  0
-call    0 returned 83
-call    1 returned 83
-branch  2 taken 83 (fallthrough)
+        -:   50:
+        -:   51:    static bool sort_by_title(const carte& book1, const carte& book2);
+        -:   52:    static bool sort_by_author(const carte& book1, const carte& book2);
+        -:   53:    static bool sort_by_publication_year_and_gen(const carte& book1, const carte& book2);
+        -:   54:
+        -:   55:};
+        -:   56:
+        -:   57:class repo_file : public repo {
+        -:   58:private:
+        -:   59:    string filename;
+        -:   60:    void write_to_file();
+        -:   61:    void load_from_file();
+        -:   62:public:
+        -:   63:    repo_file(string filename): filename{filename}, repo() {
+        -:   64:        load_from_file();
+        -:   65:    }
+        -:   66:    void add(const carte& carte_obj) override{
+        -:   67:        repo::add(carte_obj);
+        -:   68:        write_to_file();
+        -:   69:    }
+        -:   70:    void delete_book(const int& id) override{
+        -:   71:        repo::delete_book(id);
+        -:   72:        write_to_file();
+        -:   73:    }
+        -:   74:    void modify_book(const carte& obj_carte) override{
+        -:   75:        repo::add(obj_carte);
+        -:   76:        write_to_file();
+        -:   77:    }
+        -:   78:};
+        -:   79:
+        -:   80:
+        -:   81:class book_repo_exception : std::exception{
+        -:   82:    string msg;
+        -:   83:public:
+function _ZN19book_repo_exceptionC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 86 returned 100% blocks executed 80%
+       86:   84:    explicit book_repo_exception(string error_msg): msg{error_msg} {}
+       86:   84-block  0
+call    0 returned 86
+call    1 returned 86
+branch  2 taken 86 (fallthrough)
 branch  3 taken 0 (throw)
-       83:   59-block  1
-    $$$$$:   59-block  2
+       86:   84-block  1
+    $$$$$:   84-block  2
 call    4 never executed
-        -:   60:    friend ostream& operator<<(ostream& out, const book_repo_exception& ex);
-        -:   61:};
-        -:   62:
-        -:   63:ostream& operator<<(ostream& out, const book_repo_exception& ex);
-        -:   64:
-        -:   65:#endif //LAB6_7_CLION_REPO_H
+        -:   85:    friend ostream& operator<<(ostream& out, const book_repo_exception& ex);
+        -:   86:};
+        -:   87:
+        -:   88:ostream& operator<<(ostream& out, const book_repo_exception& ex);
+        -:   89:
+        -:   90:#endif //LAB6_7_CLION_REPO_H

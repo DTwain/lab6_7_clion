@@ -4,8 +4,9 @@
 
 #include "../Headers/repo.h"
 #include <sstream>
-#include <cstring>
+#include <fstream>
 #include <vector>
+#include <string>
 #include <algorithm>
 
 using std::string;
@@ -134,4 +135,54 @@ bool repo::sort_by_publication_year_and_gen(const carte &book1, const carte &boo
     else if(book1.get_publication_year() == book2.get_publication_year())
         return book1.get_genre() < book2.get_genre();
     return false;
+}
+
+void repo_file::write_to_file() {
+    std::ofstream cout(filename);
+    if(!cout.is_open())
+        throw book_repo_exception("Nu s-a deschis fisierul pentru scriere");
+
+    for(const carte& book : get_all()){
+        cout<<book.get_book_id()<<";"<<book.get_author()<<";"<<book.get_title()<<";"<<book.get_genre()<<";"<<book.get_publication_year()<<'\n';
+    }
+
+    cout.close();
+}
+
+void repo_file::load_from_file() {
+    std::ifstream cin(filename);
+    if(!cin.is_open())
+        throw book_repo_exception("Nu s-a deschis fisierul pentru citire");
+
+    cin.seekg(0, std::ios::end);
+    if (cin.tellg() == 0) {
+        cin.close();
+        return;
+    }
+    cin.seekg(0, std::ios::beg);
+    while(!cin.eof()){
+        string linie;
+        getline(cin,linie);
+
+        std::vector<std::string> tokens;
+        std::istringstream iss(linie);
+        std::string token;
+
+        while (std::getline(iss, token, ';')) {
+            tokens.push_back(token);
+        }
+
+        if(tokens.size() >= 6)
+            throw book_repo_exception("Fisierul in care se stocheaza cartile contile o line cu mai mult de 5 date");
+        // Print the tokens
+        int id = std::stoi(tokens[0]);
+        string autor = tokens[1];
+        string titlu = tokens[2];
+        string gen = tokens[3];
+        int an = std::stoi(tokens[4]);
+
+        carte book{autor, titlu, gen, an, id};
+        repo::add(book);
+    }
+    cin.close();
 }

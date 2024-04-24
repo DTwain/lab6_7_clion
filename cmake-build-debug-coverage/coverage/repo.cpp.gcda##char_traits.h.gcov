@@ -480,21 +480,21 @@ function _ZNSt11char_traitsIcE2ltERKcS2_ called 0 returned 0% blocks executed 0%
         -:  381:      }
         -:  382:
         -:  383:      static _GLIBCXX17_CONSTEXPR int
-function _ZNSt11char_traitsIcE7compareEPKcS2_y called 119 returned 100% blocks executed 31%
-      119:  384:      compare(const char_type* __s1, const char_type* __s2, size_t __n)
+function _ZNSt11char_traitsIcE7compareEPKcS2_y called 121 returned 100% blocks executed 31%
+      121:  384:      compare(const char_type* __s1, const char_type* __s2, size_t __n)
         -:  385:      {
-      119:  386:	if (__n == 0)
-      119:  386-block  0
+      121:  386:	if (__n == 0)
+      121:  386-block  0
 branch  0 taken 0 (fallthrough)
-branch  1 taken 119
+branch  1 taken 121
     #####:  387:	  return 0;
     %%%%%:  387-block  0
         -:  388:#if __cplusplus >= 201703L
-      119:  389:	if (std::__is_constant_evaluated())
-      119:  389-block  0
-call    0 returned 119
+      121:  389:	if (std::__is_constant_evaluated())
+      121:  389-block  0
+call    0 returned 121
 branch  1 taken 0 (fallthrough)
-branch  2 taken 119
+branch  2 taken 121
         -:  390:	  {
     #####:  391:	    for (size_t __i = 0; __i < __n; ++__i)
     %%%%%:  391-block  0
@@ -520,26 +520,26 @@ branch  2 never executed
     %%%%%:  396-block  0
         -:  397:	  }
         -:  398:#endif
-      119:  399:	return __builtin_memcmp(__s1, __s2, __n);
-      119:  399-block  0
+      121:  399:	return __builtin_memcmp(__s1, __s2, __n);
+      121:  399-block  0
         -:  400:      }
         -:  401:
         -:  402:      static _GLIBCXX17_CONSTEXPR size_t
-function _ZNSt11char_traitsIcE6lengthEPKc called 590 returned 100% blocks executed 67%
-      590:  403:      length(const char_type* __s)
+function _ZNSt11char_traitsIcE6lengthEPKc called 604 returned 100% blocks executed 67%
+      604:  403:      length(const char_type* __s)
         -:  404:      {
         -:  405:#if __cplusplus >= 201703L
-      590:  406:	if (std::__is_constant_evaluated())
-      590:  406-block  0
-call    0 returned 590
+      604:  406:	if (std::__is_constant_evaluated())
+      604:  406-block  0
+call    0 returned 604
 branch  1 taken 0 (fallthrough)
-branch  2 taken 590
+branch  2 taken 604
     #####:  407:	  return __gnu_cxx::char_traits<char_type>::length(__s);
     %%%%%:  407-block  0
 call    0 never executed
         -:  408:#endif
-      590:  409:	return __builtin_strlen(__s);
-      590:  409-block  0
+      604:  409:	return __builtin_strlen(__s);
+      604:  409-block  0
         -:  410:      }
         -:  411:
         -:  412:      static _GLIBCXX17_CONSTEXPR const char_type*

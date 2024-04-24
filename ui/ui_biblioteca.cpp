@@ -33,7 +33,7 @@ void ui_biblioteca::afiseaza(const vector<carte>& books) {
 }
 
 void ui_biblioteca::meniu(){
-    cout<< "\n< 1 > Adaugare carte\n< 2 > Sterge carte\n< 3 > Modifica carte\n< 4 > Afiseaza cartile\n< 5 > Cautare\n< 6 > Filtrare: \n< 7 > Sortare\n< 8 > Adauga carte in cos\n< 9 > Goleste cos\n< 10 > Genereaza cos\n< 11 > Export\n< 12 > Raport\n< 13 > EXIT\nOption: ";
+    cout<< "\n< 1 > Adaugare carte\n< 2 > Sterge carte\n< 3 > Modifica carte\n< 4 > Afiseaza cartile\n< 5 > Cautare\n< 6 > Filtrare: \n< 7 > Sortare\n< 8 > Adauga carte in cos\n< 9 > Goleste cos\n< 10 > Genereaza cos\n< 11 > Export\n< 12 > Raport\n< 13 > Undo\n< 14 > EXIT\nOption: ";
 }
 void ui_biblioteca::add_book() {
     string autor, titlu, gen;
@@ -163,17 +163,22 @@ void ui_biblioteca::raport() {
         std::cout << "Gen: " << it -> second.genre << " nr_entitati: " << it->second.numar_entitati << "\n";
     }
 }
+
+void ui_biblioteca::undo() {
+    srv.do_undo();
+    cout << "Undo succesful\n";
+}
 void ui_biblioteca::run(){
     srv.add_book_srv("I.L.C", "O scrisoare pierduta", "dramatic", 1884);
     srv.add_book_srv("Albert Camus", "Strainul", "dramatic", 1942);
     srv.add_book_srv("Frank Kafka", "Procesul", "dramatic", 1925);
-    srv.add_book_srv("Jane Austen", "Mandrie si prejudecata", "dramatic", 1813);
+    /*srv.add_book_srv("Jane Austen", "Mandrie si prejudecata", "dramatic", 1813);
     srv.add_book_srv("Dante Alighieri", "Divina Comedie", "epic", 1320);
     srv.add_book_srv("John Milton", "Paradisul pierdut", "epic", 1667);
     srv.add_book_srv("Torquato Tasso", "Ierusalimul eliberat", "epic", 1581);
     srv.add_book_srv("William Shakespeare", "Sonetul 18", "liric", 1609);
     srv.add_book_srv("Emily Dickinson", "Hope is the Thing with Feathers", "liric", 1861);
-    srv.add_book_srv("Langston Hughes", "Harlem", "liric", 1951);
+    srv.add_book_srv("Langston Hughes", "Harlem", "liric", 1951);*/
 
     while(true){
         meniu();
@@ -219,16 +224,22 @@ void ui_biblioteca::run(){
                     raport();
                     break;
                 case 13:
+                    undo();
+                    break;
+                case 14:
                     return;
                 default:
                     cout << "Optiunea nu exista!\n";
             }
         }
         catch (const book_validation_exception& ex){
-            cout << ex << '\n';
+            cout << "< A CRAPAT > " << ex << '\n';
         }
         catch (const book_repo_exception& ex){
-            cout << ex << '\n';
+            cout << "< A CRAPAT > " << ex << '\n';
+        }
+        catch (const books_service_exception& ex){
+            cout << "< A CRAPAT > " << ex << '\n';
         }
         catch (const std::exception){
             cout<< "Alta eroare!!\n";

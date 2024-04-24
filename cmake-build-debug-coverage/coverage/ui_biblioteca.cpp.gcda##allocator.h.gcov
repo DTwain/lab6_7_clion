@@ -164,17 +164,38 @@
         -:  160:      // 3035. std::allocator's constructors should be constexpr
         -:  161:      __attribute__((__always_inline__))
         -:  162:      _GLIBCXX20_CONSTEXPR
-       9*:  163:      allocator() _GLIBCXX_NOTHROW { }
-        1:  163-block  0
-        1:  163-block  1
-        1:  163-block  2
-        1:  163-block  3
-        1:  163-block  4
-        1:  163-block  5
-        1:  163-block  6
-        1:  163-block  7
-        1:  163-block  8
+    #####:  163:      allocator() _GLIBCXX_NOTHROW { }
+    %%%%%:  163-block  0
+    %%%%%:  163-block  1
+    %%%%%:  163-block  2
+    %%%%%:  163-block  3
+    %%%%%:  163-block  4
+    %%%%%:  163-block  5
+    %%%%%:  163-block  6
+    %%%%%:  163-block  7
+    %%%%%:  163-block  8
     %%%%%:  163-block  9
+    %%%%%:  163-block 10
+    %%%%%:  163-block 11
+    %%%%%:  163-block 12
+    %%%%%:  163-block 13
+    %%%%%:  163-block 14
+    %%%%%:  163-block 15
+    %%%%%:  163-block 16
+    %%%%%:  163-block 17
+    %%%%%:  163-block 18
+    %%%%%:  163-block 19
+    %%%%%:  163-block 20
+    %%%%%:  163-block 21
+    %%%%%:  163-block 22
+    %%%%%:  163-block 23
+    %%%%%:  163-block 24
+    %%%%%:  163-block 25
+    %%%%%:  163-block 26
+    %%%%%:  163-block 27
+    %%%%%:  163-block 28
+    %%%%%:  163-block 29
+    %%%%%:  163-block 30
         -:  164:
         -:  165:      __attribute__((__always_inline__))
         -:  166:      _GLIBCXX20_CONSTEXPR
@@ -198,7 +219,7 @@
         -:  181:#if __cpp_constexpr_dynamic_alloc
         -:  182:      constexpr
         -:  183:#endif
-       9*:  184:      ~allocator() _GLIBCXX_NOTHROW { }
+    #####:  184:      ~allocator() _GLIBCXX_NOTHROW { }
     $$$$$:  184-block  0
     $$$$$:  184-block  1
     $$$$$:  184-block  2
@@ -208,6 +229,27 @@
     $$$$$:  184-block  6
     $$$$$:  184-block  7
     $$$$$:  184-block  8
+    $$$$$:  184-block  9
+    $$$$$:  184-block 10
+    $$$$$:  184-block 11
+    $$$$$:  184-block 12
+    $$$$$:  184-block 13
+    $$$$$:  184-block 14
+    $$$$$:  184-block 15
+    $$$$$:  184-block 16
+    $$$$$:  184-block 17
+    $$$$$:  184-block 18
+    $$$$$:  184-block 19
+    $$$$$:  184-block 20
+    $$$$$:  184-block 21
+    $$$$$:  184-block 22
+    $$$$$:  184-block 23
+    $$$$$:  184-block 24
+    $$$$$:  184-block 25
+    $$$$$:  184-block 26
+    $$$$$:  184-block 27
+    $$$$$:  184-block 28
+    $$$$$:  184-block 29
         -:  185:
         -:  186:#if __cplusplus > 201703L
         -:  187:      [[nodiscard,__gnu__::__always_inline__]]
@@ -244,10 +286,10 @@ call    0 never executed
 call    0 never executed
 branch  1 never executed (fallthrough)
 branch  2 never executed
-    %%%%%:  205-block  0
 call    3 never executed
 branch  4 never executed (fallthrough)
 branch  5 never executed
+    %%%%%:  205-block  0
 call    6 never executed
 branch  7 never executed (fallthrough)
 branch  8 never executed
