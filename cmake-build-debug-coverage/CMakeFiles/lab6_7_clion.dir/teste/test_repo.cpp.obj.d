@@ -1,5 +1,5 @@
 CMakeFiles/lab6_7_clion.dir/teste/test_repo.cpp.obj: \
- D:\INFO\ 2\SEM\ 2\oop_lab_6_9\teste\test_repo.cpp \
+ C:\Users\obrej\OneDrive\Desktop\lab6-9\teste\test_repo.cpp \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
@@ -158,9 +158,9 @@ CMakeFiles/lab6_7_clion.dir/teste/test_repo.cpp.obj: \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fstream.tcc \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/teste.h \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/repo.h \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/carte.h \
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/teste.h \
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/repo.h \
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/carte.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \

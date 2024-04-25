@@ -1,6 +1,6 @@
 CMakeFiles/lab6_7_clion.dir/ui/ui_biblioteca.cpp.obj: \
- D:\INFO\ 2\SEM\ 2\oop_lab_6_9\ui\ui_biblioteca.cpp \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/ui_biblioteca.h \
+ C:\Users\obrej\OneDrive\Desktop\lab6-9\ui\ui_biblioteca.cpp \
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/ui_biblioteca.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -69,7 +69,7 @@ CMakeFiles/lab6_7_clion.dir/ui/ui_biblioteca.cpp.obj: \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_base.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/max_size_type.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numbers \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/service_biblioteca.h \
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/service_biblioteca.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
@@ -182,13 +182,13 @@ CMakeFiles/lab6_7_clion.dir/ui/ui_biblioteca.cpp.obj: \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_algobase.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/carte.h \
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/carte.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/repo.h \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/validator.h \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/undo.h \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/cos_carti.h \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/repo.h \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/carte.h
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/repo.h \
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/validator.h \
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/undo.h \
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/cos_carti.h \
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/repo.h \
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/carte.h

@@ -1,0 +1,8 @@
+0;I.L.C;O scrisoare pierduta;dramatic;1884
+1;Albert Camus;Strainul;dramatic;1942
+2;Frank Kafka;Procesul;dramatic;1925
+3;Jane Austen;Mandrie si prejudecata;dramatic;1813
+4;Dante Alighieri;Divina Comedie;epic;1320
+5;John Milton;Paradisul pierdut;epic;1667
+6;Torquato Tasso;Ierusalimul eliberat;epic;1581
+7;William Shakespeare;Sonetul 18;liric;1609

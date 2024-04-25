@@ -1,8 +1,8 @@
 CMakeFiles/lab6_7_clion.dir/teste/test_cos_srv.cpp.obj: \
- D:\INFO\ 2\SEM\ 2\oop_lab_6_9\teste\test_cos_srv.cpp \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/teste.h \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/repo.h \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/carte.h \
+ C:\Users\obrej\OneDrive\Desktop\lab6-9\teste\test_cos_srv.cpp \
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/teste.h \
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/repo.h \
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/carte.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -165,7 +165,7 @@ CMakeFiles/lab6_7_clion.dir/teste/test_cos_srv.cpp.obj: \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/cos_carti.h \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/repo.h \
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/cos_carti.h \
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/repo.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
  D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/assert.h

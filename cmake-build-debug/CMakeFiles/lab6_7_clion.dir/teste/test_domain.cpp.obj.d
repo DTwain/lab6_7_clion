@@ -1,5 +1,5 @@
 CMakeFiles/lab6_7_clion.dir/teste/test_domain.cpp.obj: \
- D:\INFO\ 2\SEM\ 2\oop_lab_6_9\teste\test_domain.cpp \
+ C:\Users\obrej\OneDrive\Desktop\lab6-9\teste\test_domain.cpp \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
@@ -25,8 +25,8 @@ CMakeFiles/lab6_7_clion.dir/teste/test_domain.cpp.obj: \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
  D:/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/errno.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/teste.h \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/carte.h \
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/teste.h \
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/carte.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \

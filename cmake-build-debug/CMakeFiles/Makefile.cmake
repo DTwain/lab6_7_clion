@@ -7,6 +7,11 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "C:/Users/obrej/OneDrive/Desktop/lab6-9/CMakeLists.txt"
+  "CMakeFiles/3.27.8/CMakeCCompiler.cmake"
+  "CMakeFiles/3.27.8/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.27.8/CMakeRCCompiler.cmake"
+  "CMakeFiles/3.27.8/CMakeSystem.cmake"
   "D:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake"
   "D:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake"
   "D:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake"
@@ -32,11 +37,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "D:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake"
   "D:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake"
   "D:/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/ProcessorCount.cmake"
-  "D:/INFO 2/SEM 2/oop_lab_6_9/CMakeLists.txt"
-  "CMakeFiles/3.27.8/CMakeCCompiler.cmake"
-  "CMakeFiles/3.27.8/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.27.8/CMakeRCCompiler.cmake"
-  "CMakeFiles/3.27.8/CMakeSystem.cmake"
   )
 
 # The corresponding makefile is:

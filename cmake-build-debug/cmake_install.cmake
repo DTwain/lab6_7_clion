@@ -1,4 +1,4 @@
-# Install script for directory: D:/INFO 2/SEM 2/oop_lab_6_9
+# Install script for directory: C:/Users/obrej/OneDrive/Desktop/lab6-9
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/INFO 2/SEM 2/oop_lab_6_9/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/obrej/OneDrive/Desktop/lab6-9/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

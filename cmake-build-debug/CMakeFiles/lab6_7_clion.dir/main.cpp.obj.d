@@ -1,5 +1,5 @@
 CMakeFiles/lab6_7_clion.dir/main.cpp.obj: \
- D:\INFO\ 2\SEM\ 2\oop_lab_6_9\main.cpp \
+ C:\Users\obrej\OneDrive\Desktop\lab6-9\main.cpp \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -150,9 +150,9 @@ CMakeFiles/lab6_7_clion.dir/main.cpp.obj: \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
- D:\INFO\ 2\SEM\ 2\oop_lab_6_9\Headers/teste.h \
- D:\INFO\ 2\SEM\ 2\oop_lab_6_9\Headers/repo.h \
- D:\INFO\ 2\SEM\ 2\oop_lab_6_9\Headers/carte.h \
+ C:\Users\obrej\OneDrive\Desktop\lab6-9\Headers/teste.h \
+ C:\Users\obrej\OneDrive\Desktop\lab6-9\Headers/repo.h \
+ C:\Users\obrej\OneDrive\Desktop\lab6-9\Headers/carte.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
@@ -165,8 +165,8 @@ CMakeFiles/lab6_7_clion.dir/main.cpp.obj: \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
- D:\INFO\ 2\SEM\ 2\oop_lab_6_9\Headers/validator.h \
- D:\INFO\ 2\SEM\ 2\oop_lab_6_9\Headers/service_biblioteca.h \
+ C:\Users\obrej\OneDrive\Desktop\lab6-9\Headers/validator.h \
+ C:\Users\obrej\OneDrive\Desktop\lab6-9\Headers/service_biblioteca.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_raw_storage_iter.h \
@@ -188,11 +188,11 @@ CMakeFiles/lab6_7_clion.dir/main.cpp.obj: \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_algobase.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
- D:\INFO\ 2\SEM\ 2\oop_lab_6_9\Headers/repo.h \
- D:\INFO\ 2\SEM\ 2\oop_lab_6_9\Headers/validator.h \
- D:\INFO\ 2\SEM\ 2\oop_lab_6_9\Headers/undo.h \
- D:\INFO\ 2\SEM\ 2\oop_lab_6_9\Headers/cos_carti.h \
- D:/INFO\ 2/SEM\ 2/oop_lab_6_9/Headers/repo.h \
- D:\INFO\ 2\SEM\ 2\oop_lab_6_9\Headers/ui_biblioteca.h \
- D:\INFO\ 2\SEM\ 2\oop_lab_6_9\Headers/service_biblioteca.h \
- D:\INFO\ 2\SEM\ 2\oop_lab_6_9\Headers/cos_carti.h
+ C:\Users\obrej\OneDrive\Desktop\lab6-9\Headers/repo.h \
+ C:\Users\obrej\OneDrive\Desktop\lab6-9\Headers/validator.h \
+ C:\Users\obrej\OneDrive\Desktop\lab6-9\Headers/undo.h \
+ C:\Users\obrej\OneDrive\Desktop\lab6-9\Headers/cos_carti.h \
+ C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/repo.h \
+ C:\Users\obrej\OneDrive\Desktop\lab6-9\Headers/ui_biblioteca.h \
+ C:\Users\obrej\OneDrive\Desktop\lab6-9\Headers/service_biblioteca.h \
+ C:\Users\obrej\OneDrive\Desktop\lab6-9\Headers/cos_carti.h
