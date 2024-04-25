@@ -168,18 +168,20 @@ void ui_biblioteca::undo() {
     srv.do_undo();
     cout << "Undo succesful\n";
 }
-void ui_biblioteca::run(){
-    srv.add_book_srv("I.L.C", "O scrisoare pierduta", "dramatic", 1884);
+void ui_biblioteca::add_elems(){
+    /*srv.add_book_srv("I.L.C", "O scrisoare pierduta", "dramatic", 1884);
     srv.add_book_srv("Albert Camus", "Strainul", "dramatic", 1942);
     srv.add_book_srv("Frank Kafka", "Procesul", "dramatic", 1925);
-    /*srv.add_book_srv("Jane Austen", "Mandrie si prejudecata", "dramatic", 1813);
+    srv.add_book_srv("Jane Austen", "Mandrie si prejudecata", "dramatic", 1813);
     srv.add_book_srv("Dante Alighieri", "Divina Comedie", "epic", 1320);
     srv.add_book_srv("John Milton", "Paradisul pierdut", "epic", 1667);
     srv.add_book_srv("Torquato Tasso", "Ierusalimul eliberat", "epic", 1581);
     srv.add_book_srv("William Shakespeare", "Sonetul 18", "liric", 1609);
     srv.add_book_srv("Emily Dickinson", "Hope is the Thing with Feathers", "liric", 1861);
     srv.add_book_srv("Langston Hughes", "Harlem", "liric", 1951);*/
-
+}
+void ui_biblioteca::run(){
+    add_elems();
     while(true){
         meniu();
         int option;

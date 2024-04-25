@@ -31,6 +31,8 @@ private:
 
     void raport();
     void undo();
+
+    void add_elems();
 public:
     ui_biblioteca(service_biblioteca &srv_obj, cos_carti &srv): srv{srv_obj}, service_cos{srv}{}
     ui_biblioteca(const ui_biblioteca& other_ui) = delete;
