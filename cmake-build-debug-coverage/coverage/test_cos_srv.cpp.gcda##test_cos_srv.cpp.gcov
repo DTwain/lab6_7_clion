@@ -1,0 +1,1041 @@
+        -:    0:Source:D:/INFO 2/SEM 2/oop_lab_6_9/teste/test_cos_srv.cpp
+        -:    0:Graph:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_cos_srv.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_cos_srv.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by obrej on 4/23/2024.
+        -:    3://
+        -:    4:#include "../Headers/teste.h"
+        -:    5:#include "../Headers/repo.h"
+        -:    6:#include "../Headers/cos_carti.h"
+        -:    7:#include <cassert>
+        -:    8:
+function _ZN16test_service_cos21run_service_cos_testsEv called 1 returned 100% blocks executed 100%
+        1:    9:void test_service_cos::run_service_cos_tests() {
+        1:   10:    test_add_cos();
+        1:   10-block  0
+call    0 returned 1
+        1:   11:    test_goleste_cos();
+call    0 returned 1
+        1:   12:    test_genereaza_cos();
+call    0 returned 1
+        1:   13:    test_export_cos();
+call    0 returned 1
+        1:   14:}
+        -:   15:
+function _ZN16test_service_cos12test_add_cosEv called 1 returned 100% blocks executed 52%
+        1:   16:void test_service_cos::test_add_cos() {
+        1:   17:    repo book_repo;
+        1:   18:    repo cos;
+        1:   19:    cos_carti srv_cos{book_repo, cos};
+        1:   19-block  0
+call    0 returned 1
+        -:   20:
+        6:   21:    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+        1:   21-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   21-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   21-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   21-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   21-block  4
+call   12 returned 1
+        1:   21-block  5
+call   13 returned 1
+        1:   21-block  6
+call   14 returned 1
+        1:   21-block  7
+    $$$$$:   21-block  8
+call   15 never executed
+    $$$$$:   21-block  9
+    $$$$$:   21-block 10
+    $$$$$:   21-block 11
+call   16 never executed
+    $$$$$:   21-block 12
+    $$$$$:   21-block 13
+    $$$$$:   21-block 14
+call   17 never executed
+    $$$$$:   21-block 15
+    $$$$$:   21-block 16
+        6:   22:    carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
+        1:   22-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   22-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   22-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   22-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   22-block  4
+call   12 returned 1
+        1:   22-block  5
+call   13 returned 1
+        1:   22-block  6
+call   14 returned 1
+        1:   22-block  7
+    $$$$$:   22-block  8
+call   15 never executed
+    $$$$$:   22-block  9
+    $$$$$:   22-block 10
+    $$$$$:   22-block 11
+call   16 never executed
+    $$$$$:   22-block 12
+    $$$$$:   22-block 13
+    $$$$$:   22-block 14
+call   17 never executed
+    $$$$$:   22-block 15
+    $$$$$:   22-block 16
+        6:   23:    carte book3 = carte("aa", "bb", "liric", 2020, 2);
+        1:   23-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   23-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   23-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   23-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   23-block  4
+call   12 returned 1
+        1:   23-block  5
+call   13 returned 1
+        1:   23-block  6
+call   14 returned 1
+        1:   23-block  7
+    $$$$$:   23-block  8
+call   15 never executed
+    $$$$$:   23-block  9
+    $$$$$:   23-block 10
+    $$$$$:   23-block 11
+call   16 never executed
+    $$$$$:   23-block 12
+    $$$$$:   23-block 13
+    $$$$$:   23-block 14
+call   17 never executed
+    $$$$$:   23-block 15
+    $$$$$:   23-block 16
+        5:   24:    carte book4 = carte("lala", "trala", "epic", 1234, 3);
+        1:   24-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   24-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   24-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   24-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   24-block  4
+call   12 returned 1
+        1:   24-block  5
+call   13 returned 1
+        1:   24-block  6
+call   14 returned 1
+    $$$$$:   24-block  7
+call   15 never executed
+    $$$$$:   24-block  8
+    $$$$$:   24-block  9
+    $$$$$:   24-block 10
+call   16 never executed
+    $$$$$:   24-block 11
+    $$$$$:   24-block 12
+    $$$$$:   24-block 13
+call   17 never executed
+    $$$$$:   24-block 14
+    $$$$$:   24-block 15
+        -:   25:
+        1:   26:    book_repo.add(book1);
+        1:   26-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   27:    book_repo.add(book2);
+        1:   27-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   28:    book_repo.add(book3);
+        1:   28-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   29:
+        2:   30:    srv_cos.add_carte_in_cos("bb");
+        1:   30-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   30-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   30-block  2
+call    6 returned 1
+        1:   30-block  3
+    $$$$$:   30-block  4
+call    7 never executed
+    $$$$$:   30-block  5
+    $$$$$:   30-block  6
+        1:   31:    srv_cos.add_carte_in_cos("Jupanii");
+        1:   31-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   31-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   31-block  2
+call    6 returned 1
+    $$$$$:   31-block  3
+call    7 never executed
+    $$$$$:   31-block  4
+    $$$$$:   31-block  5
+        -:   32:
+       1*:   33:    assert(cos.get_all().size() == 2);
+        1:   33-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   33-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   33-block  2
+call    6 never executed
+        1:   33-block  3
+       1*:   34:    assert(srv_cos.get_nr_carti_din_cos() == 2);
+        1:   34-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   34-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   34-block  2
+call    5 never executed
+        1:   34-block  3
+        -:   35:
+        -:   36:    try{
+       2*:   37:        srv_cos.add_carte_in_cos("tralala");
+        1:   37-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   37-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1 (throw)
+    %%%%%:   37-block  2
+call    6 never executed
+        1:   37-block  3
+call    7 returned 1
+        1:   37-block  4
+        1:   37-block  5
+    #####:   38:        assert(false);
+    %%%%%:   38-block  0
+call    0 never executed
+        -:   39:    }
+        1:   40:    catch(std::exception){
+        1:   40-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   40-block  1
+call    2 returned 1
+call    3 returned 1
+        -:   41:        assert(true);
+        1:   42:    }
+call    0 returned 1
+call    1 returned 1
+        -:   43:
+        1:   44:}
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+call    5 returned 1
+    $$$$$:   44-block  0
+call    6 never executed
+    $$$$$:   44-block  1
+call    7 never executed
+    $$$$$:   44-block  2
+call    8 never executed
+    $$$$$:   44-block  3
+call    9 never executed
+    $$$$$:   44-block  4
+call   10 never executed
+    $$$$$:   44-block  5
+call   11 never executed
+        -:   45:
+function _ZN16test_service_cos16test_goleste_cosEv called 1 returned 100% blocks executed 49%
+        1:   46:void test_service_cos::test_goleste_cos() {
+        1:   47:    repo book_repo;
+        1:   48:    repo cos;
+        1:   49:    cos_carti srv_cos{book_repo, cos};
+        1:   49-block  0
+call    0 returned 1
+        -:   50:
+        6:   51:    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+        1:   51-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   51-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   51-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   51-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   51-block  4
+call   12 returned 1
+        1:   51-block  5
+call   13 returned 1
+        1:   51-block  6
+call   14 returned 1
+        1:   51-block  7
+    $$$$$:   51-block  8
+call   15 never executed
+    $$$$$:   51-block  9
+    $$$$$:   51-block 10
+    $$$$$:   51-block 11
+call   16 never executed
+    $$$$$:   51-block 12
+    $$$$$:   51-block 13
+    $$$$$:   51-block 14
+call   17 never executed
+    $$$$$:   51-block 15
+    $$$$$:   51-block 16
+        6:   52:    carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
+        1:   52-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   52-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   52-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   52-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   52-block  4
+call   12 returned 1
+        1:   52-block  5
+call   13 returned 1
+        1:   52-block  6
+call   14 returned 1
+        1:   52-block  7
+    $$$$$:   52-block  8
+call   15 never executed
+    $$$$$:   52-block  9
+    $$$$$:   52-block 10
+    $$$$$:   52-block 11
+call   16 never executed
+    $$$$$:   52-block 12
+    $$$$$:   52-block 13
+    $$$$$:   52-block 14
+call   17 never executed
+    $$$$$:   52-block 15
+    $$$$$:   52-block 16
+        6:   53:    carte book3 = carte("aa", "bb", "liric", 2020, 2);
+        1:   53-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   53-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   53-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   53-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   53-block  4
+call   12 returned 1
+        1:   53-block  5
+call   13 returned 1
+        1:   53-block  6
+call   14 returned 1
+        1:   53-block  7
+    $$$$$:   53-block  8
+call   15 never executed
+    $$$$$:   53-block  9
+    $$$$$:   53-block 10
+    $$$$$:   53-block 11
+call   16 never executed
+    $$$$$:   53-block 12
+    $$$$$:   53-block 13
+    $$$$$:   53-block 14
+call   17 never executed
+    $$$$$:   53-block 15
+    $$$$$:   53-block 16
+        5:   54:    carte book4 = carte("lala", "trala", "epic", 1234, 3);
+        1:   54-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   54-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   54-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   54-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   54-block  4
+call   12 returned 1
+        1:   54-block  5
+call   13 returned 1
+        1:   54-block  6
+call   14 returned 1
+    $$$$$:   54-block  7
+call   15 never executed
+    $$$$$:   54-block  8
+    $$$$$:   54-block  9
+    $$$$$:   54-block 10
+call   16 never executed
+    $$$$$:   54-block 11
+    $$$$$:   54-block 12
+    $$$$$:   54-block 13
+call   17 never executed
+    $$$$$:   54-block 14
+    $$$$$:   54-block 15
+        -:   55:
+        1:   56:    book_repo.add(book1);
+        1:   56-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   57:    book_repo.add(book2);
+        1:   57-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   58:    book_repo.add(book3);
+        1:   58-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   59:
+        2:   60:    srv_cos.add_carte_in_cos("bb");
+        1:   60-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   60-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   60-block  2
+call    6 returned 1
+        1:   60-block  3
+    $$$$$:   60-block  4
+call    7 never executed
+    $$$$$:   60-block  5
+    $$$$$:   60-block  6
+        1:   61:    srv_cos.add_carte_in_cos("Jupanii");
+        1:   61-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   61-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   61-block  2
+call    6 returned 1
+    $$$$$:   61-block  3
+call    7 never executed
+    $$$$$:   61-block  4
+    $$$$$:   61-block  5
+        -:   62:
+        1:   63:    srv_cos.goleste_cos();
+        1:   63-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   64:
+       1*:   65:    assert(cos.get_all().size() == 0);
+        1:   65-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   65-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   65-block  2
+call    6 never executed
+        1:   65-block  3
+        1:   66:}
+        1:   66-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+call    5 returned 1
+    $$$$$:   66-block  1
+call    6 never executed
+    $$$$$:   66-block  2
+call    7 never executed
+    $$$$$:   66-block  3
+call    8 never executed
+    $$$$$:   66-block  4
+call    9 never executed
+    $$$$$:   66-block  5
+call   10 never executed
+    $$$$$:   66-block  6
+call   11 never executed
+        -:   67:
+function _ZN16test_service_cos18test_genereaza_cosEv called 1 returned 100% blocks executed 49%
+        1:   68:void test_service_cos::test_genereaza_cos() {
+        1:   69:    repo book_repo;
+        1:   70:    repo cos;
+        1:   71:    cos_carti srv_cos{book_repo, cos};
+        1:   71-block  0
+call    0 returned 1
+        -:   72:
+        6:   73:    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+        1:   73-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   73-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   73-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   73-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   73-block  4
+call   12 returned 1
+        1:   73-block  5
+call   13 returned 1
+        1:   73-block  6
+call   14 returned 1
+        1:   73-block  7
+    $$$$$:   73-block  8
+call   15 never executed
+    $$$$$:   73-block  9
+    $$$$$:   73-block 10
+    $$$$$:   73-block 11
+call   16 never executed
+    $$$$$:   73-block 12
+    $$$$$:   73-block 13
+    $$$$$:   73-block 14
+call   17 never executed
+    $$$$$:   73-block 15
+    $$$$$:   73-block 16
+        6:   74:    carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
+        1:   74-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   74-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   74-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   74-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   74-block  4
+call   12 returned 1
+        1:   74-block  5
+call   13 returned 1
+        1:   74-block  6
+call   14 returned 1
+        1:   74-block  7
+    $$$$$:   74-block  8
+call   15 never executed
+    $$$$$:   74-block  9
+    $$$$$:   74-block 10
+    $$$$$:   74-block 11
+call   16 never executed
+    $$$$$:   74-block 12
+    $$$$$:   74-block 13
+    $$$$$:   74-block 14
+call   17 never executed
+    $$$$$:   74-block 15
+    $$$$$:   74-block 16
+        6:   75:    carte book3 = carte("aa", "bb", "liric", 2020, 2);
+        1:   75-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   75-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   75-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   75-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   75-block  4
+call   12 returned 1
+        1:   75-block  5
+call   13 returned 1
+        1:   75-block  6
+call   14 returned 1
+        1:   75-block  7
+    $$$$$:   75-block  8
+call   15 never executed
+    $$$$$:   75-block  9
+    $$$$$:   75-block 10
+    $$$$$:   75-block 11
+call   16 never executed
+    $$$$$:   75-block 12
+    $$$$$:   75-block 13
+    $$$$$:   75-block 14
+call   17 never executed
+    $$$$$:   75-block 15
+    $$$$$:   75-block 16
+        5:   76:    carte book4 = carte("lala", "trala", "epic", 1234, 3);
+        1:   76-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   76-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   76-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   76-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   76-block  4
+call   12 returned 1
+        1:   76-block  5
+call   13 returned 1
+        1:   76-block  6
+call   14 returned 1
+    $$$$$:   76-block  7
+call   15 never executed
+    $$$$$:   76-block  8
+    $$$$$:   76-block  9
+    $$$$$:   76-block 10
+call   16 never executed
+    $$$$$:   76-block 11
+    $$$$$:   76-block 12
+    $$$$$:   76-block 13
+call   17 never executed
+    $$$$$:   76-block 14
+    $$$$$:   76-block 15
+        -:   77:
+        1:   78:    book_repo.add(book1);
+        1:   78-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   79:    book_repo.add(book2);
+        1:   79-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   80:    book_repo.add(book3);
+        1:   80-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   81:
+        2:   82:    srv_cos.add_carte_in_cos("bb");
+        1:   82-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   82-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   82-block  2
+call    6 returned 1
+        1:   82-block  3
+    $$$$$:   82-block  4
+call    7 never executed
+    $$$$$:   82-block  5
+    $$$$$:   82-block  6
+        1:   83:    srv_cos.add_carte_in_cos("Jupanii");
+        1:   83-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   83-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   83-block  2
+call    6 returned 1
+    $$$$$:   83-block  3
+call    7 never executed
+    $$$$$:   83-block  4
+    $$$$$:   83-block  5
+        -:   84:
+        1:   85:    srv_cos.genereaza_cos(3);
+        1:   85-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   86:
+       1*:   87:    assert(cos.get_all().size() == 5);
+        1:   87-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   87-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   87-block  2
+call    6 never executed
+        1:   87-block  3
+        1:   88:}
+        1:   88-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+call    5 returned 1
+    $$$$$:   88-block  1
+call    6 never executed
+    $$$$$:   88-block  2
+call    7 never executed
+    $$$$$:   88-block  3
+call    8 never executed
+    $$$$$:   88-block  4
+call    9 never executed
+    $$$$$:   88-block  5
+call   10 never executed
+    $$$$$:   88-block  6
+call   11 never executed
+        -:   89:
+function _ZN16test_service_cos15test_export_cosEv called 1 returned 100% blocks executed 49%
+        1:   90:void test_service_cos::test_export_cos() {
+        1:   91:    repo book_repo;
+        1:   92:    repo cos;
+        1:   93:    cos_carti srv_cos{book_repo, cos};
+        1:   93-block  0
+call    0 returned 1
+        -:   94:
+        6:   95:    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+        1:   95-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   95-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   95-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   95-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   95-block  4
+call   12 returned 1
+        1:   95-block  5
+call   13 returned 1
+        1:   95-block  6
+call   14 returned 1
+        1:   95-block  7
+    $$$$$:   95-block  8
+call   15 never executed
+    $$$$$:   95-block  9
+    $$$$$:   95-block 10
+    $$$$$:   95-block 11
+call   16 never executed
+    $$$$$:   95-block 12
+    $$$$$:   95-block 13
+    $$$$$:   95-block 14
+call   17 never executed
+    $$$$$:   95-block 15
+    $$$$$:   95-block 16
+        6:   96:    carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
+        1:   96-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   96-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   96-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   96-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   96-block  4
+call   12 returned 1
+        1:   96-block  5
+call   13 returned 1
+        1:   96-block  6
+call   14 returned 1
+        1:   96-block  7
+    $$$$$:   96-block  8
+call   15 never executed
+    $$$$$:   96-block  9
+    $$$$$:   96-block 10
+    $$$$$:   96-block 11
+call   16 never executed
+    $$$$$:   96-block 12
+    $$$$$:   96-block 13
+    $$$$$:   96-block 14
+call   17 never executed
+    $$$$$:   96-block 15
+    $$$$$:   96-block 16
+        6:   97:    carte book3 = carte("aa", "bb", "liric", 2020, 2);
+        1:   97-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   97-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   97-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   97-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   97-block  4
+call   12 returned 1
+        1:   97-block  5
+call   13 returned 1
+        1:   97-block  6
+call   14 returned 1
+        1:   97-block  7
+    $$$$$:   97-block  8
+call   15 never executed
+    $$$$$:   97-block  9
+    $$$$$:   97-block 10
+    $$$$$:   97-block 11
+call   16 never executed
+    $$$$$:   97-block 12
+    $$$$$:   97-block 13
+    $$$$$:   97-block 14
+call   17 never executed
+    $$$$$:   97-block 15
+    $$$$$:   97-block 16
+        5:   98:    carte book4 = carte("lala", "trala", "epic", 1234, 3);
+        1:   98-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   98-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   98-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   98-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   98-block  4
+call   12 returned 1
+        1:   98-block  5
+call   13 returned 1
+        1:   98-block  6
+call   14 returned 1
+    $$$$$:   98-block  7
+call   15 never executed
+    $$$$$:   98-block  8
+    $$$$$:   98-block  9
+    $$$$$:   98-block 10
+call   16 never executed
+    $$$$$:   98-block 11
+    $$$$$:   98-block 12
+    $$$$$:   98-block 13
+call   17 never executed
+    $$$$$:   98-block 14
+    $$$$$:   98-block 15
+        -:   99:
+        1:  100:    book_repo.add(book1);
+        1:  100-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  101:    book_repo.add(book2);
+        1:  101-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  102:    book_repo.add(book3);
+        1:  102-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  103:
+        2:  104:    srv_cos.add_carte_in_cos("bb");
+        1:  104-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  104-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  104-block  2
+call    6 returned 1
+        1:  104-block  3
+    $$$$$:  104-block  4
+call    7 never executed
+    $$$$$:  104-block  5
+    $$$$$:  104-block  6
+        1:  105:    srv_cos.add_carte_in_cos("Jupanii");
+        1:  105-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  105-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  105-block  2
+call    6 returned 1
+    $$$$$:  105-block  3
+call    7 never executed
+    $$$$$:  105-block  4
+    $$$$$:  105-block  5
+        -:  106:
+        1:  107:    srv_cos.genereaza_cos(3);
+        1:  107-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  108:
+        1:  109:    srv_cos.export_cos("ceva.html", 0);
+        1:  109-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  109-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  109-block  2
+call    6 returned 1
+    $$$$$:  109-block  3
+call    7 never executed
+    $$$$$:  109-block  4
+    $$$$$:  109-block  5
+        -:  110:
+        -:  111:    FILE *file;
+        1:  112:    file = fopen("ceva.html", "r");
+        1:  112-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  113:    if (file == NULL)
+        1:  113-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  114:        assert(false);
+    %%%%%:  114-block  0
+call    0 never executed
+        -:  115:    else {
+        1:  116:        remove("ceva.html");
+        1:  116-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  117:    }
+        1:  118:}
+        1:  118-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+call    5 returned 1
+    $$$$$:  118-block  1
+call    6 never executed
+    $$$$$:  118-block  2
+call    7 never executed
+    $$$$$:  118-block  3
+call    8 never executed
+    $$$$$:  118-block  4
+call    9 never executed
+    $$$$$:  118-block  5
+call   10 never executed
+    $$$$$:  118-block  6
+call   11 never executed

@@ -1,6 +1,6 @@
         -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc
-        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcno
-        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcda
+        -:    0:Graph:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcda
         -:    0:Runs:1
         -:    1:// Components for manipulating sequences of characters -*- C++ -*-
         -:    2:
@@ -135,17 +135,17 @@
         -:  131:  template<typename _CharT, typename _Traits, typename _Alloc>
         -:  132:    _GLIBCXX20_CONSTEXPR
         -:  133:    typename basic_string<_CharT, _Traits, _Alloc>::pointer
-function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERyy called 282 returned 100% blocks executed 68%
-      282:  134:    basic_string<_CharT, _Traits, _Alloc>::
+function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERyy called 311 returned 100% blocks executed 68%
+      311:  134:    basic_string<_CharT, _Traits, _Alloc>::
         -:  135:    _M_create(size_type& __capacity, size_type __old_capacity)
         -:  136:    {
         -:  137:      // _GLIBCXX_RESOLVE_LIB_DEFECTS
         -:  138:      // 83.  String::npos vs. string::max_size()
-      282:  139:      if (__capacity > max_size())
-      282:  139-block  0
-call    0 returned 282
+      311:  139:      if (__capacity > max_size())
+      311:  139-block  0
+call    0 returned 311
 branch  1 taken 0 (fallthrough)
-branch  2 taken 282
+branch  2 taken 311
     #####:  140:	std::__throw_length_error(__N("basic_string::_M_create"));
     %%%%%:  140-block  0
 call    0 never executed
@@ -153,21 +153,21 @@ call    0 never executed
         -:  142:      // The below implements an exponential growth policy, necessary to
         -:  143:      // meet amortized linear time requirements of the library: see
         -:  144:      // http://gcc.gnu.org/ml/libstdc++/2001-07/msg00085.html.
-      282:  145:      if (__capacity > __old_capacity && __capacity < 2 * __old_capacity)
-      282:  145-block  0
-branch  0 taken 282 (fallthrough)
+      311:  145:      if (__capacity > __old_capacity && __capacity < 2 * __old_capacity)
+      311:  145-block  0
+branch  0 taken 311 (fallthrough)
 branch  1 taken 0
-      282:  145-block  1
-branch  2 taken 112 (fallthrough)
-branch  3 taken 170
+      311:  145-block  1
+branch  2 taken 120 (fallthrough)
+branch  3 taken 191
         -:  146:	{
-      112:  147:	  __capacity = 2 * __old_capacity;
+      120:  147:	  __capacity = 2 * __old_capacity;
         -:  148:	  // Never allocate a string bigger than max_size.
-      112:  149:	  if (__capacity > max_size())
-      112:  149-block  0
-call    0 returned 112
+      120:  149:	  if (__capacity > max_size())
+      120:  149-block  0
+call    0 returned 120
 branch  1 taken 0 (fallthrough)
-branch  2 taken 112
+branch  2 taken 120
     #####:  150:	    __capacity = max_size();
     %%%%%:  150-block  0
 call    0 never executed
@@ -175,10 +175,10 @@ call    0 never executed
         -:  152:
         -:  153:      // NB: Need an array of char_type[__capacity], plus a terminating
         -:  154:      // null char_type() element.
-      564:  155:      return _Alloc_traits::allocate(_M_get_allocator(), __capacity + 1);
-      282:  155-block  0
-call    0 returned 282
-      282:  155-block  1
+      622:  155:      return _Alloc_traits::allocate(_M_get_allocator(), __capacity + 1);
+      311:  155-block  0
+call    0 returned 311
+      311:  155-block  1
         -:  156:    }
         -:  157:
         -:  158:  // NB: This is the special case for Input Iterators, used in
@@ -240,28 +240,28 @@ call    0 returned 282
         -:  214:    template<typename _InIterator>
         -:  215:      _GLIBCXX20_CONSTEXPR
         -:  216:      void
-function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag called 1510 returned 100% blocks executed 88%
-     1510:  217:      basic_string<_CharT, _Traits, _Alloc>::
-     1510:  217-block  0
+function _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag called 1669 returned 100% blocks executed 88%
+     1669:  217:      basic_string<_CharT, _Traits, _Alloc>::
+     1669:  217-block  0
         -:  218:      _M_construct(_InIterator __beg, _InIterator __end,
         -:  219:		   std::forward_iterator_tag)
         -:  220:      {
-     1510:  221:	size_type __dnew = static_cast<size_type>(std::distance(__beg, __end));
+     1669:  221:	size_type __dnew = static_cast<size_type>(std::distance(__beg, __end));
         -:  222:
-     1510:  223:	if (__dnew > size_type(_S_local_capacity))
-     1510:  223-block  0
-branch  0 taken 142 (fallthrough)
-branch  1 taken 1368
+     1669:  223:	if (__dnew > size_type(_S_local_capacity))
+     1669:  223-block  0
+branch  0 taken 161 (fallthrough)
+branch  1 taken 1508
         -:  224:	  {
-      142:  225:	    _M_data(_M_create(__dnew, size_type(0)));
-      142:  225-block  0
-call    0 returned 142
-branch  1 taken 142 (fallthrough)
+      161:  225:	    _M_data(_M_create(__dnew, size_type(0)));
+      161:  225-block  0
+call    0 returned 161
+branch  1 taken 161 (fallthrough)
 branch  2 taken 0 (throw)
-      142:  225-block  1
-call    3 returned 142
-      142:  226:	    _M_capacity(__dnew);
-call    0 returned 142
+      161:  225-block  1
+call    3 returned 161
+      161:  226:	    _M_capacity(__dnew);
+call    0 returned 161
         -:  227:	  }
         -:  228:	else
         -:  229:	  _M_use_local_data();
@@ -270,33 +270,33 @@ call    0 returned 142
         -:  232:	struct _Guard
         -:  233:	{
         -:  234:	  _GLIBCXX20_CONSTEXPR
-function _ZZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tagEN6_GuardC1EPS4_ called 1510 returned 100% blocks executed 100%
-     1510:  235:	  explicit _Guard(basic_string* __s) : _M_guarded(__s) { }
+function _ZZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tagEN6_GuardC1EPS4_ called 1669 returned 100% blocks executed 100%
+     1669:  235:	  explicit _Guard(basic_string* __s) : _M_guarded(__s) { }
         -:  236:
         -:  237:	  _GLIBCXX20_CONSTEXPR
-function _ZZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tagEN6_GuardD1Ev called 1510 returned 100% blocks executed 67%
-    1510*:  238:	  ~_Guard() { if (_M_guarded) _M_guarded->_M_dispose(); }
-     1510:  238-block  0
+function _ZZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tagEN6_GuardD1Ev called 1669 returned 100% blocks executed 67%
+    1669*:  238:	  ~_Guard() { if (_M_guarded) _M_guarded->_M_dispose(); }
+     1669:  238-block  0
 branch  0 taken 0 (fallthrough)
-branch  1 taken 1510
+branch  1 taken 1669
     %%%%%:  238-block  1
 call    2 never executed
         -:  239:
         -:  240:	  basic_string* _M_guarded;
-     1510:  241:	} __guard(this);
-     1510:  241-block  0
-call    0 returned 1510
+     1669:  241:	} __guard(this);
+     1669:  241-block  0
+call    0 returned 1669
         -:  242:
-     1510:  243:	this->_S_copy_chars(_M_data(), __beg, __end);
-call    0 returned 1510
-call    1 returned 1510
+     1669:  243:	this->_S_copy_chars(_M_data(), __beg, __end);
+call    0 returned 1669
+call    1 returned 1669
         -:  244:
-     1510:  245:	__guard._M_guarded = 0;
+     1669:  245:	__guard._M_guarded = 0;
         -:  246:
-     1510:  247:	_M_set_length(__dnew);
-call    0 returned 1510
-     1510:  248:      }
-call    0 returned 1510
+     1669:  247:	_M_set_length(__dnew);
+call    0 returned 1669
+     1669:  248:      }
+call    0 returned 1669
         -:  249:
         -:  250:  template<typename _CharT, typename _Traits, typename _Alloc>
         -:  251:    _GLIBCXX20_CONSTEXPR

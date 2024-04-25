@@ -1,3 +1,3 @@
-"D:\Aplicatii\CLion 2024.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\lab6_7_clion.dir/objects.a
-"D:\Aplicatii\CLion 2024.1\bin\mingw\bin\ar.exe" qc CMakeFiles\lab6_7_clion.dir/objects.a @CMakeFiles\lab6_7_clion.dir\objects1.rsp
-"D:\Aplicatii\CLion 2024.1\bin\mingw\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\lab6_7_clion.dir/objects.a -Wl,--no-whole-archive -o lab6_7_clion.exe -Wl,--out-implib,liblab6_7_clion.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\lab6_7_clion.dir\linkLibs.rsp
+"D:\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\lab6_7_clion.dir/objects.a
+"D:\CLion 2023.3.4\bin\mingw\bin\ar.exe" qc CMakeFiles\lab6_7_clion.dir/objects.a @CMakeFiles\lab6_7_clion.dir\objects1.rsp
+"D:\CLion 2023.3.4\bin\mingw\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\lab6_7_clion.dir/objects.a -Wl,--no-whole-archive -o lab6_7_clion.exe -Wl,--out-implib,liblab6_7_clion.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\lab6_7_clion.dir\linkLibs.rsp

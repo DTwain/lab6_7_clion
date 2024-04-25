@@ -1,6 +1,6 @@
-        -:    0:Source:D:/INFO 2/SEM 2/OOP/lab6-7---oop/service/service_biblioteca.cpp
-        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcno
-        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcda
+        -:    0:Source:D:/INFO 2/SEM 2/oop_lab_6_9/service/service_biblioteca.cpp
+        -:    0:Graph:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcda
         -:    0:Runs:1
         -:    1://
         -:    2:// Created by obrej on 4/10/2024.
@@ -285,45 +285,48 @@ function _ZN18service_biblioteca15search_for_bookERKNSt7__cxx1112basic_stringIcS
         2:   73:    const vector<carte>& all{ repo_carti.get_all() };
         2:   73-block  0
 call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
 function _ZZN18service_biblioteca15search_for_bookERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_S7_RKiENKUlRK5carteE_clESC_ called 8 returned 100% blocks executed 67%
         2:   74:    auto itr = std::find_if(all.begin(), all.end(), [autor, titlu, genre, an](const carte& book) {
+        2:   74-block  0
 call    0 returned 2
 branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-        2:   74-block  0
+        2:   74-block  1
 call    3 returned 2
 branch  4 taken 2 (fallthrough)
 branch  5 taken 0 (throw)
-        2:   74-block  1
+        2:   74-block  2
 call    6 returned 2
 branch  7 taken 2 (fallthrough)
 branch  8 taken 0 (throw)
-        2:   74-block  2
+        2:   74-block  3
 call    9 returned 2
 call   10 returned 2
 call   11 returned 2
 branch 12 taken 2 (fallthrough)
 branch 13 taken 0 (throw)
-        2:   74-block  3
+        2:   74-block  4
 call   14 returned 2
-    $$$$$:   74-block  4
-call   15 never executed
     $$$$$:   74-block  5
+call   15 never executed
+    $$$$$:   74-block  6
 branch 16 never executed (fallthrough)
 branch 17 never executed
-    $$$$$:   74-block  6
-call   18 never executed
     $$$$$:   74-block  7
+call   18 never executed
+    $$$$$:   74-block  8
 branch 19 never executed (fallthrough)
 branch 20 never executed
-    $$$$$:   74-block  8
-call   21 never executed
     $$$$$:   74-block  9
+call   21 never executed
+    $$$$$:   74-block 10
 branch 22 never executed (fallthrough)
 branch 23 never executed
-    $$$$$:   74-block 10
-call   24 never executed
     $$$$$:   74-block 11
+call   24 never executed
+    $$$$$:   74-block 12
        15:   75:        return book.get_author() == autor ||
 branch  0 taken 7 (fallthrough)
 branch  1 taken 0
@@ -526,26 +529,29 @@ function _ZNK18service_biblioteca10filter_srvEiNSt7__cxx1112basic_stringIcSt11ch
         2:  115:    const vector<carte>& all{ repo_carti.get_all() };
         2:  115-block  0
 call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
 function _ZZNK18service_biblioteca10filter_srvEiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEENKUlRK5carteE_clES8_ called 8 returned 100% blocks executed 81%
         2:  116:    std::copy_if(all.begin(), all.end(), std::back_inserter(filtered_books), [an, titlu](const carte& book)
+        2:  116-block  0
 call    0 returned 2
 branch  1 taken 2 (fallthrough)
 branch  2 taken 0 (throw)
-        2:  116-block  0
+        2:  116-block  1
 call    3 returned 2
 branch  4 taken 2 (fallthrough)
 branch  5 taken 0 (throw)
-        2:  116-block  1
+        2:  116-block  2
 call    6 returned 2
 call    7 returned 2
 call    8 returned 2
 branch  9 taken 2 (fallthrough)
 branch 10 taken 0 (throw)
-        2:  116-block  2
+        2:  116-block  3
 call   11 returned 2
-    $$$$$:  116-block  3
-call   12 never executed
     $$$$$:  116-block  4
+call   12 never executed
+    $$$$$:  116-block  5
         8:  117:    { return book.get_publication_year() == an || book.get_title() == titlu; });
         8:  117-block  0
 call    0 returned 8

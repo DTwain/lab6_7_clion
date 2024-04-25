@@ -1,6 +1,6 @@
         -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.h
-        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcno
-        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcda
+        -:    0:Graph:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcda
         -:    0:Runs:1
         -:    1:// Components for manipulating sequences of characters -*- C++ -*-
         -:    2:
@@ -4038,28 +4038,28 @@ call    0 never executed
         -: 3706:  template<typename _CharT, typename _Traits, typename _Alloc>
         -: 3707:    _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
         -: 3708:    inline bool
-function _ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EESA_ called 48 returned 100% blocks executed 100%
-       48: 3709:    operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+function _ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EESA_ called 54 returned 100% blocks executed 100%
+       54: 3709:    operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
         -: 3710:	       const basic_string<_CharT, _Traits, _Alloc>& __rhs)
         -: 3711:    _GLIBCXX_NOEXCEPT
         -: 3712:    {
-       48: 3713:      return __lhs.size() == __rhs.size()
-       48: 3713-block  0
-call    0 returned 48
-call    1 returned 48
-       48: 3714:	       && !_Traits::compare(__lhs.data(), __rhs.data(), __lhs.size());
-branch  0 taken 11 (fallthrough)
+       54: 3713:      return __lhs.size() == __rhs.size()
+       54: 3713-block  0
+call    0 returned 54
+call    1 returned 54
+       54: 3714:	       && !_Traits::compare(__lhs.data(), __rhs.data(), __lhs.size());
+branch  0 taken 17 (fallthrough)
 branch  1 taken 37
-       11: 3714-block  0
-call    2 returned 11
-call    3 returned 11
-call    4 returned 11
-call    5 returned 11
-branch  6 taken 10 (fallthrough)
+       17: 3714-block  0
+call    2 returned 17
+call    3 returned 17
+call    4 returned 17
+call    5 returned 17
+branch  6 taken 16 (fallthrough)
 branch  7 taken 1
-       10: 3714-block  1
+       16: 3714-block  1
        38: 3714-block  2
-       48: 3714-block  3
+       54: 3714-block  3
         -: 3715:    }
         -: 3716:
         -: 3717:  /**

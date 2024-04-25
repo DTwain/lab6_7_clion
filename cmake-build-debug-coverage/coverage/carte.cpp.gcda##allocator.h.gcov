@@ -1,6 +1,6 @@
         -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h
-        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcno
-        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcda
+        -:    0:Graph:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcda
         -:    0:Runs:1
         -:    1:// Allocators -*- C++ -*-
         -:    2:
@@ -169,9 +169,9 @@
         -:  165:      __attribute__((__always_inline__))
         -:  166:      _GLIBCXX20_CONSTEXPR
         -:  167:      allocator(const allocator& __a) _GLIBCXX_NOTHROW
-     3256:  168:      : __allocator_base<_Tp>(__a) { }
-     1746:  168-block  0
-     1510:  168-block  1
+     3625:  168:      : __allocator_base<_Tp>(__a) { }
+     1956:  168-block  0
+     1669:  168-block  1
         -:  169:
         -:  170:#if __cplusplus >= 201103L
         -:  171:      // Avoid implicit deprecation.
@@ -187,17 +187,17 @@
         -:  181:#if __cpp_constexpr_dynamic_alloc
         -:  182:      constexpr
         -:  183:#endif
-     1510:  184:      ~allocator() _GLIBCXX_NOTHROW { }
+     1669:  184:      ~allocator() _GLIBCXX_NOTHROW { }
         -:  185:
         -:  186:#if __cplusplus > 201703L
         -:  187:      [[nodiscard,__gnu__::__always_inline__]]
         -:  188:      constexpr _Tp*
         -:  189:      allocate(size_t __n)
         -:  190:      {
-      282:  191:	if (std::__is_constant_evaluated())
-call    0 returned 282
+      311:  191:	if (std::__is_constant_evaluated())
+call    0 returned 311
 branch  1 taken 0 (fallthrough)
-branch  2 taken 282
+branch  2 taken 311
         -:  192:	  {
     #####:  193:	    if (__builtin_mul_overflow(__n, sizeof(_Tp), &__n))
     %%%%%:  193-block  0
@@ -211,28 +211,28 @@ call    0 never executed
 call    0 never executed
         -:  196:	  }
         -:  197:
-      282:  198:	return __allocator_base<_Tp>::allocate(__n, 0);
-      282:  198-block  0
-call    0 returned 282
+      311:  198:	return __allocator_base<_Tp>::allocate(__n, 0);
+      311:  198-block  0
+call    0 returned 311
         -:  199:      }
         -:  200:
         -:  201:      [[__gnu__::__always_inline__]]
         -:  202:      constexpr void
         -:  203:      deallocate(_Tp* __p, size_t __n)
         -:  204:      {
-      292:  205:	if (std::__is_constant_evaluated())
-call    0 returned 292
+      326:  205:	if (std::__is_constant_evaluated())
+call    0 returned 326
 branch  1 taken 0 (fallthrough)
-branch  2 taken 292
+branch  2 taken 326
         -:  206:	  {
     #####:  207:	    ::operator delete(__p);
     %%%%%:  207-block  0
 call    0 never executed
     #####:  208:	    return;
         -:  209:	  }
-      292:  210:	__allocator_base<_Tp>::deallocate(__p, __n);
-      292:  210-block  0
-call    0 returned 292
+      326:  210:	__allocator_base<_Tp>::deallocate(__p, __n);
+      326:  210-block  0
+call    0 returned 326
         -:  211:      }
         -:  212:#endif // C++20
         -:  213:

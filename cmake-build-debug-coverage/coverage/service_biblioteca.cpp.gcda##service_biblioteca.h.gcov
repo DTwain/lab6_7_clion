@@ -1,0 +1,75 @@
+        -:    0:Source:D:/INFO 2/SEM 2/oop_lab_6_9/Headers/service_biblioteca.h
+        -:    0:Graph:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by obrej on 4/10/2024.
+        -:    3://
+        -:    4:
+        -:    5:
+        -:    6:#ifndef LAB6_7_CLION_SERVICE_BIBLIOTECA_H
+        -:    7:#define LAB6_7_CLION_SERVICE_BIBLIOTECA_H
+        -:    8:
+        -:    9:#include <map>
+        -:   10:#include <memory>
+        -:   11:#include <string>
+        -:   12:#include "carte.h"
+        -:   13:#include "repo.h"
+        -:   14:#include "validator.h"
+        -:   15:#include "undo.h"
+        -:   16:
+        -:   17:using std::map;
+        -:   18:
+        -:   19:class service_biblioteca {
+        -:   20:private:
+        -:   21:    repo& repo_carti;
+        -:   22:    validator_carte& validator;
+        -:   23:    vector<std::unique_ptr<undo>> undo_actions_list;
+        -:   24:public:
+        -:   25:    service_biblioteca(repo &repo_carti_obj, validator_carte& validator_obj):
+        -:   26:        repo_carti{repo_carti_obj}, validator{validator_obj}{}
+        -:   27:
+        -:   28:    service_biblioteca(const service_biblioteca& other) = delete; // blocam copierea service lui
+        -:   29:
+        -:   30:    const vector<carte>& get_reference_from_vector_srv() const noexcept;
+        -:   31:
+        -:   32:    void add_book_srv(const string& autor, const string& titlu, const string& genre, const int& an);
+        -:   33:
+        -:   34:    void delete_book_srv(const int& id);
+        -:   35:
+        -:   36:    void modify_book_srv(const string& autor, const string& titlu, const string& genre, const int& an, const int& id);
+        -:   37:
+        -:   38:    map<string, DTO_carte> raport();
+        -:   39:
+        -:   40:    void do_undo();
+        -:   41:
+        -:   42:    const vector<carte>& get_all_srv() noexcept;
+        -:   43:
+        -:   44:    const vector<carte> filter_srv(const int an, const string titlu) const;
+        -:   45:
+        -:   46:    const vector<carte> sorter_based_on_option(int option) const;
+        -:   47:
+        -:   48:    const carte& search_for_book(const std::string &autor, const std::string &titlu, const std::string &genre,
+        -:   49:                                 const int &an);
+        -:   50:
+        -:   51:};
+        -:   52:
+        -:   53:class books_service_exception : std::exception{
+        -:   54:    string msg;
+        -:   55:public:
+function _ZN23books_service_exceptionC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 2 returned 100% blocks executed 80%
+        2:   56:    explicit books_service_exception(string error_msg): msg{error_msg} {}
+        2:   56-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   56-block  1
+    $$$$$:   56-block  2
+call    4 never executed
+        -:   57:    friend ostream& operator<<(ostream& out, const books_service_exception& ex);
+        -:   58:};
+        -:   59:
+        -:   60:ostream& operator<<(ostream& out, const books_service_exception& ex);
+        -:   61:
+        -:   62:#endif //LAB6_7_CLION_SERVICE_BIBLIOTECA_H

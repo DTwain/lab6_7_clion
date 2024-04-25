@@ -1,6 +1,6 @@
-        -:    0:Source:D:/INFO 2/SEM 2/OOP/lab6-7---oop/main.cpp
-        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\main.cpp.gcno
-        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\main.cpp.gcda
+        -:    0:Source:D:/INFO 2/SEM 2/oop_lab_6_9/main.cpp
+        -:    0:Graph:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\main.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\main.cpp.gcda
         -:    0:Runs:1
         -:    1:#include <iostream>
         -:    2:#include "Headers/teste.h"
@@ -10,26 +10,26 @@
         -:    6:#include "Headers/cos_carti.h"
         -:    7:#include "Headers/ui_biblioteca.h"
         -:    8:
-        -:    9:
 function main called 1 returned 100% blocks executed 100%
-        1:   10:int main() {
-        -:   11:    tests tester;
-        1:   12:    tester.run_all_tests();
+        1:    9:int main() {
+        -:   10:    tests tester;
+        1:   11:    tester.run_all_tests();
+        1:   11-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   12:    std::cout<<"ok boss\n";
         1:   12-block  0
 call    0 returned 1
 branch  1 taken 1 (fallthrough)
 branch  2 taken 0 (throw)
-        1:   13:    std::cout<<"ok boss\n";
-        1:   13-block  0
-call    0 returned 1
-branch  1 taken 1 (fallthrough)
-branch  2 taken 0 (throw)
-        -:   14:
-        -:   15:    /*repo book_repo;
+        -:   13:
+        -:   14:    /*repo_file book_repo_file{"carti.txt"};
+        -:   15:    repo book_repo;
         -:   16:    repo cos;
         -:   17:    validator_carte validator;
-        -:   18:    service_biblioteca srv{book_repo, validator};
-        -:   19:    cos_carti cos_srv{book_repo, cos};
+        -:   18:    service_biblioteca srv{book_repo_file, validator};
+        -:   19:    cos_carti cos_srv{book_repo_file, cos};
         -:   20:    ui_biblioteca service{srv, cos_srv};
         -:   21:    service.run();*/
         -:   22:

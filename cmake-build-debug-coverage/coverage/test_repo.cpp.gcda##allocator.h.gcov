@@ -1,6 +1,6 @@
         -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h
-        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_repo.cpp.gcno
-        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_repo.cpp.gcda
+        -:    0:Graph:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_repo.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\teste\test_repo.cpp.gcda
         -:    0:Runs:1
         -:    1:// Allocators -*- C++ -*-
         -:    2:
@@ -164,15 +164,15 @@
         -:  160:      // 3035. std::allocator's constructors should be constexpr
         -:  161:      __attribute__((__always_inline__))
         -:  162:      _GLIBCXX20_CONSTEXPR
-      108:  163:      allocator() _GLIBCXX_NOTHROW { }
-        2:  163-block  0
-        2:  163-block  1
-        2:  163-block  2
-        2:  163-block  3
-        2:  163-block  4
-        2:  163-block  5
+     132*:  163:      allocator() _GLIBCXX_NOTHROW { }
+        1:  163-block  0
+        1:  163-block  1
+        1:  163-block  2
+        1:  163-block  3
+        1:  163-block  4
+        1:  163-block  5
         1:  163-block  6
-        1:  163-block  7
+    %%%%%:  163-block  7
         1:  163-block  8
         1:  163-block  9
         1:  163-block 10
@@ -187,12 +187,12 @@
         1:  163-block 19
         1:  163-block 20
         1:  163-block 21
-        1:  163-block 22
-        1:  163-block 23
-        1:  163-block 24
-        1:  163-block 25
-        1:  163-block 26
-        1:  163-block 27
+        2:  163-block 22
+        2:  163-block 23
+        2:  163-block 24
+        2:  163-block 25
+        2:  163-block 26
+        2:  163-block 27
         1:  163-block 28
         1:  163-block 29
         1:  163-block 30
@@ -267,6 +267,29 @@
         1:  163-block 99
         1:  163-block 100
         1:  163-block 101
+        1:  163-block 102
+        1:  163-block 103
+        1:  163-block 104
+        1:  163-block 105
+        1:  163-block 106
+        1:  163-block 107
+        1:  163-block 108
+        1:  163-block 109
+        1:  163-block 110
+        1:  163-block 111
+        1:  163-block 112
+        1:  163-block 113
+        1:  163-block 114
+        1:  163-block 115
+        1:  163-block 116
+        1:  163-block 117
+        1:  163-block 118
+        1:  163-block 119
+        1:  163-block 120
+        1:  163-block 121
+        1:  163-block 122
+        1:  163-block 123
+        3:  163-block 124
         -:  164:
         -:  165:      __attribute__((__always_inline__))
         -:  166:      _GLIBCXX20_CONSTEXPR
@@ -292,7 +315,7 @@
         -:  181:#if __cpp_constexpr_dynamic_alloc
         -:  182:      constexpr
         -:  183:#endif
-     108*:  184:      ~allocator() _GLIBCXX_NOTHROW { }
+     129*:  184:      ~allocator() _GLIBCXX_NOTHROW { }
     %%%%%:  184-block  0
     $$$$$:  184-block  1
     $$$$$:  184-block  2
@@ -397,6 +420,27 @@
     $$$$$:  184-block 101
     $$$$$:  184-block 102
     $$$$$:  184-block 103
+    $$$$$:  184-block 104
+    $$$$$:  184-block 105
+    $$$$$:  184-block 106
+    $$$$$:  184-block 107
+    $$$$$:  184-block 108
+    $$$$$:  184-block 109
+    $$$$$:  184-block 110
+    $$$$$:  184-block 111
+    $$$$$:  184-block 112
+    $$$$$:  184-block 113
+    $$$$$:  184-block 114
+    $$$$$:  184-block 115
+    $$$$$:  184-block 116
+    $$$$$:  184-block 117
+    $$$$$:  184-block 118
+    $$$$$:  184-block 119
+    $$$$$:  184-block 120
+    $$$$$:  184-block 121
+    $$$$$:  184-block 122
+    $$$$$:  184-block 123
+    $$$$$:  184-block 124
         -:  185:
         -:  186:#if __cplusplus > 201703L
         -:  187:      [[nodiscard,__gnu__::__always_inline__]]
@@ -408,9 +452,13 @@
 call    0 never executed
 branch  1 never executed (fallthrough)
 branch  2 never executed
+    %%%%%:  191-block  1
 call    3 never executed
 branch  4 never executed (fallthrough)
 branch  5 never executed
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed
         -:  192:	  {
     #####:  193:	    if (__builtin_mul_overflow(__n, sizeof(_Tp), &__n))
     %%%%%:  193-block  0
@@ -419,16 +467,23 @@ branch  1 never executed
     %%%%%:  193-block  1
 branch  2 never executed (fallthrough)
 branch  3 never executed
+    %%%%%:  193-block  2
+branch  4 never executed (fallthrough)
+branch  5 never executed
     #####:  194:	      std::__throw_bad_array_new_length();
     %%%%%:  194-block  0
 call    0 never executed
     %%%%%:  194-block  1
 call    1 never executed
+    %%%%%:  194-block  2
+call    2 never executed
     #####:  195:	    return static_cast<_Tp*>(::operator new(__n));
     %%%%%:  195-block  0
 call    0 never executed
     %%%%%:  195-block  1
 call    1 never executed
+    %%%%%:  195-block  2
+call    2 never executed
         -:  196:	  }
         -:  197:
     #####:  198:	return __allocator_base<_Tp>::allocate(__n, 0);
@@ -436,6 +491,8 @@ call    1 never executed
 call    0 never executed
     %%%%%:  198-block  1
 call    1 never executed
+    %%%%%:  198-block  2
+call    2 never executed
         -:  199:      }
         -:  200:
         -:  201:      [[__gnu__::__always_inline__]]
@@ -450,12 +507,18 @@ branch  2 never executed
 call    3 never executed
 branch  4 never executed (fallthrough)
 branch  5 never executed
+    %%%%%:  205-block  1
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed
         -:  206:	  {
     #####:  207:	    ::operator delete(__p);
     %%%%%:  207-block  0
 call    0 never executed
     %%%%%:  207-block  1
 call    1 never executed
+    %%%%%:  207-block  2
+call    2 never executed
     #####:  208:	    return;
         -:  209:	  }
     #####:  210:	__allocator_base<_Tp>::deallocate(__p, __n);
@@ -463,6 +526,8 @@ call    1 never executed
 call    0 never executed
     %%%%%:  210-block  1
 call    1 never executed
+    %%%%%:  210-block  2
+call    2 never executed
         -:  211:      }
         -:  212:#endif // C++20
         -:  213:

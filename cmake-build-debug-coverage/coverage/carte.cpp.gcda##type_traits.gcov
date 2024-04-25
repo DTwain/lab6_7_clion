@@ -1,6 +1,6 @@
         -:    0:Source:D:/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits
-        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcno
-        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcda
+        -:    0:Graph:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\domain\carte.cpp.gcda
         -:    0:Runs:1
         -:    1:// C++11 <type_traits> -*- C++ -*-
         -:    2:
@@ -3645,14 +3645,14 @@
         -: 3641:  /// Returns true only when called during constant evaluation.
         -: 3642:  /// @since C++20
         -: 3643:  constexpr inline bool
-function _ZSt21is_constant_evaluatedv called 2021 returned 100% blocks executed 100%
-     2021: 3644:  is_constant_evaluated() noexcept
+function _ZSt21is_constant_evaluatedv called 2217 returned 100% blocks executed 100%
+     2217: 3644:  is_constant_evaluated() noexcept
         -: 3645:  {
         -: 3646:#if __cpp_if_consteval >= 202106L
         -: 3647:    if consteval { return true; } else { return false; }
         -: 3648:#else
-     2021: 3649:    return __builtin_is_constant_evaluated();
-     2021: 3649-block  0
+     2217: 3649:    return __builtin_is_constant_evaluated();
+     2217: 3649-block  0
         -: 3650:#endif
         -: 3651:  }
         -: 3652:#endif

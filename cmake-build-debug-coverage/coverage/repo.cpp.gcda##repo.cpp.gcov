@@ -1,6 +1,6 @@
-        -:    0:Source:D:/INFO 2/SEM 2/OOP/lab6-7---oop/repository/repo.cpp
-        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcno
-        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcda
+        -:    0:Source:D:/INFO 2/SEM 2/oop_lab_6_9/repository/repo.cpp
+        -:    0:Graph:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\repository\repo.cpp.gcda
         -:    0:Runs:1
         -:    1://
         -:    2:// Created by obrej on 4/10/2024.
@@ -19,10 +19,10 @@
         -:   15:using std::to_string;
         -:   16:using std::vector;
         -:   17:
-function _ZN4repo15incrementare_idEv called 74 returned 100% blocks executed 100%
-       74:   18:void repo::incrementare_id(){
-       74:   19:    this->id += 1;
-       74:   20:}
+function _ZN4repo15incrementare_idEv called 81 returned 100% blocks executed 100%
+       81:   18:void repo::incrementare_id(){
+       81:   19:    this->id += 1;
+       81:   20:}
         -:   21:/*
         -:   22: * Returneaza un id pentru cartea pe care dorim sa o adaugam
         -:   23: * Return type: int
@@ -43,20 +43,20 @@ function _ZNK4repo25get_reference_from_vectorEv called 2 returned 100% blocks ex
         -:   34: * Adauga cartea in repo
         -:   35: * Arunca book_repo_exception daca mai exista o cartte cu acelasi Id
         -:   36: */
-function _ZN4repo3addERK5carte called 75 returned 99% blocks executed 61%
-       75:   37:void repo::add(const carte& obj_carte){
-       75:   38:    if(carte_in_repo(obj_carte.get_book_id()))
-       75:   38-block  0
-call    0 returned 75
-branch  1 taken 75 (fallthrough)
+function _ZN4repo3addERK5carte called 82 returned 99% blocks executed 61%
+       82:   37:void repo::add(const carte& obj_carte){
+       82:   38:    if(carte_in_repo(obj_carte.get_book_id()))
+       82:   38-block  0
+call    0 returned 82
+branch  1 taken 82 (fallthrough)
 branch  2 taken 0 (throw)
-       75:   38-block  1
-call    3 returned 75
-branch  4 taken 75 (fallthrough)
+       82:   38-block  1
+call    3 returned 82
+branch  4 taken 82 (fallthrough)
 branch  5 taken 0 (throw)
-       75:   38-block  2
+       82:   38-block  2
 branch  6 taken 1 (fallthrough)
-branch  7 taken 74
+branch  7 taken 81
     $$$$$:   38-block  3
 call    8 never executed
         1:   39:        throw book_repo_exception("Cartea cu id - ul: " + to_string(obj_carte.get_book_id()) + "exista deja");
@@ -94,12 +94,12 @@ call   20 never executed
     $$$$$:   39-block 10
     $$$$$:   39-block 11
 call   21 never executed
-       74:   40:    this->carte_vec.push_back(obj_carte);
-       74:   40-block  0
-call    0 returned 74
-       74:   41:    this->incrementare_id();
-call    0 returned 74
-       74:   42:}
+       81:   40:    this->carte_vec.push_back(obj_carte);
+       81:   40-block  0
+call    0 returned 81
+       81:   41:    this->incrementare_id();
+call    0 returned 81
+       81:   42:}
         -:   43:
 function _ZN4repo10add_pt_cosERK5carte called 14 returned 100% blocks executed 100%
        14:   44:void repo::add_pt_cos(const carte& obj_carte){
@@ -113,73 +113,73 @@ call    0 returned 14
         -:   50: *      true: carta apare in repo
         -:   51: *      false: nu apare in repo
         -:   52: */
-function _ZNK4repo13carte_in_repoERKi called 88 returned 100% blocks executed 86%
-       88:   53:bool repo::carte_in_repo(const int& id_to_find ) const {
+function _ZNK4repo13carte_in_repoERKi called 96 returned 100% blocks executed 86%
+       96:   53:bool repo::carte_in_repo(const int& id_to_find ) const {
         -:   54:    try {
-       88:   55:        find_book_by_id(id_to_find);
-       88:   55-block  0
-call    0 returned 88
-branch  1 taken 11 (fallthrough)
-branch  2 taken 77 (throw)
-       11:   56:        return true;
-       11:   56-block  0
+       96:   55:        find_book_by_id(id_to_find);
+       96:   55-block  0
+call    0 returned 96
+branch  1 taken 12 (fallthrough)
+branch  2 taken 84 (throw)
+       12:   56:        return true;
+       12:   56-block  0
         -:   57:    }
-       77:   58:    catch(book_repo_exception&){
-       77:   58-block  0
+       84:   58:    catch(book_repo_exception&){
+       84:   58-block  0
 branch  0 taken 0 (fallthrough)
-branch  1 taken 77
-       77:   58-block  1
-call    2 returned 77
-       77:   59:        return false;
-       77:   60:    }
+branch  1 taken 84
+       84:   58-block  1
+call    2 returned 84
+       84:   59:        return false;
+       84:   60:    }
         -:   61:}
         -:   62:/*
         -:   63: *  Returneaza cartea cu id ul dat sau ridica o exceptie daca nu exista
         -:   64: *
         -:   65: */
-function _ZNK4repo15find_book_by_idERKi called 110 returned 27% blocks executed 65%
-      110:   66:const carte& repo::find_book_by_id(const int& id) const{
-      462:   67:    for(const carte& book : this->carte_vec)
-      110:   67-block  0
-call    0 returned 110
-call    1 returned 110
-      382:   67-block  1
-call    2 returned 382
-      352:   67-block  2
-call    3 returned 352
-      462:   67-block  3
-call    4 returned 462
-branch  5 taken 382
-branch  6 taken 80 (fallthrough)
-      382:   68:        if(book.get_book_id() == id)
-call    0 returned 382
-branch  1 taken 382 (fallthrough)
+function _ZNK4repo15find_book_by_idERKi called 118 returned 26% blocks executed 65%
+      118:   66:const carte& repo::find_book_by_id(const int& id) const{
+      471:   67:    for(const carte& book : this->carte_vec)
+      118:   67-block  0
+call    0 returned 118
+call    1 returned 118
+      384:   67-block  1
+call    2 returned 384
+      353:   67-block  2
+call    3 returned 353
+      471:   67-block  3
+call    4 returned 471
+branch  5 taken 384
+branch  6 taken 87 (fallthrough)
+      384:   68:        if(book.get_book_id() == id)
+call    0 returned 384
+branch  1 taken 384 (fallthrough)
 branch  2 taken 0 (throw)
-      382:   68-block  0
-branch  3 taken 30 (fallthrough)
-branch  4 taken 352
-       30:   69:            return book;
-       30:   69-block  0
-       30:   69-block  1
-       80:   70:    throw book_repo_exception("Book with id: " + to_string(id) + " doesn't exist");
-       80:   70-block  0
-call    0 returned 80
-call    1 returned 80
-call    2 returned 80
-branch  3 taken 80 (fallthrough)
+      384:   68-block  0
+branch  3 taken 31 (fallthrough)
+branch  4 taken 353
+       31:   69:            return book;
+       31:   69-block  0
+       31:   69-block  1
+       87:   70:    throw book_repo_exception("Book with id: " + to_string(id) + " doesn't exist");
+       87:   70-block  0
+call    0 returned 87
+call    1 returned 87
+call    2 returned 87
+branch  3 taken 87 (fallthrough)
 branch  4 taken 0 (throw)
-       80:   70-block  1
-call    5 returned 80
-branch  6 taken 80 (fallthrough)
+       87:   70-block  1
+call    5 returned 87
+branch  6 taken 87 (fallthrough)
 branch  7 taken 0 (throw)
-       80:   70-block  2
-call    8 returned 80
-branch  9 taken 80 (fallthrough)
+       87:   70-block  2
+call    8 returned 87
+branch  9 taken 87 (fallthrough)
 branch 10 taken 0 (throw)
-       80:   70-block  3
-call   11 returned 80
-call   12 returned 80
-call   13 returned 80
+       87:   70-block  3
+call   11 returned 87
+call   12 returned 87
+call   13 returned 87
 call   14 returned 0
     $$$$$:   70-block  4
 call   15 never executed
@@ -197,16 +197,16 @@ call   18 never executed
         -:   73: * Sterge cartea cu id ul dat sau ridica o exceptie daca nu gaseste cartea
         -:   74: *
         -:   75: */
-function _ZN4repo11delete_bookERKi called 13 returned 77% blocks executed 59%
-       13:   76:void repo::delete_book(const int &id) {
-       13:   77:    if(!carte_in_repo(id))
-       13:   77-block  0
-call    0 returned 13
-branch  1 taken 13 (fallthrough)
+function _ZN4repo11delete_bookERKi called 14 returned 79% blocks executed 59%
+       14:   76:void repo::delete_book(const int &id) {
+       14:   77:    if(!carte_in_repo(id))
+       14:   77-block  0
+call    0 returned 14
+branch  1 taken 14 (fallthrough)
 branch  2 taken 0 (throw)
-       13:   77-block  1
+       14:   77-block  1
 branch  3 taken 3 (fallthrough)
-branch  4 taken 10
+branch  4 taken 11
         3:   78:        throw book_repo_exception("Cartea cu id-ul " + to_string(id) + " nu exista!");
         3:   78-block  0
 call    0 returned 3
@@ -238,30 +238,30 @@ call   17 never executed
     $$$$$:   78-block  9
     $$$$$:   78-block 10
 call   18 never executed
-       10:   79:    auto remove_begin = std::remove_if(carte_vec.begin(), carte_vec.end(),
-call    0 returned 10
-call    1 returned 10
-branch  2 taken 10 (fallthrough)
+       11:   79:    auto remove_begin = std::remove_if(carte_vec.begin(), carte_vec.end(),
+call    0 returned 11
+call    1 returned 11
+branch  2 taken 11 (fallthrough)
 branch  3 taken 0 (throw)
-function _ZZN4repo11delete_bookERKiENKUlRK5carteE_clES4_ called 22 returned 100% blocks executed 100%
-       32:   80:                                       [id](const carte& obj_carte) { return obj_carte.get_book_id() == id; });
-       10:   80-block  0
-call    0 returned 10
-       22:   80-block  1
-call    1 returned 22
-       10:   81:    carte_vec.erase(remove_begin, carte_vec.end());
-       10:   81-block  0
-call    0 returned 10
-call    1 returned 10
-call    2 returned 10
-call    3 returned 10
-branch  4 taken 10 (fallthrough)
+function _ZZN4repo11delete_bookERKiENKUlRK5carteE_clES4_ called 25 returned 100% blocks executed 100%
+       36:   80:                                       [id](const carte& obj_carte) { return obj_carte.get_book_id() == id; });
+       11:   80-block  0
+call    0 returned 11
+       25:   80-block  1
+call    1 returned 25
+       11:   81:    carte_vec.erase(remove_begin, carte_vec.end());
+       11:   81-block  0
+call    0 returned 11
+call    1 returned 11
+call    2 returned 11
+call    3 returned 11
+branch  4 taken 11 (fallthrough)
 branch  5 taken 0 (throw)
     $$$$$:   81-block  1
     $$$$$:   81-block  2
     $$$$$:   81-block  3
-       10:   82:}
-       10:   82-block  0
+       11:   82:}
+       11:   82-block  0
         -:   83:/*
         -:   84: * Sterge toate cartile din repo
         -:   85: */
@@ -276,49 +276,49 @@ call    0 returned 2
         -:   91: * Modifica cartea cu id ul egal cu cel al cartii care
         -:   92: *
         -:   93: */
-function _ZN4repo11modify_bookERK5carte called 5 returned 60% blocks executed 73%
-        5:   94:void repo::modify_book(const carte& obj_carte) {
-        5:   95:    int book_id = obj_carte.get_book_id();
-        5:   95-block  0
-call    0 returned 5
-        5:   96:    bool found = false;
+function _ZN4repo11modify_bookERK5carte called 6 returned 67% blocks executed 73%
+        6:   94:void repo::modify_book(const carte& obj_carte) {
+        6:   95:    int book_id = obj_carte.get_book_id();
+        6:   95-block  0
+call    0 returned 6
+        6:   96:    bool found = false;
         -:   97:
-       12:   98:    for(carte& book: this->carte_vec)
-call    0 returned 5
-call    1 returned 5
-       10:   98-block  0
-call    2 returned 10
-        7:   98-block  1
-call    3 returned 7
-       12:   98-block  2
-call    4 returned 12
-branch  5 taken 10
+       14:   98:    for(carte& book: this->carte_vec)
+call    0 returned 6
+call    1 returned 6
+       12:   98-block  0
+call    2 returned 12
+        8:   98-block  1
+call    3 returned 8
+       14:   98-block  2
+call    4 returned 14
+branch  5 taken 12
 branch  6 taken 2 (fallthrough)
-       10:   99:        if(book.get_book_id() == obj_carte.get_book_id()){
-call    0 returned 10
-branch  1 taken 10 (fallthrough)
+       12:   99:        if(book.get_book_id() == obj_carte.get_book_id()){
+call    0 returned 12
+branch  1 taken 12 (fallthrough)
 branch  2 taken 0 (throw)
-       10:   99-block  0
-call    3 returned 10
-branch  4 taken 10 (fallthrough)
+       12:   99-block  0
+call    3 returned 12
+branch  4 taken 12 (fallthrough)
 branch  5 taken 0 (throw)
-       10:   99-block  1
-branch  6 taken 3 (fallthrough)
-branch  7 taken 7
-        3:  100:            book = obj_carte;
-        3:  100-block  0
-call    0 returned 3
-branch  1 taken 3 (fallthrough)
+       12:   99-block  1
+branch  6 taken 4 (fallthrough)
+branch  7 taken 8
+        4:  100:            book = obj_carte;
+        4:  100-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
 branch  2 taken 0 (throw)
-        3:  101:            found = true;
-        3:  102:            break;
-        3:  102-block  0
+        4:  101:            found = true;
+        4:  102:            break;
+        4:  102-block  0
         -:  103:        }
         -:  104:
-        5:  105:    if(!found) {
-        5:  105-block  0
+        6:  105:    if(!found) {
+        6:  105-block  0
 branch  0 taken 2 (fallthrough)
-branch  1 taken 3
+branch  1 taken 4
         2:  106:        throw book_repo_exception("Doesn't exist book with id: " + to_string(book_id));
         2:  106-block  0
 call    0 returned 2
@@ -343,13 +343,13 @@ call   12 never executed
     $$$$$:  106-block  7
 call   13 never executed
         -:  107:    }
-        3:  108:}
-        3:  108-block  0
+        4:  108:}
+        4:  108-block  0
         -:  109:
-function _ZNK4repo7get_allEv called 35 returned 100% blocks executed 100%
-       35:  110:const vector<carte>& repo::get_all() const noexcept{
-       35:  111:    return carte_vec;
-       35:  111-block  0
+function _ZN4repo7get_allEv called 43 returned 100% blocks executed 100%
+       43:  110:const vector<carte>& repo::get_all() {
+       43:  111:    return carte_vec;
+       43:  111-block  0
         -:  112:}
         -:  113:
 function _ZlsRSoRK19book_repo_exception called 5 returned 100% blocks executed 100%
@@ -452,18 +452,18 @@ call   11 never executed
         6:  137-block  0
         -:  138:}
         -:  139:
-function _ZN9repo_file13write_to_fileEv called 0 returned 0% blocks executed 0%
-    #####:  140:void repo_file::write_to_file() {
-    #####:  141:    std::ofstream cout(filename);
-    %%%%%:  141-block  0
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed (throw)
-    #####:  142:    if(!cout.is_open())
-    %%%%%:  142-block  0
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed
+function _ZN9repo_file13write_to_fileEv called 7 returned 100% blocks executed 53%
+        7:  140:void repo_file::write_to_file() {
+        7:  141:    std::ofstream cout(filename);
+        7:  141-block  0
+call    0 returned 7
+branch  1 taken 7 (fallthrough)
+branch  2 taken 0 (throw)
+        7:  142:    if(!cout.is_open())
+        7:  142-block  0
+call    0 returned 7
+branch  1 taken 0 (fallthrough)
+branch  2 taken 7
     #####:  143:        throw book_repo_exception("Nu s-a deschis fisierul pentru scriere");
     %%%%%:  143-block  0
 call    0 never executed
@@ -486,82 +486,85 @@ call    9 never executed
     $$$$$:  143-block  8
 call   10 never executed
         -:  144:
-    #####:  145:    for(const carte& book : get_all()){
-    %%%%%:  145-block  0
-call    0 never executed
-call    1 never executed
-call    2 never executed
-    %%%%%:  145-block  1
-call    3 never executed
-    %%%%%:  145-block  2
-call    4 never executed
-branch  5 never executed
-branch  6 never executed (fallthrough)
-    #####:  146:        cout<<book.get_book_id()<<";"<<book.get_author()<<";"<<book.get_title()<<";"<<book.get_genre()<<";"<<book.get_publication_year()<<'\n';
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed (throw)
-    %%%%%:  146-block  0
-call    3 never executed
-branch  4 never executed (fallthrough)
-branch  5 never executed (throw)
-    %%%%%:  146-block  1
-call    6 never executed
-branch  7 never executed (fallthrough)
-branch  8 never executed (throw)
-    %%%%%:  146-block  2
-call    9 never executed
-branch 10 never executed (fallthrough)
-branch 11 never executed (throw)
-    %%%%%:  146-block  3
-call   12 never executed
-branch 13 never executed (fallthrough)
-branch 14 never executed (throw)
-    %%%%%:  146-block  4
-call   15 never executed
-branch 16 never executed (fallthrough)
-branch 17 never executed (throw)
-    %%%%%:  146-block  5
-call   18 never executed
-branch 19 never executed (fallthrough)
-branch 20 never executed (throw)
-    %%%%%:  146-block  6
-call   21 never executed
-branch 22 never executed (fallthrough)
-branch 23 never executed (throw)
-    %%%%%:  146-block  7
-call   24 never executed
-branch 25 never executed (fallthrough)
-branch 26 never executed (throw)
-    %%%%%:  146-block  8
-call   27 never executed
-branch 28 never executed (fallthrough)
-branch 29 never executed (throw)
-    %%%%%:  146-block  9
-call   30 never executed
-branch 31 never executed (fallthrough)
-branch 32 never executed (throw)
-    %%%%%:  146-block 10
-call   33 never executed
-branch 34 never executed (fallthrough)
-branch 35 never executed (throw)
-    %%%%%:  146-block 11
-call   36 never executed
-branch 37 never executed (fallthrough)
-branch 38 never executed (throw)
-    %%%%%:  146-block 12
-call   39 never executed
-branch 40 never executed (fallthrough)
-branch 41 never executed (throw)
-    %%%%%:  146-block 13
-call   42 never executed
-branch 43 never executed (fallthrough)
-branch 44 never executed (throw)
-    %%%%%:  146-block 14
-call   45 never executed
-call   46 never executed
-call   47 never executed
-call   48 never executed
+       20:  145:    for(const carte& book : get_all()){
+        7:  145-block  0
+call    0 returned 7
+branch  1 taken 7 (fallthrough)
+branch  2 taken 0 (throw)
+        7:  145-block  1
+call    3 returned 7
+call    4 returned 7
+       13:  145-block  2
+call    5 returned 13
+       20:  145-block  3
+call    6 returned 20
+branch  7 taken 13
+branch  8 taken 7 (fallthrough)
+       13:  146:        cout<<book.get_book_id()<<";"<<book.get_author()<<";"<<book.get_title()<<";"<<book.get_genre()<<";"<<book.get_publication_year()<<'\n';
+call    0 returned 13
+branch  1 taken 13 (fallthrough)
+branch  2 taken 0 (throw)
+       13:  146-block  0
+call    3 returned 13
+branch  4 taken 13 (fallthrough)
+branch  5 taken 0 (throw)
+       13:  146-block  1
+call    6 returned 13
+branch  7 taken 13 (fallthrough)
+branch  8 taken 0 (throw)
+       13:  146-block  2
+call    9 returned 13
+branch 10 taken 13 (fallthrough)
+branch 11 taken 0 (throw)
+       13:  146-block  3
+call   12 returned 13
+branch 13 taken 13 (fallthrough)
+branch 14 taken 0 (throw)
+       13:  146-block  4
+call   15 returned 13
+branch 16 taken 13 (fallthrough)
+branch 17 taken 0 (throw)
+       13:  146-block  5
+call   18 returned 13
+branch 19 taken 13 (fallthrough)
+branch 20 taken 0 (throw)
+       13:  146-block  6
+call   21 returned 13
+branch 22 taken 13 (fallthrough)
+branch 23 taken 0 (throw)
+       13:  146-block  7
+call   24 returned 13
+branch 25 taken 13 (fallthrough)
+branch 26 taken 0 (throw)
+       13:  146-block  8
+call   27 returned 13
+branch 28 taken 13 (fallthrough)
+branch 29 taken 0 (throw)
+       13:  146-block  9
+call   30 returned 13
+branch 31 taken 13 (fallthrough)
+branch 32 taken 0 (throw)
+       13:  146-block 10
+call   33 returned 13
+branch 34 taken 13 (fallthrough)
+branch 35 taken 0 (throw)
+       13:  146-block 11
+call   36 returned 13
+branch 37 taken 13 (fallthrough)
+branch 38 taken 0 (throw)
+       13:  146-block 12
+call   39 returned 13
+branch 40 taken 13 (fallthrough)
+branch 41 taken 0 (throw)
+       13:  146-block 13
+call   42 returned 13
+branch 43 taken 13 (fallthrough)
+branch 44 taken 0 (throw)
+       13:  146-block 14
+call   45 returned 13
+call   46 returned 13
+call   47 returned 13
+call   48 returned 13
     $$$$$:  146-block 15
 call   49 never executed
     $$$$$:  146-block 16
@@ -573,29 +576,29 @@ call   51 never executed
     $$$$$:  146-block 20
         -:  147:    }
         -:  148:
-    #####:  149:    cout.close();
-    %%%%%:  149-block  0
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed (throw)
-    #####:  150:}
-    %%%%%:  150-block  0
-call    0 never executed
+        7:  149:    cout.close();
+        7:  149-block  0
+call    0 returned 7
+branch  1 taken 7 (fallthrough)
+branch  2 taken 0 (throw)
+        7:  150:}
+        7:  150-block  0
+call    0 returned 7
     $$$$$:  150-block  1
 call    1 never executed
         -:  151:
-function _ZN9repo_file14load_from_fileEv called 0 returned 0% blocks executed 0%
-    #####:  152:void repo_file::load_from_file() {
-    #####:  153:    std::ifstream cin(filename);
-    %%%%%:  153-block  0
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed (throw)
-    #####:  154:    if(!cin.is_open())
-    %%%%%:  154-block  0
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed
+function _ZN9repo_file14load_from_fileEv called 3 returned 100% blocks executed 52%
+        3:  152:void repo_file::load_from_file() {
+        3:  153:    std::ifstream cin(filename);
+        3:  153-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:  154:    if(!cin.is_open())
+        3:  154-block  0
+call    0 returned 3
+branch  1 taken 0 (fallthrough)
+branch  2 taken 3
     #####:  155:        throw book_repo_exception("Nu s-a deschis fisierul pentru citire");
     %%%%%:  155-block  0
 call    0 never executed
@@ -617,177 +620,454 @@ call    9 never executed
     $$$$$:  155-block  7
     $$$$$:  155-block  8
 call   10 never executed
-    #####:  156:    while(!cin.eof()){
-    %%%%%:  156-block  0
-    %%%%%:  156-block  1
+        -:  156:
+        3:  157:    cin.seekg(0, std::ios::end);
+        3:  157-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:  158:    if (cin.tellg() == 0) {
+        3:  158-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:  158-block  1
+call    3 returned 3
+branch  4 taken 2 (fallthrough)
+branch  5 taken 1
+    $$$$$:  158-block  2
+        2:  159:        cin.close();
+        2:  159-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:  160:        return;
+        2:  160-block  0
+        -:  161:    }
+        1:  162:    cin.seekg(0, std::ios::beg);
+        1:  162-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        3:  163:    while(!cin.eof()){
+        1:  163-block  0
+        3:  163-block  1
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:  163-block  2
+branch  3 taken 3
+branch  4 taken 0 (fallthrough)
+        3:  164:        string linie;
+        3:  164-block  0
+call    0 returned 3
+        3:  165:        getline(cin,linie);
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  166:
+        3:  167:        if(linie.size() == 0){
+        3:  167-block  0
+call    0 returned 3
+branch  1 taken 1 (fallthrough)
+branch  2 taken 2
+        1:  168:            break;
+        1:  168-block  0
+        -:  169:        }
+        2:  170:        std::vector<std::string> tokens;
+        2:  171:        std::istringstream iss(linie);
+        2:  171-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:  172:        std::string token;
+        2:  172-block  0
+call    0 returned 2
+        -:  173:
+       12:  174:        while (std::getline(iss, token, ';')) {
+       12:  174-block  0
+call    0 returned 12
+branch  1 taken 12 (fallthrough)
+branch  2 taken 0 (throw)
+       12:  174-block  1
+call    3 returned 12
+branch  4 taken 12 (fallthrough)
+branch  5 taken 0 (throw)
+       12:  174-block  2
+branch  6 taken 10
+branch  7 taken 2 (fallthrough)
+       10:  175:            tokens.push_back(token);
+       10:  175-block  0
+call    0 returned 10
+branch  1 taken 10 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  176:        }
+        -:  177:
+        2:  178:        if(tokens.size() >= 6)
+        2:  178-block  0
+call    0 returned 2
+branch  1 taken 0 (fallthrough)
+branch  2 taken 2
+    #####:  179:            throw book_repo_exception("Fisierul in care se stocheaza cartile contile o line cu mai mult de 5 date");
+    %%%%%:  179-block  0
 call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed (throw)
-    %%%%%:  156-block  2
-branch  3 never executed
-branch  4 never executed (fallthrough)
-    #####:  157:        string linie;
-    %%%%%:  157-block  0
-call    0 never executed
-    #####:  158:        getline(cin,linie);
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed (throw)
-        -:  159:
-    #####:  160:        std::vector<std::string> tokens;
-    #####:  161:        std::istringstream iss(linie);
-    %%%%%:  161-block  0
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed (throw)
-    #####:  162:        std::string token;
-    %%%%%:  162-block  0
-call    0 never executed
-        -:  163:
-    #####:  164:        while (std::getline(iss, token, ';')) {
-    %%%%%:  164-block  0
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed (throw)
-    %%%%%:  164-block  1
-call    3 never executed
-branch  4 never executed (fallthrough)
-branch  5 never executed (throw)
-    %%%%%:  164-block  2
-branch  6 never executed
-branch  7 never executed (fallthrough)
-    #####:  165:            tokens.push_back(token);
-    %%%%%:  165-block  0
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed (throw)
-        -:  166:        }
-        -:  167:
-    #####:  168:        if(tokens.size() >= 6)
-    %%%%%:  168-block  0
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed
-    #####:  169:            throw book_repo_exception("Fisierul in care se stocheaza cartile contile o line cu mai mult de 5 date");
-    %%%%%:  169-block  0
-call    0 never executed
-    %%%%%:  169-block  1
+    %%%%%:  179-block  1
 call    1 never executed
 branch  2 never executed (fallthrough)
 branch  3 never executed (throw)
-    %%%%%:  169-block  2
+    %%%%%:  179-block  2
 call    4 never executed
 branch  5 never executed (fallthrough)
 branch  6 never executed (throw)
-    %%%%%:  169-block  3
+    %%%%%:  179-block  3
 call    7 never executed
-    %%%%%:  169-block  4
+    %%%%%:  179-block  4
 call    8 never executed
-    $$$$$:  169-block  5
+    $$$$$:  179-block  5
 call    9 never executed
-    $$$$$:  169-block  6
-    $$$$$:  169-block  7
-    $$$$$:  169-block  8
+    $$$$$:  179-block  6
+    $$$$$:  179-block  7
+    $$$$$:  179-block  8
 call   10 never executed
-        -:  170:        // Print the tokens
-    #####:  171:        int id = std::stoi(tokens[0]);
-    %%%%%:  171-block  0
+        -:  180:        // Print the tokens
+        2:  181:        int id = std::stoi(tokens[0]);
+        2:  181-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  182:        string autor = tokens[1];
+        2:  182-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  183:        string titlu = tokens[2];
+        2:  183-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  184:        string gen = tokens[3];
+        2:  184-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  185:        int an = std::stoi(tokens[4]);
+        2:  185-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        -:  186:
+        2:  187:        carte book{autor, titlu, gen, an, id};
+        2:  187-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:  187-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:  187-block  2
+call    6 returned 2
+branch  7 taken 2 (fallthrough)
+branch  8 taken 0 (throw)
+        2:  187-block  3
+call    9 returned 2
+branch 10 taken 2 (fallthrough)
+branch 11 taken 0 (throw)
+        2:  187-block  4
+call   12 returned 2
+call   13 returned 2
+call   14 returned 2
+    $$$$$:  187-block  5
+call   15 never executed
+    $$$$$:  187-block  6
+    $$$$$:  187-block  7
+call   16 never executed
+    $$$$$:  187-block  8
+    $$$$$:  187-block  9
+call   17 never executed
+    $$$$$:  187-block 10
+        2:  188:        repo::add(book);
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        3:  189:    }
+        2:  189-block  0
+call    0 returned 2
+call    1 returned 2
+call    2 returned 2
+call    3 returned 2
+call    4 returned 2
+call    5 returned 2
+call    6 returned 2
+        3:  189-block  1
+call    7 returned 3
+branch  8 taken 2 (fallthrough)
+branch  9 taken 1
+    $$$$$:  189-block  2
+call   10 never executed
+    $$$$$:  189-block  3
+call   11 never executed
+    $$$$$:  189-block  4
+call   12 never executed
+    $$$$$:  189-block  5
+call   13 never executed
+    $$$$$:  189-block  6
+call   14 never executed
+    $$$$$:  189-block  7
+call   15 never executed
+    $$$$$:  189-block  8
+call   16 never executed
+    $$$$$:  189-block  9
+call   17 never executed
+        1:  190:    cin.close();
+        1:  190-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        3:  191:}
+        1:  191-block  0
+        3:  191-block  1
+call    0 returned 3
+branch  1 taken 1 (fallthrough)
+branch  2 taken 2
+    $$$$$:  191-block  2
+call    3 never executed
+        -:  192:
+function _ZN16probability_repo19cat_de_norocos_estiEv called 0 returned 0% blocks executed 0%
+    #####:  193:void probability_repo::cat_de_norocos_esti() {
+    #####:  194:    int prob_din_doua_cifre = probability * 10;
+    #####:  195:    int val_random = rand() % 100;
+    %%%%%:  195-block  0
+call    0 never executed
+    #####:  196:    if(val_random <= prob_din_doua_cifre)
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    #####:  197:        throw book_repo_exception("Ai ghinion azi John");
+    %%%%%:  197-block  0
+call    0 never executed
+    %%%%%:  197-block  1
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    %%%%%:  197-block  2
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:  197-block  3
+call    7 never executed
+    %%%%%:  197-block  4
+call    8 never executed
+    $$$$$:  197-block  5
+call    9 never executed
+    $$$$$:  197-block  6
+    $$$$$:  197-block  7
+    $$$$$:  197-block  8
+call   10 never executed
+    #####:  198:}
+    %%%%%:  198-block  0
+        -:  199:
+function _ZN16probability_repo3addERK5carte called 0 returned 0% blocks executed 0%
+    #####:  200:void probability_repo::add(const carte &carte_obj) {
+    #####:  201:    cat_de_norocos_esti();
+    %%%%%:  201-block  0
+call    0 never executed
+    #####:  202:    if(!(lista_carti.find(carte_obj.get_book_id()) != lista_carti.end()))
 call    0 never executed
 call    1 never executed
 branch  2 never executed (fallthrough)
 branch  3 never executed (throw)
-    #####:  172:        string autor = tokens[1];
-    %%%%%:  172-block  0
+    %%%%%:  202-block  0
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:  202-block  1
+call    7 never executed
+branch  8 never executed (fallthrough)
+branch  9 never executed
+    $$$$$:  202-block  2
+    $$$$$:  202-block  3
+    $$$$$:  202-block  4
+call   10 never executed
+    #####:  203:        throw book_repo_exception("Exista cartea deja");
+    %%%%%:  203-block  0
 call    0 never executed
+    %%%%%:  203-block  1
 call    1 never executed
 branch  2 never executed (fallthrough)
 branch  3 never executed (throw)
-    #####:  173:        string titlu = tokens[2];
-    %%%%%:  173-block  0
-call    0 never executed
-call    1 never executed
-branch  2 never executed (fallthrough)
-branch  3 never executed (throw)
-    #####:  174:        string gen = tokens[3];
-    %%%%%:  174-block  0
-call    0 never executed
-call    1 never executed
-branch  2 never executed (fallthrough)
-branch  3 never executed (throw)
-    #####:  175:        int an = std::stoi(tokens[4]);
-    %%%%%:  175-block  0
-call    0 never executed
-call    1 never executed
-branch  2 never executed (fallthrough)
-branch  3 never executed (throw)
-        -:  176:
-    #####:  177:        carte book{autor, titlu, gen, an, id};
-    %%%%%:  177-block  0
+    %%%%%:  203-block  2
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:  203-block  3
+call    7 never executed
+    %%%%%:  203-block  4
+call    8 never executed
+    $$$$$:  203-block  5
+call    9 never executed
+    $$$$$:  203-block  6
+    $$$$$:  203-block  7
+    $$$$$:  203-block  8
+call   10 never executed
+    #####:  204:    lista_carti.insert(std::make_pair(carte_obj.get_book_id(), carte_obj));
+    %%%%%:  204-block  0
 call    0 never executed
 branch  1 never executed (fallthrough)
 branch  2 never executed (throw)
-    %%%%%:  177-block  1
+    %%%%%:  204-block  1
 call    3 never executed
 branch  4 never executed (fallthrough)
 branch  5 never executed (throw)
-    %%%%%:  177-block  2
+    %%%%%:  204-block  2
 call    6 never executed
 branch  7 never executed (fallthrough)
 branch  8 never executed (throw)
-    %%%%%:  177-block  3
+    %%%%%:  204-block  3
 call    9 never executed
-branch 10 never executed (fallthrough)
-branch 11 never executed (throw)
-    %%%%%:  177-block  4
-call   12 never executed
-call   13 never executed
-call   14 never executed
-    $$$$$:  177-block  5
-call   15 never executed
-    $$$$$:  177-block  6
-    $$$$$:  177-block  7
-call   16 never executed
-    $$$$$:  177-block  8
-    $$$$$:  177-block  9
-call   17 never executed
-    $$$$$:  177-block 10
-    #####:  178:        repo::add(book);
-call    0 never executed
-branch  1 never executed (fallthrough)
-branch  2 never executed (throw)
-    #####:  179:    }
-    %%%%%:  179-block  0
-call    0 never executed
-call    1 never executed
-call    2 never executed
-call    3 never executed
-call    4 never executed
-call    5 never executed
-call    6 never executed
-call    7 never executed
-    $$$$$:  179-block  1
-call    8 never executed
-    $$$$$:  179-block  2
-call    9 never executed
-    $$$$$:  179-block  3
+    $$$$$:  204-block  4
 call   10 never executed
-    $$$$$:  179-block  4
-call   11 never executed
-    $$$$$:  179-block  5
-call   12 never executed
-    $$$$$:  179-block  6
-call   13 never executed
-    $$$$$:  179-block  7
-call   14 never executed
-    $$$$$:  179-block  8
-call   15 never executed
-    #####:  180:    cin.close();
-    %%%%%:  180-block  0
+    $$$$$:  204-block  5
+    $$$$$:  204-block  6
+    #####:  205:}
+function _ZN16probability_repo11delete_bookERKi called 0 returned 0% blocks executed 0%
+    #####:  206:void probability_repo::delete_book(const int &id) {
+    #####:  207:    cat_de_norocos_esti();
+    %%%%%:  207-block  0
 call    0 never executed
 branch  1 never executed (fallthrough)
 branch  2 never executed (throw)
-    #####:  181:}
-    %%%%%:  181-block  0
+    #####:  208:    auto iter = lista_carti.find(id);
+    %%%%%:  208-block  0
 call    0 never executed
-    $$$$$:  181-block  1
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  209:    if(iter != lista_carti.end())
+    %%%%%:  209-block  0
+call    0 never executed
 call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    #####:  210:        lista_carti.erase(iter);
+    %%%%%:  210-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  211:    else
+    #####:  212:        throw book_repo_exception("Nu exista cartea cu id-ul dat");
+    %%%%%:  212-block  0
+call    0 never executed
+    %%%%%:  212-block  1
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    %%%%%:  212-block  2
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:  212-block  3
+call    7 never executed
+    %%%%%:  212-block  4
+call    8 never executed
+    $$$$$:  212-block  5
+call    9 never executed
+    $$$$$:  212-block  6
+    $$$$$:  212-block  7
+    $$$$$:  212-block  8
+call   10 never executed
+    #####:  213:}
+    %%%%%:  213-block  0
+        -:  214:
+function _ZN16probability_repo11modify_bookERK5carte called 0 returned 0% blocks executed 0%
+    #####:  215:void probability_repo::modify_book(const carte &modified_book) {
+    #####:  216:    cat_de_norocos_esti();
+    %%%%%:  216-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    #####:  217:    auto iter = lista_carti.find(modified_book.get_book_id());
+    %%%%%:  217-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  217-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    $$$$$:  217-block  2
+    #####:  218:    if(iter != lista_carti.end())
+    %%%%%:  218-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed
+    #####:  219:        lista_carti[modified_book.get_book_id()] = modified_book;
+    %%%%%:  219-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:  219-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:  219-block  2
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    $$$$$:  219-block  3
+        -:  220:    else
+    #####:  221:        throw book_repo_exception("Nu exista cartea pentru modificare");
+    %%%%%:  221-block  0
+call    0 never executed
+    %%%%%:  221-block  1
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    %%%%%:  221-block  2
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:  221-block  3
+call    7 never executed
+    %%%%%:  221-block  4
+call    8 never executed
+    $$$$$:  221-block  5
+call    9 never executed
+    $$$$$:  221-block  6
+    $$$$$:  221-block  7
+    $$$$$:  221-block  8
+call   10 never executed
+    #####:  222:}
+    %%%%%:  222-block  0
+        -:  223:
+function _ZN16probability_repo7get_allEv called 0 returned 0% blocks executed 0%
+    #####:  224:const vector<carte>& probability_repo::get_all() {
+    #####:  225:    cat_de_norocos_esti();
+    %%%%%:  225-block  0
+call    0 never executed
+    #####:  226:    lista.clear();
+call    0 never executed
+    #####:  227:    for(const auto& itr: lista_carti)
+call    0 never executed
+call    1 never executed
+    %%%%%:  227-block  0
+call    2 never executed
+    %%%%%:  227-block  1
+call    3 never executed
+    %%%%%:  227-block  2
+call    4 never executed
+branch  5 never executed
+branch  6 never executed (fallthrough)
+    #####:  228:        lista.push_back(itr.second);
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:  229:
+    #####:  230:    return lista;
+    %%%%%:  230-block  0
+    %%%%%:  230-block  1
+        -:  231:}

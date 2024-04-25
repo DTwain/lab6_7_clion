@@ -10,13 +10,27 @@
 #include "carte.h"
 #include <ostream>
 #include <vector>
+#include <map>
 #include <string>
 
 using std::ostream;
 using std::string;
 using std::vector;
 
-class repo {
+class repo_abs{
+public:
+    virtual void add(const carte& carte_obj) = 0;
+
+    virtual void delete_book(const int& id) = 0;
+
+    virtual void modify_book(const carte& modified_book) = 0;
+
+    virtual const vector<carte> & get_all() = 0;
+
+    virtual ~repo_abs() = default;
+};
+
+class repo : public repo_abs{
 private:
     vector<carte> carte_vec;
     int id = 0;
@@ -33,19 +47,19 @@ public:
 
     const vector<carte>& get_reference_from_vector() const;
 
-    virtual void add(const carte& carte_obj);
+    virtual void add(const carte& carte_obj) override;
 
     void add_pt_cos(const carte& obj_carte);
 
-    virtual void delete_book(const int& id);
+    virtual void delete_book(const int& id) override;
 
-    virtual void modify_book(const carte& obj_carte);
+    virtual void modify_book(const carte& obj_carte) override;
 
     void goleste_repo();
 
     const carte& find_book_by_id(const int& id) const;
 
-    const vector<carte>& get_all() const noexcept;
+    const vector<carte>& get_all() override;
 
 
     static bool sort_by_title(const carte& book1, const carte& book2);
@@ -63,6 +77,8 @@ public:
     repo_file(const string &filename): repo(), filename{ filename } {
         load_from_file();
     }
+    ~repo_file() override = default;
+
     void add(const carte& carte_obj) override{
         repo::add(carte_obj);
         write_to_file();
@@ -72,11 +88,31 @@ public:
         write_to_file();
     }
     void modify_book(const carte& obj_carte) override{
-        repo::add(obj_carte);
+        repo::modify_book(obj_carte);
         write_to_file();
     }
 };
 
+class probability_repo: public repo_abs{
+private:
+    float probability;
+    std::map<int, carte> lista_carti;
+    void cat_de_norocos_esti();
+public:
+    vector<carte> lista;
+
+    probability_repo() = default;
+
+    probability_repo(const float& prob): probability{ prob } { lista_carti.clear(); }
+
+    void add(const carte& carte_obj) override;
+
+    void delete_book(const int& id) override;
+
+    void modify_book(const carte& modified_book) override;
+
+    const vector<carte>& get_all() override;
+};
 
 class book_repo_exception : std::exception{
     string msg;

@@ -1,6 +1,6 @@
-        -:    0:Source:D:/INFO 2/SEM 2/OOP/lab6-7---oop/Headers/carte.h
-        -:    0:Graph:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcno
-        -:    0:Data:D:\INFO 2\SEM 2\OOP\lab6-7---oop\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcda
+        -:    0:Source:D:/INFO 2/SEM 2/oop_lab_6_9/Headers/carte.h
+        -:    0:Graph:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcda
         -:    0:Runs:1
         -:    1://
         -:    2:// Created by obrej on 4/10/2024.
@@ -29,12 +29,12 @@
         -:   25:            book_id;
         -:   26:
         -:   27:public:
-function _ZN5carteC1Ev called 8 returned 100% blocks executed 100%
-        8:   28:    carte() = default;
-        8:   28-block  0
-call    0 returned 8
-call    1 returned 8
-call    2 returned 8
+function _ZN5carteC1Ev called 0 returned 0% blocks executed 0%
+    #####:   28:    carte() = default;
+    %%%%%:   28-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
         -:   29:
 function _ZN5carteC1ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_S5_ii called 0 returned 0% blocks executed 0%
     #####:   30:    carte(const string author, const string title, const string genre, const int year, const int id)

@@ -16,8 +16,8 @@ void test_repo::run_repo_tests() {
     test_repo_find_book_by_id();
     test_increment_id();
     test_get_id_for_next_book_to_be_added();
-    test_repo_file_write();
     test_repo_file_load();
+    test_repo_file_write();
 }
 
 void test_repo::test_repo_add() {
@@ -195,6 +195,46 @@ void test_repo::test_repo_file_load() {
 
     carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
     carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
+    carte book3 = carte("Ottmar", "Comandant la auschwitz", "Epic", 1960, 2);
+    carte book3_modified = carte("Ottmar", "Comandant la auschwitz", "Epic", 1961, 2);
+
+    book_repo_file.add(book1);
+    book_repo_file.add(book2);
+    book_repo_file.add(book3);
+
+    book_repo_file.delete_book(1);
+    book_repo_file.modify_book(book3_modified);
+
+    repo_file book_repo_file_to_test{"test.txt"};
+
+    const vector<carte>& vec{ book_repo_file.get_all() };
+
+    assert(vec.size() == 2);
+
+    assert(vec[0].get_author() == "Luis");
+    assert(vec[0].get_title() == "Jupanii");
+    assert(vec[0].get_genre() == "Epic");
+    assert(vec[0].get_publication_year() == 1842);
+    assert(vec[0].get_book_id() == 0);
+
+    assert(vec[1].get_author() == "Ottmar");
+    assert(vec[1].get_title() == "Comandant la auschwitz");
+    assert(vec[1].get_genre() == "Epic");
+    assert(vec[1].get_publication_year() == 1961);
+    assert(vec[1].get_book_id() == 2);
+
+    remove("test.txt");
+}
+
+
+void test_repo::test_repo_file_write() {
+    std::ofstream fout("test.txt", std::ios::trunc);
+    fout.close();
+
+    repo_file book_repo_file{"test.txt"};
+
+    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+    carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
 
     book_repo_file.add(book1);
     book_repo_file.add(book2);
@@ -270,9 +310,4 @@ void test_repo::test_repo_file_load() {
     // Close the file
     fin.close();
     remove("test.txt");
-}
-
-
-void test_repo::test_repo_file_write() {
-    test_repo_file_load();
 }

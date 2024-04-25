@@ -107,7 +107,7 @@ void repo::modify_book(const carte& obj_carte) {
     }
 }
 
-const vector<carte>& repo::get_all() const noexcept{
+const vector<carte>& repo::get_all() {
     return carte_vec;
 }
 
@@ -150,20 +150,23 @@ void repo_file::write_to_file() {
 }
 
 void repo_file::load_from_file() {
-    std::ifstream cin(filename);
-    if(!cin.is_open())
+    std::ifstream fin(filename, std::ios::in);
+    if(fin.fail())
         throw book_repo_exception("Nu s-a deschis fisierul pentru citire");
 
-    cin.seekg(0, std::ios::end);
-    if (cin.tellg() == 0) {
-        cin.close();
+    fin.seekg(0, std::ios::end);
+    if (fin.tellg() == 0) {
+        fin.close();
         return;
     }
-    cin.seekg(0, std::ios::beg);
-    while(!cin.eof()){
+    fin.seekg(0, std::ios::beg);
+    while(!fin.eof()){
         string linie;
-        getline(cin,linie);
+        getline(fin,linie);
 
+        if(linie.size() == 0){
+            break;
+        }
         std::vector<std::string> tokens;
         std::istringstream iss(linie);
         std::string token;
@@ -184,5 +187,45 @@ void repo_file::load_from_file() {
         carte book{autor, titlu, gen, an, id};
         repo::add(book);
     }
-    cin.close();
+    fin.close();
+}
+
+void probability_repo::cat_de_norocos_esti() {
+    int prob_din_doua_cifre = probability * 10;
+    int val_random = rand() % 100;
+    if(val_random <= prob_din_doua_cifre)
+        throw book_repo_exception("Ai ghinion azi John");
+}
+
+void probability_repo::add(const carte &carte_obj) {
+    cat_de_norocos_esti();
+    if(!(lista_carti.find(carte_obj.get_book_id()) != lista_carti.end()))
+        throw book_repo_exception("Exista cartea deja");
+    lista_carti.insert(std::make_pair(carte_obj.get_book_id(), carte_obj));
+}
+void probability_repo::delete_book(const int &id) {
+    cat_de_norocos_esti();
+    auto iter = lista_carti.find(id);
+    if(iter != lista_carti.end())
+        lista_carti.erase(iter);
+    else
+        throw book_repo_exception("Nu exista cartea cu id-ul dat");
+}
+
+void probability_repo::modify_book(const carte &modified_book) {
+    cat_de_norocos_esti();
+    auto iter = lista_carti.find(modified_book.get_book_id());
+    if(iter != lista_carti.end())
+        lista_carti[modified_book.get_book_id()] = modified_book;
+    else
+        throw book_repo_exception("Nu exista cartea pentru modificare");
+}
+
+const vector<carte>& probability_repo::get_all() {
+    cat_de_norocos_esti();
+    lista.clear();
+    for(const auto& itr: lista_carti)
+        lista.push_back(itr.second);
+
+    return lista;
 }

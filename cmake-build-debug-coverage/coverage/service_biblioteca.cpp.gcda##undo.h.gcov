@@ -1,0 +1,102 @@
+        -:    0:Source:D:/INFO 2/SEM 2/oop_lab_6_9/Headers/undo.h
+        -:    0:Graph:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcno
+        -:    0:Data:D:\INFO 2\SEM 2\oop_lab_6_9\cmake-build-debug-coverage\CMakeFiles\lab6_7_clion.dir\service\service_biblioteca.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by obrej on 4/24/2024.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef LAB6_7_CLION_UNDO_H
+        -:    6:#define LAB6_7_CLION_UNDO_H
+        -:    7:
+        -:    8:#include "carte.h"
+        -:    9:#include "repo.h"
+        -:   10:
+        -:   11:class undo{
+        -:   12:public:
+        -:   13:    virtual void do_undo() = 0;
+function _ZN4undoD2Ev called 34 returned 100% blocks executed 100%
+       34:   14:    virtual ~undo() = default;
+        -:   15:};
+        -:   16:
+        -:   17:class undo_add : public undo {
+        -:   18:private:
+        -:   19:    carte book;
+        -:   20:    repo& repo_carti;
+        -:   21:public:
+function _ZN8undo_addC1ER4repoRK5carte called 27 returned 100% blocks executed 80%
+       27:   22:    undo_add(repo& repo_obj, const carte& book): book{book}, repo_carti{repo_obj} {}
+       27:   22-block  0
+call    0 returned 27
+call    1 returned 27
+branch  2 taken 27 (fallthrough)
+branch  3 taken 0 (throw)
+       27:   22-block  1
+    $$$$$:   22-block  2
+call    4 never executed
+        -:   23:
+function _ZN8undo_add7do_undoEv called 3 returned 100% blocks executed 100%
+        3:   24:    void do_undo() override{
+        3:   25:        repo_carti.delete_book(book.get_book_id());
+        3:   25-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:   25-block  1
+call    3 returned 3
+branch  4 taken 3 (fallthrough)
+branch  5 taken 0 (throw)
+        3:   26:    }
+        3:   26-block  0
+        -:   27:};
+        -:   28:
+        -:   29:class undo_delete : public undo {
+        -:   30:private:
+        -:   31:    carte book;
+        -:   32:    repo& repo_carti;
+        -:   33:public:
+function _ZN11undo_deleteC1ER4repoRK5carte called 6 returned 100% blocks executed 80%
+        6:   34:    undo_delete(repo& repo_obj, const carte& book) : book{book}, repo_carti{repo_obj} {}
+        6:   34-block  0
+call    0 returned 6
+call    1 returned 6
+branch  2 taken 6 (fallthrough)
+branch  3 taken 0 (throw)
+        6:   34-block  1
+    $$$$$:   34-block  2
+call    4 never executed
+        -:   35:
+function _ZN11undo_delete7do_undoEv called 1 returned 100% blocks executed 100%
+        1:   36:    void do_undo() override{
+        1:   37:        repo_carti.add(book);
+        1:   37-block  0
+call    0 returned 1
+        1:   38:    }
+        -:   39:};
+        -:   40:
+        -:   41:class undo_modify : public undo {
+        -:   42:private:
+        -:   43:    carte book;
+        -:   44:    repo& repo_carti;
+        -:   45:public:
+function _ZN11undo_modifyC1ER4repoRK5carte called 1 returned 100% blocks executed 80%
+        1:   46:    undo_modify(repo& repo_obj, const carte& book) : book{book}, repo_carti{repo_obj} {}
+        1:   46-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   46-block  1
+    $$$$$:   46-block  2
+call    4 never executed
+        -:   47:
+function _ZN11undo_modify7do_undoEv called 1 returned 100% blocks executed 100%
+        1:   48:    void do_undo() override{
+        1:   49:        repo_carti.modify_book(book);
+        1:   49-block  0
+call    0 returned 1
+        1:   50:    }
+        -:   51:};
+        -:   52:
+        -:   53:
+        -:   54:#endif //LAB6_7_CLION_UNDO_H
