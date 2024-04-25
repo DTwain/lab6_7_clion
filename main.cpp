@@ -14,6 +14,8 @@ int main() {
     repo_file book_repo_file{"carti.txt"};
     repo book_repo;
     repo cos;
+    probability_repo book_repo_prob{0.3};
+
     validator_carte validator;
     service_biblioteca srv{book_repo_file, validator};
     cos_carti cos_srv{book_repo_file, cos};

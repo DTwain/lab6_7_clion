@@ -1,6 +1,6 @@
 CMakeFiles/lab6_7_clion.dir/service/service_biblioteca.cpp.obj: \
- C:\Users\obrej\OneDrive\Desktop\lab6-9\service\service_biblioteca.cpp \
- C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/service_biblioteca.h \
+ D:\INFO\ 2\lab6-9ooppp\service\service_biblioteca.cpp \
+ D:/INFO\ 2/lab6-9ooppp/Headers/service_biblioteca.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -177,7 +177,7 @@ CMakeFiles/lab6_7_clion.dir/service/service_biblioteca.cpp.obj: \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_algobase.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
- C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/carte.h \
+ D:/INFO\ 2/lab6-9ooppp/Headers/carte.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
@@ -185,9 +185,9 @@ CMakeFiles/lab6_7_clion.dir/service/service_biblioteca.cpp.obj: \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
- C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/repo.h \
- C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/validator.h \
- C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/undo.h \
+ D:/INFO\ 2/lab6-9ooppp/Headers/repo.h \
+ D:/INFO\ 2/lab6-9ooppp/Headers/validator.h \
+ D:/INFO\ 2/lab6-9ooppp/Headers/undo.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h \
