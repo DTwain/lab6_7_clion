@@ -15,9 +15,14 @@ private:
     void test_repo_find_book_by_id();
     void test_get_id_for_next_book_to_be_added();
     void test_increment_id();
+
     void test_repo_file_write();
     void test_repo_file_load();
 
+    void test_repo_probability_add();
+    void test_repo_probability_delete();
+    void test_repo_probability_modify();
+    void test_repo_probability_get_all();
 public:
     void run_repo_tests();
 };

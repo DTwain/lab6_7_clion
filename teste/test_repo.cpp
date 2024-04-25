@@ -16,8 +16,14 @@ void test_repo::run_repo_tests() {
     test_repo_find_book_by_id();
     test_increment_id();
     test_get_id_for_next_book_to_be_added();
+
     test_repo_file_load();
     test_repo_file_write();
+
+    test_repo_probability_add();
+    test_repo_probability_delete();
+    test_repo_probability_modify();
+    test_repo_probability_get_all();
 }
 
 void test_repo::test_repo_add() {
@@ -310,4 +316,122 @@ void test_repo::test_repo_file_write() {
     // Close the file
     fin.close();
     remove("test.txt");
+}
+
+
+void test_repo::test_repo_probability_add() {
+    probability_repo repo_prob{0.50};
+    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+    carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
+    while(1) {
+        try {
+            repo_prob.add(book1);
+            break;
+        }
+        catch (book_repo_exception) {
+
+        }
+    }
+}
+
+void test_repo::test_repo_probability_delete() {
+    probability_repo repo_prob{0.50};
+    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+    carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
+    while(1) {
+        try {
+            repo_prob.add(book1);
+            break;
+        }
+        catch (book_repo_exception) {
+
+        }
+    }
+    while(1) {
+        try{
+            repo_prob.delete_book(0);
+            break;
+        }
+        catch(book_repo_exception){
+
+        }
+    }
+    while(1){
+        try{
+            int size = repo_prob.get_all().size();
+            assert(size == 0);
+            break;
+        }
+        catch(book_repo_exception){
+
+        }
+    }
+}
+
+void test_repo::test_repo_probability_modify() {
+    probability_repo repo_prob{0.50};
+    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+    carte book2 = carte("Kong", "Maria", "Liric", 1940, 0);
+    while(1) {
+        try {
+            repo_prob.add(book1);
+            break;
+        }
+        catch (book_repo_exception) {
+
+        }
+    }
+    while(1) {
+        try{
+            repo_prob.modify_book(book2);
+            break;
+        }
+        catch(book_repo_exception){
+
+        }
+    }
+    while(1){
+        try{
+            int size = repo_prob.get_all().size();
+            assert(size == 1);
+            break;
+        }
+        catch(book_repo_exception){
+
+        }
+    }
+}
+
+void test_repo::test_repo_probability_get_all() {
+    probability_repo repo_prob{0.50};
+    carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
+    carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
+    while(1) {
+        try {
+            repo_prob.add(book1);
+            break;
+        }
+        catch (book_repo_exception) {
+
+        }
+    }
+    while(1) {
+        try {
+            repo_prob.add(book2);
+            break;
+        }
+        catch (book_repo_exception) {
+
+        }
+    }
+    while(1) {
+        try {
+            const vector<carte>& books = repo_prob.get_all();
+            assert(books.size() == 2);
+            break;
+        }
+        catch (book_repo_exception){
+
+        }
+    }
 }

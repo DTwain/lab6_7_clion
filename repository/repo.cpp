@@ -8,6 +8,7 @@
 #include <vector>
 #include <string>
 #include <algorithm>
+#include <stdlib.h>
 
 using std::string;
 using std::ostream;
@@ -191,7 +192,7 @@ void repo_file::load_from_file() {
 }
 
 void probability_repo::cat_de_norocos_esti() {
-    int prob_din_doua_cifre = probability * 10;
+    int prob_din_doua_cifre = probability * 100;
     int val_random = rand() % 100;
     if(val_random <= prob_din_doua_cifre)
         throw book_repo_exception("Ai ghinion azi John");
@@ -199,9 +200,9 @@ void probability_repo::cat_de_norocos_esti() {
 
 void probability_repo::add(const carte &carte_obj) {
     cat_de_norocos_esti();
-    if(!(lista_carti.find(carte_obj.get_book_id()) != lista_carti.end()))
+    if(lista_carti.find(carte_obj.get_book_id()) != lista_carti.end())
         throw book_repo_exception("Exista cartea deja");
-    lista_carti.insert(std::make_pair(carte_obj.get_book_id(), carte_obj));
+    lista_carti[carte_obj.get_book_id()] = carte_obj;
 }
 void probability_repo::delete_book(const int &id) {
     cat_de_norocos_esti();

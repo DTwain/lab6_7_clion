@@ -1,8 +1,8 @@
 CMakeFiles/lab6_7_clion.dir/service/cos_carti.cpp.obj: \
- C:\Users\obrej\OneDrive\Desktop\lab6-9\service\cos_carti.cpp \
- C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/cos_carti.h \
- C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/repo.h \
- C:/Users/obrej/OneDrive/Desktop/lab6-9/Headers/carte.h \
+ D:\INFO\ 2\lab6-9ooppp\service\cos_carti.cpp \
+ D:/INFO\ 2/lab6-9ooppp/Headers/cos_carti.h \
+ D:/INFO\ 2/lab6-9ooppp/Headers/repo.h \
+ D:/INFO\ 2/lab6-9ooppp/Headers/carte.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  D:/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
