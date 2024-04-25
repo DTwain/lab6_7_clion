@@ -7,9 +7,9 @@
 #include "Headers/ui_biblioteca.h"
 
 int main() {
-    /*tests tester;
+    tests tester;
     tester.run_all_tests();
-    std::cout<<"ok boss\n";*/
+    std::cout<<"ok boss\n";
 
     repo_file book_repo_file{"carti.txt"};
     repo book_repo;

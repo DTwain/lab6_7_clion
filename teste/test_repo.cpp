@@ -188,36 +188,27 @@ void test_repo::test_get_id_for_next_book_to_be_added(){
 }
 
 void test_repo::test_repo_file_load() {
-    // Open the file for writing and clear its contents
     std::ofstream fout("test.txt", std::ios::trunc);
     fout.close();
 
-    // Create repo_file object and load data from the file
     repo_file book_repo_file{"test.txt"};
 
-    // Create some book objects
     carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
     carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
 
-    // Add books to the repository
     book_repo_file.add(book1);
     book_repo_file.add(book2);
 
-    // Open the file for reading
     std::ifstream fin("test.txt");
 
-    // Check if the file is open
     if (!fin.is_open()) {
-        std::cerr << "Error: Could not open file for reading." << std::endl;
+        std::cerr << "Error: Nu s-a putut deschide pt citre" << std::endl;
         return;
     }
 
-    // Variables to store lines read from the file
     std::string line1, line2;
 
-    // Read the first line
     if (std::getline(fin, line1)) {
-        // Tokenize the first line
         std::istringstream iss(line1);
         std::vector<std::string> tokens;
         std::string token;
@@ -225,7 +216,6 @@ void test_repo::test_repo_file_load() {
             tokens.push_back(token);
         }
 
-        // Check if tokens are parsed correctly
         if (tokens.size() == 5) {
             int id = std::stoi(tokens[0]);
             std::string autor = tokens[1];
@@ -233,20 +223,20 @@ void test_repo::test_repo_file_load() {
             std::string gen = tokens[3];
             int an = std::stoi(tokens[4]);
 
-            // Assertions for book1
             assert(id == book1.get_book_id());
             assert(autor == book1.get_author());
             assert(titlu == book1.get_title());
             assert(gen == book1.get_genre());
             assert(an == book1.get_publication_year());
-        } else {
-            std::cerr << "Error: Incorrect number of tokens in line 1." << std::endl;
         }
-    } else {
-        std::cerr << "Error: Could not read line 1 from file." << std::endl;
+        else {
+            std::cerr << "Error: numar incorect de campuri";
+        }
+    }
+    else {
+        std::cerr << "Error: Nu s-a citit linia";
     }
 
-    // Read the second line
     if (std::getline(fin, line2)) {
         // Tokenize the second line
         std::istringstream iss(line2);
@@ -256,7 +246,6 @@ void test_repo::test_repo_file_load() {
             tokens.push_back(token);
         }
 
-        // Check if tokens are parsed correctly
         if (tokens.size() == 5) {
             int id = std::stoi(tokens[0]);
             std::string autor = tokens[1];
@@ -264,21 +253,23 @@ void test_repo::test_repo_file_load() {
             std::string gen = tokens[3];
             int an = std::stoi(tokens[4]);
 
-            // Assertions for book2
             assert(id == book2.get_book_id());
             assert(autor == book2.get_author());
             assert(titlu == book2.get_title());
             assert(gen == book2.get_genre());
             assert(an == book2.get_publication_year());
-        } else {
-            std::cerr << "Error: Incorrect number of tokens in line 2." << std::endl;
         }
-    } else {
-        std::cerr << "Error: Could not read line 2 from file." << std::endl;
+        else {
+            std::cerr << "Error: numar incorect de campuri";
+        }
+    }
+    else {
+        std::cerr << "Error: Nu s-a citit linia";
     }
 
     // Close the file
     fin.close();
+    remove("test.txt");
 }
 
 
