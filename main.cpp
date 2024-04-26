@@ -11,7 +11,7 @@ int main() {
     tester.run_all_tests();
     std::cout<<"ok boss\n";
 
-    /*repo_file book_repo_file{"carti.txt"};
+    repo_file book_repo_file{"carti.txt"};
     repo book_repo;
     repo cos;
     probability_repo book_repo_prob{0.3};
@@ -20,7 +20,7 @@ int main() {
     service_biblioteca srv{book_repo_file, validator};
     cos_carti cos_srv{book_repo_file, cos};
     ui_biblioteca service{srv, cos_srv};
-    service.run();*/
+    service.run();
 
     return 0;
 }

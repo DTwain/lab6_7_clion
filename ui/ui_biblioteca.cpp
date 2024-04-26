@@ -181,7 +181,7 @@ void ui_biblioteca::add_elems(){
     srv.add_book_srv("Langston Hughes", "Harlem", "liric", 1951);
 }
 void ui_biblioteca::run(){
-    add_elems();
+    //add_elems();
     while(true){
         meniu();
         int option;
