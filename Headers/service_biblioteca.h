@@ -18,16 +18,16 @@ using std::map;
 
 class service_biblioteca {
 private:
-    repo& repo_carti;
+    repo_abs& repo_carti;
     validator_carte& validator;
     vector<std::unique_ptr<undo>> undo_actions_list;
 public:
-    service_biblioteca(repo &repo_carti_obj, validator_carte& validator_obj):
+    service_biblioteca(repo_abs &repo_carti_obj, validator_carte& validator_obj):
         repo_carti{repo_carti_obj}, validator{validator_obj}{}
 
     service_biblioteca(const service_biblioteca& other) = delete; // blocam copierea service lui
 
-    const vector<carte>& get_reference_from_vector_srv() const noexcept;
+    const vector<carte>& get_reference_from_storage_srv() const noexcept;
 
     void add_book_srv(const string& autor, const string& titlu, const string& genre, const int& an);
 

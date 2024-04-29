@@ -9,10 +9,10 @@
 
 class cos_carti {
 private:
-    repo &repo_carti;
-    repo &cos;
+    repo_abs &repo_carti;
+    repo_abs &cos;
 public:
-    cos_carti(repo& all, repo& cos): repo_carti{all}, cos{cos}{}
+    cos_carti(repo_abs& all, repo_abs& cos): repo_carti{all}, cos{cos}{}
 
     int get_nr_carti_din_cos();
     void add_carte_in_cos(string titlu);

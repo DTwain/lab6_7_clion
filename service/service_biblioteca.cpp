@@ -7,8 +7,8 @@
 #include <algorithm>
 
 // return a reference to a my_vector class obj, used for printing
-const vector<carte>& service_biblioteca::get_reference_from_vector_srv() const noexcept {
-    return repo_carti.get_reference_from_vector();
+const vector<carte>& service_biblioteca::get_reference_from_storage_srv() const noexcept {
+    return repo_carti.get_reference_from_storage();
 }
 
 /*
@@ -128,11 +128,17 @@ const vector<carte> service_biblioteca::filter_srv(const int an, const string ti
 const vector<carte> service_biblioteca::sorter_based_on_option(int option) const{
     vector<carte> all{ repo_carti.get_all() };
     if(option == 1)
-        sort(all.begin(), all.end(), repo_carti.sort_by_title);
+        sort(all.begin(), all.end(), [&](const carte& book1, const carte& book2 ){
+            return (repo_carti.comp_by_title)(book1, book2);
+        });
     else if(option == 2)
-        sort(all.begin(), all.end(), repo_carti.sort_by_author);
+        sort(all.begin(), all.end(), [&](const carte& book1, const carte& book2 ){
+            return (repo_carti.comp_by_author)(book1, book2);
+        });
     else
-        sort(all.begin(), all.end(), repo_carti.sort_by_publication_year_and_gen);
+        sort(all.begin(), all.end(), [&](const carte& book1, const carte& book2 ){
+            return (repo_carti.comp_by_publication_year_and_gen)(book1, book2);
+        });
     return all;
 }
 

@@ -61,7 +61,7 @@ void test_repo::test_repo_add() {
     book_repo.add(book16);book_repo.add(book17);book_repo.add(book18);
     book_repo.add(book19);book_repo.add(book20);book_repo.add(book21);
 
-    assert(book_repo.get_reference_from_vector().size() == 22); // echivalent cu get_all()
+    assert(book_repo.get_reference_from_storage().size() == 22); // echivalent cu get_all()
     assert(book_repo.find_book_by_id(0).get_title() == "Jupanii");
 
     assert(book_repo.find_book_by_id(20) == book20);
@@ -320,7 +320,10 @@ void test_repo::test_repo_file_write() {
 
 
 void test_repo::test_repo_probability_add() {
-    probability_repo repo_prob{0.50};
+    std::ofstream fout("test.txt", std::ios::trunc);
+    fout.close();
+
+    probability_repo repo_prob{0.50, "test.txt"};
     carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
     carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
     while(1) {
@@ -328,14 +331,20 @@ void test_repo::test_repo_probability_add() {
             repo_prob.add(book1);
             break;
         }
-        catch (book_repo_exception) {
-
-        }
+        catch (book_repo_exception) { }
     }
+
+    probability_repo repo_prob_2{0.50, "test.txt"};
+    // trebuia sa mai verific daca contine cele doua carti
+
+    remove("test.txt");
 }
 
 void test_repo::test_repo_probability_delete() {
-    probability_repo repo_prob{0.50};
+    std::ofstream fout("test.txt", std::ios::trunc);
+    fout.close();
+
+    probability_repo repo_prob{0.50, "test.txt"};
     carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
     carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
     while(1) {
@@ -366,10 +375,14 @@ void test_repo::test_repo_probability_delete() {
 
         }
     }
+    remove("test.txt");
 }
 
 void test_repo::test_repo_probability_modify() {
-    probability_repo repo_prob{0.50};
+    std::ofstream fout("test.txt", std::ios::trunc);
+    fout.close();
+
+    probability_repo repo_prob{0.50, "test.txt"};
     carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
     carte book2 = carte("Kong", "Maria", "Liric", 1940, 0);
     while(1) {
@@ -400,10 +413,14 @@ void test_repo::test_repo_probability_modify() {
 
         }
     }
+    remove("test.txt");
 }
 
 void test_repo::test_repo_probability_get_all() {
-    probability_repo repo_prob{0.50};
+    std::ofstream fout("test.txt", std::ios::trunc);
+    fout.close();
+
+    probability_repo repo_prob{0.50, "test.txt"};
     carte book1 = carte("Luis", "Jupanii", "Epic", 1842, 0);
     carte book2 = carte("Kong", "Maria", "Liric", 1940, 1);
     while(1) {
@@ -434,4 +451,5 @@ void test_repo::test_repo_probability_get_all() {
 
         }
     }
+    remove("test.txt");
 }

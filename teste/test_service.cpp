@@ -143,7 +143,7 @@ void test_service::test_search_book() {
     }
 
     // testez cu get_reference_from_vector_srv
-    vector<carte> books_vec { srv.get_reference_from_vector_srv() };
+    vector<carte> books_vec { srv.get_reference_from_storage_srv() };
     assert(books_vec.size() == 4);
 }
 

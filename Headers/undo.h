@@ -17,9 +17,9 @@ public:
 class undo_add : public undo {
 private:
     carte book;
-    repo& repo_carti;
+    repo_abs& repo_carti;
 public:
-    undo_add(repo& repo_obj, const carte& book): book{book}, repo_carti{repo_obj} {}
+    undo_add(repo_abs& repo_obj, const carte& book): book{book}, repo_carti{repo_obj} {}
 
     void do_undo() override{
         repo_carti.delete_book(book.get_book_id());
@@ -29,9 +29,9 @@ public:
 class undo_delete : public undo {
 private:
     carte book;
-    repo& repo_carti;
+    repo_abs& repo_carti;
 public:
-    undo_delete(repo& repo_obj, const carte& book) : book{book}, repo_carti{repo_obj} {}
+    undo_delete(repo_abs& repo_obj, const carte& book) : book{book}, repo_carti{repo_obj} {}
 
     void do_undo() override{
         repo_carti.add(book);
@@ -41,9 +41,9 @@ public:
 class undo_modify : public undo {
 private:
     carte book;
-    repo& repo_carti;
+    repo_abs& repo_carti;
 public:
-    undo_modify(repo& repo_obj, const carte& book) : book{book}, repo_carti{repo_obj} {}
+    undo_modify(repo_abs& repo_obj, const carte& book) : book{book}, repo_carti{repo_obj} {}
 
     void do_undo() override{
         repo_carti.modify_book(book);
